@@ -2,4 +2,8 @@
 
 Accepted LeetCode solutions in java
 
-- [876. Middle of the Linked List](/src/MiddleOfTheLinkedList.java) (Easy)
+-  (Easy)
+
+| # | Problem Name | Difficulty |
+| --- | --- | --- |
+| 876 | [876. Middle of the Linked List](/src/MiddleOfTheLinkedList.java) | Easy |
