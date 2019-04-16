@@ -1,6 +1,5 @@
 # LeetCode
-LeetCode Solutions
 
-Accepted solutions in java for problems from LeetCode
+Accepted LeetCode solutions in java
 
 - [876. Middle of the Linked List](/src/MiddleOfTheLinkedList.java) (Easy)
