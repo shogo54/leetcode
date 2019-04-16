@@ -1,8 +1,13 @@
 /**
  * 
  * @author Shogo Akiyama
+ * Solved on 04/14/2019 
  * 
- *         To run the code in LeetCode, take the codes from middleList(ListNode head) method.
+ * 876. Middle of the Linked List
+ * https://leetcode.com/problems/middle-of-the-linked-list/ 
+ * 
+ * To run the code in LeetCode, take the codes from
+ * middleList(ListNode head) method.
  * 
  */
 
