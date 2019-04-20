@@ -1,17 +1,17 @@
 /**
  * 
- * @author Shogo Akiyama
- * Solved on 04/14/2019 
+ * @author Shogo Akiyama 
+ * Solved on 04/20/2019
  * 
- * 876. Middle of the Linked List
- * https://leetcode.com/problems/middle-of-the-linked-list/ 
+ * 206. Reverse Linked List
+ * https://leetcode.com/problems/reverse-linked-list/
  * 
- * To run the code in LeetCode, take the codes from
- * middleList(ListNode head) method.
+ * To run the code in LeetCode, take the codes from 
+ * reverseList(ListNode head) method.
  * 
  */
 
-public class MiddleOfTheLinkedList {
+public class ReverseLinkedList {
 
 	static class ListNode {
 		int val;
@@ -40,7 +40,7 @@ public class MiddleOfTheLinkedList {
 		/*
 		 * test and result
 		 */
-		ListNode answer = new MiddleOfTheLinkedList().middleNode(head);
+		ListNode answer = new ReverseLinkedList().reverseList(head);
 		String result = "[";
 
 		while (answer != null) {
@@ -52,19 +52,16 @@ public class MiddleOfTheLinkedList {
 		System.out.print("Result: " + result.substring(0, result.length() - 1) + "]");
 	}
 
-	public ListNode middleNode(ListNode head) {
-		int count = 0;
+	public ListNode reverseList(ListNode head) {
 		ListNode curr = head;
-		while (curr != null) {
-			curr = curr.next;
-			count++;
-		}
+		ListNode prev = null;
 
-		curr = head;
-		int target = count / 2;
-		for (int i = 0; i < target; i++) {
-			curr = curr.next;
+		while (curr != null) {
+			ListNode next = curr.next;
+			curr.next = prev;
+			prev = curr;
+			curr = next;
 		}
-		return curr;
+		return prev;
 	}
 }
