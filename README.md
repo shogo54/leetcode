@@ -3,7 +3,7 @@
 Accepted LeetCode solutions in java
 
 | # | Problem Name | Difficulty | Test Case Included |
-| --- | --- | --- | :---: |
+| ---: | --- | --- | :---: |
 | 206 | [Reverse Linked List](/src/ReverseLinkedList.java) | Easy | O |
 | 260 | [Single Number III](/src/SingleNumberIII.java) | Medium | X |
 | 344 | [Reverse String](/src/ReverseString.java) | Easy | X |
