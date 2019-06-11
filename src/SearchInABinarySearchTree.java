@@ -6,7 +6,7 @@
  * https://leetcode.com/problems/search-in-a-binary-search-tree/
  * 
  * To run the code in LeetCode, take the codes from 
- * searchBST(TreeNode root, int val) method.
+ * TreeNode searchBST(TreeNode root, int val) method.
  * 
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Search in a Binary Search Tree.
  * Memory Usage: 38.8 MB, less than 98.47% of Java online submissions for Search in a Binary Search Tree.

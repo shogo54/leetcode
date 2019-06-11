@@ -7,7 +7,7 @@
  * https://leetcode.com/problems/middle-of-the-linked-list/ 
  * 
  * To run the code in LeetCode, take the codes from
- * middleList(ListNode head) method.
+ * ListNode middleList(ListNode head) method.
  * 
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Middle of the Linked List.
  * Memory Usage: 35.4 MB, less than 88.01% of Java online submissions for Middle of the Linked List.

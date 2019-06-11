@@ -8,7 +8,7 @@ import java.util.*;
  * https://leetcode.com/problems/single-number-iii/
  * 
  * To run the code in LeetCode, take the codes from 
- * singleNumber(int[] nums) method.
+ * int[] singleNumber(int[] nums) method.
  * 
  * Runtime: 4 ms, faster than 34.11% of Java online submissions for Single Number III.
  * Memory Usage: 37.4 MB, less than 68.48% of Java online submissions for Single Number III.

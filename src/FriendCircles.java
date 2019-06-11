@@ -12,7 +12,7 @@ import java.util.Stack;
  * https://leetcode.com/problems/friend-circles/
  * 
  * To run the code in LeetCode, take the codes from 
- * findCircleNum(int[][] M) method and class Node.
+ * int findCircleNum(int[][] M) method and class Node.
  * 
  * Runtime: 67 ms, faster than 5.13% of Java online submissions for Friend Circles.
  * Memory Usage: 45.3 MB, less than 33.56% of Java online submissions for Friend Circles.

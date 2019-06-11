@@ -6,7 +6,7 @@
  * https://leetcode.com/problems/reverse-linked-list/
  * 
  * To run the code in LeetCode, take the codes from 
- * reverseList(ListNode head) method.
+ * ListNode reverseList(ListNode head) method.
  * 
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Reverse Linked List.
  * Memory Usage: 37.9 MB, less than 11.06% of Java online submissions for Reverse Linked List.
