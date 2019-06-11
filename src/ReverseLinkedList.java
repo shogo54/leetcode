@@ -1,5 +1,4 @@
 /**
- * 
  * @author Shogo Akiyama 
  * Solved on 04/20/2019
  * 
