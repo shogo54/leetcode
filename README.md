@@ -3,7 +3,7 @@
 Accepted LeetCode solutions in java
 
 | # | Problem Name | Difficulty | Test Case Included |
-| --- | --- | --- | :---: |
+| :---: | --- | --- | :---: |
 | 206 | [Reverse Linked List](/src/ReverseLinkedList.java) | Easy | O |
 | 260 | [Single Number III](/src/SingleNumberIII.java) | Medium | X |
 | 344 | [Reverse String](/src/ReverseString.java) | Easy | X |
@@ -13,3 +13,4 @@ Accepted LeetCode solutions in java
 | 876 | [Middle of the Linked List](/src/MiddleOfTheLinkedList.java) | Easy | O |
 | 905 | [Sort Array By Parity](/src/SortArrayByParity.java) | Easy | O |
 | 912 | [Sort An Array](/src/SortAnArray.java) | Medium | X |
+| 1053 | [Previous Permutation With One Swap](/src/PreviousPermutationWithOneSwap.java) | Medium | X |
