@@ -6,8 +6,8 @@
  * 905. Sort Array By Parity
  * https://leetcode.com/problems/sort-array-by-parity/
  * 
- * To run the code in LeetCode, take the codes from 
- * int[] sortArrayByParity(int[] A) method.
+ * To run the code in LeetCode, take the codes from the method
+ * int[] sortArrayByParity(int[] A).
  * 
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Sort Array By Parity.
  * Memory Usage: 42.2 MB, less than 21.75% of Java online submissions for Sort Array By Parity.
