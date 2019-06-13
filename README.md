@@ -9,6 +9,7 @@ Accepted LeetCode solutions in java
 | 260 | [Single Number III](/src/SingleNumberIII.java) | Medium | X |
 | 344 | [Reverse String](/src/ReverseString.java) | Easy | X |
 | 461 | [Hamming Distance](/src/HammingDistance.java) | Easy | X |
+| 508 | [Most Frequent Subtree Sum](src/MostFrequentSubtreeSum.java) | Medium | X |
 | 547 | [Friend Circles](/src/FriendCircles.java) | Medium | X |
 | 657 | [Robot Return to Origin](/src/RobotReturnToOrigin.java) | Easy | X |
 | 700 | [Search in a Binary Search Tree](/src/SearchInABinarySearchTree.java) | Easy | X |
