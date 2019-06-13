@@ -16,7 +16,8 @@
  */
 
 public class PreviousPermutationWithOneSwap {
-	public int[] prevPermOpt1(int[] A) {
+
+    public int[] prevPermOpt1(int[] A) {
         int[] res = helper(A);
         return res==null? A: res;
     }
@@ -57,6 +58,5 @@ public class PreviousPermutationWithOneSwap {
             }
         }
     }
-    
-    
+
 }
