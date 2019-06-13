@@ -5,8 +5,8 @@
  * 1053. Previous Permutation With One Swap
  * https://leetcode.com/problems/previous-permutation-with-one-swap/
  * 
- * To run the code in LeetCode, take the codes from 
- * int[] prevPermOpt1(int[] A) method.
+ * To run the code in LeetCode, take the codes from the methods
+ * int[] prevPermOpt1(int[] A) and int[] helper(int[] A).
  * 
  * Runtime: 572 ms, faster than 5.00% of Java online submissions for Previous Permutation With One Swap.
  * Memory Usage: 326.2 MB, less than 100.00% of Java online submissions for Previous Permutation With One Swap.
