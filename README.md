@@ -16,4 +16,5 @@ Accepted LeetCode solutions in java
 | 876 | [Middle of the Linked List](/src/MiddleOfTheLinkedList.java) | Easy | O |
 | 905 | [Sort Array By Parity](/src/SortArrayByParity.java) | Easy | O |
 | 912 | [Sort An Array](/src/SortAnArray.java) | Medium | X |
+| 1047 | [Remove All Adjacent Duplicates In String](/src/RemoveAllAdjacentDuplicatesInString.java) | Easy | X |
 | 1053 | [Previous Permutation With One Swap](/src/PreviousPermutationWithOneSwap.java) | Medium | X |
