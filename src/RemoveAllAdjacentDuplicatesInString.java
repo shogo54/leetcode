@@ -5,7 +5,7 @@
  * 1047. Remove All Adjacent Duplicates In String
  * https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
  * 
- * To run the code in LeetCode, take the codes from method
+ * To run the code in LeetCode, take the codes from the method
  * String removeDuplicates(String S).
  * 
  * Runtime: 166 ms, faster than 17.36% of Java online submissions for Remove All Adjacent Duplicates In String.
