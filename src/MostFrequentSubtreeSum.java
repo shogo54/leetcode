@@ -7,8 +7,9 @@ import java.util.*;
  * 508. Most Frequent Subtree Sum
  * https://leetcode.com/problems/most-frequent-subtree-sum/
  * 
- * To run the code in LeetCode, take the codes from the methods
- * int[] findFrequentTreeSum(TreeNode root) and int subtreeSum(TreeNode node, Map<Integer, Integer> map).
+ * To run the code in LeetCode, take the codes from the following method(s):
+ * - int[] findFrequentTreeSum(TreeNode root)
+ * - int subtreeSum(TreeNode node, Map<Integer, Integer> map).
  * 
  * Runtime: 10 ms, faster than 32.61% of Java online submissions for Most Frequent Subtree Sum.
  * Memory Usage: 37.6 MB, less than 100.00% of Java online submissions for Most Frequent Subtree Sum.
@@ -24,7 +25,6 @@ public class MostFrequentSubtreeSum {
 	    TreeNode(int x) { val = x; }
 	}
 	
-
 	public int[] findFrequentTreeSum(TreeNode root) {
         if(root == null){
             return new int[0];
@@ -68,4 +68,5 @@ public class MostFrequentSubtreeSum {
         
         return sum;
     }
+    
 }

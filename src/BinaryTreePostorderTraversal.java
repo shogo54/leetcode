@@ -7,8 +7,9 @@ import java.util.*;
  * 145. Binary Tree Postorder Traversal
  * https://leetcode.com/problems/binary-tree-postorder-traversal/
  * 
- * To run the code in LeetCode, take the codes from 
- * List<Integer> postorderTraversal(TreeNode root) method.
+ * To run the code in LeetCode, take the codes from the following method(s):
+ * - List<Integer> postorderTraversal(TreeNode root)
+ * - void helper(TreeNode node, List<Integer> result).
  * 
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Binary Tree Postorder Traversal.
  * Memory Usage: 34.7 MB, less than 99.98% of Java online submissions for Binary Tree Postorder Traversal.
@@ -44,6 +45,6 @@ public class BinaryTreePostorderTraversal {
             helper(node.right, result);
         }
         result.add(node.val);
-        
     }
+    
 }

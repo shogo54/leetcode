@@ -6,7 +6,7 @@
  * 905. Sort Array By Parity
  * https://leetcode.com/problems/sort-array-by-parity/
  * 
- * To run the code in LeetCode, take the codes from the method
+ * To run the code in LeetCode, take the codes from the following method(s):
  * int[] sortArrayByParity(int[] A).
  * 
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Sort Array By Parity.
@@ -48,7 +48,7 @@ public class SortArrayByParity {
 				oddIndex--;
 			}
 		}
-
 		return result;
 	}
+	
 }

@@ -7,8 +7,8 @@ import java.util.*;
  * 260. Single Number III
  * https://leetcode.com/problems/single-number-iii/
  * 
- * To run the code in LeetCode, take the codes from 
- * int[] singleNumber(int[] nums) method.
+ * To run the code in LeetCode, take the codes from the following method(s):
+ * - int[] singleNumber(int[] nums).
  * 
  * Runtime: 4 ms, faster than 34.11% of Java online submissions for Single Number III.
  * Memory Usage: 37.4 MB, less than 68.48% of Java online submissions for Single Number III.
@@ -16,6 +16,7 @@ import java.util.*;
  */
 
 class SingleNumberIII {
+	
     public int[] singleNumber(int[] nums) {
         Set<Integer> set = new HashSet<Integer>();
         
@@ -31,8 +32,8 @@ class SingleNumberIII {
         int i = 0;
         for(Integer n: set){
             result[i++] = n;
-        }
-        
+        }    
         return result;
     }
+    
 }

@@ -5,8 +5,8 @@
  * 657. Robot Return to Origin
  * https://leetcode.com/problems/robot-return-to-origin/
  * 
- * To run the code in LeetCode, take the codes from 
- * boolean judgeCircle(String moves) method.
+ * To run the code in LeetCode, take the codes from the following method(s):
+ * - boolean judgeCircle(String moves).
  * 
  * Runtime: 15 ms, faster than 13.65% of Java online submissions for Robot Return to Origin.
  * Memory Usage: 39.6 MB, less than 19.18% of Java online submissions for Robot Return to Origin.
@@ -14,6 +14,7 @@
  */
 
 public class RobotReturnToOrigin {
+	
 	public boolean judgeCircle(String moves) {
 		int[] store = new int[4];
 
@@ -34,4 +35,5 @@ public class RobotReturnToOrigin {
 		else
 			return false;
 	}
+	
 }

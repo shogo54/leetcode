@@ -5,8 +5,9 @@
  * 461. Hamming Distance
  * https://leetcode.com/problems/hamming-distance/
  * 
- * To run the code in LeetCode, take the codes from 
- * int hammingDistance(int x, int y) method.
+ * To run the code in LeetCode, take the codes from the following method(s):
+ * - int hammingDistance(int x, int y)
+ * - String adjust(String s, int index).
  * 
  * Runtime: 1 ms, faster than 38.22% of Java online submissions for Hamming Distance.
  * Memory Usage: 33.2 MB, less than 41.32% of Java online submissions for Hamming Distance.
@@ -48,4 +49,5 @@ public class HammingDistance {
             return zeros + s;
         }
     }
+    
 }

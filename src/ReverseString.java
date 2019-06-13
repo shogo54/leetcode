@@ -5,8 +5,8 @@
  * 344. Reverse String
  * https://leetcode.com/problems/reverse-string/
  * 
- * To run the code in LeetCode, take the codes from 
- * void reverseString(char[] s) method.
+ * To run the code in LeetCode, take the codes from the following method(s):
+ * - void reverseString(char[] s).
  * 
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Reverse String.
  * Memory Usage: 47.5 MB, less than 65.73% of Java online submissions for Reverse String.
@@ -14,6 +14,7 @@
  */
 
 public class ReverseString {
+	
 	public void reverseString(char[] s) {
         int i = 0; 
         int j = s.length-1;
@@ -26,4 +27,5 @@ public class ReverseString {
             j--;
         }
     }
+	
 }
