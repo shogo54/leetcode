@@ -7,8 +7,8 @@ import java.util.*;
  * 912. Sort an Array
  * https://leetcode.com/problems/sort-an-array/
  * 
- * To run the code in LeetCode, take the codes from 
- * int[] sortArray(int[] nums) method.
+ * To run the code in LeetCode, take the codes from the methods
+ * int[] sortArray(int[] nums) and int[] merge(int[] a, int[] b).
  * 
  * Runtime: 11 ms, faster than 22.15% of Java online submissions for Sort an Array.
  * Memory Usage: 44.6 MB, less than 93.44% of Java online submissions for Sort an Array.
@@ -16,6 +16,7 @@ import java.util.*;
  */
 
 class SortAnArray {
+    
     public int[] sortArray(int[] nums) {
         Queue<int[]> list = new LinkedList<int[]>();
         
@@ -63,4 +64,5 @@ class SortAnArray {
 
         return result;
     }
+    
 }
