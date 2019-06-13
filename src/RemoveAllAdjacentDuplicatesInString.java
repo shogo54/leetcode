@@ -25,4 +25,5 @@ public class RemoveAllAdjacentDuplicatesInString {
         }
         return result;
     }
+    
 }
