@@ -4,6 +4,7 @@ Accepted LeetCode solutions in java
 
 | # | Problem Name | Difficulty | Test Case Included |
 | :---: | --- | --- | :---: |
+| 22 | [Valid Parentheses](/src/ValidParentheses.java) | Easy | X |
 | 145 | [Binary Tree Postorder Traversal](/src/BinaryTreePostorderTraversal.java) | Hard | X |
 | 206 | [Reverse Linked List](/src/ReverseLinkedList.java) | Easy | O |
 | 260 | [Single Number III](/src/SingleNumberIII.java) | Medium | X |
