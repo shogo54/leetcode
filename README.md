@@ -9,6 +9,7 @@ Accepted LeetCode solutions in java
 | 206 | [Reverse Linked List](/src/ReverseLinkedList.java) | Easy | O |
 | 260 | [Single Number III](/src/SingleNumberIII.java) | Medium | X |
 | 344 | [Reverse String](/src/ReverseString.java) | Easy | X |
+| 445 | [Add Two Numbers II](/src/AddTwoNumbersII.java) | Medium | X |
 | 461 | [Hamming Distance](/src/HammingDistance.java) | Easy | X |
 | 508 | [Most Frequent Subtree Sum](src/MostFrequentSubtreeSum.java) | Medium | X |
 | 509 | [Fibonacci Number](src/FibonacciNumber.java) | Easy | X |
