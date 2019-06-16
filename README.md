@@ -8,6 +8,7 @@ Accepted LeetCode solutions in java
 | 145 | [Binary Tree Postorder Traversal](/src/BinaryTreePostorderTraversal.java) | Hard | X |
 | 206 | [Reverse Linked List](/src/ReverseLinkedList.java) | Easy | O |
 | 260 | [Single Number III](/src/SingleNumberIII.java) | Medium | X |
+| 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy | X |
 | 344 | [Reverse String](/src/ReverseString.java) | Easy | X |
 | 445 | [Add Two Numbers II](/src/AddTwoNumbersII.java) | Medium | X |
 | 461 | [Hamming Distance](/src/HammingDistance.java) | Easy | X |
