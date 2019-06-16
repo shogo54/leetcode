@@ -1,6 +1,6 @@
 /**
  * @author Shogo Akiyama 
- * Solved on 06/14/2019
+ * Solved on 06/15/2019
  * 
  * 283. Move Zeroes
  * https://leetcode.com/problems/move-zeroes/
