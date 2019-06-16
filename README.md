@@ -6,6 +6,7 @@ Accepted LeetCode solutions in java
 | :---: | --- | --- | :---: |
 | 22 | [Valid Parentheses](/src/ValidParentheses.java) | Easy | X |
 | 145 | [Binary Tree Postorder Traversal](/src/BinaryTreePostorderTraversal.java) | Hard | X |
+| 169 | [Majority Element](/src/MajorityElement.java) | Easy | X |
 | 206 | [Reverse Linked List](/src/ReverseLinkedList.java) | Easy | O |
 | 260 | [Single Number III](/src/SingleNumberIII.java) | Medium | X |
 | 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy | X |
