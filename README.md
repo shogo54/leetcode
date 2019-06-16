@@ -23,3 +23,4 @@ Accepted LeetCode solutions in java
 | 1003 | [Check If Word Is Valid After Substitutions](/src/CheckIfWordIsValidAfterSubstitutions.java) | Medium | X |
 | 1047 | [Remove All Adjacent Duplicates In String](/src/RemoveAllAdjacentDuplicatesInString.java) | Easy | X |
 | 1053 | [Previous Permutation With One Swap](/src/PreviousPermutationWithOneSwap.java) | Medium | X |
+| 1078 | [Occurrences After Bigram](/src/OccurrencesAfterBigram.java) | Easy | X |
