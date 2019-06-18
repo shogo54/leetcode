@@ -4,6 +4,7 @@ Accepted LeetCode solutions in java
 
 | # | Problem Name | Difficulty | Test Case Included |
 | :---: | --- | --- | :---: |
+| 13 | [Roman to Integer](/src/RomanToInteger.java) | Easy | X |
 | 22 | [Valid Parentheses](/src/ValidParentheses.java) | Easy | X |
 | 145 | [Binary Tree Postorder Traversal](/src/BinaryTreePostorderTraversal.java) | Hard | X |
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy | X |
