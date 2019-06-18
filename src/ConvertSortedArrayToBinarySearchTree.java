@@ -33,10 +33,11 @@ public class ConvertSortedArrayToBinarySearchTree {
 		} else if (s > e) {
 			return null;
 		}
-
-		TreeNode node = new TreeNode(array[s + (e - s) / 2]);
-		node.left = convert(array, s, s + (e - s) / 2 - 1);
-		node.right = convert(array, s + (e - s) / 2 + 1, e);
+		
+		int mid = s + (e-s)/2;
+		TreeNode node = new TreeNode(array[mid]);
+		node.left = convert(array, s, mid - 1);
+		node.right = convert(array, mid + 1, e);
 		return node;
 	}
 
