@@ -8,6 +8,7 @@ Accepted LeetCode solutions in java
 | 22 | [Valid Parentheses](/src/ValidParentheses.java) | Easy | X |
 | 104 | [Maximum Depth of Binary Tree](/src/MaximumDepthOfBinaryTree.java) | Easy | X |
 | 108 | [Convert Sorted Array to Binary Search Tree](/src/ConvertSortedArrayToBinarySearchTree.java) | Easy | X |
+| 136 | [Single Number](/src/SingleNumber.java) | Easy | X |
 | 145 | [Binary Tree Postorder Traversal](/src/BinaryTreePostorderTraversal.java) | Hard | X |
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy | X |
 | 206 | [Reverse Linked List](/src/ReverseLinkedList.java) | Easy | O |
