@@ -15,6 +15,7 @@ Accepted LeetCode solutions in java
 | 260 | [Single Number III](/src/SingleNumberIII.java) | Medium | X |
 | 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy | X |
 | 344 | [Reverse String](/src/ReverseString.java) | Easy | X |
+| 412 | [Fizz Buzz](/src/FizzBuzz.java) | Easy | X |
 | 445 | [Add Two Numbers II](/src/AddTwoNumbersII.java) | Medium | X |
 | 461 | [Hamming Distance](/src/HammingDistance.java) | Easy | X |
 | 508 | [Most Frequent Subtree Sum](src/MostFrequentSubtreeSum.java) | Medium | X |
