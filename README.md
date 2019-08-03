@@ -6,6 +6,7 @@ Accepted LeetCode solutions in java
 | :---: | --- | --- | :---: |
 | 13 | [Roman to Integer](/src/RomanToInteger.java) | Easy | X |
 | 22 | [Valid Parentheses](/src/ValidParentheses.java) | Easy | X |
+| 94 | [Binary Tree Inorder Traversal](/src/BinaryTreeInorderTraversal.java) | Medium | X | 
 | 104 | [Maximum Depth of Binary Tree](/src/MaximumDepthOfBinaryTree.java) | Easy | X |
 | 108 | [Convert Sorted Array to Binary Search Tree](/src/ConvertSortedArrayToBinarySearchTree.java) | Easy | X |
 | 136 | [Single Number](/src/SingleNumber.java) | Easy | X |
@@ -13,8 +14,10 @@ Accepted LeetCode solutions in java
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy | X |
 | 198 | [House Robber](/src/HouseRobber.java) | Easy | X |
 | 206 | [Reverse Linked List](/src/ReverseLinkedList.java) | Easy | O |
+| 242 | [Valid Anagram](/src/ValidAnagram.java) | Easy | X |
 | 260 | [Single Number III](/src/SingleNumberIII.java) | Medium | X |
 | 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy | X |
+| 328 | [Odd Even Linked List](/src/OddEvenLinkedList.java) | Medium | X |
 | 344 | [Reverse String](/src/ReverseString.java) | Easy | X |
 | 412 | [Fizz Buzz](/src/FizzBuzz.java) | Easy | X |
 | 445 | [Add Two Numbers II](/src/AddTwoNumbersII.java) | Medium | X |
