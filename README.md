@@ -6,6 +6,7 @@ Accepted LeetCode solutions in java
 | :---: | --- | --- | :---: |
 | 13 | [Roman to Integer](/src/RomanToInteger.java) | Easy | X |
 | 22 | [Valid Parentheses](/src/ValidParentheses.java) | Easy | X |
+| 62 | [Unique Paths](/src/UniquePaths.java) | Medium | X |
 | 94 | [Binary Tree Inorder Traversal](/src/BinaryTreeInorderTraversal.java) | Medium | X | 
 | 104 | [Maximum Depth of Binary Tree](/src/MaximumDepthOfBinaryTree.java) | Easy | X |
 | 108 | [Convert Sorted Array to Binary Search Tree](/src/ConvertSortedArrayToBinarySearchTree.java) | Easy | X |
