@@ -5,7 +5,7 @@ Accepted LeetCode solutions in java
 | # | Problem Name | Difficulty | Test Case Included |
 | :---: | --- | --- | :---: |
 | 13 | [Roman to Integer](/src/RomanToInteger.java) | Easy | X |
-| 22 | [Valid Parentheses](/src/ValidParentheses.java) | Easy | X |
+| 20 | [Valid Parentheses](/src/ValidParentheses.java) | Easy | X |
 | 56 | [Merge Intervals](/src/MergeIntervals.java) | Medium | X |
 | 62 | [Unique Paths](/src/UniquePaths.java) | Medium | X |
 | 94 | [Binary Tree Inorder Traversal](/src/BinaryTreeInorderTraversal.java) | Medium | X | 
