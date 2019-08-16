@@ -44,5 +44,5 @@ Accepted LeetCode solutions in java
 | 1078 | [Occurrences After Bigram](/src/OccurrencesAfterBigram.java) | Easy | X |
 
 Note for myself: 
-* = problems that can be improved in time or space complexity.
+ * = problems that can be improved in time or space complexity.
 ** = problems that I should revisit in the future because either I spent too long on solving it or the solution is not the best way. 
