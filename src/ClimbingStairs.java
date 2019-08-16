@@ -4,6 +4,7 @@
  * 
  * 70. Climbing Stairs
  * https://leetcode.com/problems/climbing-stairs/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int climbStairs(int n).

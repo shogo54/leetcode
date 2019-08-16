@@ -6,6 +6,7 @@ import java.util.*;
  * 
  * 56. Merge Intervals
  * https://leetcode.com/problems/merge-intervals/
+ * Difficulty: Medium
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int[][] merge(int[][] intervals)

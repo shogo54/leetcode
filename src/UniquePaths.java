@@ -4,6 +4,7 @@
  * 
  * 62. Unique Paths
  * https://leetcode.com/problems/unique-paths/
+ * Difficulty: Medium
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int uniquePaths(int m, int n).

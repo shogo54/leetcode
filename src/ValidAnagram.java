@@ -6,6 +6,7 @@ import java.util.*;
  * 
  * 242. Valid Anagram
  * https://leetcode.com/problems/valid-anagram/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - boolean isAnagram(String s, String t).

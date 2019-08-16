@@ -4,6 +4,7 @@
  * 
  * 198. House Robber
  * https://leetcode.com/problems/house-robber/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int rob(int[] nums).

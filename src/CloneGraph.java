@@ -6,6 +6,7 @@ import java.util.*;
  * 
  * 133. Clone Graph
  * https://leetcode.com/problems/clone-graph/
+ * Difficulty: Medium
  * 
  * To run the code in LeetCode, take the codes from the following method(s) and properties:
  * - Map<Node, Node> map

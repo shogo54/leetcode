@@ -4,6 +4,7 @@
  * 
  * 100. Same Tree
  * https://leetcode.com/problems/same-tree/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - boolean isSameTree(TreeNode p, TreeNode q).
