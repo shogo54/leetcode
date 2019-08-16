@@ -19,7 +19,7 @@ Accepted LeetCode solutions in java
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy | X |
 | 198 | [House Robber](/src/HouseRobber.java) | Easy | X |
 | 206 | [Reverse Linked List](/src/ReverseLinkedList.java) | Easy | O |
-| 207 | [Course Schedule](/src/CourseSchedule.java) | Medium | X |
+| 207 | [Course Schedule*](/src/CourseSchedule.java) | Medium | X |
 | 242 | [Valid Anagram](/src/ValidAnagram.java) | Easy | X |
 | 260 | [Single Number III](/src/SingleNumberIII.java) | Medium | X |
 | 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy | X |
@@ -42,3 +42,7 @@ Accepted LeetCode solutions in java
 | 1047 | [Remove All Adjacent Duplicates In String](/src/RemoveAllAdjacentDuplicatesInString.java) | Easy | X |
 | 1053 | [Previous Permutation With One Swap](/src/PreviousPermutationWithOneSwap.java) | Medium | X |
 | 1078 | [Occurrences After Bigram](/src/OccurrencesAfterBigram.java) | Easy | X |
+
+Note for myself: 
+* = problems that can be improved in time or space complexity.
+** = problems that I should revisit in the future because either I spent too long on solving it or the solution is not the best way. 
