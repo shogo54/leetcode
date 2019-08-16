@@ -19,9 +19,11 @@ Accepted LeetCode solutions in java
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy | X |
 | 198 | [House Robber](/src/HouseRobber.java) | Easy | X |
 | 206 | [Reverse Linked List](/src/ReverseLinkedList.java) | Easy | O |
+| 207 | [Course Schedule](/src/CourseSchedule.java) | Medium | X |
 | 242 | [Valid Anagram](/src/ValidAnagram.java) | Easy | X |
 | 260 | [Single Number III](/src/SingleNumberIII.java) | Medium | X |
 | 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy | X |
+| 322 | [Coin Change](/src/CoinChange.java) | Medium | X |
 | 328 | [Odd Even Linked List](/src/OddEvenLinkedList.java) | Medium | X |
 | 344 | [Reverse String](/src/ReverseString.java) | Easy | X |
 | 412 | [Fizz Buzz](/src/FizzBuzz.java) | Easy | X |
