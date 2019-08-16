@@ -4,6 +4,7 @@
  * 
  * 322. Coin Change
  * https://leetcode.com/problems/coin-change/
+ * difficulty: Medium
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int coinChange(int[] coins, int amount).
