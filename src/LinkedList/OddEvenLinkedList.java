@@ -1,3 +1,7 @@
+package LinkedList;
+
+import LinkedList.LinkedListTest.ListNode;
+
 /**
  * @author Shogo Akiyama 
  * Solved on 08/02/2019
@@ -32,17 +36,8 @@ public class OddEvenLinkedList {
 		    even = even.next;
 		}
 
-        	odd.next = firstEven;
+        odd.next = firstEven;
 		return head;
-	}
-	
-	static class ListNode {
-		int val;
-		ListNode next;
-
-		ListNode(int x) {
-			val = x;
-		}
 	}
 	
 }

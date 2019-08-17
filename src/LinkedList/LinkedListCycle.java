@@ -1,4 +1,8 @@
+package LinkedList;
+
 import java.util.*;
+
+import LinkedList.LinkedListTest.ListNode;
 
 /**
  * @author Shogo Akiyama 
@@ -30,15 +34,6 @@ public class LinkedListCycle {
         }
         set.add(head);
         return hasCycle(head.next);
-    }
-	
-    static class ListNode {
-    	int val;
-    	ListNode next;
-    	
-    	ListNode(int x) {
-    		val = x;
-    	}
     }
     
 }
