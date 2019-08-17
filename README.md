@@ -16,7 +16,7 @@ Accepted LeetCode solutions in java
 | 108 | [Convert Sorted Array to Binary Search Tree^](/src/ConvertSortedArrayToBinarySearchTree.java) | Easy | X |
 | 133 | [Clone Graph](/src/CloneGraph.java) | Medium | X |
 | 136 | [Single Number*](/src/SingleNumber.java) | Easy | X |
-| 141 | [Linked List Cycle*](/src/LinkedListCycle.java) | Easy | X |
+| 141 | [Linked List Cycle*](https://leetcode.com/problems/linked-list-cycle/) | Easy | [Set](/src/LinkedList/LinkedListCycle.java) | O |
 | 145 | [Binary Tree Postorder Traversal***](/src/BinaryTreePostorderTraversal.java) | Hard | X |
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy | X |
 | 198 | [House Robber](/src/HouseRobber.java) | Easy | X |
