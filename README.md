@@ -6,8 +6,8 @@ Accepted LeetCode solutions in java
 | :---: | --- | --- | :---: |
 | 13 | [Roman to Integer](/src/RomanToInteger.java) | Easy | X |
 | 20 | [Valid Parentheses](/src/ValidParentheses.java) | Easy | X |
-| 56 | [Merge Intervals](/src/MergeIntervals.java) | Medium | X |
-| 62 | [Unique Paths](/src/UniquePaths.java) | Medium | X |
+| 56 | [Merge Intervals**](/src/MergeIntervals.java) | Medium | X |
+| 62 | [Unique Paths**](/src/UniquePaths.java) | Medium | X |
 | 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy | X |
 | 94 | [Binary Tree Inorder Traversal](/src/BinaryTreeInorderTraversal.java) | Medium | X |
 | 100 | [Same Tree](/src/SameTree.java) | Easy | X |
@@ -19,9 +19,11 @@ Accepted LeetCode solutions in java
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy | X |
 | 198 | [House Robber](/src/HouseRobber.java) | Easy | X |
 | 206 | [Reverse Linked List](/src/ReverseLinkedList.java) | Easy | O |
-| 242 | [Valid Anagram](/src/ValidAnagram.java) | Easy | X |
+| 207 | [Course Schedule**](/src/CourseSchedule.java) | Medium | X |
+| 242 | [Valid Anagram*](/src/ValidAnagram.java) | Easy | X |
 | 260 | [Single Number III](/src/SingleNumberIII.java) | Medium | X |
 | 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy | X |
+| 322 | [Coin Change](/src/CoinChange.java) | Medium | X |
 | 328 | [Odd Even Linked List](/src/OddEvenLinkedList.java) | Medium | X |
 | 344 | [Reverse String](/src/ReverseString.java) | Easy | X |
 | 412 | [Fizz Buzz](/src/FizzBuzz.java) | Easy | X |
@@ -40,3 +42,7 @@ Accepted LeetCode solutions in java
 | 1047 | [Remove All Adjacent Duplicates In String](/src/RemoveAllAdjacentDuplicatesInString.java) | Easy | X |
 | 1053 | [Previous Permutation With One Swap](/src/PreviousPermutationWithOneSwap.java) | Medium | X |
 | 1078 | [Occurrences After Bigram](/src/OccurrencesAfterBigram.java) | Easy | X |
+
+Note for myself:\n
+\* = problems that can be improved in time or space complexity.\n
+** = problems that I should revisit in the future because I spent too long on solving it. 
