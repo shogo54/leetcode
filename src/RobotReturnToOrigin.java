@@ -4,6 +4,7 @@
  * 
  * 657. Robot Return to Origin
  * https://leetcode.com/problems/robot-return-to-origin/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - boolean judgeCircle(String moves).

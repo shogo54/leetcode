@@ -6,6 +6,7 @@ import java.util.*;
  * 
  * 260. Single Number III
  * https://leetcode.com/problems/single-number-iii/
+ * Difficulty: Medium
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int[] singleNumber(int[] nums).

@@ -4,6 +4,7 @@
  * 
  * 509. Fibonacci Number
  * https://leetcode.com/problems/fibonacci-number/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int fib(int N).

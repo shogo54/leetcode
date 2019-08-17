@@ -10,6 +10,7 @@ import java.util.Stack;
  * 
  * 547. Friend Circles
  * https://leetcode.com/problems/friend-circles/
+ * Difficulty: Medium
  * 
  * To run the code in LeetCode, take the codes from the following(s):
  * - int findCircleNum(int[][] M) method

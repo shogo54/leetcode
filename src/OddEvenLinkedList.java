@@ -4,6 +4,7 @@
  * 
  * 328. Odd Even Linked List
  * https://leetcode.com/problems/odd-even-linked-list/
+ * Difficulty: Medium
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - ListNode oddEvenList(ListNode head).

@@ -4,6 +4,7 @@
  * 
  * 20. Valid Parentheses
  * https://leetcode.com/problems/valid-parentheses/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - boolean isValid(String s).

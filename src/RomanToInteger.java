@@ -4,6 +4,7 @@
  * 
  * 13. Roman to Integer
  * https://leetcode.com/problems/roman-to-integer/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int romanToInt(String s).

@@ -7,6 +7,7 @@ import java.awt.*;
  * 
  * 980. Unique Paths III
  * https://leetcode.com/problems/unique-paths-iii/
+ * Difficulty: Hard
  * 
  * To run the code in LeetCode, take the codes inside the bellow class.
  * 

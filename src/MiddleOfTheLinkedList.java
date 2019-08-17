@@ -4,7 +4,8 @@
  * Solved on 04/14/2019 
  * 
  * 876. Middle of the Linked List
- * https://leetcode.com/problems/middle-of-the-linked-list/ 
+ * https://leetcode.com/problems/middle-of-the-linked-list/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - ListNode middleList(ListNode head).

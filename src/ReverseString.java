@@ -4,6 +4,7 @@
  * 
  * 344. Reverse String
  * https://leetcode.com/problems/reverse-string/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - void reverseString(char[] s).

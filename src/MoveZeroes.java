@@ -4,6 +4,7 @@
  * 
  * 283. Move Zeroes
  * https://leetcode.com/problems/move-zeroes/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - void moveZeroes(int[] nums).

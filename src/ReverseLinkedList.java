@@ -4,6 +4,7 @@
  * 
  * 206. Reverse Linked List
  * https://leetcode.com/problems/reverse-linked-list/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - ListNode reverseList(ListNode head).

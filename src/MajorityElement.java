@@ -6,6 +6,7 @@ import java.util.*;
  * 
  * 169. Majority Element
  * https://leetcode.com/problems/majority-element/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int majorityElement(int[] nums).

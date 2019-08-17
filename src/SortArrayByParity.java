@@ -5,6 +5,7 @@
  * 
  * 905. Sort Array By Parity
  * https://leetcode.com/problems/sort-array-by-parity/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * int[] sortArrayByParity(int[] A).

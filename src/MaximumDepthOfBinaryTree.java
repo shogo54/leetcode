@@ -4,6 +4,7 @@
  * 
  * 104. Maximum Depth of Binary Tree
  * https://leetcode.com/problems/maximum-depth-of-binary-tree/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int maxDepth(TreeNode root).

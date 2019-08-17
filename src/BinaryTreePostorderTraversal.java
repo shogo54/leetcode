@@ -6,6 +6,7 @@ import java.util.*;
  * 
  * 145. Binary Tree Postorder Traversal
  * https://leetcode.com/problems/binary-tree-postorder-traversal/
+ * Difficulty: Hard
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - List<Integer> postorderTraversal(TreeNode root)

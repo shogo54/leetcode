@@ -4,6 +4,7 @@
  * 
  * 700. Search in a Binary Search Tree
  * https://leetcode.com/problems/search-in-a-binary-search-tree/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - TreeNode searchBST(TreeNode root, int val).

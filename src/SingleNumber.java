@@ -6,6 +6,7 @@ import java.util.*;
  * 
  * 136. Single Number
  * https://leetcode.com/problems/single-number/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int singleNumber(int[] nums).

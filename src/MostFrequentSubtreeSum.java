@@ -6,6 +6,7 @@ import java.util.*;
  * 
  * 508. Most Frequent Subtree Sum
  * https://leetcode.com/problems/most-frequent-subtree-sum/
+ * Difficulty: Medium
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int[] findFrequentTreeSum(TreeNode root)

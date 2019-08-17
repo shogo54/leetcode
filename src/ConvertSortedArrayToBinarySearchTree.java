@@ -4,6 +4,7 @@
  * 
  * 108. Convert Sorted Array to Binary Search Tree	
  * https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - TreeNode sortedArrayToBST(int[] nums)

@@ -4,6 +4,7 @@
  * 
  * 1047. Remove All Adjacent Duplicates In String
  * https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - String removeDuplicates(String S).

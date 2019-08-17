@@ -6,6 +6,7 @@ import java.util.*;
  * 
  * 912. Sort an Array
  * https://leetcode.com/problems/sort-an-array/
+ * Difficulty: Medium
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int[] sortArray(int[] nums)

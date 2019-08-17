@@ -6,6 +6,7 @@ import java.util.*;
  * 
  * 412. Fizz Buzz
  * https://leetcode.com/problems/fizz-buzz/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - List<String> fizzBuzz(int n).

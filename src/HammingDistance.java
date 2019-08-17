@@ -4,6 +4,7 @@
  * 
  * 461. Hamming Distance
  * https://leetcode.com/problems/hamming-distance/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int hammingDistance(int x, int y)

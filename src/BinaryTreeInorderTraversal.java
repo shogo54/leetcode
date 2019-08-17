@@ -6,6 +6,7 @@ import java.util.*;
  * 
  * 94. Binary Tree Inorder Traversal
  * https://leetcode.com/problems/binary-tree-inorder-traversal/
+ * Difficulty: Medium
  * 
  * To run the code in LeetCode, take the codes from the following method(s) and properties:
  * - List<Integer> list

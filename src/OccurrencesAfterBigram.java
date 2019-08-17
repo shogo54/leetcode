@@ -6,6 +6,7 @@ import java.util.*;
  * 
  * 1078. Occurrences After Bigram
  * https://leetcode.com/problems/occurrences-after-bigram/
+ * Difficulty: Easy
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - String[] findOcurrences(String text, String first, String second).

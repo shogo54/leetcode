@@ -4,6 +4,7 @@
  * 
  * 1053. Previous Permutation With One Swap
  * https://leetcode.com/problems/previous-permutation-with-one-swap/
+ * Difficulty: Medium
  * 
  * To run the code in LeetCode, take the codes from the following method(s):
  * - int[] prevPermOpt1(int[] A)
