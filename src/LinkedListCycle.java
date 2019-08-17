@@ -38,7 +38,6 @@ public class LinkedListCycle {
     	
     	ListNode(int x) {
     		val = x;
-    		next = null;
     	}
     }
     
