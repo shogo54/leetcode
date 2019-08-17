@@ -1,3 +1,7 @@
+package BinarySearchTree;
+
+import BinarySearchTree.BinarySearchTreeTest.TreeNode;
+
 /**
  * @author Shogo Akiyama 
  * Solved on 06/17/2019
@@ -17,18 +21,11 @@
 
 public class ConvertSortedArrayToBinarySearchTree {
 
-	static class TreeNode {
-		int val;
-		TreeNode left;
-		TreeNode right;
-		TreeNode(int x) { val = x; }
-	}
-
 	public TreeNode sortedArrayToBST(int[] nums) {
 		return convert(nums, 0, nums.length - 1);
 	}
 
-	TreeNode convert(int[] array, int s, int e) {
+	private TreeNode convert(int[] array, int s, int e) {
 		if (s == e) {
 			return new TreeNode(array[s]);
 		} else if (s > e) {

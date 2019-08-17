@@ -1,4 +1,8 @@
+package BinarySearchTree;
+
 import java.util.*;
+
+import BinarySearchTree.BinarySearchTreeTest.TreeNode;
 
 /**
  * @author Shogo Akiyama 
@@ -19,13 +23,6 @@ import java.util.*;
 
 public class MostFrequentSubtreeSum {
 
-	static class TreeNode {
-		int val;
-		TreeNode left;
-		TreeNode right;
-	    TreeNode(int x) { val = x; }
-	}
-	
 	public int[] findFrequentTreeSum(TreeNode root) {
         if(root == null){
             return new int[0];
@@ -53,7 +50,7 @@ public class MostFrequentSubtreeSum {
         return result;
     }
     
-    int subtreeSum(TreeNode node, Map<Integer, Integer> map){
+    private int subtreeSum(TreeNode node, Map<Integer, Integer> map){
         int sum = node.val;
         if(node.left != null){
             sum += subtreeSum(node.left, map);

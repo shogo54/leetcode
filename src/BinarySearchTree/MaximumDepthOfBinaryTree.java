@@ -1,3 +1,7 @@
+package BinarySearchTree;
+
+import BinarySearchTree.BinarySearchTreeTest.TreeNode;
+
 /**
  * @author Shogo Akiyama 
  * Solved on 06/19/2019
@@ -15,13 +19,6 @@
  */
 
 public class MaximumDepthOfBinaryTree {
-
-	static class TreeNode {
-		 int val;
-		 TreeNode left;
-		 TreeNode right;
-		 TreeNode(int x) { val = x; }
-	}
 	
 	public int maxDepth(TreeNode root) {
         if(root == null){

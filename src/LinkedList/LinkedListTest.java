@@ -6,16 +6,7 @@ import org.junit.jupiter.api.Test;
 public class LinkedListTest {
 	
 	ListNode setupHead() {
-		ListNode head = new ListNode(1);
-		ListNode curr = head;
-
-		for (int i = 1; i < 5; i++) {
-			ListNode newNode = new ListNode(i + 1);
-			curr.next = newNode;
-			curr = newNode;
-		}
-		
-		return head;
+		return setupHead(new int[] {1,2,3,4,5});
 	}
 	
 	ListNode setupHead(int[] array) {

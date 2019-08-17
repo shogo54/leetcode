@@ -1,4 +1,8 @@
+package BinarySearchTree;
+
 import java.util.*;
+
+import BinarySearchTree.BinarySearchTreeTest.TreeNode;
 
 /**
  * @author Shogo Akiyama 
@@ -21,13 +25,6 @@ import java.util.*;
  */
 
 public class BinaryTreePostorderTraversal {
-	
-	static class TreeNode {
-		int val;
-		TreeNode left;
-		TreeNode right;
-	    TreeNode(int x) { val = x; }
-	}
 	
 	public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<Integer>();

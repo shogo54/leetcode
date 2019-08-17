@@ -1,3 +1,7 @@
+package BinarySearchTree;
+
+import BinarySearchTree.BinarySearchTreeTest.TreeNode;
+
 /**
  * @author Shogo Akiyama 
  * Solved on 08/13/2019
@@ -28,12 +32,5 @@ public class SameTree {
         }
         return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
-	
-	static class TreeNode {
-		int val;
-		TreeNode left;
-		TreeNode right;
-		TreeNode(int x) { val = x; }
-	}
 	
 }

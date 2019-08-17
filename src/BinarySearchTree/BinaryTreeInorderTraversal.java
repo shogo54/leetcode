@@ -1,4 +1,8 @@
+package BinarySearchTree;
+
 import java.util.*;
+
+import BinarySearchTree.BinarySearchTreeTest.TreeNode;
 
 /**
  * @author Shogo Akiyama 
@@ -35,11 +39,4 @@ public class BinaryTreeInorderTraversal {
 		return list;
 	}
 	
-	static class TreeNode {
-		int val;
-		TreeNode left;
-		TreeNode right;
-		TreeNode(int x) { val = x; }
-	}
-    
 }
