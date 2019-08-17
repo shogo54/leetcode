@@ -26,7 +26,7 @@ Accepted LeetCode solutions in java
 | 260 | [Single Number III*](/src/SingleNumberIII.java) | Medium | X |
 | 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy | X |
 | 322 | [Coin Change](/src/CoinChange.java) | Medium | X |
-| 328 | [Odd Even Linked List](/src/OddEvenLinkedList.java) | Medium | X |
+| 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | Medium | [Iteration](/src/LinkedList/OddEvenLinkedList.java) | O |
 | 344 | [Reverse String](/src/ReverseString.java) | Easy | X |
 | 412 | [Fizz Buzz*](/src/FizzBuzz.java) | Easy | X |
 | 445 | [Add Two Numbers II***](/src/AddTwoNumbersII.java) | Medium | X |
