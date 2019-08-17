@@ -2,8 +2,8 @@
 
 Accepted LeetCode solutions in java
 
-| # | Problem Name | Difficulty | Test Case Included |
-| :---: | --- | --- | :---: |
+| # | Problem Name | Difficulty | Solutions | Test Case Included |
+| :---: | --- | --- | --- | :---: |
 | 13 | [Roman to Integer*](/src/RomanToInteger.java) | Easy | X |
 | 20 | [Valid Parentheses*](/src/ValidParentheses.java) | Easy | X |
 | 56 | [Merge Intervals**](/src/MergeIntervals.java) | Medium | X |
@@ -20,7 +20,7 @@ Accepted LeetCode solutions in java
 | 145 | [Binary Tree Postorder Traversal***](/src/BinaryTreePostorderTraversal.java) | Hard | X |
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy | X |
 | 198 | [House Robber](/src/HouseRobber.java) | Easy | X |
-| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | O |
+| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | [Iteration](/src/LinkedList/ReverseLinkedList.java) / [Recursition](/src/LinkedList/ReverseLinkedList2.java) | O |
 | 207 | [Course Schedule**](/src/CourseSchedule.java) | Medium | X |
 | 242 | [Valid Anagram*](/src/ValidAnagram.java) | Easy | X |
 | 260 | [Single Number III*](/src/SingleNumberIII.java) | Medium | X |
