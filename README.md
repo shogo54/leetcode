@@ -20,7 +20,7 @@ Accepted LeetCode solutions in java
 | 145 | [Binary Tree Postorder Traversal***](/src/BinaryTreePostorderTraversal.java) | Hard | X |
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy | X |
 | 198 | [House Robber](/src/HouseRobber.java) | Easy | X |
-| 206 | [Reverse Linked List***](/src/ReverseLinkedList.java) | Easy | O |
+| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | O |
 | 207 | [Course Schedule**](/src/CourseSchedule.java) | Medium | X |
 | 242 | [Valid Anagram*](/src/ValidAnagram.java) | Easy | X |
 | 260 | [Single Number III*](/src/SingleNumberIII.java) | Medium | X |
