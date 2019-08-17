@@ -43,8 +43,9 @@ Accepted LeetCode solutions in java
 | 1053 | [Previous Permutation With One Swap*](/src/PreviousPermutationWithOneSwap.java) | Medium | X |
 | 1078 | [Occurrences After Bigram](/src/OccurrencesAfterBigram.java) | Easy | X |
 
-Note for myself:\n
-\* = problems that can be improved in time or space complexity.\n
+Note for myself:
+
+\* = problems that can be improved in time or space complexity.
 
 ** = problems that I should revisit in the future because I spent too long on solving it. 
 
