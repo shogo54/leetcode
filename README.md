@@ -36,7 +36,7 @@ Accepted LeetCode solutions in java
 | 547 | [Friend Circles*](/src/FriendCircles.java) | Medium | X |
 | 657 | [Robot Return to Origin*](/src/RobotReturnToOrigin.java) | Easy | X |
 | 700 | [Search in a Binary Search Tree](/src/SearchInABinarySearchTree.java) | Easy | X |
-| 876 | [Middle of the Linked List](/src/MiddleOfTheLinkedList.java) | Easy | O |
+| 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | [Iteration](/src/LinkedList/MiddleOfTheLinkedList.java) | O |
 | 905 | [Sort Array By Parity***](/src/SortArrayByParity.java) | Easy | O |
 | 912 | [Sort An Array*](/src/SortAnArray.java) | Medium | X |
 | 980 | [Unique Paths III*](/src/UniquePathsIII.java) | Hard | X |
