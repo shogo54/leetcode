@@ -2,7 +2,7 @@
 
 Accepted LeetCode solutions in java
 
-| # | Problem Name | Difficulty | Solutions | Test Case Included |
+| # | Problem Name | Difficulty | Solutions | Test Case |
 | :---: | --- | --- | --- | :---: |
 | 13 | [Roman to Integer*](/src/RomanToInteger.java) | Easy |  | X |
 | 20 | [Valid Parentheses*](/src/ValidParentheses.java) | Easy |  | X |
