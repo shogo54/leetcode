@@ -9,6 +9,7 @@ Accepted LeetCode solutions in java
 | 56 | [Merge Intervals**](/src/MergeIntervals.java) | Medium | X |
 | 62 | [Unique Paths**](/src/UniquePaths.java) | Medium | X |
 | 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy | X |
+| 73 | [Set Matrix Zeroes***](/src/SetMatrixZeroes.java) | Medium | X |
 | 94 | [Binary Tree Inorder Traversal***](/src/BinaryTreeInorderTraversal.java) | Medium | X |
 | 100 | [Same Tree](/src/SameTree.java) | Easy | X |
 | 104 | [Maximum Depth of Binary Tree](/src/MaximumDepthOfBinaryTree.java) | Easy | X |
