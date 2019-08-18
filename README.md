@@ -5,6 +5,7 @@ Accepted LeetCode solutions in java
 | # | Problem Name | Difficulty | Solutions | Test Case | Last Solved |
 | :---: | --- | --- | --- | :---: | :---: |
 | 2 | [Add Two Numbers***](https://leetcode.com/problems/add-two-numbers/) | Medium | [Recursion](/src/LinkedList/AddTwoNumbers.java) | O | 08/18/2019 |
+| 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy | [Recursion](/src/PalindromeNumber.java) | X | 08/18/2019 |
 | 13 | [Roman to Integer*](/src/RomanToInteger.java) | Easy |  | X |
 | 20 | [Valid Parentheses*](/src/ValidParentheses.java) | Easy |  | X |
 | 56 | [Merge Intervals**](/src/MergeIntervals.java) | Medium |  | X |
