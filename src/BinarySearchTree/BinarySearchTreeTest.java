@@ -119,6 +119,14 @@ class BinarySearchTreeTest {
 		TreeNode inverted = setupTree(new Integer[] {4,7,2,9,6,3,1});
 		assertEquals(inverted.toString(), new InvertBinaryTree().invertTree(root).toString());
 	}
+	
+	@Test
+	void testValidateBinarySearchTree() throws Exception{
+		TreeNode root = setupTree(new Integer[] {2,1,3});
+		assertTrue(new ValidateBinarySearchTree().isValidBST(root));
+		root = setupTree(new Integer[] {10,5,15,null,null,6,20});
+		assertFalse(new ValidateBinarySearchTree().isValidBST(root));
+	}
 
 	static class TreeNode {
 		int val;
