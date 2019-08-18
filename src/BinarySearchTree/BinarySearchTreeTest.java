@@ -102,6 +102,16 @@ class BinarySearchTreeTest {
 		root = setupTree(new Integer[] {5,2,-5});
 		assertArrayEquals(new int[] {2}, new MostFrequentSubtreeSum().findFrequentTreeSum(root));
 	}
+	
+	@Test
+	void testBinaryTreeLevelOrderTraversal() throws Exception{
+		TreeNode root = setupTree(new Integer[] {3,9,20,null,null,15,7});
+		List<List<Integer>> list = new ArrayList<List<Integer>>();
+		list.add(Arrays.asList(3));
+		list.add(Arrays.asList(9, 20));
+		list.add(Arrays.asList(15, 7));
+		assertEquals(list, new BinaryTreeLevelOrderTraversal().levelOrder(root));
+	}
 
 	static class TreeNode {
 		int val;
