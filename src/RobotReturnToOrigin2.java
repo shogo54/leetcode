@@ -17,7 +17,7 @@
 
 public class RobotReturnToOrigin2 {
 	
-	int x = 0;
+    int x = 0;
     int y = 0;
     
     public boolean judgeCircle(String moves) {
