@@ -36,7 +36,7 @@ Accepted LeetCode solutions in java
 | 508 | [Most Frequent Subtree Sum*](https://leetcode.com/problems/most-frequent-subtree-sum/) | Medium | [Recursion](src/BinarySearchTree/MostFrequentSubtreeSum.java) | O |
 | 509 | [Fibonacci Number](src/FibonacciNumber.java) | Easy |  | X |
 | 547 | [Friend Circles*](/src/FriendCircles.java) | Medium |  | X |
-| 657 | [Robot Return to Origin*](/src/RobotReturnToOrigin.java) | Easy |  | X |
+| 657 | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) | Easy | [Iteration](/src/RobotReturnToOrigin.java) / [Recursion](/src/RobotReturnToOrigin2.java) | X |
 | 700 | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | Easy | [Recursion](/src/BinarySearchTree/SearchInABinarySearchTree.java) | O |
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | [Iteration](/src/LinkedList/MiddleOfTheLinkedList.java) | O |
 | 905 | [Sort Array By Parity***](/src/SortArrayByParity.java) | Easy |  | O |
