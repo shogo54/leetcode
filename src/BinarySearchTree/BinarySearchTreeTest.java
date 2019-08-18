@@ -112,6 +112,13 @@ class BinarySearchTreeTest {
 		list.add(Arrays.asList(15, 7));
 		assertEquals(list, new BinaryTreeLevelOrderTraversal().levelOrder(root));
 	}
+	
+	@Test
+	void testInvertBinaryTree() throws Exception{
+		TreeNode root = setupTree(new Integer[] {4,2,7,1,3,6,9});
+		TreeNode inverted = setupTree(new Integer[] {4,7,2,9,6,3,1});
+		assertEquals(inverted.toString(), new InvertBinaryTree().invertTree(root).toString());
+	}
 
 	static class TreeNode {
 		int val;
