@@ -15,7 +15,7 @@ import LinkedList.LinkedListTest.ListNode;
  * - void add(ListNode n1, ListNode n2, ListNode prev, int carry).
  * 
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Add Two Numbers.
- * Memory Usage: 43.7 MB, less than 87.15% of Java online submissions for Add Two Numbers.
+ * Memory Usage: 44.5 MB, less than 86.83% of Java online submissions for Add Two Numbers.
  * 
  */
 
@@ -43,14 +43,10 @@ public class AddTwoNumbers {
             next = n2.next;
         }
         
-        if(carry == 1){
-            n1.val++;
-            carry = 0;
-        }
-        if(n1.val >= 10){
-            n1.val %= 10;
-            carry = 1;
-        }
+        n1.val += carry;
+        carry = n1.val / 10;
+        n1.val %= 10;
+        
         if(prev != null){
             prev.next = n1;
         }

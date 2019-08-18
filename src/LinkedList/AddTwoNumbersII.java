@@ -1,3 +1,7 @@
+package LinkedList;
+
+import LinkedList.LinkedListTest.ListNode;
+
 /**
  * @author Shogo Akiyama 
  * Solved on 06/14/2019
@@ -17,12 +21,6 @@
  */
 
 public class AddTwoNumbersII {
-	
-	static class ListNode {
-		int val;
-		ListNode next;
-		ListNode(int x) { val = x; }
-	}
 	
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode r1 = reverse(l1);

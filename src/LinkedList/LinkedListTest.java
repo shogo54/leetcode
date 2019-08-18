@@ -83,6 +83,13 @@ public class LinkedListTest {
 		assertEquals("0-0-1", new AddTwoNumbers().addTwoNumbers(head1, head2).toString());
 	}
 	
+	@Test
+	void testAddTwoNumbersII() throws Exception{
+		ListNode head1 = setupHead(new int[] {9,2,4,3});
+		ListNode head2 = setupHead(new int[] {7,6,4});
+		assertEquals("1-0-0-0-7", new AddTwoNumbersII().addTwoNumbers(head1, head2).toString());
+	}
+	
 	static class ListNode {
 		int val;
 		ListNode next;
