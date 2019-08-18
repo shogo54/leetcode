@@ -58,9 +58,9 @@ public class LinkedListTest {
 	
 	@Test
 	void testMiddleOfTheLinkedList() throws Exception{
-		ListNode head = setupHead();
+		ListNode head1 = setupHead();
 		ListNode head2 = setupHead(new int[]{7,6,5,4,3,2,1});
-		assertEquals("3-4-5", new MiddleOfTheLinkedList().middleNode(head).toString());
+		assertEquals("3-4-5", new MiddleOfTheLinkedList().middleNode(head1).toString());
 		assertEquals("4-3-2-1", new MiddleOfTheLinkedList().middleNode(head2).toString());
 	}
 	
@@ -74,6 +74,13 @@ public class LinkedListTest {
 	void testReverseLinkedListII() throws Exception{
 		ListNode head = setupHead();
 		assertEquals("1-4-3-2-5", new ReverseLinkedListII().reverseBetween(head, 2, 4).toString());
+	}
+	
+	@Test
+	void testAddTwoNumbers() throws Exception{
+		ListNode head1 = setupHead(new int[] {1});
+		ListNode head2 = setupHead(new int[] {9,9});
+		assertEquals("0-0-1", new AddTwoNumbers().addTwoNumbers(head1, head2).toString());
 	}
 	
 	static class ListNode {
