@@ -10,6 +10,7 @@ Accepted LeetCode solutions in java
 | 62 | [Unique Paths**](/src/UniquePaths.java) | Medium |  | X |
 | 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy |  | X |
 | 73 | [Set Matrix Zeroes***](/src/SetMatrixZeroes.java) | Medium |  | X |
+| 92 | [Reverse Linked List II**](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | [Recursion](/src/LinkedList/ReverseLinkedListII.java) | O |
 | 94 | [Binary Tree Inorder Traversal***](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | [Recursion](/src/BinarySearchTree/BinaryTreeInorderTraversal.java) | O |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | [Recursion](/src/BinarySearchTree/SameTree.java) | O |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | [Recursion](/src/BinarySearchTree/MaximumDepthOfBinaryTree.java) | O |
