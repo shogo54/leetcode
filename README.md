@@ -14,6 +14,7 @@ Accepted LeetCode solutions in java
 | 73 | [Set Matrix Zeroes***](/src/SetMatrixZeroes.java) | Medium |  | X |
 | 92 | [Reverse Linked List II**](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | [Recursion](/src/LinkedList/ReverseLinkedListII.java) | O | 08/18/2019 |
 | 94 | [Binary Tree Inorder Traversal***](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | [Recursion](/src/BinarySearchTree/BinaryTreeInorderTraversal.java) | O |
+| 98 | [Validate Binary Search Tree*](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | [Inorder](/src/BinarySearchTree/ValidateBinarySearchTree.java) | O | 08/18/2019 |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | [Recursion](/src/BinarySearchTree/SameTree.java) | O |
 | 102 | [Binary Tree Level Order Traversal***](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | [Recursion](/src/BinarySearchTree/BinaryTreeLevelOrderTraversal.java) | O |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | [Recursion](/src/BinarySearchTree/MaximumDepthOfBinaryTree.java) | O |
