@@ -70,6 +70,12 @@ public class LinkedListTest {
 		assertEquals("1-3-5-2-4", new OddEvenLinkedList().oddEvenList(head).toString());
 	}
 	
+	@Test
+	void testReverseLinkedListII() throws Exception{
+		ListNode head = setupHead();
+		assertEquals("1-4-3-2-5", new ReverseLinkedListII().reverseBetween(head, 2, 4).toString());
+	}
+	
 	static class ListNode {
 		int val;
 		ListNode next;
