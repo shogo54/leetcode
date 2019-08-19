@@ -7,7 +7,7 @@ Accepted LeetCode solutions in java
 | 2 | [Add Two Numbers***](https://leetcode.com/problems/add-two-numbers/) | Medium | [Recursion](/src/LinkedList/AddTwoNumbers.java) | O | 08/18/2019 |
 | 9 | [Palindrome Number*](https://leetcode.com/problems/palindrome-number/) | Easy | [Recursion](/src/PalindromeNumber.java) | X | 08/18/2019 |
 | 13 | [Roman to Integer*](/src/RomanToInteger.java) | Easy |  | X |
-| 20 | [Valid Parentheses*](/src/ValidParentheses.java) | Easy |  | X |
+| 20 | [Valid Parentheses*](https://leetcode.com/problems/valid-parentheses/) | Easy | [Recursion](/src/String/ValidParentheses.java) | O | 06/13/2019 |
 | 56 | [Merge Intervals**](/src/MergeIntervals.java) | Medium |  | X |
 | 62 | [Unique Paths**](/src/UniquePaths.java) | Medium |  | X |
 | 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy |  | X |
@@ -28,12 +28,12 @@ Accepted LeetCode solutions in java
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | [Iteration](/src/LinkedList/ReverseLinkedList.java) / [Recursion](/src/LinkedList/ReverseLinkedList2.java) | O | 08/17/2019 |
 | 207 | [Course Schedule**](/src/CourseSchedule.java) | Medium |  | X |
 | 226 | [Invert Binary Tree***](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Easy | [Recursion](/src/BinarySearchTree/InvertBinaryTree.java) | O | 08/18/2019 |
-| 242 | [Valid Anagram*](/src/ValidAnagram.java) | Easy |  | X |
+| 242 | [Valid Anagram*](https://leetcode.com/problems/valid-anagram/) | Easy | [Sort](/src/String/ValidAnagram.java) | O | 08/02/2019 |
 | 260 | [Single Number III*](/src/SingleNumberIII.java) | Medium |  | X |
 | 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy |  | X |
 | 322 | [Coin Change](/src/CoinChange.java) | Medium |  | X |
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | Medium | [Iteration](/src/LinkedList/OddEvenLinkedList.java) | O | 08/02/2019 |
-| 344 | [Reverse String](/src/ReverseString.java) | Easy |  | X |
+| 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | [Iteration](/src/String/ReverseString.java) | O | 06/11/2018 |
 | 412 | [Fizz Buzz*](/src/FizzBuzz.java) | Easy |  | X |
 | 445 | [Add Two Numbers II***](https://leetcode.com/problems/add-two-numbers-ii/) | Medium | [Recursion](/src/LinkedList/AddTwoNumbersII.java) | O | 06/14/2019 |
 | 461 | [Hamming Distance*](/src/HammingDistance.java) | Easy |  | X |
@@ -46,10 +46,10 @@ Accepted LeetCode solutions in java
 | 905 | [Sort Array By Parity***](/src/SortArrayByParity.java) | Easy |  | O |
 | 912 | [Sort An Array*](/src/SortAnArray.java) | Medium |  | X |
 | 980 | [Unique Paths III*](/src/UniquePathsIII.java) | Hard |  | X |
-| 1003 | [Check If Word Is Valid After Substitutions*](/src/CheckIfWordIsValidAfterSubstitutions.java) | Medium |  | X |
-| 1047 | [Remove All Adjacent Duplicates In String*](/src/RemoveAllAdjacentDuplicatesInString.java) | Easy |  | X |
+| 1003 | [Check If Word Is Valid After Substitutions*](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/) | Medium | [Recursion](/src/String/CheckIfWordIsValidAfterSubstitutions.java) | O | 06/13/2019 |
+| 1047 | [Remove All Adjacent Duplicates In String*](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | Easy | [Recursion](/src/String/RemoveAllAdjacentDuplicatesInString.java) | O | 06/12/2019 |
 | 1053 | [Previous Permutation With One Swap*](/src/PreviousPermutationWithOneSwap.java) | Medium |  | X |
-| 1078 | [Occurrences After Bigram](/src/OccurrencesAfterBigram.java) | Easy |  | X |
+| 1078 | [Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/) | Easy | [Iteration](/src/String/OccurrencesAfterBigram.java) | O | 06/15/2019 |
 
 Note for myself:
 
