@@ -1,3 +1,5 @@
+package String;
+
 /**
  * @author Shogo Akiyama 
  * Solved on 06/12/2019

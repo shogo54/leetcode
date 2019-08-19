@@ -1,3 +1,5 @@
+package String;
+
 /**
  * @author Shogo Akiyama 
  * Solved on 06/13/2019
@@ -26,7 +28,7 @@ public class ValidParentheses {
             if(s.charAt(i) == '(' && s.charAt(i+1) == ')'
               || s.charAt(i) == '{' && s.charAt(i+1) == '}'
               || s.charAt(i) == '[' && s.charAt(i+1) == ']'){
-                return isValid(s.substring(0, i)+ s.substring(i+2, s.length()));
+                return isValid(s.substring(0, i) + s.substring(i+2, s.length()));
             }
         }
         return false;

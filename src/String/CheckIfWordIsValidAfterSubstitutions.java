@@ -1,3 +1,5 @@
+package String;
+
 /**
  * @author Shogo Akiyama 
  * Solved on 06/13/2019
@@ -21,7 +23,7 @@ public class CheckIfWordIsValidAfterSubstitutions {
         return containValid(S, 0);
     }
     
-    boolean containValid(String s, int index){
+    private boolean containValid(String s, int index){
         if(s.equals("")){
             return true;
         }
