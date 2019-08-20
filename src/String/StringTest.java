@@ -57,4 +57,13 @@ class StringTest {
 
 	}
 	
+	@Test
+	void testLongestSubstringWithoutRepeatingCharacters() throws Exception{
+		LongestSubstringWithoutRepeatingCharacters tester = new LongestSubstringWithoutRepeatingCharacters();
+		assertEquals(3, tester.lengthOfLongestSubstring("abcabcbb"));
+		assertEquals(1, tester.lengthOfLongestSubstring("bbbbb"));
+		assertEquals(3, tester.lengthOfLongestSubstring("pwwkew"));
+		assertEquals(6, tester.lengthOfLongestSubstring("ohvhjdml"));
+	}
+	
 }
