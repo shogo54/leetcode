@@ -6,7 +6,7 @@ Accepted LeetCode solutions in java
 | :---: | --- | --- | --- | :---: | :---: |
 | 1 | [Two Sum*](https://leetcode.com/problems/two-sum/) | Easy | [Iteration](/src/Array/TwoSum.java) | X | 08/13/2019 |
 | 2 | [Add Two Numbers***](https://leetcode.com/problems/add-two-numbers/) | Medium | [Recursion](/src/LinkedList/AddTwoNumbers.java) | O | 08/18/2019 |
-| 3 | [3. Longest Substring Without Repeating Characters*](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Iteration](/src/String/LongestSubstringWithoutRepeatingCharacters.java) | O | 08/19/2019 |
+| 3 | [Longest Substring Without Repeating Characters*](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Iteration](/src/String/LongestSubstringWithoutRepeatingCharacters.java) | O | 08/19/2019 |
 | 9 | [Palindrome Number*](https://leetcode.com/problems/palindrome-number/) | Easy | [Recursion](/src/PalindromeNumber.java) | X | 08/18/2019 |
 | 13 | [Roman to Integer*](/src/RomanToInteger.java) | Easy |  | X |
 | 20 | [Valid Parentheses*](https://leetcode.com/problems/valid-parentheses/) | Easy | [Recursion](/src/String/ValidParentheses.java) | O | 06/13/2019 |
