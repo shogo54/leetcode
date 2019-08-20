@@ -19,7 +19,7 @@ package String;
 
 public class CheckIfWordIsValidAfterSubstitutions {
 	
-	public boolean isValid(String S) {
+    public boolean isValid(String S) {
         return containValid(S, 0);
     }
     
