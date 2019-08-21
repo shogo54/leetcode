@@ -9,7 +9,9 @@ Accepted LeetCode solutions in java
 | 3 | [Longest Substring Without Repeating Characters*](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Iteration](/src/String/LongestSubstringWithoutRepeatingCharacters.java) | O | 08/19/2019 |
 | 9 | [Palindrome Number*](https://leetcode.com/problems/palindrome-number/) | Easy | [Recursion](/src/PalindromeNumber.java) | X | 08/18/2019 |
 | 13 | [Roman to Integer*](/src/RomanToInteger.java) | Easy |  | X |
+| 19 | [Remove Nth Node From End of List**](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | [Recursion](/src/LinkedList/RemoveNthNodeFromEndOfList.java) | O | 08/20/2019 |
 | 20 | [Valid Parentheses*](https://leetcode.com/problems/valid-parentheses/) | Easy | [Recursion](/src/String/ValidParentheses.java) | O | 06/13/2019 |
+| 21 | [Merge Two Sorted Lists**](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | [Recursion](/src/LinkedList/MergeTwoSortedLists.java) | O | 08/20/2019 |
 | 56 | [Merge Intervals**](/src/MergeIntervals.java) | Medium |  | X |
 | 62 | [Unique Paths**](/src/UniquePaths.java) | Medium |  | X |
 | 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy |  | X |
