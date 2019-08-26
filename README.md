@@ -13,10 +13,12 @@ Accepted LeetCode solutions in java
 | 20 | [Valid Parentheses*](https://leetcode.com/problems/valid-parentheses/) | Easy | [Recursion](/src/String/ValidParentheses.java) | O | 06/13/2019 |
 | 21 | [Merge Two Sorted Lists**](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | [Recursion](/src/LinkedList/MergeTwoSortedLists.java) | O | 08/20/2019 |
 | 54 | [Spiral Matrix**](https://leetcode.com/problems/spiral-matrix/) | Medium | [Recursion](/src/Matrix/SpiralMatrix.java) | X | 08/22/2019 |
+| 55 | [Jump Game**](https://leetcode.com/problems/jump-game/) | Medium | [Greedy](/src/Array/JumpGame.java) | X | 08/23/2019 |
 | 56 | [Merge Intervals**](/src/MergeIntervals.java) | Medium |  | X |
 | 62 | [Unique Paths**](/src/UniquePaths.java) | Medium |  | X |
 | 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy |  | X |
 | 73 | [Set Matrix Zeroes***](/src/SetMatrixZeroes.java) | Medium |  | X |
+| 79 | [Word Search*](https://leetcode.com/problems/word-search/) | Medium | [DFS](/src/String/WordSearch.java) | X | 08/22/2019 |
 | 92 | [Reverse Linked List II**](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | [Recursion](/src/LinkedList/ReverseLinkedListII.java) | O | 08/18/2019 |
 | 94 | [Binary Tree Inorder Traversal***](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | [Recursion](/src/BinarySearchTree/BinaryTreeInorderTraversal.java) | O | 08/02/2019 |
 | 98 | [Validate Binary Search Tree*](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | [Inorder](/src/BinarySearchTree/ValidateBinarySearchTree.java) | O | 08/18/2019 |
@@ -27,6 +29,7 @@ Accepted LeetCode solutions in java
 | 133 | [Clone Graph](/src/CloneGraph.java) | Medium |  | X |
 | 136 | [Single Number*](/src/SingleNumber.java) | Easy |  | X |
 | 141 | [Linked List Cycle*](https://leetcode.com/problems/linked-list-cycle/) | Easy | [Recursion](/src/LinkedList/LinkedListCycle.java) | O | 08/16/2019 |
+| 143 | [Reorder List*](https://leetcode.com/problems/reorder-list/) | Medium | [Recursion](/src/LinkedList/ReorderList.java) | O | 08/22/2019 |
 | 145 | [Binary Tree Postorder Traversal***](https://leetcode.com/problems/binary-tree-postorder-traversal/) | Hard | [Recursion](/src/BinarySearchTree/BinaryTreePostorderTraversal.java) | O | 06/11/2019 |
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy |  | X |
 | 198 | [House Robber](/src/HouseRobber.java) | Easy |  | X |
