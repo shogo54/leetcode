@@ -116,6 +116,21 @@ public class LinkedListTest {
 		assertEquals("1-2-3-88-99-100-105", new MergeTwoSortedLists().mergeTwoLists(head1, head2).toString());
 	}
 	
+	@Test
+	void testReorderList() throws Exception{
+		ListNode head = setupHead();
+		new ReorderList().reorderList(head);
+		assertEquals("1-5-2-4-3", head.toString());
+		
+		head = setupHead(new int[] {1,2,3,4});
+		new ReorderList().reorderList(head);
+		assertEquals("1-4-2-3", head.toString());
+		
+		head = setupHead(new int[] {1,2});
+		new ReorderList().reorderList(head);
+		assertEquals("1-2", head.toString());
+	}
+	
 	static class ListNode {
 		int val;
 		ListNode next;
