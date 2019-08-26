@@ -4,7 +4,7 @@ Accepted LeetCode solutions in java
 
 | # | Problem Name | Difficulty | Solutions | Test Case | Last Solved |
 | :---: | --- | --- | --- | :---: | :---: |
-| 1 | [Two Sum*](https://leetcode.com/problems/two-sum/) | Easy | [Iteration](/src/Array/TwoSum.java) | X | 08/13/2019 |
+| 1 | [Two Sum*](https://leetcode.com/problems/two-sum/) | Easy | [Iteration](/src/Array/TwoSum.java) | O | 08/13/2019 |
 | 2 | [Add Two Numbers***](https://leetcode.com/problems/add-two-numbers/) | Medium | [Recursion](/src/LinkedList/AddTwoNumbers.java) | O | 08/18/2019 |
 | 3 | [Longest Substring Without Repeating Characters*](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Iteration](/src/String/LongestSubstringWithoutRepeatingCharacters.java) | O | 08/19/2019 |
 | 9 | [Palindrome Number*](https://leetcode.com/problems/palindrome-number/) | Easy | [Recursion](/src/PalindromeNumber.java) | X | 08/18/2019 |
@@ -13,7 +13,7 @@ Accepted LeetCode solutions in java
 | 20 | [Valid Parentheses*](https://leetcode.com/problems/valid-parentheses/) | Easy | [Recursion](/src/String/ValidParentheses.java) | O | 06/13/2019 |
 | 21 | [Merge Two Sorted Lists**](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | [Recursion](/src/LinkedList/MergeTwoSortedLists.java) | O | 08/20/2019 |
 | 54 | [Spiral Matrix**](https://leetcode.com/problems/spiral-matrix/) | Medium | [Recursion](/src/Matrix/SpiralMatrix.java) | X | 08/22/2019 |
-| 55 | [Jump Game**^](https://leetcode.com/problems/jump-game/) | Medium | [Greedy](/src/Array/JumpGame.java) | X | 08/23/2019 |
+| 55 | [Jump Game**^](https://leetcode.com/problems/jump-game/) | Medium | [Greedy](/src/Array/JumpGame.java) | O | 08/23/2019 |
 | 56 | [Merge Intervals**](/src/MergeIntervals.java) | Medium |  | X |
 | 62 | [Unique Paths**](/src/UniquePaths.java) | Medium |  | X |
 | 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy |  | X |
@@ -42,7 +42,7 @@ Accepted LeetCode solutions in java
 | 322 | [Coin Change](/src/CoinChange.java) | Medium |  | X |
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | Medium | [Iteration](/src/LinkedList/OddEvenLinkedList.java) | O | 08/02/2019 |
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | [Iteration](/src/String/ReverseString.java) | O | 06/11/2018 |
-| 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | Easy | [Iteration](/src/Array/IntersectionOfTwoArrays.java) | X | 08/19/2019 |
+| 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | Easy | [Iteration](/src/Array/IntersectionOfTwoArrays.java) | O | 08/19/2019 |
 | 412 | [Fizz Buzz*](/src/FizzBuzz.java) | Easy |  | X |
 | 445 | [Add Two Numbers II***](https://leetcode.com/problems/add-two-numbers-ii/) | Medium | [Recursion](/src/LinkedList/AddTwoNumbersII.java) | O | 06/14/2019 |
 | 461 | [Hamming Distance*](/src/HammingDistance.java) | Easy |  | X |
