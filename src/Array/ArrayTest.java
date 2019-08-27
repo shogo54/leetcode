@@ -35,4 +35,11 @@ class ArrayTest {
 		assertEquals(Arrays.asList(-1,2), new TopKFrequentElements().topKFrequent(new int[] {4,1,-1,2,-1,2,3}, 2));
 	}
 	
+	@Test
+	void testContainsDuplicate() throws Exception{
+		assertTrue(new ContainsDuplicate().containsDuplicate(new int[] {1,2,3,1}));
+		assertFalse(new ContainsDuplicate().containsDuplicate(new int[] {1,2,3,4}));
+		assertTrue(new ContainsDuplicate().containsDuplicate(new int[] {1,1,1,3,3,4,3,2,4,2}));
+	}
+	
 }
