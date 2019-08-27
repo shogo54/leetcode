@@ -127,6 +127,15 @@ class BinarySearchTreeTest {
 		root = setupTree(new Integer[] {10,5,15,null,null,6,20});
 		assertFalse(new ValidateBinarySearchTree().isValidBST(root));
 	}
+	
+	@Test
+	void testKthSmallestElementInABST() throws Exception{
+		TreeNode root = setupTree(new Integer[] {3,1,4,null,2});
+		assertEquals(1, new KthSmallestElementInABST().kthSmallest(root, 1));
+		
+		root = setupTree(new Integer[] {5,3,6,2,4,null,null,1});
+		assertEquals(3, new KthSmallestElementInABST().kthSmallest(root, 3));
+	}
 
 	static class TreeNode {
 		int val;
