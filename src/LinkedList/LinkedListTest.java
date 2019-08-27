@@ -39,13 +39,13 @@ public class LinkedListTest {
 	@Test
 	void testReverseLinkedList() throws Exception{
 		ListNode head = setupHead();
-		assertEquals("5-4-3-2-1", new ReverseLinkedList().reverseList(head).toString());
+		assertEquals("[5,4,3,2,1]", new ReverseLinkedList().reverseList(head).toString());
 	}
 	
 	@Test
 	void testReverseLinkedList2() throws Exception{
 		ListNode head = setupHead();
-		assertEquals("5-4-3-2-1", new ReverseLinkedList2().reverseList(head).toString());
+		assertEquals("[5,4,3,2,1]", new ReverseLinkedList2().reverseList(head).toString());
 	}
 	
 	@Test
@@ -60,46 +60,46 @@ public class LinkedListTest {
 	void testMiddleOfTheLinkedList() throws Exception{
 		ListNode head1 = setupHead();
 		ListNode head2 = setupHead(new int[]{7,6,5,4,3,2,1});
-		assertEquals("3-4-5", new MiddleOfTheLinkedList().middleNode(head1).toString());
-		assertEquals("4-3-2-1", new MiddleOfTheLinkedList().middleNode(head2).toString());
+		assertEquals("[3,4,5]", new MiddleOfTheLinkedList().middleNode(head1).toString());
+		assertEquals("[4,3,2,1]", new MiddleOfTheLinkedList().middleNode(head2).toString());
 	}
 	
 	@Test
 	void testOddEvenLinkedList() throws Exception{
 		ListNode head = setupHead();
-		assertEquals("1-3-5-2-4", new OddEvenLinkedList().oddEvenList(head).toString());
+		assertEquals("[1,3,5,2,4]", new OddEvenLinkedList().oddEvenList(head).toString());
 	}
 	
 	@Test
 	void testReverseLinkedListII() throws Exception{
 		ListNode head = setupHead();
-		assertEquals("1-4-3-2-5", new ReverseLinkedListII().reverseBetween(head, 2, 4).toString());
+		assertEquals("[1,4,3,2,5]", new ReverseLinkedListII().reverseBetween(head, 2, 4).toString());
 	}
 	
 	@Test
 	void testAddTwoNumbers() throws Exception{
 		ListNode head1 = setupHead(new int[] {1});
 		ListNode head2 = setupHead(new int[] {9,9});
-		assertEquals("0-0-1", new AddTwoNumbers().addTwoNumbers(head1, head2).toString());
+		assertEquals("[0,0,1]", new AddTwoNumbers().addTwoNumbers(head1, head2).toString());
 	}
 	
 	@Test
 	void testAddTwoNumbersII() throws Exception{
 		ListNode head1 = setupHead(new int[] {9,2,4,3});
 		ListNode head2 = setupHead(new int[] {7,6,4});
-		assertEquals("1-0-0-0-7", new AddTwoNumbersII().addTwoNumbers(head1, head2).toString());
+		assertEquals("[1,0,0,0,7]", new AddTwoNumbersII().addTwoNumbers(head1, head2).toString());
 	}
 	
 	@Test
 	void testRemoveNthNodeFromEndofList() throws Exception{
 		ListNode head = setupHead();
-		assertEquals("1-2-3-5", new RemoveNthNodeFromEndOfList().removeNthFromEnd(head, 2).toString());
+		assertEquals("[1,2,3,5]", new RemoveNthNodeFromEndOfList().removeNthFromEnd(head, 2).toString());
 		
 		head = setupHead();
-		assertEquals("1-2-3-4", new RemoveNthNodeFromEndOfList().removeNthFromEnd(head, 1).toString());
+		assertEquals("[1,2,3,4]", new RemoveNthNodeFromEndOfList().removeNthFromEnd(head, 1).toString());
 		
 		head = setupHead();
-		assertEquals("2-3-4-5", new RemoveNthNodeFromEndOfList().removeNthFromEnd(head, 5).toString());
+		assertEquals("[2,3,4,5]", new RemoveNthNodeFromEndOfList().removeNthFromEnd(head, 5).toString());
 		
 		head = setupHead(new int[] {1});
 		assertEquals(null, new RemoveNthNodeFromEndOfList().removeNthFromEnd(head, 1));
@@ -109,26 +109,38 @@ public class LinkedListTest {
 	void testMergeTwoSortedLists() throws Exception{
 		ListNode head1 = setupHead(new int[] {1,2,4});
 		ListNode head2 = setupHead(new int[] {1,3,4});
-		assertEquals("1-1-2-3-4-4", new MergeTwoSortedLists().mergeTwoLists(head1, head2).toString());
+		assertEquals("[1,1,2,3,4,4]", new MergeTwoSortedLists().mergeTwoLists(head1, head2).toString());
 		
 		head1 = setupHead(new int[] {1,88,99});
 		head2 = setupHead(new int[] {2,3,100,105});
-		assertEquals("1-2-3-88-99-100-105", new MergeTwoSortedLists().mergeTwoLists(head1, head2).toString());
+		assertEquals("[1,2,3,88,99,100,105]", new MergeTwoSortedLists().mergeTwoLists(head1, head2).toString());
 	}
 	
 	@Test
 	void testReorderList() throws Exception{
 		ListNode head = setupHead();
 		new ReorderList().reorderList(head);
-		assertEquals("1-5-2-4-3", head.toString());
+		assertEquals("[1,5,2,4,3]", head.toString());
 		
 		head = setupHead(new int[] {1,2,3,4});
 		new ReorderList().reorderList(head);
-		assertEquals("1-4-2-3", head.toString());
+		assertEquals("[1,4,2,3]", head.toString());
 		
 		head = setupHead(new int[] {1,2});
 		new ReorderList().reorderList(head);
-		assertEquals("1-2", head.toString());
+		assertEquals("[1,2]", head.toString());
+	}
+	
+	@Test
+	void testMergeKSortedLists() throws Exception{
+		ListNode[] lists = new ListNode[7];
+		lists[0] = setupHead(new int[] {-10,-9,-9,-3,-1,-1,0});
+		lists[1] = setupHead(new int[] {-5});
+		lists[2] = setupHead(new int[] {4});
+		lists[3] = setupHead(new int[] {-8});
+		lists[5] = setupHead(new int[] {-9,-6,-5,-4,-2,2,3});
+		lists[6] = setupHead(new int[] {-3,-3,-2,-1,0});
+		assertEquals("[-10,-9,-9,-9,-8,-6,-5,-5,-4,-3,-3,-3,-2,-2,-1,-1,-1,0,0,2,3,4]", new MergeKSortedLists().mergeKLists(lists).toString());
 	}
 	
 	static class ListNode {
@@ -140,10 +152,16 @@ public class LinkedListTest {
 		}
 		
 		public String toString(){
+			String result = "[";
+			result += helperString();
+			return result + "]";
+		}
+		
+		private String helperString() {
 			if(next == null) {
 				return val + "";
 			}
-			return val + "-" + next.toString();
+			return val + "," + next.helperString();
 		}
 	}
 
