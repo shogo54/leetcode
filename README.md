@@ -36,6 +36,7 @@ Accepted LeetCode solutions in java
 | 198 | [House Robber](/src/HouseRobber.java) | Easy |  | X |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | [Iteration](/src/LinkedList/ReverseLinkedList.java) / [Recursion](/src/LinkedList/ReverseLinkedList2.java) | O | 08/17/2019 |
 | 207 | [Course Schedule**](/src/CourseSchedule.java) | Medium |  | X |
+| 217 | [Contains Duplicate***](https://leetcode.com/problems/contains-duplicate/) | Easy | [HashTable](/src/Array/ContainsDuplicate.java) | O | 08/27/2019 |
 | 226 | [Invert Binary Tree***](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Easy | [Recursion](/src/BinarySearchTree/InvertBinaryTree.java) | O | 08/18/2019 |
 | 242 | [Valid Anagram*](https://leetcode.com/problems/valid-anagram/) | Easy | [Sort](/src/String/ValidAnagram.java) | O | 08/02/2019 |
 | 260 | [Single Number III*](/src/SingleNumberIII.java) | Medium |  | X |
