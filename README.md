@@ -38,6 +38,7 @@ Accepted LeetCode solutions in java
 | 207 | [Course Schedule**](/src/CourseSchedule.java) | Medium |  | X |
 | 217 | [Contains Duplicate***](https://leetcode.com/problems/contains-duplicate/) | Easy | [HashTable](/src/Array/ContainsDuplicate.java) | O | 08/27/2019 |
 | 226 | [Invert Binary Tree***](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Easy | [Recursion](/src/BinarySearchTree/InvertBinaryTree.java) | O | 08/18/2019 |
+| 230 | [Kth Smallest Element in a BST***](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | [Recursion](/src/BinarySearchTree/KthSmallestElementInABST.java) | O | 08/27/2019 |
 | 242 | [Valid Anagram*](https://leetcode.com/problems/valid-anagram/) | Easy | [Sort](/src/String/ValidAnagram.java) | O | 08/02/2019 |
 | 260 | [Single Number III*](/src/SingleNumberIII.java) | Medium |  | X |
 | 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy |  | X |
