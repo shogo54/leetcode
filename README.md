@@ -4,7 +4,7 @@ Accepted LeetCode solutions in java
 
 | # | Problem Name | Difficulty | Solutions | Test Case | Last Solved |
 | :---: | --- | --- | --- | :---: | :---: |
-| 1 | [Two Sum*](https://leetcode.com/problems/two-sum/) | <p color="green">Easy</p> | [Iteration](/src/Array/TwoSum.java) | O | 08/13/2019 |
+| 1 | [Two Sum*](https://leetcode.com/problems/two-sum/) | <font color="green">Easy</font> | [Iteration](/src/Array/TwoSum.java) | O | 08/13/2019 |
 | 2 | [Add Two Numbers***](https://leetcode.com/problems/add-two-numbers/) | Medium | [Recursion](/src/LinkedList/AddTwoNumbers.java) | O | 08/18/2019 |
 | 3 | [Longest Substring Without Repeating Characters*](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Iteration](/src/String/LongestSubstringWithoutRepeatingCharacters.java) | O | 08/19/2019 |
 | 9 | [Palindrome Number*](https://leetcode.com/problems/palindrome-number/) | Easy | [Recursion](/src/PalindromeNumber.java) | X | 08/18/2019 |
