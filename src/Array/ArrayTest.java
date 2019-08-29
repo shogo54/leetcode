@@ -4,7 +4,7 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-class ArrayTest {
+class ArrayTest<L> {
 
 	@Test
 	void testJumpGame() throws Exception {
@@ -46,6 +46,22 @@ class ArrayTest {
 	void testFindMinimumInRotatedSortedArray() throws Exception{
 		assertEquals(1, new FindMinimumInRotatedSortedArray().findMin(new int[] {3,4,5,1,2}));
 		assertEquals(0, new FindMinimumInRotatedSortedArray().findMin(new int[] {4,5,6,7,0,1,2}));
+	}
+	
+	@Test
+	void testCombinationSum() throws Exception{
+		List<List<Integer>> expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(2,2,3));
+		expected.add(Arrays.asList(7));
+		List<List<Integer>> actual = new CombinationSum().combinationSum(new int[] {2,3,6,7}, 7);
+		assertEquals(expected, actual);
+		
+		expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(2,3,3));
+		expected.add(Arrays.asList(3,5));
+		expected.add(Arrays.asList(2,2,2,2));
+		actual = new CombinationSum().combinationSum(new int[] {2,3,5}, 8);
+		assertEquals(expected, actual);
 	}
 	
 }
