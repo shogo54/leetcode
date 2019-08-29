@@ -13,7 +13,7 @@ Accepted LeetCode solutions in java
 | 20 | [Valid Parentheses*](https://leetcode.com/problems/valid-parentheses/) | Easy | [Recursion](/src/String/ValidParentheses.java) | O | 06/13/2019 |
 | 21 | [Merge Two Sorted Lists**](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | [Recursion](/src/LinkedList/MergeTwoSortedLists.java) | O | 08/20/2019 |
 | 23 | [Merge k Sorted Lists***](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard| [Divide & Conquer](/src/LinkedList/MergeKSortedLists.java) | O | 08/27/2019 |
-| 39 | [Combination Sum*](https://leetcode.com/problems/combination-sum/) | Medium | [Recursion](/src/Array/CombinationSum.java) | O | 08/29/2019 |
+| 39 | [Combination Sum*](https://leetcode.com/problems/combination-sum/) | Medium | [DFS](/src/Array/CombinationSum.java) | O | 08/29/2019 |
 | 54 | [Spiral Matrix**](https://leetcode.com/problems/spiral-matrix/) | Medium | [Recursion](/src/Matrix/SpiralMatrix.java) | X | 08/22/2019 |
 | 55 | [Jump Game**^](https://leetcode.com/problems/jump-game/) | Medium | [Greedy](/src/Array/JumpGame.java) | O | 08/23/2019 |
 | 56 | [Merge Intervals**](/src/MergeIntervals.java) | Medium |  | X |
