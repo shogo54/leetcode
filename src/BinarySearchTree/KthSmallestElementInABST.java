@@ -19,7 +19,6 @@ import BinarySearchTree.BinarySearchTreeTest.TreeNode;
  * 
  */
 
-
 public class KthSmallestElementInABST {
 
 	private int num;

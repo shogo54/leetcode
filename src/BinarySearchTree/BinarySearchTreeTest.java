@@ -136,6 +136,16 @@ class BinarySearchTreeTest {
 		root = setupTree(new Integer[] {5,3,6,2,4,null,null,1});
 		assertEquals(3, new KthSmallestElementInABST().kthSmallest(root, 3));
 	}
+	
+	@Test
+	void testLowestCommonAncestorOfABinarySearchTree() throws Exception{
+		TreeNode root = setupTree(new Integer[] {6,2,8,0,4,7,9,null,null,3,5});
+		LowestCommonAncestorOfABinarySearchTree tester = new LowestCommonAncestorOfABinarySearchTree();
+		
+		assertEquals(root.toString(), tester.lowestCommonAncestor(root, new TreeNode(2), new TreeNode(8)).toString());
+		
+		assertEquals(root.left.toString(), tester.lowestCommonAncestor(root, new TreeNode(2), new TreeNode(4)).toString());
+	}
 
 	static class TreeNode {
 		int val;
