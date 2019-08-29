@@ -42,4 +42,10 @@ class ArrayTest {
 		assertTrue(new ContainsDuplicate().containsDuplicate(new int[] {1,1,1,3,3,4,3,2,4,2}));
 	}
 	
+	@Test
+	void testFindMinimumInRotatedSortedArray() throws Exception{
+		assertEquals(1, new FindMinimumInRotatedSortedArray().findMin(new int[] {3,4,5,1,2}));
+		assertEquals(0, new FindMinimumInRotatedSortedArray().findMin(new int[] {4,5,6,7,0,1,2}));
+	}
+	
 }
