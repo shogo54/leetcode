@@ -146,6 +146,18 @@ class BinarySearchTreeTest {
 		
 		assertEquals(root.left.toString(), tester.lowestCommonAncestor(root, new TreeNode(2), new TreeNode(4)).toString());
 	}
+	
+	@Test
+	void testSubtreeOfAnotherTree() throws Exception{
+		TreeNode root = setupTree(new Integer[] {3,4,5,1,2});
+		assertTrue(new SubtreeOfAnotherTree().isSubtree(root, setupTree(new Integer[] {4,1,2})));
+		
+		root = setupTree(new Integer[] {3,4,5,1,2,null,null,null,null,0});
+		assertFalse(new SubtreeOfAnotherTree().isSubtree(root, setupTree(new Integer[] {4,1,2})));
+		
+		root = setupTree(new Integer[] {3,4,5,1,null,2});
+		assertFalse(new SubtreeOfAnotherTree().isSubtree(root, setupTree(new Integer[] {3,1,2})));
+	}
 
 	static class TreeNode {
 		int val;
