@@ -66,4 +66,12 @@ class StringTest {
 		assertEquals(6, tester.lengthOfLongestSubstring("ohvhjdml"));
 	}
 	
+	@Test
+	void testValidPalindrome() throws Exception{
+		assertTrue(new ValidPalindrome().isPalindrome("A man, a plan, a canal: Panama"));
+		assertFalse(new ValidPalindrome().isPalindrome("race a car"));
+		assertFalse(new ValidPalindrome().isPalindrome("0P"));
+		assertTrue(new ValidPalindrome().isPalindrome("ab@a"));
+	}
+	
 }
