@@ -28,6 +28,7 @@ Accepted LeetCode solutions in java
 | 102 | [Binary Tree Level Order Traversal***](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | [Recursion](/src/BinarySearchTree/BinaryTreeLevelOrderTraversal.java) | O | 08/18/2019 |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | [Recursion](/src/BinarySearchTree/MaximumDepthOfBinaryTree.java) | O | 06/19/2019 |
 | 108 | [Convert Sorted Array to Binary Search Tree^](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | Easy | [Recursion](/src/BinarySearchTree/ConvertSortedArrayToBinarySearchTree.java) | O | 06/17/2019 |
+| 125 | [Valid Palindrome*](https://leetcode.com/problems/valid-palindrome/) | Easy | [2 Pointers](/src/String/ValidPalindrome.java) | O | 08/30/2019 |
 | 133 | [Clone Graph](/src/CloneGraph.java) | Medium |  | X |
 | 136 | [Single Number*](/src/SingleNumber.java) | Easy |  | X |
 | 141 | [Linked List Cycle*](https://leetcode.com/problems/linked-list-cycle/) | Easy | [Recursion](/src/LinkedList/LinkedListCycle.java) | O | 08/16/2019 |
