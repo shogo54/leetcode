@@ -74,4 +74,11 @@ class StringTest {
 		assertTrue(new ValidPalindrome().isPalindrome("ab@a"));
 	}
 	
+	@Test
+	void testMinimumWindowSubstring() throws Exception{
+		assertEquals("BANC", new MinimumWindowSubstring().minWindow("ADOBECODEBANC", "ABC"));
+		assertEquals("BECODEBA", new MinimumWindowSubstring().minWindow("ADOBECODEBANC", "ABCB"));
+		assertEquals("aa", new MinimumWindowSubstring().minWindow("aa", "aa"));
+	}
+	
 }
