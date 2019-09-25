@@ -14,8 +14,8 @@ import java.util.*;
  * - int longestConsecutive(int[] nums)
  * - class Group.
  * 
- * Runtime: 72 ms, faster than 8.41% of Java online submissions for Longest Consecutive Sequence.
- * Memory Usage: 38.8 MB, less than 44.83% of Java online submissions for Longest Consecutive Sequence.
+ * Runtime: 7 ms, faster than 63.28% of Java online submissions for Longest Consecutive Sequence.
+ * Memory Usage: 38.2 MB, less than 62.07% of Java online submissions for Longest Consecutive Sequence.
  * 
  */
 
@@ -24,7 +24,6 @@ public class LongestConsecutiveSequence {
 	public int longestConsecutive(int[] nums) {
 		HashMap<Integer, Group> nodes = new HashMap<Integer, Group>();
 		for (int i : nums) {
-			System.out.println(i);
 			if (nodes.containsKey(i)) {
 				continue;
 			}

@@ -4,7 +4,7 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-class ArrayTest<L> {
+class ArrayTest{
 
 	@Test
 	void testJumpGame() throws Exception {
@@ -68,6 +68,13 @@ class ArrayTest<L> {
 	void testMissingNumber() throws Exception{
 		assertEquals(2, new MissingNumber().missingNumber(new int[] {3,0,1}));
 		assertEquals(8, new MissingNumber().missingNumber(new int[] {9,6,4,2,3,5,7,0,1}));
+	}
+	
+	@Test
+	void testLongestConsecutiveSequence() throws Exception{
+		assertEquals(4, new LongestConsecutiveSequence().longestConsecutive(new int[] {100, 4, 200, 1, 3, 2}));
+		assertEquals(3, new LongestConsecutiveSequence().longestConsecutive(new int[] {1,2,0,1}));
+		assertEquals(5, new LongestConsecutiveSequence().longestConsecutive(new int[] {1,3,5,2,4}));
 	}
 	
 }
