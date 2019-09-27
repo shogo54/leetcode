@@ -77,4 +77,10 @@ class ArrayTest{
 		assertEquals(5, new LongestConsecutiveSequence().longestConsecutive(new int[] {1,3,5,2,4}));
 	}
 	
+	@Test
+	void testLongestIncreasingSubsequence() throws Exception{
+		assertEquals(4, new LongestIncreasingSubsequence().lengthOfLIS(new int[] {10,9,2,5,3,7,101,18}));
+		assertEquals(0, new LongestIncreasingSubsequence().lengthOfLIS(new int[] {}));
+	}
+	
 }
