@@ -83,4 +83,10 @@ class ArrayTest{
 		assertEquals(0, new LongestIncreasingSubsequence().lengthOfLIS(new int[] {}));
 	}
 	
+	@Test
+	void testMaximumProductSubarray() throws Exception{
+		assertEquals(6, new MaximumProductSubarray().maxProduct(new int[] {2,3,-2,4}));
+		assertEquals(0, new MaximumProductSubarray().maxProduct(new int[] {-2,0,-1}));
+	}
+	
 }
