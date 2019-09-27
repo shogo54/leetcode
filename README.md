@@ -36,6 +36,7 @@ Accepted LeetCode solutions in java
 | 141 | [Linked List Cycle*](https://leetcode.com/problems/linked-list-cycle/) | Easy | [Recursion](/src/LinkedList/LinkedListCycle.java) | O | 08/16/2019 |
 | 143 | [Reorder List*](https://leetcode.com/problems/reorder-list/) | Medium | [Recursion](/src/LinkedList/ReorderList.java) | O | 08/22/2019 |
 | 145 | [Binary Tree Postorder Traversal***](https://leetcode.com/problems/binary-tree-postorder-traversal/) | Hard | [Recursion](/src/BinarySearchTree/BinaryTreePostorderTraversal.java) | O | 06/11/2019 |
+| 152 | [Maximum Product Subarray**](https://leetcode.com/problems/maximum-product-subarray/) | Medium | [D&C](/src/Array/MaximumProductSubarray.java) | O | 09/27/2019 |
 | 153 | [Find Minimum in Rotated Sorted Array***](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | [Recursion](/src/Array/FindMinimumInRotatedSortedArray.java) | O | 08/28/2019 |
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy |  | X |
 | 198 | [House Robber](/src/HouseRobber.java) | Easy |  | X |
