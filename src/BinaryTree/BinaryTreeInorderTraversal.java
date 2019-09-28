@@ -1,8 +1,8 @@
-package BinarySearchTree;
+package BinaryTree;
 
 import java.util.*;
 
-import BinarySearchTree.BinarySearchTreeTest.TreeNode;
+import BinaryTree.BinaryTreeTest.TreeNode;
 
 /**
  * @author Shogo Akiyama 

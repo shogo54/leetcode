@@ -1,10 +1,10 @@
-package BinarySearchTree;
+package BinaryTree;
 
 import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-class BinarySearchTreeTest {
+class BinaryTreeTest {
 	
 	TreeNode setupTree() throws Exception {
 		return setupTree(new Integer[] {1,null,2,null,null,3});
@@ -157,6 +157,20 @@ class BinarySearchTreeTest {
 		
 		root = setupTree(new Integer[] {3,4,5,1,null,2});
 		assertFalse(new SubtreeOfAnotherTree().isSubtree(root, setupTree(new Integer[] {3,1,2})));
+	}
+	
+	@Test
+	void testSerializeAndDeserializeBinaryTree() throws Exception{
+		SerializeAndDeserializeBinaryTree tester = new SerializeAndDeserializeBinaryTree();
+		
+		TreeNode root = setupTree();
+		assertEquals(root.toString(), tester.deserialize(tester.serialize(root)).toString());
+		
+		root = setupTree(new Integer[] {1,2,3,null,null,4,5});
+		assertEquals(root.toString(), tester.deserialize(tester.serialize(root)).toString());
+		
+		root = setupTree(new Integer[] {1,2,null,3,null,null,null,4});
+		assertEquals(root.toString(), tester.deserialize(tester.serialize(root)).toString());
 	}
 
 	static class TreeNode {
