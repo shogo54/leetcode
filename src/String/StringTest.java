@@ -81,4 +81,12 @@ class StringTest {
 		assertEquals("aa", new MinimumWindowSubstring().minWindow("aa", "aa"));
 	}
 	
+	@Test
+	void testDecodeWays() throws Exception{
+		assertEquals(2, new DecodeWays().numDecodings("12"));
+		assertEquals(3, new DecodeWays().numDecodings("226"));
+		assertEquals(0, new DecodeWays().numDecodings("00"));
+		assertEquals(0, new DecodeWays().numDecodings("01"));
+	}
+	
 }
