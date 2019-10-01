@@ -1,4 +1,4 @@
-package Array;
+package array;
 
 /**
  * @author Shogo Akiyama 
