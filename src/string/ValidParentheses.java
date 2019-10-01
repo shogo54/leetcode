@@ -1,4 +1,4 @@
-package String;
+package string;
 
 /**
  * @author Shogo Akiyama 
