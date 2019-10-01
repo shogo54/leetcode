@@ -12,10 +12,7 @@ import linkedlist.LinkedListTest.ListNode;
  * https://leetcode.com/problems/linked-list-cycle/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and properties:
- * - Set<ListNode> set
- * - boolean hasCycle(ListNode head).
- * 
+ * Approach: HashTable & Recursion
  * Runtime: 4 ms, faster than 20.24% of Java online submissions for Linked List Cycle.
  * Memory Usage: 36.8 MB, less than 100.00% of Java online submissions for Linked List Cycle.
  * 
