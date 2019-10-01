@@ -35,7 +35,7 @@ Accepted LeetCode solutions in java
 | 128 | [Longest Consecutive Sequence*](https://leetcode.com/problems/longest-consecutive-sequence/) | Hard | [HashTable with Class](/src/array/LongestConsecutiveSequence.java) | O | 09/23/2019 |
 | 133 | [Clone Graph](/src/CloneGraph.java) | Medium |  | X |
 | 136 | [Single Number*](/src/SingleNumber.java) | Easy |  | X |
-| 141 | [Linked List Cycle*](https://leetcode.com/problems/linked-list-cycle/) | Easy | [Recursion](/src/linkedlist/LinkedListCycle.java) | O | 08/16/2019 |
+| 141 | [Linked List Cycle***](https://leetcode.com/problems/linked-list-cycle/) | Easy | [Recursion](/src/linkedlist/LinkedListCycle.java) / [Floyed's Cycle Detection](/src/linkedlist/LinkedListCycle2.java) | O | 08/16/2019 |
 | 143 | [Reorder List*](https://leetcode.com/problems/reorder-list/) | Medium | [Recursion](/src/linkedlist/ReorderList.java) | O | 08/22/2019 |
 | 145 | [Binary Tree Postorder Traversal***](https://leetcode.com/problems/binary-tree-postorder-traversal/) | Hard | [Recursion](/src/binarytree/BinaryTreePostorderTraversal.java) | O | 06/11/2019 |
 | 152 | [Maximum Product Subarray**](https://leetcode.com/problems/maximum-product-subarray/) | Medium | [D&C](/src/array/MaximumProductSubarray.java) | O | 09/27/2019 |
