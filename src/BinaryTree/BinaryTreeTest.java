@@ -172,6 +172,15 @@ class BinaryTreeTest {
 		root = setupTree(new Integer[] {1,2,null,3,null,null,null,4});
 		assertEquals(root.toString(), tester.deserialize(tester.serialize(root)).toString());
 	}
+	
+	@Test
+	void testMaximumBinaryTree() throws Exception{
+		TreeNode root = setupTree(new Integer[] {6,3,5,null,2,0,null,null,null,null,1});
+		assertEquals(root.toString(), new MaximumBinaryTree().constructMaximumBinaryTree(new int[] {3,2,1,6,0,5}).toString());
+		
+		root = setupTree(new Integer[] {3});
+		assertEquals(root.toString(), new MaximumBinaryTree().constructMaximumBinaryTree(new int[] {3}).toString());
+	}
 
 	static class TreeNode {
 		int val;
