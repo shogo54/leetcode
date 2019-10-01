@@ -1,6 +1,6 @@
-package BinaryTree;
+package binarytree;
 
-import BinaryTree.BinaryTreeTest.TreeNode;
+import binarytree.BinaryTreeTest.TreeNode;
 
 /**
  * @author Shogo Akiyama 

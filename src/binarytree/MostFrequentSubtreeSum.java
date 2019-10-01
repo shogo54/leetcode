@@ -1,8 +1,8 @@
-package BinaryTree;
+package binarytree;
 
 import java.util.*;
 
-import BinaryTree.BinaryTreeTest.TreeNode;
+import binarytree.BinaryTreeTest.TreeNode;
 
 /**
  * @author Shogo Akiyama 

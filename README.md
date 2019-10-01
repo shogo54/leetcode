@@ -25,19 +25,19 @@ Accepted LeetCode solutions in java
 | 79 | [Word Search*](https://leetcode.com/problems/word-search/) | Medium | [DFS](/src/string/WordSearch.java) | X | 08/22/2019 |
 | 91 | [Decode Ways*](https://leetcode.com/problems/decode-ways/) | Medium | [D&C](/src/string/DecodeWays.java) | O | 09/28/2019 |
 | 92 | [Reverse Linked List II**](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | [Recursion](/src/linkedlist/ReverseLinkedListII.java) | O | 08/18/2019 |
-| 94 | [Binary Tree Inorder Traversal***](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | [Recursion](/src/BinaryTree/BinaryTreeInorderTraversal.java) | O | 08/02/2019 |
-| 98 | [Validate Binary Search Tree*](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | [Inorder](/src/BinaryTree/ValidateBinarySearchTree.java) | O | 08/18/2019 |
-| 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | [Recursion](/src/BinaryTree/SameTree.java) | O | 08/13/2019 |
-| 102 | [Binary Tree Level Order Traversal***](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | [Recursion](/src/BinaryTree/BinaryTreeLevelOrderTraversal.java) | O | 08/18/2019 |
-| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | [Recursion](/src/BinaryTree/MaximumDepthOfBinaryTree.java) | O | 06/19/2019 |
-| 108 | [Convert Sorted Array to Binary Search Tree^](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | Easy | [Recursion](/src/BinaryTree/ConvertSortedArrayToBinarySearchTree.java) | O | 06/17/2019 |
+| 94 | [Binary Tree Inorder Traversal***](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | [Recursion](/src/binarytree/BinaryTreeInorderTraversal.java) | O | 08/02/2019 |
+| 98 | [Validate Binary Search Tree*](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | [Inorder](/src/binarytree/ValidateBinarySearchTree.java) | O | 08/18/2019 |
+| 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | [Recursion](/src/binarytree/SameTree.java) | O | 08/13/2019 |
+| 102 | [Binary Tree Level Order Traversal***](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | [Recursion](/src/binarytree/BinaryTreeLevelOrderTraversal.java) | O | 08/18/2019 |
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | [Recursion](/src/binarytree/MaximumDepthOfBinaryTree.java) | O | 06/19/2019 |
+| 108 | [Convert Sorted Array to Binary Search Tree^](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | Easy | [Recursion](/src/binarytree/ConvertSortedArrayToBinarySearchTree.java) | O | 06/17/2019 |
 | 125 | [Valid Palindrome*](https://leetcode.com/problems/valid-palindrome/) | Easy | [2 Pointers](/src/string/ValidPalindrome.java) | O | 08/30/2019 |
 | 128 | [Longest Consecutive Sequence*](https://leetcode.com/problems/longest-consecutive-sequence/) | Hard | [HashTable with Class](/src/array/LongestConsecutiveSequence.java) | O | 09/23/2019 |
 | 133 | [Clone Graph](/src/CloneGraph.java) | Medium |  | X |
 | 136 | [Single Number*](/src/SingleNumber.java) | Easy |  | X |
 | 141 | [Linked List Cycle*](https://leetcode.com/problems/linked-list-cycle/) | Easy | [Recursion](/src/linkedlist/LinkedListCycle.java) | O | 08/16/2019 |
 | 143 | [Reorder List*](https://leetcode.com/problems/reorder-list/) | Medium | [Recursion](/src/linkedlist/ReorderList.java) | O | 08/22/2019 |
-| 145 | [Binary Tree Postorder Traversal***](https://leetcode.com/problems/binary-tree-postorder-traversal/) | Hard | [Recursion](/src/BinaryTree/BinaryTreePostorderTraversal.java) | O | 06/11/2019 |
+| 145 | [Binary Tree Postorder Traversal***](https://leetcode.com/problems/binary-tree-postorder-traversal/) | Hard | [Recursion](/src/binarytree/BinaryTreePostorderTraversal.java) | O | 06/11/2019 |
 | 152 | [Maximum Product Subarray**](https://leetcode.com/problems/maximum-product-subarray/) | Medium | [D&C](/src/array/MaximumProductSubarray.java) | O | 09/27/2019 |
 | 153 | [Find Minimum in Rotated Sorted Array***](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | [Recursion](/src/array/FindMinimumInRotatedSortedArray.java) | O | 08/28/2019 |
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy |  | X |
@@ -45,15 +45,15 @@ Accepted LeetCode solutions in java
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | [Iteration](/src/linkedlist/ReverseLinkedList.java) / [Recursion](/src/linkedlist/ReverseLinkedList2.java) | O | 08/17/2019 |
 | 207 | [Course Schedule**](/src/CourseSchedule.java) | Medium |  | X |
 | 217 | [Contains Duplicate***](https://leetcode.com/problems/contains-duplicate/) | Easy | [HashTable](/src/array/ContainsDuplicate.java) | O | 08/27/2019 |
-| 226 | [Invert Binary Tree***](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Easy | [Recursion](/src/BinaryTree/InvertBinaryTree.java) | O | 08/18/2019 |
-| 230 | [Kth Smallest Element in a BST***](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | [Recursion](/src/BinaryTree/KthSmallestElementInABST.java) | O | 08/27/2019 |
-| 235 | [Lowest Common Ancestor of a Binary Search Tree***](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Easy | [Recursion](/src/BinaryTree/LowestCommonAncestorOfABinarySearchTree.java) | O | 08/28/2019 |
+| 226 | [Invert Binary Tree***](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Easy | [Recursion](/src/binarytree/InvertBinaryTree.java) | O | 08/18/2019 |
+| 230 | [Kth Smallest Element in a BST***](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | [Recursion](/src/binarytree/KthSmallestElementInABST.java) | O | 08/27/2019 |
+| 235 | [Lowest Common Ancestor of a Binary Search Tree***](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Easy | [Recursion](/src/binarytree/LowestCommonAncestorOfABinarySearchTree.java) | O | 08/28/2019 |
 | 242 | [Valid Anagram*](https://leetcode.com/problems/valid-anagram/) | Easy | [Sort](/src/string/ValidAnagram.java) | O | 08/02/2019 |
 | 260 | [Single Number III*](/src/SingleNumberIII.java) | Medium |  | X |
 | 268 | [Missing Number***](https://leetcode.com/problems/missing-number/) | Easy | [Formula](/src/array/MissingNumber.java) | O | 08/29/2019 |
 | 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy |  | X |
 | 287 | [Find the Duplicate Number*^](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | [Brute Force](/src/array/FindTheDuplicateNumber.java) / [Floyd's Cycle Detection](/src/array/FindTheDuplicateNumber2.java) | O | 10/01/2019 |
-| 297 | [Serialize and Deserialize Binary Tree*](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Hard | [Iteration](/src/BinaryTree/SerializeAndDeserializeBinaryTree.java) | O | 09/27/2019 |
+| 297 | [Serialize and Deserialize Binary Tree*](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Hard | [Iteration](/src/binarytree/SerializeAndDeserializeBinaryTree.java) | O | 09/27/2019 |
 | 300 | [Longest Increasing Subsequence*](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | [D&P](/src/array/LongestIncreasingSubsequence.java) | O | 09/26/2019 |
 | 322 | [Coin Change](/src/CoinChange.java) | Medium |  | X |
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | Medium | [Iteration](/src/linkedlist/OddEvenLinkedList.java) | O | 08/02/2019 |
@@ -66,10 +66,10 @@ Accepted LeetCode solutions in java
 | 508 | [Most Frequent Subtree Sum*](https://leetcode.com/problems/most-frequent-subtree-sum/) | Medium | [Recursion](src/BinaryTree/MostFrequentSubtreeSum.java) | O | 06/12/2019 |
 | 509 | [Fibonacci Number](src/FibonacciNumber.java) | Easy |  | X |
 | 547 | [Friend Circles*](/src/FriendCircles.java) | Medium |  | X |
-| 572 | [Subtree of Another Tree***](https://leetcode.com/problems/subtree-of-another-tree/) | Easy | [Recursion](/src/BinaryTree/SubtreeOfAnotherTree.java) | O | 08/29/2019 |
-| 654 | [Maximum Binary Tree*](https://leetcode.com/problems/maximum-binary-tree/) | Medium | [Recursion](/src/BinaryTree/MaximumBinaryTree.java) | O | 09/30/2019 |
+| 572 | [Subtree of Another Tree***](https://leetcode.com/problems/subtree-of-another-tree/) | Easy | [Recursion](/src/binarytree/SubtreeOfAnotherTree.java) | O | 08/29/2019 |
+| 654 | [Maximum Binary Tree*](https://leetcode.com/problems/maximum-binary-tree/) | Medium | [Recursion](/src/binarytree/MaximumBinaryTree.java) | O | 09/30/2019 |
 | 657 | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) | Easy | [Iteration](/src/RobotReturnToOrigin.java) / [Recursion](/src/RobotReturnToOrigin2.java) | X | 08/18/2019 |
-| 700 | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | Easy | [Recursion](/src/BinaryTree/SearchInABinarySearchTree.java) | O | 06/10/2019 |
+| 700 | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | Easy | [Recursion](/src/binarytree/SearchInABinarySearchTree.java) | O | 06/10/2019 |
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | [Iteration](/src/linkedlist/MiddleOfTheLinkedList.java) | O | 04/14/2019 |
 | 905 | [Sort Array By Parity***](/src/SortArrayByParity.java) | Easy |  | O |
 | 912 | [Sort An Array*](/src/SortAnArray.java) | Medium |  | X |

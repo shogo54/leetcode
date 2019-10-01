@@ -1,9 +1,9 @@
-package BinaryTree;
+package binarytree;
 
 import java.util.*;
 import java.util.stream.*;
 
-import BinaryTree.BinaryTreeTest.TreeNode;
+import binarytree.BinaryTreeTest.TreeNode;
 
 /**
  * @author Shogo Akiyama 
