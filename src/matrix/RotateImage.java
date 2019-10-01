@@ -1,4 +1,4 @@
-package Matrix;
+package matrix;
 
 /**
  * @author Shogo Akiyama 
