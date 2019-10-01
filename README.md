@@ -52,6 +52,7 @@ Accepted LeetCode solutions in java
 | 260 | [Single Number III*](/src/SingleNumberIII.java) | Medium |  | X |
 | 268 | [Missing Number***](https://leetcode.com/problems/missing-number/) | Easy | [Formula](/src/Array/MissingNumber.java) | O | 08/29/2019 |
 | 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy |  | X |
+| 287 | [Find the Duplicate Number*](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | [Brute Force](/src/array/FindTheDuplicateNumber.java) | O | 10/01/2019 |
 | 297 | [Serialize and Deserialize Binary Tree*](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Hard | [Iteration](/src/BinaryTree/SerializeAndDeserializeBinaryTree.java) | O | 09/27/2019 |
 | 300 | [Longest Increasing Subsequence*](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | [D&P](/src/Array/LongestIncreasingSubsequence.java) | O | 09/26/2019 |
 | 322 | [Coin Change](/src/CoinChange.java) | Medium |  | X |
