@@ -10,10 +10,7 @@ import linkedlist.LinkedListTest.ListNode;
  * https://leetcode.com/problems/add-two-numbers/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * - ListNode addTwoNumbers(ListNode l1, ListNode l2)
- * - void add(ListNode n1, ListNode n2, ListNode prev, int carry).
- * 
+ * Approach: Recursion
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Add Two Numbers.
  * Memory Usage: 44.5 MB, less than 86.83% of Java online submissions for Add Two Numbers.
  * 

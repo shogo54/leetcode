@@ -10,9 +10,7 @@ import linkedlist.LinkedListTest.ListNode;
  * https://leetcode.com/problems/merge-two-sorted-lists/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * - ListNode mergeTwoLists(ListNode l1, ListNode l2).
- * 
+ * Approach: Recursion
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Merge Two Sorted Lists.
  * Memory Usage: 40.6 MB, less than 13.13% of Java online submissions for Merge Two Sorted Lists.
  * 

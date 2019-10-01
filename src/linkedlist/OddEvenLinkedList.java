@@ -10,9 +10,7 @@ import linkedlist.LinkedListTest.ListNode;
  * https://leetcode.com/problems/odd-even-linked-list/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * - ListNode oddEvenList(ListNode head).
- * 
+ * Approach: Two Pointers & Iteration
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Odd Even Linked List.
  * Memory Usage: 36.6 MB, less than 100.00% of Java online submissions for Odd Even Linked List.
  * 

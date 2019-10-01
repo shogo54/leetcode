@@ -10,10 +10,7 @@ import linkedlist.LinkedListTest.ListNode;
  * https://leetcode.com/problems/merge-k-sorted-lists/
  * Difficulty: Hard
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - ListNode mergeKLists(ListNode[] lists)
- * - ListNode mergeTwo(ListNode n1, ListNode n2).
- * 
+ * Approach: Divide and Conquer
  * Runtime: 2 ms, faster than 98.81% of Java online submissions for Merge k Sorted Lists.
  * Memory Usage: 40.9 MB, less than 46.45% of Java online submissions for Merge k Sorted Lists.
  * 

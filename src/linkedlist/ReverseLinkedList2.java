@@ -10,10 +10,7 @@ import linkedlist.LinkedListTest.ListNode;
  * https://leetcode.com/problems/reverse-linked-list/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * - ListNode reverseList(ListNode head)
- * - ListNode reverse(ListNode node, ListNode prev).
- * 
+ * Approach: Recursion
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Reverse Linked List.
  * Memory Usage: 37.2 MB, less than 98.56% of Java online submissions for Reverse Linked List.
  * 

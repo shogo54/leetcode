@@ -12,11 +12,7 @@ import linkedlist.LinkedListTest.ListNode;
  * https://leetcode.com/problems/reorder-list/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - public void reorderList(ListNode head)
- * - private void add(ListNode node, int index)
- * - private ListNode reorder(int index).
- * 
+ * Approach: Recursion & HashTable
  * Runtime: 8 ms, faster than 9.28% of Java online submissions for Reorder List.
  * Memory Usage: 46.1 MB, less than 6.82% of Java online submissions for Reorder List.
  * 

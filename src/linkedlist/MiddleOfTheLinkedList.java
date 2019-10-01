@@ -11,9 +11,7 @@ import linkedlist.LinkedListTest.ListNode;
  * https://leetcode.com/problems/middle-of-the-linked-list/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * - ListNode middleList(ListNode head).
- * 
+ * Approach: Iteration
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Middle of the Linked List.
  * Memory Usage: 35.4 MB, less than 88.01% of Java online submissions for Middle of the Linked List.
  * 

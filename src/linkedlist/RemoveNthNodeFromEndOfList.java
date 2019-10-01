@@ -10,9 +10,7 @@ import linkedlist.LinkedListTest.ListNode;
  * https://leetcode.com/problems/remove-nth-node-from-end-of-list/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * - ListNode removeNthFromEnd(ListNode head, int n).
- * 
+ * Approach: One Pass Recursion
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Remove Nth Node From End of List.
  * Memory Usage: 34.9 MB, less than 100.00% of Java online submissions for Remove Nth Node From End of List.
  * 
