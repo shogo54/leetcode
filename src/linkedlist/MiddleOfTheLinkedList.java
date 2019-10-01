@@ -1,6 +1,6 @@
-package LinkedList;
+package linkedlist;
 
-import LinkedList.LinkedListTest.ListNode;
+import linkedlist.LinkedListTest.ListNode;
 
 /**
  * 

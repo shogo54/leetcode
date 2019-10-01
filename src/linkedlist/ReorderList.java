@@ -1,8 +1,8 @@
-package LinkedList;
+package linkedlist;
 
 import java.util.*;
 
-import LinkedList.LinkedListTest.ListNode;
+import linkedlist.LinkedListTest.ListNode;
 
 /**
  * @author Shogo Akiyama 
