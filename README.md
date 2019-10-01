@@ -66,6 +66,7 @@ Accepted LeetCode solutions in java
 | 509 | [Fibonacci Number](src/FibonacciNumber.java) | Easy |  | X |
 | 547 | [Friend Circles*](/src/FriendCircles.java) | Medium |  | X |
 | 572 | [Subtree of Another Tree***](https://leetcode.com/problems/subtree-of-another-tree/) | Easy | [Recursion](/src/BinaryTree/SubtreeOfAnotherTree.java) | O | 08/29/2019 |
+| 654 | [Maximum Binary Tree*](https://leetcode.com/problems/maximum-binary-tree/) | Medium | [Recursion](/src/BinaryTree/MaximumBinaryTree.java) | O | 09/30/2019 |
 | 657 | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) | Easy | [Iteration](/src/RobotReturnToOrigin.java) / [Recursion](/src/RobotReturnToOrigin2.java) | X | 08/18/2019 |
 | 700 | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | Easy | [Recursion](/src/BinaryTree/SearchInABinarySearchTree.java) | O | 06/10/2019 |
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | [Iteration](/src/LinkedList/MiddleOfTheLinkedList.java) | O | 04/14/2019 |
