@@ -47,5 +47,16 @@ class MatrixTest {
 		new RotateImage().rotate(matrix);
 		assertArrayEquals(setupMatrix("[[13,9,5,1],[14,10,6,2],[15,11,7,3],[16,12,8,4]]"), matrix);
 	}
+	
+	@Test
+	void testPacificAtlanticWaterFlow() throws Exception{
+		int[][] matrix = setupMatrix("[[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]");
+		int[][] array = new int[][]{{0,4},{1,3},{1,4},{2,2},{3,0},{3,1},{4,0}};
+		List<List<Integer>> expected = new LinkedList<List<Integer>>();
+		for(int[] yx: array) {
+			expected.add(Arrays.asList(yx[0], yx[1]));
+		}
+		assertEquals(expected, new PacificAtlanticWaterFlow().pacificAtlantic(matrix));
+	}
 
 }

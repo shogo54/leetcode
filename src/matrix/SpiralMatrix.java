@@ -10,10 +10,7 @@ import java.util.*;
  * https://leetcode.com/problems/spiral-matrix/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - List<Integer> spiralOrder(int[][] matrix)
- * - void goAround(int[][] m, int count).
- * 
+ * Approach: Layer by Layer & Recursion
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Spiral Matrix.
  * Memory Usage: 34.5 MB, less than 100.00% of Java online submissions for Spiral Matrix.
  * 

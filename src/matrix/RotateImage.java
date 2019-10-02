@@ -8,9 +8,7 @@ package matrix;
  * https://leetcode.com/problems/rotate-image/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - void rotate(int[][] matrix).
- * 
+ * Approach: Layer by Layer
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Rotate Image.
  * Memory Usage: 36.4 MB, less than 100.00% of Java online submissions for Rotate Image.
  * 
