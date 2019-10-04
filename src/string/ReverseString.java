@@ -8,9 +8,7 @@ package string;
  * https://leetcode.com/problems/reverse-string/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * - void reverseString(char[] s).
- * 
+ * Approach: Two Pointers & Iteration
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Reverse String.
  * Memory Usage: 47.5 MB, less than 65.73% of Java online submissions for Reverse String.
  * 

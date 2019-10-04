@@ -8,10 +8,7 @@ package string;
  * https://leetcode.com/problems/decode-ways/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - int numDecodings(String s)
- * - int dc(int[] nums, int s, int e).
- * 
+ * Approach: Divide and Conquer
  * Runtime: 2 ms, faster than 55.00% of Java online submissions for Decode Ways.
  * Memory Usage: 36.1 MB, less than 71.70% of Java online submissions for Decode Ways.
  * 

@@ -8,9 +8,7 @@ package string;
  * https://leetcode.com/problems/valid-palindrome/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - boolean isPalindrome(String s).
- * 
+ * Approach: Two Pointers & Iteration
  * Runtime: 5 ms, faster than 54.76% of Java online submissions for Valid Palindrome.
  * Memory Usage: 37.7 MB, less than 100.00% of Java online submissions for Valid Palindrome.
  * 

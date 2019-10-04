@@ -10,9 +10,7 @@ import java.util.*;
  * https://leetcode.com/problems/minimum-window-substring/
  * Difficulty: Hard
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - String minWindow(String s, String t).
- * 
+ * Approach: Sliding Window
  * Runtime: 30 ms, faster than 16.02% of Java online submissions for Minimum Window Substring.
  * Memory Usage: 38.6 MB, less than 84.04% of Java online submissions for Minimum Window Substring.
  * 
