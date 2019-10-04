@@ -89,4 +89,16 @@ class StringTest {
 		assertEquals(0, new DecodeWays().numDecodings("01"));
 	}
 	
+	@Test
+	void testAddAndSearchWordDataStructureDesign() throws Exception{
+		AddAndSearchWordDataStructureDesign dict = new AddAndSearchWordDataStructureDesign();
+		dict.addWord("bad");
+		dict.addWord("dad");
+		dict.addWord("mad");
+		assertFalse(dict.search("pad"));
+		assertTrue(dict.search("bad"));
+		assertTrue(dict.search(".ad"));
+		assertTrue(dict.search("b.."));
+	}
+	
 }
