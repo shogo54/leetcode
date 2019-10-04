@@ -44,6 +44,7 @@ Accepted LeetCode solutions in java
 | 198 | [House Robber](/src/HouseRobber.java) | Easy |  | X |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | [Iteration](/src/linkedlist/ReverseLinkedList.java) / [Recursion](/src/linkedlist/ReverseLinkedList2.java) | O | 08/17/2019 |
 | 207 | [Course Schedule**](/src/CourseSchedule.java) | Medium |  | X |
+| 211 | [Add and Search Word - Data structure design*](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | Medium | [Trie](/src/string/AddAndSearchWordDataStructureDesign.java) | O | 10/03/2019 |
 | 217 | [Contains Duplicate***](https://leetcode.com/problems/contains-duplicate/) | Easy | [HashTable](/src/array/ContainsDuplicate.java) | O | 08/27/2019 |
 | 226 | [Invert Binary Tree***](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Easy | [Recursion](/src/binarytree/InvertBinaryTree.java) | O | 08/18/2019 |
 | 230 | [Kth Smallest Element in a BST***](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | [Recursion](/src/binarytree/KthSmallestElementInABST.java) | O | 08/27/2019 |
