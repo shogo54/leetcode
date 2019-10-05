@@ -14,8 +14,8 @@ import java.util.*;
  * Runtime: 24 ms, faster than 5.25% of Java online submissions for Number of Islands.
  * Memory Usage: 42.2 MB, less than 21.40% of Java online submissions for Number of Islands.
  * 
+ * @see MatrixTest#testNumberOfIslands()
  */
-
 public class NumberOfIslands {
 
 	private char[][] board;

@@ -12,8 +12,8 @@ package matrix;
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Set Matrix Zeroes.
  * Memory Usage: 41.8 MB, less than 97.14% of Java online submissions for Set Matrix Zeroes.
  * 
+ * @see MatrixTest#testSetMatrixZeroes()
  */
-
 public class SetMatrixZeroes {
 
 	public void setZeroes(int[][] matrix) {

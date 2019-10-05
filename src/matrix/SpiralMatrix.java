@@ -14,10 +14,9 @@ import java.util.*;
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Spiral Matrix.
  * Memory Usage: 34.5 MB, less than 100.00% of Java online submissions for Spiral Matrix.
  * 
+ * @see MatrixTest#testSpiralMatrix()
  */
-
 public class SpiralMatrix {
-
 
     List<Integer> list = new ArrayList<Integer>();
     int row;
