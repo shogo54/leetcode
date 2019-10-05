@@ -14,8 +14,8 @@ import linkedlist.LinkedListTest.ListNode;
  * Runtime: 2 ms, faster than 98.81% of Java online submissions for Merge k Sorted Lists.
  * Memory Usage: 40.9 MB, less than 46.45% of Java online submissions for Merge k Sorted Lists.
  * 
+ * @see LinkedListTest#testMergeKSortedLists()
  */
-
 public class MergeKSortedLists {
 
 	public ListNode mergeKLists(ListNode[] lists) {
@@ -34,20 +34,20 @@ public class MergeKSortedLists {
 		}
 		return lists[0];
 	}
-    
-    private ListNode mergeTwo(ListNode n1, ListNode n2){
-        if(n1 == null && n2 == null){
-            return null;
-        }
-        if(n1 == null || n2 == null){
-            return (n1 != null)? n1: n2;
-        }
-        
-        ListNode smaller = (n1.val < n2.val)? n1: n2;
-        ListNode bigger = (smaller.equals(n1))? n2: n1;
-        
-        smaller.next = mergeTwo(smaller.next, bigger);
-        return smaller;
-    }
-	
+
+	private ListNode mergeTwo(ListNode n1, ListNode n2) {
+		if (n1 == null && n2 == null) {
+			return null;
+		}
+		if (n1 == null || n2 == null) {
+			return (n1 != null) ? n1 : n2;
+		}
+
+		ListNode smaller = (n1.val < n2.val) ? n1 : n2;
+		ListNode bigger = (smaller.equals(n1)) ? n2 : n1;
+
+		smaller.next = mergeTwo(smaller.next, bigger);
+		return smaller;
+	}
+
 }

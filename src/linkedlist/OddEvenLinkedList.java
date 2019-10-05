@@ -14,28 +14,28 @@ import linkedlist.LinkedListTest.ListNode;
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Odd Even Linked List.
  * Memory Usage: 36.6 MB, less than 100.00% of Java online submissions for Odd Even Linked List.
  * 
+ * @see LinkedListTest#testOddEvenLinkedList()
  */
-
 public class OddEvenLinkedList {
 
 	public ListNode oddEvenList(ListNode head) {
-		if(head == null){
-		    return head;
+		if (head == null) {
+			return head;
 		}
 
 		ListNode odd = head;
 		ListNode even = head.next;
 		ListNode firstEven = even;
 
-		while(odd.next != null && odd.next.next != null){
-		    odd.next = odd.next.next;
-		    even.next = even.next.next;
-		    odd = odd.next;
-		    even = even.next;
+		while (odd.next != null && odd.next.next != null) {
+			odd.next = odd.next.next;
+			even.next = even.next.next;
+			odd = odd.next;
+			even = even.next;
 		}
 
-        odd.next = firstEven;
+		odd.next = firstEven;
 		return head;
 	}
-	
+
 }

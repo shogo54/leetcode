@@ -15,8 +15,8 @@ import linkedlist.LinkedListTest.ListNode;
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Middle of the Linked List.
  * Memory Usage: 35.4 MB, less than 88.01% of Java online submissions for Middle of the Linked List.
  * 
+ * @see LinkedListTest#testMiddleOfTheLinkedList()
  */
-
 public class MiddleOfTheLinkedList {
 
 	public ListNode middleNode(ListNode head) {
@@ -34,5 +34,5 @@ public class MiddleOfTheLinkedList {
 		}
 		return curr;
 	}
-	
+
 }
