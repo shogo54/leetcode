@@ -14,7 +14,7 @@ Accepted LeetCode solutions in java
 | 21 | [Merge Two Sorted Lists**](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | [Recursion](/src/linkedlist/MergeTwoSortedLists.java) | O | 08/20/2019 |
 | 23 | [Merge k Sorted Lists***](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard| [D&C](/src/linkedlist/MergeKSortedLists.java) | O | 08/27/2019 |
 | 39 | [Combination Sum*](https://leetcode.com/problems/combination-sum/) | Medium | [DFS](/src/array/CombinationSum.java) | O | 08/29/2019 |
-| 48 | [Rotate Image***](https://leetcode.com/problems/rotate-image/) | Medium | [Layer by Layer](/src/matrix/RotateImage.java) | [O](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L31) | 09/29/2019 |
+| 48 | [Rotate Image***](https://leetcode.com/problems/rotate-image/) | Medium | [Layer by Layer](/src/matrix/RotateImage.java) | [O](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L31-L44) | 09/29/2019 |
 | 54 | [Spiral Matrix**](https://leetcode.com/problems/spiral-matrix/) | Medium | [Recursion](/src/matrix/SpiralMatrix.java) | O | 08/22/2019 |
 | 55 | [Jump Game**^](https://leetcode.com/problems/jump-game/) | Medium | [Greedy](/src/array/JumpGame.java) | O | 08/23/2019 |
 | 56 | [Merge Intervals**](/src/MergeIntervals.java) | Medium |  | X |
