@@ -20,7 +20,7 @@ Accepted LeetCode solutions in java
 | 56 | [Merge Intervals**](/src/MergeIntervals.java) | Medium |  | X |
 | 62 | [Unique Paths**](/src/UniquePaths.java) | Medium |  | X |
 | 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy |  | X |
-| 73 | [Set Matrix Zeroes***](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | [O(M+N) space](/src/matrix/SetMatrixZeroes.java) | [O](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L59-L72) | 08/13/2019 |
+| 73 | [Set Matrix Zeroes***](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | [O(M+N) space](/src/matrix/SetMatrixZeroes.java) | [Yes](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L59-L72) | 08/13/2019 |
 | 76 | [MinimumWindowSubstring*](https://leetcode.com/problems/minimum-window-substring/) | Hard | [Sliding Window](/src/string/MinimumWindowSubstring.java) | O | 09/24/2019 |
 | 79 | [Word Search*](https://leetcode.com/problems/word-search/) | Medium | [DFS](/src/string/WordSearch.java) | X | 08/22/2019 |
 | 91 | [Decode Ways*](https://leetcode.com/problems/decode-ways/) | Medium | [D&C](/src/string/DecodeWays.java) | O | 09/28/2019 |
