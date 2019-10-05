@@ -1,3 +1,5 @@
+package string;
+
 /**
  * @author Shogo Akiyama 
  * Solved on 04/20/2019
@@ -6,16 +8,14 @@
  * https://leetcode.com/problems/robot-return-to-origin/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * - boolean judgeCircle(String moves).
- * 
+ * Approach: Iteration
  * Runtime: 15 ms, faster than 13.65% of Java online submissions for Robot Return to Origin.
  * Memory Usage: 39.6 MB, less than 19.18% of Java online submissions for Robot Return to Origin.
  * 
  */
 
 public class RobotReturnToOrigin {
-	
+
 	public boolean judgeCircle(String moves) {
 		int[] store = new int[4];
 
@@ -36,5 +36,5 @@ public class RobotReturnToOrigin {
 		else
 			return false;
 	}
-	
+
 }

@@ -8,7 +8,7 @@ Accepted LeetCode solutions in java
 | 2 | [Add Two Numbers***](https://leetcode.com/problems/add-two-numbers/) | Medium | [Recursion](/src/linkedlist/AddTwoNumbers.java) | O | 08/18/2019 |
 | 3 | [Longest Substring Without Repeating Characters*](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Iteration](/src/string/LongestSubstringWithoutRepeatingCharacters.java) | O | 08/19/2019 |
 | 9 | [Palindrome Number*](https://leetcode.com/problems/palindrome-number/) | Easy | [Recursion](/src/PalindromeNumber.java) | X | 08/18/2019 |
-| 13 | [Roman to Integer*](/src/RomanToInteger.java) | Easy |  | X |
+| 13 | [Roman to Integer*](https://leetcode.com/problems/roman-to-integer/) | Easy | [Recursion](/src/string/RomanToInteger.java) | O | 06/17/2019 |
 | 19 | [Remove Nth Node From End of List**^](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | [Recursion](/src/linkedlist/RemoveNthNodeFromEndOfList.java) | O | 08/20/2019 |
 | 20 | [Valid Parentheses*](https://leetcode.com/problems/valid-parentheses/) | Easy | [Recursion](/src/string/ValidParentheses.java) | O | 06/13/2019 |
 | 21 | [Merge Two Sorted Lists**](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | [Recursion](/src/linkedlist/MergeTwoSortedLists.java) | O | 08/20/2019 |
@@ -20,7 +20,7 @@ Accepted LeetCode solutions in java
 | 56 | [Merge Intervals**](/src/MergeIntervals.java) | Medium |  | X |
 | 62 | [Unique Paths**](/src/UniquePaths.java) | Medium |  | X |
 | 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy |  | X |
-| 73 | [Set Matrix Zeroes***](/src/SetMatrixZeroes.java) | Medium |  | X |
+| 73 | [Set Matrix Zeroes***](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | [O(M+N) space]((/src/matrix/SetMatrixZeroes.java)) | O | 08/13/2019 |
 | 76 | [MinimumWindowSubstring*](https://leetcode.com/problems/minimum-window-substring/) | Hard | [Sliding Window](/src/string/MinimumWindowSubstring.java) | O | 09/24/2019 |
 | 79 | [Word Search*](https://leetcode.com/problems/word-search/) | Medium | [DFS](/src/string/WordSearch.java) | X | 08/22/2019 |
 | 91 | [Decode Ways*](https://leetcode.com/problems/decode-ways/) | Medium | [D&C](/src/string/DecodeWays.java) | O | 09/28/2019 |
@@ -71,7 +71,7 @@ Accepted LeetCode solutions in java
 | 547 | [Friend Circles*](/src/FriendCircles.java) | Medium |  | X |
 | 572 | [Subtree of Another Tree***](https://leetcode.com/problems/subtree-of-another-tree/) | Easy | [Recursion](/src/binarytree/SubtreeOfAnotherTree.java) | O | 08/29/2019 |
 | 654 | [Maximum Binary Tree*](https://leetcode.com/problems/maximum-binary-tree/) | Medium | [Recursion](/src/binarytree/MaximumBinaryTree.java) | O | 09/30/2019 |
-| 657 | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) | Easy | [Iteration](/src/RobotReturnToOrigin.java) / [Recursion](/src/RobotReturnToOrigin2.java) | X | 08/18/2019 |
+| 657 | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) | Easy | [Iteration](/src/string/RobotReturnToOrigin.java) / [Recursion](/src/string/RobotReturnToOrigin2.java) | O | 08/18/2019 |
 | 700 | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | Easy | [Recursion](/src/binarytree/SearchInABinarySearchTree.java) | O | 06/10/2019 |
 | 876 | [Middle of the Linked List***](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | [Iteration](/src/linkedlist/MiddleOfTheLinkedList.java) | O | 04/14/2019 |
 | 905 | [Sort Array By Parity***](/src/SortArrayByParity.java) | Easy |  | O |

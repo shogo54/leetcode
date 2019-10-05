@@ -101,4 +101,24 @@ class StringTest {
 		assertTrue(dict.search("b.."));
 	}
 	
+	@Test
+	void testRomanToInteger() throws Exception{
+		assertEquals(3, new RomanToInteger().romanToInt("III"));
+		assertEquals(4, new RomanToInteger().romanToInt("IV"));
+		assertEquals(9, new RomanToInteger().romanToInt("IX"));
+		assertEquals(58, new RomanToInteger().romanToInt("LVIII"));
+		assertEquals(1994, new RomanToInteger().romanToInt("MCMXCIV"));
+	}
+	
+	@Test
+	void testRobotReturnToOrigin() throws Exception{
+		//Test for RobotReturnToOrigin
+		assertTrue(new RobotReturnToOrigin().judgeCircle("UD"));
+		assertFalse(new RobotReturnToOrigin().judgeCircle("LL"));
+		
+		//Test for RobotReturnToOrigin2
+		assertTrue(new RobotReturnToOrigin2().judgeCircle("UD"));
+		assertFalse(new RobotReturnToOrigin2().judgeCircle("LL"));
+	}
+	
 }

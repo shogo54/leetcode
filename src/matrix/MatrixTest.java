@@ -67,5 +67,16 @@ class MatrixTest {
 		grid = new char[][] {{'1','1','0','0','0'},{'1','1','0','0','0'},{'0','0','1','0','0'},{'0','0','0','1','1'}};
 		assertEquals(3, new NumberOfIslands().numIslands(grid));
 	}
+	
+	@Test
+	void testSetMatrixZeroes() throws Exception{
+		int[][] matrix = setupMatrix("[[1,1,1],[1,0,1],[1,1,1]]");
+		new SetMatrixZeroes().setZeroes(matrix);;
+		assertArrayEquals(setupMatrix("[[1,0,1],[0,0,0],[1,0,1]]"), matrix);
+		
+		matrix = setupMatrix("[[0,1,2,0],[3,4,5,2],[1,3,1,5]]");
+		new SetMatrixZeroes().setZeroes(matrix);;
+		assertArrayEquals(setupMatrix("[[0,0,0,0],[0,4,5,0],[0,3,1,0]]"), matrix);
+	}
 
 }

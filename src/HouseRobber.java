@@ -15,7 +15,7 @@
  */
 
 public class HouseRobber {
-	
+
 	public int rob(int[] nums) {
 		if (nums.length == 0) {
 			return 0;
@@ -32,5 +32,5 @@ public class HouseRobber {
 		}
 		return max[nums.length - 1];
 	}
-	
+
 }

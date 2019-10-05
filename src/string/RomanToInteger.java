@@ -1,3 +1,4 @@
+package string;
 /**
  * @author Shogo Akiyama 
  * Solved on 06/17/2019
@@ -6,9 +7,7 @@
  * https://leetcode.com/problems/roman-to-integer/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * - int romanToInt(String s).
- * 
+ * Approach: Recursion
  * Runtime: 5 ms, faster than 66.82% of Java online submissions for Roman to Integer.
  * Memory Usage: 43.1 MB, less than 5.01% of Java online submissions for Roman to Integer.
  * 
