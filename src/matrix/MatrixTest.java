@@ -8,26 +8,6 @@ import org.junit.jupiter.api.Test;
 
 class MatrixTest {
 
-	int[][] setupMatrix() {
-		return setupMatrix("[[1,2,3],[4,5,6],[7,8,9]]");
-	}
-
-	int[][] setupMatrix(String str) {
-		String[] each = str.split("],");
-		int[][] matrix = new int[each.length][];
-
-		for (int i = 0; i < each.length; i++) {
-			String[] nums = each[i].replaceAll("\\[|\\]", "").split(",");
-			matrix[i] = new int[nums.length];
-
-			for (int j = 0; j < nums.length; j++) {
-				matrix[i][j] = Integer.valueOf(nums[j]);
-			}
-		}
-
-		return matrix;
-	}
-
 	/**
 	 * Test cases for 48. Rotate Image
 	 * @see RotateImage
@@ -98,6 +78,26 @@ class MatrixTest {
 			expected.add(Arrays.asList(yx[0], yx[1]));
 		}
 		assertEquals(expected, new PacificAtlanticWaterFlow().pacificAtlantic(matrix));
+	}
+	
+	int[][] setupMatrix() {
+		return setupMatrix("[[1,2,3],[4,5,6],[7,8,9]]");
+	}
+
+	int[][] setupMatrix(String str) {
+		String[] each = str.split("],");
+		int[][] matrix = new int[each.length][];
+
+		for (int i = 0; i < each.length; i++) {
+			String[] nums = each[i].replaceAll("\\[|\\]", "").split(",");
+			matrix[i] = new int[nums.length];
+
+			for (int j = 0; j < nums.length; j++) {
+				matrix[i][j] = Integer.valueOf(nums[j]);
+			}
+		}
+
+		return matrix;
 	}
 
 }
