@@ -58,5 +58,14 @@ class MatrixTest {
 		}
 		assertEquals(expected, new PacificAtlanticWaterFlow().pacificAtlantic(matrix));
 	}
+	
+	@Test
+	void testNumberOfIslands() throws Exception{
+		char[][] grid = new char[][] {{'1','1','1'},{'0','1','0'},{'1','1','1'}};
+		assertEquals(1, new NumberOfIslands().numIslands(grid));
+		
+		grid = new char[][] {{'1','1','0','0','0'},{'1','1','0','0','0'},{'0','0','1','0','0'},{'0','0','0','1','1'}};
+		assertEquals(3, new NumberOfIslands().numIslands(grid));
+	}
 
 }

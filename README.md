@@ -42,6 +42,7 @@ Accepted LeetCode solutions in java
 | 153 | [Find Minimum in Rotated Sorted Array***](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | [Recursion](/src/array/FindMinimumInRotatedSortedArray.java) | O | 08/28/2019 |
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy |  | X |
 | 198 | [House Robber](/src/HouseRobber.java) | Easy |  | X |
+| 200 | [Number of Islands*](https://leetcode.com/problems/number-of-islands/) | Medium | [DFS](/src/matrix/NumberOfIslands.java) | O | 10/04/2019 |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | [Iteration](/src/linkedlist/ReverseLinkedList.java) / [Recursion](/src/linkedlist/ReverseLinkedList2.java) | O | 08/17/2019 |
 | 207 | [Course Schedule**](/src/CourseSchedule.java) | Medium |  | X |
 | 211 | [Add and Search Word - Data structure design*](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | Medium | [Trie](/src/string/AddAndSearchWordDataStructureDesign.java) | O | 10/03/2019 |
