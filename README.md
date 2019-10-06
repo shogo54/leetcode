@@ -6,12 +6,12 @@ Accepted LeetCode solutions in java
 | :---: | --- | --- | --- | :---: | :---: |
 | 1 | [Two Sum*](https://leetcode.com/problems/two-sum/) | Easy | [Iteration](/src/array/TwoSum.java) | O | 08/13/2019 |
 | 2 | [Add Two Numbers***](https://leetcode.com/problems/add-two-numbers/) | Medium | [Recursion](/src/linkedlist/AddTwoNumbers.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L8-L17) | 08/18/2019 |
-| 3 | [Longest Substring Without Repeating Characters*](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Iteration](/src/string/LongestSubstringWithoutRepeatingCharacters.java) | O | 08/19/2019 |
+| 3 | [Longest Substring Without Repeating Characters*](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Iteration](/src/string/LongestSubstringWithoutRepeatingCharacters.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L8-L19) | 08/19/2019 |
 | 5 | [Longest Palindromic Substring*](https://leetcode.com/problems/longest-palindromic-substring/) | Medium | [Expand Around Center](/src/string/LongestPalindromicSubstring.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/b8b3ca5d91c55659a821bc7196d2209918c9ed20/src/string/StringTest.java#L21-L29) | 10/05/2019 |
 | 9 | [Palindrome Number*](https://leetcode.com/problems/palindrome-number/) | Easy | [Recursion](/src/PalindromeNumber.java) | - | 08/18/2019 |
-| 13 | [Roman to Integer*](https://leetcode.com/problems/roman-to-integer/) | Easy | [Recursion](/src/string/RomanToInteger.java) | O | 06/17/2019 |
+| 13 | [Roman to Integer*](https://leetcode.com/problems/roman-to-integer/) | Easy | [Recursion](/src/string/RomanToInteger.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L31-L42) | 06/17/2019 |
 | 19 | [Remove Nth Node From End of List**^](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | [Recursion](/src/linkedlist/RemoveNthNodeFromEndOfList.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L19-L36) | 08/20/2019 |
-| 20 | [Valid Parentheses*](https://leetcode.com/problems/valid-parentheses/) | Easy | [Recursion](/src/string/ValidParentheses.java) | O | 06/13/2019 |
+| 20 | [Valid Parentheses*](https://leetcode.com/problems/valid-parentheses/) | Easy | [Recursion](/src/string/ValidParentheses.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L44-L54) | 06/13/2019 |
 | 21 | [Merge Two Sorted Lists**](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | [Recursion](/src/linkedlist/MergeTwoSortedLists.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L38-L51) | 08/20/2019 |
 | 23 | [Merge k Sorted Lists***](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard| [D&C](/src/linkedlist/MergeKSortedLists.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L53-L68) | 08/27/2019 |
 | 39 | [Combination Sum*](https://leetcode.com/problems/combination-sum/) | Medium | [DFS](/src/array/CombinationSum.java) | O | 08/29/2019 |
@@ -22,9 +22,9 @@ Accepted LeetCode solutions in java
 | 62 | [Unique Paths**](/src/UniquePaths.java) | Medium |  | - |
 | 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy |  | - |
 | 73 | [Set Matrix Zeroes***](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | [O(M+N) space](/src/matrix/SetMatrixZeroes.java) | [matrix](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L59-L72) | 08/13/2019 |
-| 76 | [MinimumWindowSubstring*](https://leetcode.com/problems/minimum-window-substring/) | Hard | [Sliding Window](/src/string/MinimumWindowSubstring.java) | O | 09/24/2019 |
+| 76 | [MinimumWindowSubstring*](https://leetcode.com/problems/minimum-window-substring/) | Hard | [Sliding Window](/src/string/MinimumWindowSubstring.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L56-L65) | 09/24/2019 |
 | 79 | [Word Search*](https://leetcode.com/problems/word-search/) | Medium | [DFS](/src/matrix/WordSearch.java) | [matrix](https://github.com/ShogoAkiyama54/LeetCode/blob/b8b3ca5d91c55659a821bc7196d2209918c9ed20/src/matrix/MatrixTest.java#L54-L64) | 08/22/2019 |
-| 91 | [Decode Ways*](https://leetcode.com/problems/decode-ways/) | Medium | [D&C](/src/string/DecodeWays.java) | O | 09/28/2019 |
+| 91 | [Decode Ways*](https://leetcode.com/problems/decode-ways/) | Medium | [D&C](/src/string/DecodeWays.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L67-L77) | 09/28/2019 |
 | 92 | [Reverse Linked List II**](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | [Recursion](/src/linkedlist/ReverseLinkedListII.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L70-L78) | 08/18/2019 |
 | 94 | [Binary Tree Inorder Traversal***](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | [Recursion](/src/binarytree/BinaryTreeInorderTraversal.java) | O | 08/02/2019 |
 | 98 | [Validate Binary Search Tree*](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | [Inorder](/src/binarytree/ValidateBinarySearchTree.java) | O | 08/18/2019 |
@@ -32,7 +32,7 @@ Accepted LeetCode solutions in java
 | 102 | [Binary Tree Level Order Traversal***](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | [Recursion](/src/binarytree/BinaryTreeLevelOrderTraversal.java) | O | 08/18/2019 |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | [Recursion](/src/binarytree/MaximumDepthOfBinaryTree.java) | O | 06/19/2019 |
 | 108 | [Convert Sorted Array to Binary Search Tree^](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | Easy | [Recursion](/src/binarytree/ConvertSortedArrayToBinarySearchTree.java) | O | 06/17/2019 |
-| 125 | [Valid Palindrome*](https://leetcode.com/problems/valid-palindrome/) | Easy | [2 Pointers](/src/string/ValidPalindrome.java) | O | 08/30/2019 |
+| 125 | [Valid Palindrome*](https://leetcode.com/problems/valid-palindrome/) | Easy | [2 Pointers](/src/string/ValidPalindrome.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L79-L92) | 08/30/2019 |
 | 128 | [Longest Consecutive Sequence*](https://leetcode.com/problems/longest-consecutive-sequence/) | Hard | [HashTable with Class](/src/array/LongestConsecutiveSequence.java) | O | 09/23/2019 |
 | 133 | [Clone Graph](/src/CloneGraph.java) | Medium |  | - |
 | 136 | [Single Number*](/src/SingleNumber.java) | Easy |  | - |
@@ -46,12 +46,12 @@ Accepted LeetCode solutions in java
 | 200 | [Number of Islands*](https://leetcode.com/problems/number-of-islands/) | Medium | [DFS](/src/matrix/NumberOfIslands.java) | [matrix](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L74-L86) | 10/04/2019 |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | [Iteration](/src/linkedlist/ReverseLinkedList.java) / [Recursion](/src/linkedlist/ReverseLinkedList2.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L119-L133) | 08/17/2019 |
 | 207 | [Course Schedule**](/src/CourseSchedule.java) | Medium |  | - |
-| 211 | [Add and Search Word - Data structure design*](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | Medium | [Trie](/src/string/AddAndSearchWordDataStructureDesign.java) | O | 10/03/2019 |
+| 211 | [Add and Search Word - Data structure design*](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | Medium | [Trie](/src/string/AddAndSearchWordDataStructureDesign.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L94-L108) | 10/03/2019 |
 | 217 | [Contains Duplicate***](https://leetcode.com/problems/contains-duplicate/) | Easy | [HashTable](/src/array/ContainsDuplicate.java) | O | 08/27/2019 |
 | 226 | [Invert Binary Tree***](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Easy | [Recursion](/src/binarytree/InvertBinaryTree.java) | O | 08/18/2019 |
 | 230 | [Kth Smallest Element in a BST***](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | [Recursion](/src/binarytree/KthSmallestElementInABST.java) | O | 08/27/2019 |
 | 235 | [Lowest Common Ancestor of a Binary Search Tree***](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Easy | [Recursion](/src/binarytree/LowestCommonAncestorOfABinarySearchTree.java) | O | 08/28/2019 |
-| 242 | [Valid Anagram*](https://leetcode.com/problems/valid-anagram/) | Easy | [Sort](/src/string/ValidAnagram.java) | O | 08/02/2019 |
+| 242 | [Valid Anagram*](https://leetcode.com/problems/valid-anagram/) | Easy | [Sort](/src/string/ValidAnagram.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L110-L119) | 08/02/2019 |
 | 260 | [Single Number III*](/src/SingleNumberIII.java) | Medium |  | - |
 | 268 | [Missing Number***](https://leetcode.com/problems/missing-number/) | Easy | [Formula](/src/array/MissingNumber.java) | O | 08/29/2019 |
 | 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy |  | - |
@@ -60,7 +60,7 @@ Accepted LeetCode solutions in java
 | 300 | [Longest Increasing Subsequence*](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | [D&P](/src/array/LongestIncreasingSubsequence.java) | O | 09/26/2019 |
 | 322 | [Coin Change](/src/CoinChange.java) | Medium |  | - |
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | Medium | [Iteration](/src/linkedlist/OddEvenLinkedList.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L135-L143) | 08/02/2019 |
-| 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | [Iteration](/src/string/ReverseString.java) | O | 06/11/2018 |
+| 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | [Iteration](/src/string/ReverseString.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L121-L135) | 06/11/2018 |
 | 347 | [Top K Frequent Elements***](https://leetcode.com/problems/top-k-frequent-elements/) | Medium | [Map](/src/array/TopKFrequentElements.java) | O | 08/27/2019 |
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | Easy | [Iteration](/src/array/IntersectionOfTwoArrays.java) | O | 08/19/2019 |
 | 412 | [Fizz Buzz*](/src/FizzBuzz.java) | Easy |  | - |
@@ -72,16 +72,16 @@ Accepted LeetCode solutions in java
 | 547 | [Friend Circles*](/src/FriendCircles.java) | Medium |  | - |
 | 572 | [Subtree of Another Tree***](https://leetcode.com/problems/subtree-of-another-tree/) | Easy | [Recursion](/src/binarytree/SubtreeOfAnotherTree.java) | O | 08/29/2019 |
 | 654 | [Maximum Binary Tree*](https://leetcode.com/problems/maximum-binary-tree/) | Medium | [Recursion](/src/binarytree/MaximumBinaryTree.java) | O | 09/30/2019 |
-| 657 | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) | Easy | [Iteration](/src/string/RobotReturnToOrigin.java) / [Recursion](/src/string/RobotReturnToOrigin2.java) | O | 08/18/2019 |
+| 657 | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) | Easy | [Iteration](/src/string/RobotReturnToOrigin.java) / [Recursion](/src/string/RobotReturnToOrigin2.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L137-L151) | 08/18/2019 |
 | 700 | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | Easy | [Recursion](/src/binarytree/SearchInABinarySearchTree.java) | O | 06/10/2019 |
 | 876 | [Middle of the Linked List***](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | [Iteration](/src/linkedlist/MiddleOfTheLinkedList.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L156-L166) | 04/14/2019 |
 | 905 | [Sort Array By Parity***](/src/SortArrayByParity.java) | Easy |  | O |
 | 912 | [Sort An Array*](/src/SortAnArray.java) | Medium |  | - |
 | 980 | [Unique Paths III*](/src/UniquePathsIII.java) | Hard |  | - |
-| 1003 | [Check If Word Is Valid After Substitutions*](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/) | Medium | [Recursion](/src/string/CheckIfWordIsValidAfterSubstitutions.java) | O | 06/13/2019 |
-| 1047 | [Remove All Adjacent Duplicates In String*](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | Easy | [Recursion](/src/string/RemoveAllAdjacentDuplicatesInString.java) | O | 06/12/2019 |
+| 1003 | [Check If Word Is Valid After Substitutions*](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/) | Medium | [Recursion](/src/string/CheckIfWordIsValidAfterSubstitutions.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L153-L164) | 06/13/2019 |
+| 1047 | [Remove All Adjacent Duplicates In String*](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | Easy | [Recursion](/src/string/RemoveAllAdjacentDuplicatesInString.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L166-L174) | 06/12/2019 |
 | 1053 | [Previous Permutation With One Swap*](/src/PreviousPermutationWithOneSwap.java) | Medium |  | - |
-| 1078 | [Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/) | Easy | [Iteration](/src/string/OccurrencesAfterBigram.java) | O | 06/15/2019 |
+| 1078 | [Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/) | Easy | [Iteration](/src/string/OccurrencesAfterBigram.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L176-L185) | 06/15/2019 |
 
 Note for myself:
 
