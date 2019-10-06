@@ -4,7 +4,17 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class StringTest {
-
+	
+	/**
+	 * Test cases for 5. Longest Palindromic Substring
+	 * @see LongestPalindromicSubstring
+	 */
+	@Test
+	void testLongestPalindromicSubstring() throws Exception{
+		assertEquals("bab", new LongestPalindromicSubstring().longestPalindrome("babad"));
+		assertEquals("bb", new LongestPalindromicSubstring().longestPalindrome("cbbd"));
+	}
+	
 	@Test
 	void testCheckIfWordIsValidAfterSubstitutions() throws Exception{
 		CheckIfWordIsValidAfterSubstitutions checker = new CheckIfWordIsValidAfterSubstitutions();
@@ -120,5 +130,5 @@ class StringTest {
 		assertTrue(new RobotReturnToOrigin2().judgeCircle("UD"));
 		assertFalse(new RobotReturnToOrigin2().judgeCircle("LL"));
 	}
-	
+
 }
