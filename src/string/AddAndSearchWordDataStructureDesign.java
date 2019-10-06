@@ -14,8 +14,8 @@ import java.util.*;
  * Runtime: 94 ms, faster than 26.33% of Java online submissions for Add and Search Word - Data structure design.
  * Memory Usage: 59.1 MB, less than 60.61% of Java online submissions for Add and Search Word - Data structure design.
  * 
+ * @see StringTest#testAddAndSearchWordDataStructureDesign()
  */
-
 public class AddAndSearchWordDataStructureDesign {
 
 	private Trie root = new Trie();

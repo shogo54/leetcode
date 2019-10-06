@@ -14,8 +14,8 @@ import java.util.*;
  * Runtime: 1 ms, faster than 95.45% of Java online submissions for Occurrences After Bigram.
  * Memory Usage: 34.6 MB, less than 100.00% of Java online submissions for Occurrences After Bigram.
  * 
+ * @see StringTest#testOccurrencesAfterBigram()
  */
-
 public class OccurrencesAfterBigram {
 
 	public String[] findOcurrences(String text, String first, String second) {

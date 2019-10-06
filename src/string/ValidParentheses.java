@@ -12,22 +12,21 @@ package string;
  * Runtime: 58 ms, faster than 7.28% of Java online submissions for Valid Parentheses.
  * Memory Usage: 36.3 MB, less than 42.56% of Java online submissions for Valid Parentheses.
  * 
+ * @see StringTest#testValidParentheses()
  */
-
 public class ValidParentheses {
-	
+
 	public boolean isValid(String s) {
-        if(s.equals("")){
-            return true;
-        }
-        for(int i=0; i<s.length()-1; i++){
-            if(s.charAt(i) == '(' && s.charAt(i+1) == ')'
-              || s.charAt(i) == '{' && s.charAt(i+1) == '}'
-              || s.charAt(i) == '[' && s.charAt(i+1) == ']'){
-                return isValid(s.substring(0, i) + s.substring(i+2, s.length()));
-            }
-        }
-        return false;
-    }
-	
+		if (s.equals("")) {
+			return true;
+		}
+		for (int i = 0; i < s.length() - 1; i++) {
+			if (s.charAt(i) == '(' && s.charAt(i + 1) == ')' || s.charAt(i) == '{' && s.charAt(i + 1) == '}'
+					|| s.charAt(i) == '[' && s.charAt(i + 1) == ']') {
+				return isValid(s.substring(0, i) + s.substring(i + 2, s.length()));
+			}
+		}
+		return false;
+	}
+
 }

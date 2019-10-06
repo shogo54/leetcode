@@ -12,8 +12,8 @@ package string;
  * Runtime: 142 ms, faster than 14.33% of Java online submissions for Check If Word Is Valid After Substitutions.
  * Memory Usage: 44.3 MB, less than 6.29% of Java online submissions for Check If Word Is Valid After Substitutions.
  * 
+ * @see StringTest#testCheckIfWordIsValidAfterSubstitutions()
  */
-
 public class CheckIfWordIsValidAfterSubstitutions {
 
 	public boolean isValid(String S) {

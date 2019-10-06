@@ -23,7 +23,7 @@ Accepted LeetCode solutions in java
 | 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy |  | - |
 | 73 | [Set Matrix Zeroes***](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | [O(M+N) space](/src/matrix/SetMatrixZeroes.java) | [matrix](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L59-L72) | 08/13/2019 |
 | 76 | [MinimumWindowSubstring*](https://leetcode.com/problems/minimum-window-substring/) | Hard | [Sliding Window](/src/string/MinimumWindowSubstring.java) | O | 09/24/2019 |
-| 79 | [Word Search*](https://leetcode.com/problems/word-search/) | Medium | [DFS](/src/string/WordSearch.java) | - | 08/22/2019 |
+| 79 | [Word Search*](https://leetcode.com/problems/word-search/) | Medium | [DFS](/src/matrix/WordSearch.java) | [matrix] | 08/22/2019 |
 | 91 | [Decode Ways*](https://leetcode.com/problems/decode-ways/) | Medium | [D&C](/src/string/DecodeWays.java) | O | 09/28/2019 |
 | 92 | [Reverse Linked List II**](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | [Recursion](/src/linkedlist/ReverseLinkedListII.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L70-L78) | 08/18/2019 |
 | 94 | [Binary Tree Inorder Traversal***](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | [Recursion](/src/binarytree/BinaryTreeInorderTraversal.java) | O | 08/02/2019 |

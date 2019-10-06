@@ -12,8 +12,8 @@ package string;
  * Runtime: 3 ms, faster than 99.15% of Java online submissions for Robot Return to Origin.
  * Memory Usage: 37.5 MB, less than 100.00% of Java online submissions for Robot Return to Origin.
  * 
+ * @see StringTest#testRobotReturnToOrigin()
  */
-
 public class RobotReturnToOrigin2 {
 
 	int x = 0;

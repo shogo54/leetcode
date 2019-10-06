@@ -1,4 +1,4 @@
-package string;
+package matrix;
 
 import java.util.*;
 
@@ -14,8 +14,8 @@ import java.util.*;
  * Runtime: 33 ms, faster than 12.21% of Java online submissions for Word Search.
  * Memory Usage: 40.5 MB, less than 37.76% of Java online submissions for Word Search.
  * 
+ * @see MatrixTest#testWordSearch()
  */
-
 public class WordSearch {
 
 	Map<Character, List<Integer>> map = new HashMap<Character, List<Integer>>();

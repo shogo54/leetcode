@@ -14,8 +14,8 @@ import java.util.*;
  * Runtime: 6 ms, faster than 44.21% of Java online submissions for Valid Anagram.
  * Memory Usage: 37.3 MB, less than 95.61% of Java online submissions for Valid Anagram.
  * 
+ * @see StringTest#testValidAnagram()
  */
-
 public class ValidAnagram {
 
 	public boolean isAnagram(String s, String t) {

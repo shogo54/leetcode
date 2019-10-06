@@ -52,16 +52,27 @@ class MatrixTest {
 	}
 
 	/**
+	 * Test cases for 79. Word Search
+	 * @see WordSearch
+	 */
+	@Test
+	void testWordSearch() throws Exception{
+		char[][] grid = setupCharMatrix(new String[] {"ABCE", "SFCS", "ADEE"});
+		assertTrue(new WordSearch().exist(grid, "ABCCED"));
+		assertTrue(new WordSearch().exist(grid, "SEE"));
+		assertFalse(new WordSearch().exist(grid, "ABCB"));
+	}
+	
+	/**
 	 * Test cases for 200. Number of Islands
 	 * @see NumberOfIslands
 	 */
 	@Test
 	void testNumberOfIslands() throws Exception {
-		char[][] grid = new char[][] { { '1', '1', '1' }, { '0', '1', '0' }, { '1', '1', '1' } };
+		char[][] grid = setupCharMatrix(new String[] {"111", "010", "111"});
 		assertEquals(1, new NumberOfIslands().numIslands(grid));
 
-		grid = new char[][] { { '1', '1', '0', '0', '0' }, { '1', '1', '0', '0', '0' }, { '0', '0', '1', '0', '0' },
-				{ '0', '0', '0', '1', '1' } };
+		grid = setupCharMatrix(new String[] {"11000", "11000", "00100", "00011"});
 		assertEquals(3, new NumberOfIslands().numIslands(grid));
 	}
 
@@ -98,6 +109,14 @@ class MatrixTest {
 		}
 
 		return matrix;
+	}
+	
+	char[][] setupCharMatrix(String[] strs){
+		char[][] grid = new char[strs.length][];
+		for(int i=0; i<strs.length; i++) {
+			grid[i] = strs[i].toCharArray();
+		}
+		return grid;
 	}
 
 }

@@ -12,8 +12,8 @@ package string;
  * Runtime: 166 ms, faster than 17.36% of Java online submissions for Remove All Adjacent Duplicates In String.
  * Memory Usage: 45.5 MB, less than 100.00% of Java online submissions for Remove All Adjacent Duplicates In String.
  * 
+ * @see StringTest#testRemoveAllAdjacentDuplicatesInString()
  */
-
 public class RemoveAllAdjacentDuplicatesInString {
 
 	public String removeDuplicates(String S) {

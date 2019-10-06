@@ -12,8 +12,8 @@ package string;
  * Runtime: 2 ms, faster than 55.00% of Java online submissions for Decode Ways.
  * Memory Usage: 36.1 MB, less than 71.70% of Java online submissions for Decode Ways.
  * 
+ * @see StringTest#testDecodeWays()
  */
-
 public class DecodeWays {
 
 	public int numDecodings(String s) {
@@ -35,7 +35,7 @@ public class DecodeWays {
 		}
 
 		int mid = (e + s) / 2;
-		
+
 		int count = dc(nums, s, mid);
 		count *= dc(nums, mid + 1, e);
 

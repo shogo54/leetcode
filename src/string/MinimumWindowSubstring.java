@@ -14,8 +14,8 @@ import java.util.*;
  * Runtime: 30 ms, faster than 16.02% of Java online submissions for Minimum Window Substring.
  * Memory Usage: 38.6 MB, less than 84.04% of Java online submissions for Minimum Window Substring.
  * 
+ * @see StringTest#testMinimumWindowSubstring()
  */
-
 public class MinimumWindowSubstring {
 
 	public String minWindow(String s, String t) {
