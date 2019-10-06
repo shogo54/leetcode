@@ -7,7 +7,7 @@ Accepted LeetCode solutions in java
 | 1 | [Two Sum*](https://leetcode.com/problems/two-sum/) | Easy | [Iteration](/src/array/TwoSum.java) | O | 08/13/2019 |
 | 2 | [Add Two Numbers***](https://leetcode.com/problems/add-two-numbers/) | Medium | [Recursion](/src/linkedlist/AddTwoNumbers.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L8-L17) | 08/18/2019 |
 | 3 | [Longest Substring Without Repeating Characters*](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Iteration](/src/string/LongestSubstringWithoutRepeatingCharacters.java) | O | 08/19/2019 |
-| 5 | [Longest Palindromic Substring*](https://leetcode.com/problems/longest-palindromic-substring/) | Medium | [Expand Around Center](/src/string/LongestPalindromicSubstring.java) | [string] | 10/05/2019 |
+| 5 | [Longest Palindromic Substring*](https://leetcode.com/problems/longest-palindromic-substring/) | Medium | [Expand Around Center](/src/string/LongestPalindromicSubstring.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/b8b3ca5d91c55659a821bc7196d2209918c9ed20/src/string/StringTest.java#L21-L29) | 10/05/2019 |
 | 9 | [Palindrome Number*](https://leetcode.com/problems/palindrome-number/) | Easy | [Recursion](/src/PalindromeNumber.java) | - | 08/18/2019 |
 | 13 | [Roman to Integer*](https://leetcode.com/problems/roman-to-integer/) | Easy | [Recursion](/src/string/RomanToInteger.java) | O | 06/17/2019 |
 | 19 | [Remove Nth Node From End of List**^](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | [Recursion](/src/linkedlist/RemoveNthNodeFromEndOfList.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L19-L36) | 08/20/2019 |
@@ -23,7 +23,7 @@ Accepted LeetCode solutions in java
 | 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy |  | - |
 | 73 | [Set Matrix Zeroes***](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | [O(M+N) space](/src/matrix/SetMatrixZeroes.java) | [matrix](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L59-L72) | 08/13/2019 |
 | 76 | [MinimumWindowSubstring*](https://leetcode.com/problems/minimum-window-substring/) | Hard | [Sliding Window](/src/string/MinimumWindowSubstring.java) | O | 09/24/2019 |
-| 79 | [Word Search*](https://leetcode.com/problems/word-search/) | Medium | [DFS](/src/matrix/WordSearch.java) | [matrix] | 08/22/2019 |
+| 79 | [Word Search*](https://leetcode.com/problems/word-search/) | Medium | [DFS](/src/matrix/WordSearch.java) | [matrix](https://github.com/ShogoAkiyama54/LeetCode/blob/b8b3ca5d91c55659a821bc7196d2209918c9ed20/src/matrix/MatrixTest.java#L54-L64) | 08/22/2019 |
 | 91 | [Decode Ways*](https://leetcode.com/problems/decode-ways/) | Medium | [D&C](/src/string/DecodeWays.java) | O | 09/28/2019 |
 | 92 | [Reverse Linked List II**](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | [Recursion](/src/linkedlist/ReverseLinkedListII.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L70-L78) | 08/18/2019 |
 | 94 | [Binary Tree Inorder Traversal***](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | [Recursion](/src/binarytree/BinaryTreeInorderTraversal.java) | O | 08/02/2019 |
