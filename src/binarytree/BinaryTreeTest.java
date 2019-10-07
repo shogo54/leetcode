@@ -6,45 +6,20 @@ import org.junit.jupiter.api.Test;
 
 class BinaryTreeTest {
 	
-	TreeNode setupTree() throws Exception {
-		return setupTree(new Integer[] {1,null,2,null,null,3});
-	}
-	
-	TreeNode setupTree(Integer[] array) throws Exception{
-		if(array.length == 0) {
-			return null;
-		}
+	/**
+	 * Test cases for 124. Binary Tree Maximum Path Sum
+	 * @see BinaryTreeMaximumPathSum
+	 */
+	@Test
+	void testBinaryTreeMaximumPathSum() throws Exception{
+		TreeNode root = setupTree(new Integer[] {1,2,3});
+		assertEquals(6, new BinaryTreeMaximumPathSum().maxPathSum(root));
 		
-		Map<Integer, TreeNode> map = new TreeMap<Integer, TreeNode>();
-		boolean left = true;
+		root = setupTree(new Integer[] {-10,9,20,null,null,15,7});
+		assertEquals(42, new BinaryTreeMaximumPathSum().maxPathSum(root));
 		
-		map.put(0, new TreeNode(array[0]));
-		
-		for(int i=1; i<array.length; i++) {
-			if(array[i] == null) {
-				left = !left;
-				continue;
-			}
-			TreeNode t = new TreeNode(array[i]);
-			
-			if(left) {
-				if(map.get(i/2) == null) {
-					throw new Exception();
-				}
-				map.get(i/2).left = t;
-				
-			}else{
-				if(map.get((i-1)/2) == null) {
-					throw new Exception();
-				}
-				map.get((i-1)/2).right = t;
-				
-			}
-			map.put(i, t);
-			left = !left;
-		}
-		
-		return map.get(0);
+		root = setupTree(new Integer[] {5,4,8,11,null,13,4,7,2,null,null,null,null,null,1});
+		assertEquals(48, new BinaryTreeMaximumPathSum().maxPathSum(root));
 	}
 	
 	@Test
@@ -182,6 +157,47 @@ class BinaryTreeTest {
 		assertEquals(root.toString(), new MaximumBinaryTree().constructMaximumBinaryTree(new int[] {3}).toString());
 	}
 
+	TreeNode setupTree() throws Exception {
+		return setupTree(new Integer[] {1,null,2,null,null,3});
+	}
+	
+	TreeNode setupTree(Integer[] array) throws Exception{
+		if(array.length == 0) {
+			return null;
+		}
+		
+		Map<Integer, TreeNode> map = new TreeMap<Integer, TreeNode>();
+		boolean left = true;
+		
+		map.put(0, new TreeNode(array[0]));
+		
+		for(int i=1; i<array.length; i++) {
+			if(array[i] == null) {
+				left = !left;
+				continue;
+			}
+			TreeNode t = new TreeNode(array[i]);
+			
+			if(left) {
+				if(map.get(i/2) == null) {
+					throw new Exception();
+				}
+				map.get(i/2).left = t;
+				
+			}else{
+				if(map.get((i-1)/2) == null) {
+					throw new Exception();
+				}
+				map.get((i-1)/2).right = t;
+				
+			}
+			map.put(i, t);
+			left = !left;
+		}
+		
+		return map.get(0);
+	}
+	
 	static class TreeNode {
 		int val;
 		TreeNode left;
