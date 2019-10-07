@@ -10,7 +10,7 @@ import binarytree.BinaryTreeTest.TreeNode;
  * https://leetcode.com/problems/binary-tree-maximum-path-sum/
  * Difficulty: Hard
  * 
- * Approach: Divide and Conquer
+ * Approach: Recursion
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Binary Tree Maximum Path Sum.
  * Memory Usage: 40.4 MB, less than 95.24% of Java online submissions for Binary Tree Maximum Path Sum.
  * 
