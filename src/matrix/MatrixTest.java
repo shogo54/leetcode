@@ -75,6 +75,25 @@ class MatrixTest {
 		grid = setupCharMatrix(new String[] {"11000", "11000", "00100", "00011"});
 		assertEquals(3, new NumberOfIslands().numIslands(grid));
 	}
+	
+	/**
+	 * Test cases for 212. Word Search II
+	 * @see WordSearchII
+	 */
+	@Test
+	void testWordSearchII() throws Exception{
+		char[][] grid = setupCharMatrix(new String[] {"oaan", "etae", "ihkr", "iflv"});
+		List<String> expected = Arrays.asList("oath", "eat");
+		List<String> actual = new WordSearchII().findWords(grid, new String[] {"oath", "pea", "eat", "rain"});
+		assertEquals(new HashSet<String>(expected), new HashSet<String>(actual));
+		assertEquals(expected.size(), actual.size());
+		
+		grid = setupCharMatrix(new String[] {"ab", "aa"});
+		expected = Arrays.asList("aaa","aaab","aaba","aba","baa");
+		actual = new WordSearchII().findWords(grid, new String[] {"aba","baa","bab","aaab","aaa","aaaa","aaba"});
+		assertEquals(new HashSet<String>(expected), new HashSet<String>(actual));
+		assertEquals(expected.size(), actual.size());
+	}
 
 	/**
 	 * Test cases for 417. Pacific Atlantic Water Flow
