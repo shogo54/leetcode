@@ -37,24 +37,6 @@ class ArrayTest{
 		finder2.addNum(15);
 		assertEquals(11.5, finder2.findMedian());
 	}
-	
-	@Test
-	void testFindMedianFromDataStream(FindMedianFromDataStream finder) throws Exception{
-		finder.addNum(12);
-		assertEquals(12.0, finder.findMedian());
-		finder.addNum(10);
-		assertEquals(11.0, finder.findMedian());
-		finder.addNum(13);
-		finder.addNum(11);
-		finder.addNum(5);
-		finder.addNum(15);
-		assertEquals(11.5, finder.findMedian());
-		finder.addNum(1);
-		finder.addNum(11);
-		finder.addNum(6);
-		finder.addNum(17);
-		assertEquals(11.0, finder.findMedian());
-	}
 
 	@Test
 	void testJumpGame() throws Exception {
