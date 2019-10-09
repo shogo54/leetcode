@@ -92,6 +92,18 @@ class StringTest {
 	}
 
 	/**
+	 * Test cases for 171. Excel Sheet Column Number
+	 * @see ExcelSheetColumnNumber
+	 */
+	@Test
+	void testExcelSheetColumnNumber() throws Exception{
+		assertEquals(1, new ExcelSheetColumnNumber().titleToNumber("A"));
+		assertEquals(28, new ExcelSheetColumnNumber().titleToNumber("AB"));
+		assertEquals(701, new ExcelSheetColumnNumber().titleToNumber("ZY"));
+		assertEquals(50835706, new ExcelSheetColumnNumber().titleToNumber("DGFHSL"));
+	}
+
+	/**
 	 * Test cases for 211. Add and Search Word - Data structure design
 	 * @see AddAndSearchWordDataStructureDesign
 	 */
