@@ -59,7 +59,7 @@ Accepted LeetCode solutions in java
 | 268 | [Missing Number***](https://leetcode.com/problems/missing-number/) | Easy | [Formula](/src/array/MissingNumber.java) | O | 08/29/2019 |
 | 283 | [Move Zeroes](/src/MoveZeroes.java) | Easy |  | - |
 | 287 | [Find the Duplicate Number*^](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | [Brute Force](/src/array/FindTheDuplicateNumber.java) / [Floyd's Cycle Detection](/src/array/FindTheDuplicateNumber2.java) | O | 10/01/2019 |
-| 295 | [Find Median from Data Stream*](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | [Sort](/src/array/FindMedianFromDataStream.java) / [Insertion Sort](/src/array/FindMedianFromDataStream2.java) | [array](https://github.com/ShogoAkiyama54/LeetCode/blob/341001eacf15d99007681aa48e8e9a435e8c71aa/src/array/ArrayTest.java#L9-L39) | 10/09/2019 |
+| 295 | [Find Median from Data Stream*](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | [Sort](/src/array/FindMedianFromDataStream.java) / [Insertion Sort](/src/array/FindMedianFromDataStream2.java) | [array](https://github.com/ShogoAkiyama54/LeetCode/blob/d70103a0f1b7d134d2962303ccfd65e08b043a9b/src/array/ArrayTest.java#L9-L39) | 10/09/2019 |
 | 297 | [Serialize and Deserialize Binary Tree*](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Hard | [Iteration](/src/binarytree/SerializeAndDeserializeBinaryTree.java) | O | 09/27/2019 |
 | 300 | [Longest Increasing Subsequence*](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | [D&P](/src/array/LongestIncreasingSubsequence.java) | O | 09/26/2019 |
 | 322 | [Coin Change](/src/CoinChange.java) | Medium |  | - |
