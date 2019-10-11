@@ -10,24 +10,22 @@ import binarytree.BinaryTreeTest.TreeNode;
  * https://leetcode.com/problems/search-in-a-binary-search-tree/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * - TreeNode searchBST(TreeNode root, int val).
- * 
+ * Approach: Recursion
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Search in a Binary Search Tree.
  * Memory Usage: 38.8 MB, less than 98.47% of Java online submissions for Search in a Binary Search Tree.
  * 
+ * @see BinaryTreeTest#testSearchInABinarySearchTree()
  */
-
 public class SearchInABinarySearchTree {
-	
-    public TreeNode searchBST(TreeNode root, int val) {
-        if(root.val == val){
-            return root;
-        }else if(root.val > val){
-            return root.left != null? searchBST(root.left, val) : null;
-        }else{
-            return root.right != null? searchBST(root.right, val) : null;
-        }
-    }
-    
+
+	public TreeNode searchBST(TreeNode root, int val) {
+		if (root.val == val) {
+			return root;
+		} else if (root.val > val) {
+			return root.left != null ? searchBST(root.left, val) : null;
+		} else {
+			return root.right != null ? searchBST(root.right, val) : null;
+		}
+	}
+
 }

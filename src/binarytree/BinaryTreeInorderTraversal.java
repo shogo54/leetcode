@@ -12,31 +12,28 @@ import binarytree.BinaryTreeTest.TreeNode;
  * https://leetcode.com/problems/binary-tree-inorder-traversal/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and properties:
- * - List<Integer> list
- * - List<Integer> inorderTraversal(TreeNode node).
- * 
+ * Approach: Recursion
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Binary Tree Inorder Traversal.
  * Memory Usage: 34.8 MB, less than 100.00% of Java online submissions for Binary Tree Inorder Traversal.
  * 
+ * @see BinaryTreeTest#testBinaryTreeInorderTraversal()
  */
-
 public class BinaryTreeInorderTraversal {
-	
+
 	List<Integer> list = new ArrayList<Integer>();
-    
+
 	public List<Integer> inorderTraversal(TreeNode root) {
-		if(root == null){
-		    return list;
+		if (root == null) {
+			return list;
 		}
-		if(root.left != null){
-		    inorderTraversal(root.left);
+		if (root.left != null) {
+			inorderTraversal(root.left);
 		}
 		list.add(root.val);
-		if(root.right != null){
-		    inorderTraversal(root.right);
+		if (root.right != null) {
+			inorderTraversal(root.right);
 		}
 		return list;
 	}
-	
+
 }

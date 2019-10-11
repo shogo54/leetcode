@@ -10,14 +10,12 @@ import binarytree.BinaryTreeTest.TreeNode;
  * https://leetcode.com/problems/subtree-of-another-tree/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - boolean isSubtree(TreeNode s, TreeNode t).
- * 
+ * Approach: Recursion
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Subtree of Another Tree.
  * Memory Usage: 40.6 MB, less than 95.56% of Java online submissions for Subtree of Another Tree.
  * 
+ * @see BinaryTreeTest#testSubtreeOfAnotherTree()
  */
-
 public class SubtreeOfAnotherTree {
 
 	public boolean isSubtree(TreeNode s, TreeNode t) {

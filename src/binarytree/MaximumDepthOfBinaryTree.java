@@ -10,24 +10,22 @@ import binarytree.BinaryTreeTest.TreeNode;
  * https://leetcode.com/problems/maximum-depth-of-binary-tree/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * - int maxDepth(TreeNode root).
- * 
+ * Approach: Recursion
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Maximum Depth of Binary Tree.
  * Memory Usage: 39 MB, less than 97.27% of Java online submissions for Maximum Depth of Binary Tree.
  * 
+ * @see BinaryTreeTest#testMaximumDepthOfBinaryTree()
  */
-
 public class MaximumDepthOfBinaryTree {
-	
+
 	public int maxDepth(TreeNode root) {
-        if(root == null){
-            return 0;
-        }
-        
-        int leftCount = 1 + maxDepth(root.left);
-        int rightCount = 1 + maxDepth(root.right);
-        return (leftCount>rightCount)? leftCount: rightCount;
-    }
-	
+		if (root == null) {
+			return 0;
+		}
+
+		int leftCount = 1 + maxDepth(root.left);
+		int rightCount = 1 + maxDepth(root.right);
+		return (leftCount > rightCount) ? leftCount : rightCount;
+	}
+
 }

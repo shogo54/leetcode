@@ -10,41 +10,38 @@ import binarytree.BinaryTreeTest.TreeNode;
  * https://leetcode.com/problems/kth-smallest-element-in-a-bst/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - int kthSmallest(TreeNode root, int k)
- * - void search(TreeNode root).
- * 
+ * Approach: Recursion
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Kth Smallest Element in a BST.
  * Memory Usage: 36.8 MB, less than 100.00% of Java online submissions for Kth Smallest Element in a BST.
  * 
+ * @see BinaryTreeTest#testKthSmallestElementInABST()
  */
-
 public class KthSmallestElementInABST {
 
 	private int num;
-    private int result;
-    
+	private int result;
+
 	public int kthSmallest(TreeNode root, int k) {
-        num = k;
-        search(root);
-        return result;
-    }
-    
-    private void search(TreeNode root){
-        if(root.left != null){
-            search(root.left);
-        }
-        
-        num--;
-        
-        if(num == 0){
-            result = root.val;
-            return;
-        }
-        
-        if(root.right != null){
-            search(root.right);
-        }
-    }
-	
+		num = k;
+		search(root);
+		return result;
+	}
+
+	private void search(TreeNode root) {
+		if (root.left != null) {
+			search(root.left);
+		}
+
+		num--;
+
+		if (num == 0) {
+			result = root.val;
+			return;
+		}
+
+		if (root.right != null) {
+			search(root.right);
+		}
+	}
+
 }

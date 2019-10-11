@@ -10,15 +10,12 @@ import binarytree.BinaryTreeTest.TreeNode;
  * https://leetcode.com/problems/maximum-binary-tree/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - TreeNode constructMaximumBinaryTree(int[] nums)
- * - TreeNode recurse(int[] nums, int s, int e).
- * 
+ * Approach: Recursion
  * Runtime: 2 ms, faster than 99.65% of Java online submissions for Maximum Binary Tree.
  * Memory Usage: 38.2 MB, less than 97.83% of Java online submissions for Maximum Binary Tree.
  * 
+ * @see BinaryTreeTest#testMaximumBinaryTree()
  */
-
 public class MaximumBinaryTree {
 
 	public TreeNode constructMaximumBinaryTree(int[] nums) {

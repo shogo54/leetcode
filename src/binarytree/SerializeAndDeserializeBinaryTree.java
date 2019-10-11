@@ -13,15 +13,12 @@ import binarytree.BinaryTreeTest.TreeNode;
  * https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
  * Difficulty: Hard
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - String serialize(TreeNode root)
- * - TreeNode deserialize(String data).
- * 
+ * Approach: Iteration
  * Runtime: 49 ms, faster than 15.51% of Java online submissions for Serialize and Deserialize Binary Tree.
  * Memory Usage: 40.1 MB, less than 31.43% of Java online submissions for Serialize and Deserialize Binary Tree.
  * 
+ * @see BinaryTreeTest#testSerializeAndDeserializeBinaryTree()
  */
-
 public class SerializeAndDeserializeBinaryTree {
 
 	// Encodes a tree to a single string.
@@ -98,4 +95,5 @@ public class SerializeAndDeserializeBinaryTree {
 		}
 		return root;
 	}
+	
 }
