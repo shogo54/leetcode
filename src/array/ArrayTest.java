@@ -7,6 +7,26 @@ import org.junit.jupiter.api.Test;
 class ArrayTest{
 	
 	/**
+	 * Test cases for 78. Subsets
+	 * @see SubSets
+	 */
+	@Test
+	void testSubsets() throws Exception{
+		List<List<Integer>> expected = new ArrayList<List<Integer>>();
+		expected.add(new ArrayList<Integer>());
+		expected.add(Arrays.asList(1));
+		expected.add(Arrays.asList(2));
+		expected.add(Arrays.asList(3));
+		expected.add(Arrays.asList(1,2));
+		expected.add(Arrays.asList(1,3));
+		expected.add(Arrays.asList(2,3));
+		expected.add(Arrays.asList(1,2,3));
+		List<List<Integer>> actual = new Subsets().subsets(new int[] {1,2,3});
+		assertEquals(expected.size(), actual.size());
+		assertEquals(new HashSet<List<Integer>>(expected), new HashSet<List<Integer>>(actual));
+	}
+	
+	/**
 	 * Test cases for 295. Find Median from Data Stream
 	 * @see FindMedianFromDataStream
 	 * @see FindMedianFromDataStream2
