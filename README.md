@@ -76,6 +76,7 @@ Accepted LeetCode solutions in java
 | 509 | [Fibonacci Number](src/FibonacciNumber.java) | Easy |  | - |
 | 547 | [Friend Circles*](/src/FriendCircles.java) | Medium |  | - |
 | 572 | [Subtree of Another Tree***](https://leetcode.com/problems/subtree-of-another-tree/) | Easy | [Recursion](/src/binarytree/SubtreeOfAnotherTree.java) | O | 08/29/2019 |
+| 647 | [Palindromic Substrings*](https://leetcode.com/problems/palindromic-substrings/) | Medium | [DP](/src/string/PalindromicSubstrings.java) | [string] | 10/11/2019 |
 | 654 | [Maximum Binary Tree*](https://leetcode.com/problems/maximum-binary-tree/) | Medium | [Recursion](/src/binarytree/MaximumBinaryTree.java) | O | 09/30/2019 |
 | 657 | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) | Easy | [Iteration](/src/string/RobotReturnToOrigin.java) / [Recursion](/src/string/RobotReturnToOrigin2.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L137-L151) | 08/18/2019 |
 | 700 | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | Easy | [Recursion](/src/binarytree/SearchInABinarySearchTree.java) | O | 06/10/2019 |

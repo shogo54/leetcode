@@ -147,6 +147,19 @@ class StringTest {
 	}
 
 	/**
+	 * Test cases for 647. Palindromic Substrings
+	 * @see PalindromicSubstrings
+	 */
+	@Test
+	void testPalindromicSubstrings() throws Exception{
+		assertEquals(3, new PalindromicSubstrings().countSubstrings("abc"));
+		assertEquals(6, new PalindromicSubstrings().countSubstrings("aaa"));
+		assertEquals(1, new PalindromicSubstrings().countSubstrings("a"));
+		assertEquals(0, new PalindromicSubstrings().countSubstrings(""));
+		assertEquals(12, new PalindromicSubstrings().countSubstrings("aabaaa"));
+	}
+
+	/**
 	 * Test cases for 657. Robot Return to Origin
 	 * @see RobotReturnToOrigin
 	 * @see RobotReturnToOrigin2
