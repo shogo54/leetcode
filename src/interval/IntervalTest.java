@@ -7,6 +7,21 @@ import org.junit.jupiter.api.Test;
 class IntervalTest {
 
 	/**
+	 * Test cases for 56. Merge Intervals
+	 * @see MergeIntervals
+	 */
+	@Test
+	void testMergeIntervals() throws Exception{
+		int[][] intervals = setupIntervals("[[1,3],[2,6],[8,10],[15,18]]");
+		int[][] expected = setupIntervals("[[1,6],[8,10],[15,18]]");
+		assertArrayEquals(expected, new MergeIntervals().merge(intervals));
+		
+		intervals = setupIntervals("[[1,4],[4,5]]");
+		expected = setupIntervals("[[1,5]]");
+		assertArrayEquals(expected, new MergeIntervals().merge(intervals));	
+	}
+
+	/**
 	 * Test cases for 435. Non-overlapping Intervals
 	 * @see NonOverlappingIntervals
 	 */
@@ -20,21 +35,6 @@ class IntervalTest {
 		
 		intervals = setupIntervals("[[1,2],[2,3]]");
 		assertEquals(0, new NonOverlappingIntervals().eraseOverlapIntervals(intervals));
-	}
-
-	/**
-	 * Test cases for 56. Merge Intervals
-	 * @see MergeIntervals
-	 */
-	@Test
-	void testMergeIntervals() throws Exception{
-		int[][] intervals = setupIntervals("[[1,3],[2,6],[8,10],[15,18]]");
-		int[][] expected = setupIntervals("[[1,6],[8,10],[15,18]]");
-		assertArrayEquals(expected, new MergeIntervals().merge(intervals));
-		
-		intervals = setupIntervals("[[1,4],[4,5]]");
-		expected = setupIntervals("[[1,5]]");
-		assertArrayEquals(expected, new MergeIntervals().merge(intervals));	
 	}
 
 	public static int[][] setupIntervals(String str) {
