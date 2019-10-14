@@ -19,7 +19,7 @@ Accepted LeetCode solutions in java
 | 48 | [Rotate Image***](https://leetcode.com/problems/rotate-image/) | Medium | [Layer by Layer](/src/matrix/RotateImage.java) | [matrix](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L31-L44) | 09/29/2019 |
 | 54 | [Spiral Matrix**](https://leetcode.com/problems/spiral-matrix/) | Medium | [Recursion](/src/matrix/SpiralMatrix.java) | [matrix](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L46-L57) | 08/22/2019 |
 | 55 | [Jump Game**^](https://leetcode.com/problems/jump-game/) | Medium | [Greedy](/src/array/JumpGame.java) | O | 08/23/2019 |
-| 56 | [Merge Intervals**](/src/MergeIntervals.java) | Medium |  | - |
+| 56 | [Merge Intervals**](https://leetcode.com/problems/merge-intervals/) | Medium | [Recursion] (/src/interval/MergeIntervals.java) | [interval] | 08/13/2019 |
 | 62 | [Unique Paths**](/src/UniquePaths.java) | Medium |  | - |
 | 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy |  | - |
 | 73 | [Set Matrix Zeroes***](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | [O(M+N) space](/src/matrix/SetMatrixZeroes.java) | [matrix](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L59-L72) | 08/13/2019 |
@@ -71,6 +71,7 @@ Accepted LeetCode solutions in java
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | Easy | [Iteration](/src/array/IntersectionOfTwoArrays.java) | O | 08/19/2019 |
 | 412 | [Fizz Buzz*](/src/FizzBuzz.java) | Easy |  | - |
 | 417 | [Pacific Atlantic Water Flow**](https://leetcode.com/problems/pacific-atlantic-water-flow/) | Medium | [DFS](/src/matrix/PacificAtlanticWaterFlow.java) | [matrix](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L88-L101) | 10/02/2019 |
+| 435 | [Non-overlapping Intervals*](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | [Greedy](/src/interval/NonOverlappingIntervals.java) | [interval] | 10/14/2019 |
 | 445 | [Add Two Numbers II***](https://leetcode.com/problems/add-two-numbers-ii/) | Medium | [Recursion](/src/linkedlist/AddTwoNumbersII.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L145-L154) | 06/14/2019 |
 | 461 | [Hamming Distance*](/src/HammingDistance.java) | Easy |  | - |
 | 508 | [Most Frequent Subtree Sum*](https://leetcode.com/problems/most-frequent-subtree-sum/) | Medium | [Recursion](src/BinaryTree/MostFrequentSubtreeSum.java) | [binarytree](https://github.com/ShogoAkiyama54/LeetCode/blob/16f4e7de8aaba29c3c45f455867bcd1c3a8e5b1b/src/binarytree/BinaryTreeTest.java#L164-L179) | 06/12/2019 |

@@ -1,3 +1,5 @@
+package interval;
+
 import java.util.*;
 
 /**
@@ -8,15 +10,12 @@ import java.util.*;
  * https://leetcode.com/problems/merge-intervals/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * - int[][] merge(int[][] intervals)
- * - int helper(int[][] input, int index, int count).
- * 
+ * Approach: Sort & Recursion
  * Runtime: 6 ms, faster than 88.41% of Java online submissions for Merge Intervals.
  * Memory Usage: 37.4 MB, less than 98.55% of Java online submissions for Merge Intervals.
  * 
+ * @see IntervalTest#testMergeIntervals()
  */
-
 public class MergeIntervals {
 
 	public int[][] merge(int[][] intervals) {
@@ -41,7 +40,7 @@ public class MergeIntervals {
 		return result;
 	}
 
-	int helper(int[][] input, int index, int count) {
+	private int helper(int[][] input, int index, int count) {
 		if (index + 2 > input.length) {
 			return count;
 		}
