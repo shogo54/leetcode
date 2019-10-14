@@ -37,7 +37,7 @@ class IntervalTest {
 		assertEquals(0, new NonOverlappingIntervals().eraseOverlapIntervals(intervals));
 	}
 
-	public static int[][] setupIntervals(String str) {
+	int[][] setupIntervals(String str) {
 		String[] each = str.split("],");
 		int[][] intervals = new int[each.length][];
 
