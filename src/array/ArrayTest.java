@@ -7,6 +7,24 @@ import org.junit.jupiter.api.Test;
 class ArrayTest{
 	
 	/**
+	 * Test cases for 46. Permutations
+	 * @see Permutations
+	 */
+	@Test
+	void testPermutations() throws Exception{
+		List<List<Integer>> expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(1,2,3));
+		expected.add(Arrays.asList(1,3,2));
+		expected.add(Arrays.asList(2,1,3));
+		expected.add(Arrays.asList(2,3,1));
+		expected.add(Arrays.asList(3,1,2));
+		expected.add(Arrays.asList(3,2,1));
+		List<List<Integer>> actual = new Permutations().permute(new int[] {1,2,3});
+		assertEquals(expected.size(), actual.size());
+		assertEquals(new HashSet<List<Integer>>(expected), new HashSet<List<Integer>>(actual));
+	}
+	
+	/**
 	 * Test cases for 78. Subsets
 	 * @see SubSets
 	 */

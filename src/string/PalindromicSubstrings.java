@@ -8,7 +8,7 @@ package string;
  * https://leetcode.com/problems/palindromic-substrings/
  * Difficulty: Medium
  * 
- * Approach: Dynamic Programming
+ * Approach: Dynamic Programming (Bottom Up)
  * Runtime: 5 ms, faster than 44.54% of Java online submissions for Palindromic Substrings.
  * Memory Usage: 36.1 MB, less than 45.57% of Java online submissions for Palindromic Substrings.
  * 
