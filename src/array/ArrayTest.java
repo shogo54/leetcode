@@ -43,7 +43,17 @@ class ArrayTest{
 		assertEquals(expected.size(), actual.size());
 		assertEquals(new HashSet<List<Integer>>(expected), new HashSet<List<Integer>>(actual));
 	}
-	
+
+	/**
+	 * Test cases for 121. Best Time to Buy and Sell Stock
+	 * @see BestTimeToBuyAndSellStock
+	 */
+	void testBestTimeToBuyAndSellStock() throws Exception{
+		assertEquals(5, new BestTimeToBuyAndSellStock().maxProfit(new int[] {7,1,5,3,6,4}));
+		assertEquals(0, new BestTimeToBuyAndSellStock().maxProfit(new int[] {7,6,4,3,1}));
+		assertEquals(4, new BestTimeToBuyAndSellStock().maxProfit(new int[] {3,3,5,0,0,3,1,4}));
+	}
+
 	/**
 	 * Test cases for 295. Find Median from Data Stream
 	 * @see FindMedianFromDataStream
