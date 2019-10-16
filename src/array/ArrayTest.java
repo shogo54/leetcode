@@ -57,6 +57,20 @@ class ArrayTest{
 	}
 
 	/**
+	 * Test cases for 213. House Robber II
+	 * @see HouseRobberII
+	 */
+	@Test
+	void testHouseRobberII() throws Exception{
+		assertEquals(3, new HouseRobberII().rob(new int[] {2,3,2}));
+		assertEquals(4, new HouseRobberII().rob(new int[] {1,2,3,1}));
+		assertEquals(103, new HouseRobberII().rob(new int[] {1,3,1,3,100}));
+		assertEquals(0, new HouseRobberII().rob(new int[0]));
+		assertEquals(1, new HouseRobberII().rob(new int[] {1}));
+		assertEquals(4, new HouseRobberII().rob(new int[] {4,2}));
+	}
+
+	/**
 	 * Test cases for 295. Find Median from Data Stream
 	 * @see FindMedianFromDataStream
 	 * @see FindMedianFromDataStream2
