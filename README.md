@@ -47,7 +47,7 @@ Accepted LeetCode solutions in java
 | 153 | [Find Minimum in Rotated Sorted Array***](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | [Recursion](/src/array/FindMinimumInRotatedSortedArray.java) | O | 08/28/2019 |
 | 169 | [Majority Element](/src/MajorityElement.java) | Easy |  | - |
 | 171 | [Excel Sheet Column Number***](https://leetcode.com/problems/excel-sheet-column-number/) | Easy | [Iteration](/src/string/ExcelSheetColumnNumber.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/b1bcf37f8aae0bb47fdfe263aa092353062c0a51/src/string/StringTest.java#L94-L104) | 10/08/2019 |
-| 198 | [House Robber](https://leetcode.com/problems/house-robber/) | Easy | [DP](/src/array/HouseRobber.java) | [array] | 07/31/2019 |
+| 198 | [House Robber](https://leetcode.com/problems/house-robber/) | Easy | [DP](/src/array/HouseRobber.java) | [array](https://github.com/ShogoAkiyama54/LeetCode/blob/2c3ecb8d205a6c20a266c06cfa0350de69bcdd8a/src/array/ArrayTest.java#L59-L71) | 07/31/2019 |
 | 200 | [Number of Islands*](https://leetcode.com/problems/number-of-islands/) | Medium | [DFS](/src/matrix/NumberOfIslands.java) | [matrix](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L74-L86) | 10/04/2019 |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | [Iteration](/src/linkedlist/ReverseLinkedList.java) / [Recursion](/src/linkedlist/ReverseLinkedList2.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L119-L133) | 08/17/2019 |
 | 207 | [Course Schedule**](/src/CourseSchedule.java) | Medium |  | - |
