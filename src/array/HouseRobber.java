@@ -1,3 +1,5 @@
+package array;
+
 /**
  * @author Shogo Akiyama 
  * Solved on 07/31/2019
@@ -6,14 +8,12 @@
  * https://leetcode.com/problems/house-robber/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * - int rob(int[] nums).
- * 
+ * Approach: Dynamic Programming (Bottom up)
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for House Robber.
  * Memory Usage: 33.9 MB, less than 100.00% of Java online submissions for House Robber.
  * 
+ * @see ArrayTest#testHouseRobber()
  */
-
 public class HouseRobber {
 
 	public int rob(int[] nums) {

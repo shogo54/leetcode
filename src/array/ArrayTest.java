@@ -57,6 +57,20 @@ class ArrayTest{
 	}
 
 	/**
+	 * Test cases for 198. House Robber
+	 * @see HouseRobber
+	 */
+	@Test
+	void testHouseRobber() throws Exception{
+		assertEquals(4, new HouseRobber().rob(new int[] {1,2,3,1}));
+		assertEquals(12, new HouseRobber().rob(new int[] {2,7,9,3,1}));
+		assertEquals(0, new HouseRobber().rob(new int[0]));
+		assertEquals(4, new HouseRobber().rob(new int[] {4}));
+		assertEquals(6, new HouseRobber().rob(new int[] {4,6}));
+		
+	}
+
+	/**
 	 * Test cases for 213. House Robber II
 	 * @see HouseRobberII
 	 */
