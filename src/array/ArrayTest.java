@@ -115,6 +115,17 @@ class ArrayTest{
 		assertEquals(11.5, finder2.findMedian());
 	}
 
+	/**
+	 * Test cases for 322. Coin Change
+	 * @see CoinChange
+	 */
+	@Test
+	void testCoinChange() throws Exception{
+		assertEquals(3, new CoinChange().coinChange(new int[] {1,2,5}, 11));
+		assertEquals(-1, new CoinChange().coinChange(new int[] {2}, 3));
+		assertEquals(-1, new CoinChange().coinChange(new int[0], 11));
+	}
+
 	@Test
 	void testJumpGame() throws Exception {
 		assertTrue(new JumpGame().canJump(new int[]{2,3,1,1,4}));
