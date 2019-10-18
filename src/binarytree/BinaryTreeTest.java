@@ -69,6 +69,24 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 105. Construct Binary Tree from Preorder and Inorder Traversal
+	 * @see ConstructBinaryTreeFromPreorderAndInorderTraversal
+	 * @see ConstructBinaryTreeFromPreorderAndInorderTraversal2
+	 */
+	@Test
+	void testConstructBinaryTreeFromPreorderAndInorderTraversal() throws Exception{
+		ConstructBinaryTreeFromPreorderAndInorderTraversal builder = new ConstructBinaryTreeFromPreorderAndInorderTraversal();
+		TreeNode exptected = setupTree(new Integer[] {3,9,20,null,null,15,7});
+		TreeNode actual = builder.buildTree(new int[] {3,9,20,15,7}, new int[] {9,3,15,20,7});
+		assertEquals(exptected.toString(), actual.toString());
+
+		builder = new ConstructBinaryTreeFromPreorderAndInorderTraversal();
+		exptected = setupTree(new Integer[] {4,1,null,null,2, null, null, null, null,null, 3});
+		actual = builder.buildTree(new int[] {4,1,2,3}, new int[] {1,2,3,4});
+		assertEquals(exptected.toString(), actual.toString());
+	}
+
+	/**
 	 * Test cases for 108. Convert Sorted Array to Binary Search Tree
 	 * @see ConvertSortedArrayToBinarySearchTree
 	 */
