@@ -104,6 +104,22 @@ class StringTest {
 	}
 
 	/**
+	 * Test cases for 208. Implement Trie (Prefix Tree)
+	 * @see Trie
+	 */
+	@Test
+	void testImplementTrie() throws Exception {
+		Trie trie = new Trie();
+
+		trie.insert("apple");
+		assertTrue(trie.search("apple"));
+		assertFalse(trie.search("app"));
+		assertTrue(trie.startsWith("app"));
+		trie.insert("app");
+		assertTrue(trie.search("app"));
+	}
+
+	/**
 	 * Test cases for 211. Add and Search Word - Data structure design
 	 * @see AddAndSearchWordDataStructureDesign
 	 */
