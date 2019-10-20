@@ -235,6 +235,23 @@ class BinaryTreeTest {
 		assertEquals(root.left, new SearchInABinarySearchTree().searchBST(root, 2));
 	}
 
+	/**
+	 * 
+	 * Test cases for 938. Range Sum of BST
+	 * @see RangeSumOfBST
+	 */
+	@Test
+	void testRangeSumOfBST() throws Exception{
+		TreeNode root = setupTree(new Integer[] {10,5,15,3,7,null,18});
+		assertEquals(32, new RangeSumOfBST().rangeSumBST(root, 7, 15));
+		
+		root = setupTree(new Integer[] {10,5,15,3,7,13,18,1,null,6});
+		assertEquals(23, new RangeSumOfBST().rangeSumBST(root, 6, 10));
+		
+		root = setupTree(new Integer[0]);
+		assertEquals(0, new RangeSumOfBST().rangeSumBST(root, 6, 10));
+	}
+
 	TreeNode setupTree() throws Exception {
 		return setupTree(new Integer[] {1,null,2,null,null,3});
 	}
