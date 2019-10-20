@@ -236,7 +236,6 @@ class BinaryTreeTest {
 	}
 
 	/**
-	 * 
 	 * Test cases for 938. Range Sum of BST
 	 * @see RangeSumOfBST
 	 */

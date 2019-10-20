@@ -89,7 +89,7 @@ Accepted LeetCode solutions in java
 | 876 | [Middle of the Linked List***](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | [Iteration](/src/linkedlist/MiddleOfTheLinkedList.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L156-L166) | 04/14/2019 |
 | 905 | [Sort Array By Parity***](/src/SortArrayByParity.java) | Easy |  | O |
 | 912 | [Sort An Array*](/src/SortAnArray.java) | Medium |  | - |
-| 938 | [Range Sum of BST***](https://leetcode.com/problems/range-sum-of-bst/) | Easy | [Recursion](/src/binarytree.RangeSumOfBST.java) | [binarysearch] | 10/19/2019 |
+| 938 | [Range Sum of BST***](https://leetcode.com/problems/range-sum-of-bst/) | Easy | [Recursion](/src/binarytree/RangeSumOfBST.java) | [binarysearch] | 10/19/2019 |
 | 980 | [Unique Paths III*](/src/UniquePathsIII.java) | Hard |  | - |
 | 1003 | [Check If Word Is Valid After Substitutions*](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/) | Medium | [Recursion](/src/string/CheckIfWordIsValidAfterSubstitutions.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L153-L164) | 06/13/2019 |
 | 1047 | [Remove All Adjacent Duplicates In String*](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | Easy | [Recursion](/src/string/RemoveAllAdjacentDuplicatesInString.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L166-L174) | 06/12/2019 |
