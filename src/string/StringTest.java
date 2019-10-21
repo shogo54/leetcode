@@ -163,6 +163,20 @@ class StringTest {
 	}
 
 	/**
+	 * Test cases for 424. Longest Repeating Character Replacement
+	 * @see LongestRepeatingCharacterReplacement
+	 */
+	@Test
+	void testLongestRepeatingCharacterReplacement() throws Exception{
+		LongestRepeatingCharacterReplacement tester = new LongestRepeatingCharacterReplacement();
+		assertEquals(4, tester.characterReplacement("ABAB", 2));
+		assertEquals(4, tester.characterReplacement("AABABBA", 1));
+		assertEquals(4, tester.characterReplacement("ABBB", 2));
+		assertEquals(1, tester.characterReplacement("A", 2));
+		assertEquals(0, tester.characterReplacement("", 2));
+	}
+
+	/**
 	 * Test cases for 647. Palindromic Substrings
 	 * @see PalindromicSubstrings
 	 */
