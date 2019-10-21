@@ -163,6 +163,21 @@ class StringTest {
 	}
 
 	/**
+	 * Test cases for 387. First Unique Character in a String
+	 * @see FirstUniqueCharacterInAString
+	 */
+	@Test
+	void testFirstUniqueCharacterInAString() throws Exception{
+		FirstUniqueCharacterInAString tester = new FirstUniqueCharacterInAString();
+		assertEquals(0, tester.firstUniqChar("leetcode"));
+		assertEquals(2, tester.firstUniqChar("loveleetcode"));
+		assertEquals(-1, tester.firstUniqChar("aabbcc"));
+		assertEquals(6, tester.firstUniqChar("aabbccd"));
+		assertEquals(0, tester.firstUniqChar("a"));
+		assertEquals(-1, tester.firstUniqChar(""));
+	}
+
+	/**
 	 * Test cases for 424. Longest Repeating Character Replacement
 	 * @see LongestRepeatingCharacterReplacement
 	 */
