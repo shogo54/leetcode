@@ -126,6 +126,17 @@ class ArrayTest{
 		assertEquals(-1, new CoinChange().coinChange(new int[0], 11));
 	}
 
+	/**
+	 * Test cases for 1207. Unique Number of Occurrences
+	 * @see UniqueNumberOfOccurrences
+	 */
+	@Test
+	void testUniqueNumberOfOccurrences() throws Exception{
+		assertTrue(new UniqueNumberOfOccurrences().uniqueOccurrences(new int[] {1,2,2,1,1,3}));
+		assertFalse(new UniqueNumberOfOccurrences().uniqueOccurrences(new int[] {1,2}));
+		assertTrue(new UniqueNumberOfOccurrences().uniqueOccurrences(new int[] {-3,0,1,-3,1,1,1,-3,10,0}));
+	}
+
 	@Test
 	void testJumpGame() throws Exception {
 		assertTrue(new JumpGame().canJump(new int[]{2,3,1,1,4}));

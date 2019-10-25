@@ -97,6 +97,7 @@ Accepted LeetCode solutions in java
 | 1047 | [Remove All Adjacent Duplicates In String*](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | Easy | [Recursion](/src/string/RemoveAllAdjacentDuplicatesInString.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L166-L174) | 06/12/2019 |
 | 1053 | [Previous Permutation With One Swap*](/src/PreviousPermutationWithOneSwap.java) | Medium |  | - |
 | 1078 | [Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/) | Easy | [Iteration](/src/string/OccurrencesAfterBigram.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L176-L185) | 06/15/2019 |
+| 1207 | [Unique Number of Occurrences*](https://leetcode.com/problems/unique-number-of-occurrences/) | Easy | [Map](/src/array/UniqueNumberOfOccurrences.java) | [array] | 10/24/2019 |
 
 Note for myself:
 
