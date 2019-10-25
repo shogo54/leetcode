@@ -17,6 +17,7 @@ import java.util.*;
  * @see ArrayTest#testUniqueNumberOfOccurrences()
  */
 public class UniqueNumberOfOccurrences {
+	
 	public boolean uniqueOccurrences(int[] arr) {
 		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 		Set<Integer> used = new HashSet<Integer>();
@@ -34,4 +35,5 @@ public class UniqueNumberOfOccurrences {
 
 		return true;
 	}
+	
 }
