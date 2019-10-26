@@ -127,6 +127,20 @@ class ArrayTest{
 	}
 
 	/**
+	 * Test cases for 350. Intersection of Two Arrays II
+	 * @see IntersectionOfTwoArraysII
+	 * @see IntersectionOfTwoArraysII2
+	 */
+	@Test
+	void testIntersectionOfTwoArraysII() throws Exception{
+		assertArrayEquals(new int[] {2,2}, new IntersectionOfTwoArraysII().intersect(new int[] {1,2,2,1}, new int[] {2,2}));
+		assertArrayEquals(new int[] {4,9}, new IntersectionOfTwoArraysII().intersect(new int[] {4,9,5}, new int[] {9,4,9,8,4}));
+		assertArrayEquals(new int[] {2,1}, new IntersectionOfTwoArraysII().intersect(new int[] {2,1}, new int[] {1,2}));
+		assertArrayEquals(new int[0], new IntersectionOfTwoArraysII().intersect(new int[] {1,2,2,1}, new int[0]));
+		assertArrayEquals(new int[0], new IntersectionOfTwoArraysII().intersect(new int[0], new int[] {1,2,2}));
+	}
+
+	/**
 	 * Test cases for 1207. Unique Number of Occurrences
 	 * @see UniqueNumberOfOccurrences
 	 */

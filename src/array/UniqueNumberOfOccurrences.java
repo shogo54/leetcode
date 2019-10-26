@@ -11,8 +11,8 @@ import java.util.*;
  * difficulty: Easy
  * 
  * Apporach: Map & Iteration
- * Runtime: 2 ms, faster than 87.67% of Java online submissions for Unique Number of Occurrences.
- * Memory Usage: 35.6 MB, less than 100.00% of Java online submissions for Unique Number of Occurrences.
+ * Runtime: 3 ms, faster than 57.33% of Java online submissions for Intersection of Two Arrays II.
+ * Memory Usage: 37 MB, less than 83.87% of Java online submissions for Intersection of Two Arrays II.
  * 
  * @see ArrayTest#testUniqueNumberOfOccurrences()
  */
