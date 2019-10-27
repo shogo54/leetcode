@@ -2,6 +2,7 @@
 
 Accepted LeetCode solutions in java
 
+
 | # | Problem Name | Difficulty | Solutions | Test Case | Last Solved |
 | :---: | --- | --- | --- | :---: | :---: |
 | 1 | [Two Sum*](https://leetcode.com/problems/two-sum/) | Easy | [Iteration](/src/array/TwoSum.java) | O | 08/13/2019 |
