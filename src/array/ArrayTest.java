@@ -84,6 +84,16 @@ class ArrayTest{
 	}
 
 	/**
+	 * Test cases for 215. Kth Largest Element in an Array
+	 * @see KthLargestElementInAnArray
+	 */
+	@Test
+	void testKthLargestElementInAnArray() throws Exception{
+		assertEquals(5, new KthLargestElementInAnArray().findKthLargest(new int[] {3,2,1,5,6,4}, 2));
+		assertEquals(4, new KthLargestElementInAnArray().findKthLargest(new int[] {3,2,3,1,2,4,5,5,6}, 4));
+	}
+
+	/**
 	 * Test cases for 295. Find Median from Data Stream
 	 * @see FindMedianFromDataStream
 	 * @see FindMedianFromDataStream2
