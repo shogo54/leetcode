@@ -9,6 +9,36 @@ import org.junit.jupiter.api.Test;
 class MatrixTest {
 
 	/**
+	 * Test cases for 36. Valid Sudoku
+	 * @see ValidSudoku
+	 */
+	@Test
+	void testValidSudoku() throws Exception {
+		char[][] sudoku = setupCharMatrix(new String[] {
+				"53..7....",
+				"6..195...",
+				".98....6.",
+				"8...6...3",
+				"4..8.3..1",
+				"7...2...6",
+				".6....28.",
+				"...419..5",
+				"....8..79"
+				});
+		
+		assertTrue(new ValidSudoku().isValidSudoku(sudoku));
+		
+		sudoku[0][4] = '2';
+		assertFalse(new ValidSudoku().isValidSudoku(sudoku));
+		
+		sudoku[0][4] = '3';
+		assertFalse(new ValidSudoku().isValidSudoku(sudoku));
+		
+		sudoku[0][4] = '5';
+		assertFalse(new ValidSudoku().isValidSudoku(sudoku));
+	}
+
+	/**
 	 * Test cases for 48. Rotate Image
 	 * @see RotateImage
 	 */
