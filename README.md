@@ -25,6 +25,8 @@ BFS = Breadth First Search<br/>
 *** = problems that have follow-up or different approaches.<br/>
 ^ = problems that I like.
 
+## Java Solution List
+
 | # | Problem Name | Difficulty | Solutions | Test Case | Last Solved |
 | :---: | --- | --- | --- | :---: | :---: |
 | 1 | [Two Sum*](https://leetcode.com/problems/two-sum/) | Easy | [Iteration](/src/array/TwoSum.java) | O | 08/13/2019 |
