@@ -8,7 +8,7 @@ This is the list of my accepted LeetCode solutions in Java for more than 100 pro
 + The second column is the name of the problem. It is linked to each problem page in LeetCode.
 + The third column shows the problem's difficulty in LeetCode.<br/>
 + The forth column has my solutions for each problem. Each solution is linked to my Java code in this repository. The list of abbreviations in this section is provided bellow.
-+ The fifth column shows the link to the test cases for the problem. "-" means I have not created test cases for the problem yet.
++ The fifth column shows the link to the JUnit test cases for the problem. "-" means I have not created test cases for the problem yet.
 + The last column is the date when I solved the problem last time.
 
 ## Abbreviations
@@ -26,6 +26,7 @@ BFS = Breadth First Search<br/>
 ^ = problems that I like.
 
 ## Java Solution List
+
 
 | # | Problem Name | Difficulty | Solutions | Test Case | Last Solved |
 | :---: | --- | --- | --- | :---: | :---: |
