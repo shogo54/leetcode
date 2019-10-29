@@ -1,24 +1,25 @@
 # LeetCode
 
-Accepted LeetCode solutions in java
+This is the list of my accepted LeetCode solutions in Java for more than 100 problems (as of 10/29/2019).
 
-This is the list of my LeetCode solutions for more than 100 problems (as of 10/29/2019).
+## How to Read the List
 
-How to Read the List:<br/>
-The first column is the index number of each question in LeetCode.<br/>
-The second column is the name of the problem. It is linked to each problem page in LeetCode.<br/>
-The third column shows the problem's difficulty in LeetCode.<br/>
-The forth column has my solutions for each problem. Each solution is linked to my Java code in this repository. The list of abbreviations in this section is provided bellow.<br/>
-The fifth column shows the link to the test cases for the problem. "-" means I have not created test cases for the problem yet.<br/>
-The last column is the date when I solved the problem last time.<br/>
++ The first column is the index number of each question in LeetCode.
++ The second column is the name of the problem. It is linked to each problem page in LeetCode.
++ The third column shows the problem's difficulty in LeetCode.<br/>
++ The forth column has my solutions for each problem. Each solution is linked to my Java code in this repository. The list of abbreviations in this section is provided bellow.
++ The fifth column shows the link to the test cases for the problem. "-" means I have not created test cases for the problem yet.
++ The last column is the date when I solved the problem last time.
 
-Abbreviations:<br/>
+## Abbreviations
+
 DP = Dynamic Programming<br/>
 D&C = Divide and Conquer<br/>
 DFS = Depth First Search<br/>
 BFS = Breadth First Search<br/>
 
-Note for myself:<br/>
+## Note
+
 \* = problems that can be improved in time or space complexity.<br/>
 ** = problems that I should revisit in the future because I spent too long on solving it. <br/>
 *** = problems that have follow-up or different approaches.<br/>
