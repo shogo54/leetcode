@@ -2,6 +2,27 @@
 
 Accepted LeetCode solutions in java
 
+This is the list of my LeetCode solutions for more than 100 problems (as of 10/29/2019).
+
+How to Read the List:<br/>
+The first column is the index number of each question in LeetCode.<br/>
+The second column is the name of the problem. It is linked to each problem page in LeetCode.<br/>
+The third column shows the problem's difficulty in LeetCode.<br/>
+The forth column has my solutions for each problem. Each solution is linked to my Java code in this repository. The list of abbreviations in this section is provided bellow.<br/>
+The fifth column shows the link to the test cases for the problem. "-" means I have not created test cases for the problem yet.<br/>
+The last column is the date when I solved the problem last time.<br/>
+
+Abbreviations:<br/>
+DP = Dynamic Programming<br/>
+D&C = Divide and Conquer<br/>
+DFS = Depth First Search<br/>
+BFS = Breadth First Search<br/>
+
+Note for myself:<br/>
+\* = problems that can be improved in time or space complexity.<br/>
+** = problems that I should revisit in the future because I spent too long on solving it. <br/>
+*** = problems that have follow-up or different approaches.<br/>
+^ = problems that I like.
 
 | # | Problem Name | Difficulty | Solutions | Test Case | Last Solved |
 | :---: | --- | --- | --- | :---: | :---: |
@@ -104,12 +125,4 @@ Accepted LeetCode solutions in java
 | 1078 | [Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/) | Easy | [Iteration](/src/string/OccurrencesAfterBigram.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L176-L185) | 06/15/2019 |
 | 1207 | [Unique Number of Occurrences*](https://leetcode.com/problems/unique-number-of-occurrences/) | Easy | [Map](/src/array/UniqueNumberOfOccurrences.java) | [array](https://github.com/ShogoAkiyama54/LeetCode/blob/a1dc948aa56e2f21c6f014d4d5f5bd490c45c332/src/array/ArrayTest.java#L129-L138) | 10/24/2019 |
 
-Note for myself:
 
-\* = problems that can be improved in time or space complexity.
-
-** = problems that I should revisit in the future because I spent too long on solving it. 
-
-*** = problems that has follow-up approaches. 
-
-^ = problems that I like.
