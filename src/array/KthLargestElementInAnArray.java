@@ -17,7 +17,7 @@ import java.util.*;
  * @see ArrayTest#testKthLargestElementInAnArray()
  */
 public class KthLargestElementInAnArray {
-	
+
 	public int findKthLargest(int[] nums, int k) {
 		if (nums.length == 0) {
 			return -1;
@@ -25,5 +25,5 @@ public class KthLargestElementInAnArray {
 		Arrays.sort(nums);
 		return nums[nums.length - k];
 	}
-	
+
 }

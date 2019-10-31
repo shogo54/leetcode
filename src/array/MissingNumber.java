@@ -8,14 +8,12 @@ package array;
  * https://leetcode.com/problems/missing-number/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - int missingNumber(int[] nums).
- * 
+ * Approach: Math Formula
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Missing Number.
  * Memory Usage: 39.1 MB, less than 100.00% of Java online submissions for Missing Number.
  * 
+ * @see ArrayTest#testMissingNumber()
  */
-
 public class MissingNumber {
 
 	public int missingNumber(int[] nums) {

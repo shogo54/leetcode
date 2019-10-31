@@ -8,15 +8,12 @@ package array;
  * https://leetcode.com/problems/maximum-product-subarray/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - int maxProduct(int[] nums)
- * - int maxProduct(int[] nums, int s, int e).
- * 
+ * Approach: Divide & Conquer
  * Runtime: 1 ms, faster than 98.86% of Java online submissions for Maximum Product Subarray.
  * Memory Usage: 36.1 MB, less than 100.00% of Java online submissions for Maximum Product Subarray.
  * 
+ * @see ArrayTest#testMaximumProductSubarray()
  */
-
 public class MaximumProductSubarray {
 
 	public int maxProduct(int[] nums) {

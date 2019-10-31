@@ -10,15 +10,12 @@ import java.util.*;
  * https://leetcode.com/problems/combination-sum/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - List<List<Integer>> combinationSum(int[] candidates, int target)
- * - void combine(int[] cands, int t, List<Integer> sofar, int last).
- * 
+ * Apporach: Backtracking
  * Runtime: 4 ms, faster than 66.51% of Java online submissions for Combination Sum.
  * Memory Usage: 39.1 MB, less than 28.15% of Java online submissions for Combination Sum.
  * 
+ * @see ArrayTest#testCombinationSum()
  */
-
 public class CombinationSum {
 
 	private Set<List<Integer>> result = new HashSet<List<Integer>>();
@@ -33,7 +30,7 @@ public class CombinationSum {
 			result.add(new ArrayList<Integer>(sofar));
 			return;
 		}
-		for (int i=last; i<cands.length; i++) {
+		for (int i = last; i < cands.length; i++) {
 			if (t - cands[i] >= 0) {
 				sofar.add(cands[i]);
 				combine(cands, t - cands[i], sofar, i);

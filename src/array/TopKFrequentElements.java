@@ -10,14 +10,12 @@ import java.util.*;
  * https://leetcode.com/problems/top-k-frequent-elements/ 
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties: 
- * - List<Integer> topKFrequent(int[] nums, int k).
- * 
+ * Approach: Map & Reverse
  * Runtime: 13 ms, faster than 70.89% of Java online submissions for Top K Frequent Elements. 
  * Memory Usage: 40.8 MB, less than 56.03% of Java online submissions for Top K Frequent Elements.
  * 
+ * @see ArrayTest#testTopKFrequentElements()
  */
-
 public class TopKFrequentElements {
 
 	public List<Integer> topKFrequent(int[] nums, int k) {

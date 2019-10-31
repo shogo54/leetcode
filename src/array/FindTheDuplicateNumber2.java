@@ -8,14 +8,12 @@ package array;
  * https://leetcode.com/problems/find-the-duplicate-number/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - int findDuplicate(int[] nums).
- * 
+ * Approach: Floyd's Cycle Detection (Tortoise and Hare)
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Find the Duplicate Number.
  * Memory Usage: 37.6 MB, less than 40.68% of Java online submissions for Find the Duplicate Number.
  * 
+ * @see ArrayTest#testFindTheDuplicateNumber()
  */
-
 public class FindTheDuplicateNumber2 {
 
 	public int findDuplicate(int[] nums) {

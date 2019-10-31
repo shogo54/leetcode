@@ -8,14 +8,12 @@ package array;
  * https://leetcode.com/problems/longest-increasing-subsequence/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - int lengthOfLIS(int[] nums).
- * 
+ * Approach: Dynamic Programming (Bottom up)
  * Runtime: 9 ms, faster than 48.07% of Java online submissions for Longest Increasing Subsequence.
  * Memory Usage: 36.6 MB, less than 100.00% of Java online submissions for Longest Increasing Subsequence.
  * 
+ * @see ArrayTest#testLongestIncreasingSubsequence()
  */
-
 public class LongestIncreasingSubsequence {
 
 	public int lengthOfLIS(int[] nums) {

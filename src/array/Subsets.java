@@ -29,7 +29,7 @@ public class Subsets {
 				result.get(len + j).add(nums[i]);
 			}
 		}
-		
+
 		return result;
 	}
 

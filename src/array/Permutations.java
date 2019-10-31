@@ -10,11 +10,11 @@ import java.util.*;
  * https://leetcode.com/problems/permutations/
  * Difficulty: Medium
  * 
- * Approach: Recursion & Backtracking
+ * Approach: Backtracking & Recursion
  * Runtime: 1 ms, faster than 97.75% of Java online submissions for Permutations.
  * Memory Usage: 38 MB, less than 80.14% of Java online submissions for Permutations.
  * 
- * @see ArrayTest
+ * @see ArrayTest#testPermutations()
  */
 public class Permutations {
 

@@ -10,14 +10,12 @@ import java.util.*;
  * https://leetcode.com/problems/contains-duplicate/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - boolean containsDuplicate(int[] nums).
- * 
+ * Approach: Hash Table & Iteration
  * Runtime: 9 ms, faster than 51.82% of Java online submissions for Contains Duplicate.
  * Memory Usage: 44 MB, less than 62.93% of Java online submissions for Contains Duplicate.
  * 
+ * @see ArrayTest#testContainsDuplicate()
  */
-
 public class ContainsDuplicate {
 
 	public boolean containsDuplicate(int[] nums) {

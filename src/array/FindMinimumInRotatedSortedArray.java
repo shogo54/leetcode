@@ -8,15 +8,12 @@ package array;
  * https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
  * Difficulty: Medium
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - int findMin(int[] nums)
- * - int find(int[] nums, int s, int e).
- * 
+ * Approach: Binary Search & Recursion
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Find Minimum in Rotated Sorted Array.
  * Memory Usage: 38.5 MB, less than 77.27% of Java online submissions for Find Minimum in Rotated Sorted Array.
  * 
+ * @see ArrayTest#testFindMinimumInRotatedSortedArray()
  */
-
 public class FindMinimumInRotatedSortedArray {
 
 	public int findMin(int[] nums) {

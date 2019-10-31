@@ -10,17 +10,14 @@ import java.util.*;
  * https://leetcode.com/problems/longest-consecutive-sequence/
  * Difficulty: Hard
  * 
- * To run the code in LeetCode, take the codes from the following method(s) and all properties:
- * - int longestConsecutive(int[] nums)
- * - class Group.
- * 
+ * Approach: Hash Map with Class
  * Runtime: 7 ms, faster than 63.28% of Java online submissions for Longest Consecutive Sequence.
  * Memory Usage: 38.2 MB, less than 62.07% of Java online submissions for Longest Consecutive Sequence.
  * 
+ * @see ArrayTest#testLongestConsecutiveSequence()
  */
-
 public class LongestConsecutiveSequence {
-	
+
 	public int longestConsecutive(int[] nums) {
 		HashMap<Integer, Group> nodes = new HashMap<Integer, Group>();
 		for (int i : nums) {
