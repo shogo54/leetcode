@@ -65,6 +65,28 @@ class ArrayTest{
 	}
 
 	/**
+	 * Test cases for 75. Sort Colors
+	 * @see SortColors
+	 */
+	@Test
+	void testSortColors() throws Exception{
+		int[] array = new int[] {2,0,2,1,1,0};
+		int[] expected = new int[] {0,0,1,1,2,2};
+		new SortColors().sortColors(array);
+		assertArrayEquals(expected, array);
+		
+		array = new int[] {};
+		expected = new int[] {};
+		new SortColors().sortColors(array);
+		assertArrayEquals(expected, array);
+		
+		array = new int[] {1};
+		expected = new int[] {1};
+		new SortColors().sortColors(array);
+		assertArrayEquals(expected, array);
+	}
+
+	/**
 	 * Test cases for 78. Subsets
 	 * @see SubSets
 	 */
