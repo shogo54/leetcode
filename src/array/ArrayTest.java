@@ -107,6 +107,37 @@ class ArrayTest{
 	}
 
 	/**
+	 * Test cases for 88. Merge Sorted Array
+	 * @see MergeSortedArray
+	 */
+	@Test
+	void testMergeSortedArray() throws Exception{
+		int[] nums1 = new int[] {1,2,3,0,0,0};
+		int[] nums2 = new int[] {2,5,6};
+		int[] expected = new int[] {1,2,2,3,5,6};
+		new MergeSortedArray().merge(nums1, 3, nums2, 3);
+		assertArrayEquals(expected, nums1);
+		
+		nums1 = new int[] {1};
+		nums2 = new int[0];
+		expected = new int[] {1};
+		new MergeSortedArray().merge(nums1, 1, nums2, 0);
+		assertArrayEquals(expected, nums1);
+		
+		nums1 = new int[] {0};
+		nums2 = new int[] {3};
+		expected = new int[] {3};
+		new MergeSortedArray().merge(nums1, 0, nums2, 1);
+		assertArrayEquals(expected, nums1);
+		
+		nums1 = new int[0];
+		nums2 = new int[0];
+		expected = new int[0];
+		new MergeSortedArray().merge(nums1, 0, nums2, 0);
+		assertArrayEquals(expected, nums1);
+	}
+
+	/**
 	 * Test cases for 121. Best Time to Buy and Sell Stock
 	 * @see BestTimeToBuyAndSellStock
 	 */
