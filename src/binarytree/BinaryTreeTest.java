@@ -45,6 +45,22 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 101. Symmetric Tree
+	 * @see SymmetricTree
+	 */
+	@Test
+	void testSymmetricTree() throws Exception{
+		TreeNode root = setupTree(new Integer[] {1,2,2,3,4,4,3});
+		assertTrue(new SymmetricTree().isSymmetric(root));
+		
+		root = setupTree(new Integer[] {1,2,2,null,3,null,3});
+		assertFalse(new SymmetricTree().isSymmetric(root));
+		
+		root = null;
+		assertTrue(new SymmetricTree().isSymmetric(root));
+	}
+
+	/**
 	 * Test cases for 102. Binary Tree Level Order Traversal
 	 * @see BinaryTreeLevelOrderTraversal
 	 */
