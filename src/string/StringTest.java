@@ -136,6 +136,17 @@ class StringTest {
 	}
 
 	/**
+	 * Test cases for 227. Basic Calculator II
+	 * @see BasicCalculatorII
+	 */
+	@Test
+	void testBasicCalculatorII() throws Exception{
+		assertEquals(7, new BasicCalculatorII().calculate("3+2*2"));
+		assertEquals(1, new BasicCalculatorII().calculate(" 3/2 "));
+		assertEquals(5, new BasicCalculatorII().calculate(" 3+5 / 2 "));
+	}
+
+	/**
 	 * Test cases for 242. Valid Anagram
 	 * @see ValidAnagram
 	 */
