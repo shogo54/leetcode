@@ -115,6 +115,20 @@ class StringTest {
 	}
 
 	/**
+	 * Test cases for 127. Word Ladder
+	 * 
+	 * @see WordLadder
+	 */
+	@Test
+	void testWordLadder() {
+		assertEquals(5, new WordLadder().ladderLength("hit", "cog", Arrays.asList("hot", "dot", "dog", "lot", "log", "cog")));
+		assertEquals(5, new WordLadder().ladderLength("hit", "cog", Arrays.asList("hot", "dot", "dog", "lot", "log")));
+		assertEquals(4, new WordLadder().ladderLength("ta", "if", 
+				Arrays.asList("ts", "sc", "ph", "ca", "jr", "hf", "to", "if", "ha", "is", "io", "cf", "ta")));
+		assertEquals(2, new WordLadder().ladderLength("a", "c", Arrays.asList("b", "c")));
+	}
+
+	/**
 	 * Test cases for 171. Excel Sheet Column Number
 	 * 
 	 * @see ExcelSheetColumnNumber
