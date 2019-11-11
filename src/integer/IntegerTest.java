@@ -7,7 +7,23 @@ import org.junit.jupiter.api.Test;
 class IntegerTest {
 
 	/**
+	 * Test cases for 202. Happy Number
+	 * 
+	 * @see HappyNumber
+	 */
+	@Test
+	void testHappyNumber() {
+		assertTrue(new HappyNumber().isHappy(19));
+		assertTrue(new HappyNumber().isHappy(1));
+		assertFalse(new HappyNumber().isHappy(0));
+		assertFalse(new HappyNumber().isHappy(2));
+		assertFalse(new HappyNumber().isHappy(20));
+		assertFalse(new HappyNumber().isHappy(999));
+	}
+
+	/**
 	 * Test cases for 279. Perfect Squares
+	 * 
 	 * @see PerfectSquares
 	 */
 	@Test
