@@ -48,7 +48,7 @@ BFS = Breadth First Search<br/>
 | 55 | [Jump Game**^](https://leetcode.com/problems/jump-game/) | Medium | [Greedy](/src/array/JumpGame.java) | [array](https://github.com/ShogoAkiyama54/LeetCode/blob/71940da22cc70ad84c6ba1bc488ae48720307d95/src/array/ArrayTest.java#L57-L65) | 08/23/2019 |
 | 56 | [Merge Intervals**](https://leetcode.com/problems/merge-intervals/) | Medium | [Recursion](/src/interval/MergeIntervals.java) | [interval](https://github.com/ShogoAkiyama54/LeetCode/blob/1688d26f6459d9685be9f76cc8dd0856b55280da/src/interval/IntervalTest.java#L9-L22) | 08/13/2019 |
 | 62 | [Unique Paths**](/src/UniquePaths.java) | Medium |  | - |
-| 70 | [Climbing Stairs](/src/ClimbingStairs.java) | Easy |  | - |
+| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [DP](/src/integer/ClimbingStairs.java) | [integer] | 08/14/2019 |
 | 73 | [Set Matrix Zeroes***](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | [O(M+N) space](/src/matrix/SetMatrixZeroes.java) | [matrix](https://github.com/ShogoAkiyama54/LeetCode/blob/75d67c8a23b01f70f1ab6f73bcd1c8197e8c1dc4/src/matrix/MatrixTest.java#L59-L72) | 08/13/2019 |
 | 75 | [Sort Colors*](https://leetcode.com/problems/sort-colors/) | Medium | [Iteration Two Pass](/src/array/SortColors.java) | [array](https://github.com/ShogoAkiyama54/LeetCode/blob/71940da22cc70ad84c6ba1bc488ae48720307d95/src/array/ArrayTest.java#L67-L87) | 10/31/2019 |
 | 76 | [Minimum Window Substring*](https://leetcode.com/problems/minimum-window-substring/) | Hard | [Sliding Window](/src/string/MinimumWindowSubstring.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L56-L65) | 09/24/2019 |
