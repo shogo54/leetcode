@@ -7,6 +7,20 @@ import org.junit.jupiter.api.Test;
 class IntegerTest {
 
 	/**
+	 * Test cases for 70. Climbing Stairs
+	 * 
+	 * @see ClimbingStairs
+	 */
+	@Test
+	void testClimbingStairs() {
+		assertEquals(2, new ClimbingStairs().climbStairs(2));
+		assertEquals(3, new ClimbingStairs().climbStairs(3));
+		assertEquals(5, new ClimbingStairs().climbStairs(4));
+		assertEquals(8, new ClimbingStairs().climbStairs(5));
+		assertEquals(10946, new ClimbingStairs().climbStairs(20));
+	}
+
+	/**
 	 * Test cases for 202. Happy Number
 	 * 
 	 * @see HappyNumber
