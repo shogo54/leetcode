@@ -18,6 +18,38 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 26. Remove Duplicates from Sorted Array
+	 * 
+	 * @see RemoveDuplicatesFromSortedArray
+	 * @see #testRemoveDuplicatesFromSortedArray(int[], int[], int)
+	 */
+	@Test
+	void testRemoveDuplicatesFromSortedArray() {
+		testRemoveDuplicatesFromSortedArray(new int[] { 1, 1, 2 }, new int[] { 1, 2, 0 }, 2);
+		testRemoveDuplicatesFromSortedArray(new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 },
+				new int[] { 0, 1, 2, 3, 4, 0, 0, 0, 0, 0 }, 5);
+		testRemoveDuplicatesFromSortedArray(new int[] { 1, 2, 2 }, new int[] { 1, 2, 0 }, 2);
+		testRemoveDuplicatesFromSortedArray(new int[] { 1, 2 }, new int[] { 1, 2 }, 2);
+		testRemoveDuplicatesFromSortedArray(new int[] { 2 }, new int[] { 2 }, 1);
+		testRemoveDuplicatesFromSortedArray(new int[0], new int[0], 0);
+	}
+
+	/**
+	 * Helper method for testRemoveDuplicatesFromSortedArray()
+	 * 
+	 * @see RemoveDuplicatesFromSortedArray
+	 * @see #testRemoveDuplicatesFromSortedArray()
+	 */
+	@Test
+	void testRemoveDuplicatesFromSortedArray(int[] input, int[] expectedArray, int expectedSize) {
+		int result = new RemoveDuplicatesFromSortedArray().removeDuplicates(input);
+		assertEquals(expectedSize, result);
+		for (int i = 0; i < expectedSize; i++) {
+			assertEquals(expectedArray[i], input[i]);
+		}
+	}
+
+	/**
 	 * Test cases for 39. Combination Sum
 	 * 
 	 * @see CombinationSum
