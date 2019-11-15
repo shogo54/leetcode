@@ -273,6 +273,29 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 617. Merge Two Binary Trees
+	 * 
+	 * @see MergeTwoBinaryTrees
+	 */
+	@Test
+	void testMergeTwoBinaryTrees() throws Exception {
+		TreeNode root1 = setupTree(new Integer[] { 1, 3, 2, 5 });
+		TreeNode root2 = setupTree(new Integer[] { 2, 1, 3, null, 4, null, 7 });
+		TreeNode expected = setupTree(new Integer[] { 3, 4, 5, 5, 4, null, 7 });
+		assertEquals(expected.toString(), new MergeTwoBinaryTrees().mergeTrees(root1, root2).toString());
+
+		root1 = setupTree(new Integer[] {});
+		root2 = setupTree(new Integer[] { 2, 1, 3, null, 4, null, 7 });
+		expected = setupTree(new Integer[] { 2, 1, 3, null, 4, null, 7 });
+		assertEquals(expected.toString(), new MergeTwoBinaryTrees().mergeTrees(root1, root2).toString());
+
+		root1 = setupTree(new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+		root2 = setupTree(new Integer[] { 2, 1, 3, null, 4, null, 7 });
+		expected = setupTree(new Integer[] { 3, 3, 6, 4, 9, 6, 14, 8, 9 });
+		assertEquals(expected.toString(), new MergeTwoBinaryTrees().mergeTrees(root1, root2).toString());
+	}
+
+	/**
 	 * Test cases for 654. Maximum Binary Tree
 	 * 
 	 * @see MaximumBinaryTree
