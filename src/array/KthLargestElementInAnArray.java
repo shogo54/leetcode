@@ -10,7 +10,7 @@ import java.util.*;
  * https://leetcode.com/problems/kth-largest-element-in-an-array/
  * difficulty: Medium
  * 
- * Apporach: Sort
+ * Approach: Sort
  * Runtime: 2 ms, faster than 88.79% of Java online submissions for Kth Largest Element in an Array.
  * Memory Usage: 36.9 MB, less than 90.16% of Java online submissions for Kth Largest Element in an Array.
  * 

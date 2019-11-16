@@ -40,13 +40,32 @@ class ArrayTest {
 	 * @see RemoveDuplicatesFromSortedArray
 	 * @see #testRemoveDuplicatesFromSortedArray()
 	 */
-	@Test
 	void testRemoveDuplicatesFromSortedArray(int[] input, int[] expectedArray, int expectedSize) {
 		int result = new RemoveDuplicatesFromSortedArray().removeDuplicates(input);
 		assertEquals(expectedSize, result);
 		for (int i = 0; i < expectedSize; i++) {
 			assertEquals(expectedArray[i], input[i]);
 		}
+	}
+
+	/**
+	 * Test cases for 33. Search in Rotated Sorted Array
+	 * 
+	 * @see SearchInRotatedSortedArray
+	 */
+	@Test
+	void testSearchInRotatedSortedArray() {
+		assertEquals(4, new SearchInRotatedSortedArray().search(new int[] { 4, 5, 6, 7, 0, 1, 2 }, 0));
+		assertEquals(-1, new SearchInRotatedSortedArray().search(new int[] { 4, 5, 6, 7, 0, 1, 2 }, 3));
+		assertEquals(-1, new SearchInRotatedSortedArray().search(new int[] { 4, 5, 6, 7, 0, 1, 2 }, 8));
+		assertEquals(-1, new SearchInRotatedSortedArray().search(new int[] {}, 5));
+		assertEquals(-1, new SearchInRotatedSortedArray().search(new int[] { 1, 3 }, 0));
+		assertEquals(0, new SearchInRotatedSortedArray().search(new int[] { 1, 3 }, 1));
+		assertEquals(1, new SearchInRotatedSortedArray().search(new int[] { 1, 3 }, 3));
+		assertEquals(1, new SearchInRotatedSortedArray().search(new int[] { 3, 1 }, 1));
+		assertEquals(0, new SearchInRotatedSortedArray().search(new int[] { 3, 1 }, 3));
+		assertEquals(4, new SearchInRotatedSortedArray().search(new int[] { 4, 5, 6, 7, 8, 1, 2, 3 }, 8));
+		assertEquals(0, new SearchInRotatedSortedArray().search(new int[] { 3, 5, 1 }, 3));
 	}
 
 	/**
