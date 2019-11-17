@@ -8,7 +8,7 @@ import java.util.*;
  * https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
  * Difficulty: Medium
  * 
- * Apporach: Iteration and Stack
+ * Approach: Iteration and Stack
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Populating Next Right Pointers in Each Node.
  * Memory Usage: 37.9 MB, less than 6.35% of Java online submissions for Populating Next Right Pointers in Each Node.
  * 

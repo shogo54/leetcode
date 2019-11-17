@@ -3,7 +3,6 @@ package linkedlist;
 import linkedlist.LinkedListTest.ListNode;
 
 /**
- * 
  * @author Shogo Akiyama
  * Solved on 04/14/2019 
  * 

@@ -10,7 +10,7 @@ import java.util.*;
  * https://leetcode.com/problems/intersection-of-two-arrays-ii/
  * difficulty: Easy
  * 
- * Apporach: Map & Iteration
+ * Approach: Map & Iteration
  * Runtime: 3 ms, faster than 57.33% of Java online submissions for Intersection of Two Arrays II.
  * Memory Usage: 37 MB, less than 83.87% of Java online submissions for Intersection of Two Arrays II.
  * 

@@ -8,7 +8,7 @@ package array;
  * https://leetcode.com/problems/coin-change/
  * difficulty: Medium
  * 
- * Apporach: Dynamic Programming (Bottom up)
+ * Approach: Dynamic Programming (Bottom up)
  * Runtime: 10 ms, faster than 71.40% of Java online submissions for Coin Change.
  * Memory Usage: 36 MB, less than 94.08% of Java online submissions for Coin Change.
  * 

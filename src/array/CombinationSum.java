@@ -10,7 +10,7 @@ import java.util.*;
  * https://leetcode.com/problems/combination-sum/
  * Difficulty: Medium
  * 
- * Apporach: Backtracking
+ * Approach: Backtracking
  * Runtime: 4 ms, faster than 66.51% of Java online submissions for Combination Sum.
  * Memory Usage: 39.1 MB, less than 28.15% of Java online submissions for Combination Sum.
  * 
