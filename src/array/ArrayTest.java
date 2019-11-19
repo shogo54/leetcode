@@ -18,6 +18,21 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 11. Container With Most Water
+	 * 
+	 * @see ContainerWithMostWater
+	 */
+	@Test
+	void testContainerWithMostWater() {
+		assertEquals(49, new ContainerWithMostWater().maxArea(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }));
+		assertEquals(24, new ContainerWithMostWater().maxArea(new int[] { 1, 3, 2, 5, 25, 24, 5 }));
+		assertEquals(96, new ContainerWithMostWater().maxArea(new int[] { 10, 14, 10, 4, 10, 2, 6, 1, 6, 12 }));
+		assertEquals(10, new ContainerWithMostWater().maxArea(new int[] { 10, 10 }));
+		assertEquals(0, new ContainerWithMostWater().maxArea(new int[] { 0, 0 }));
+		assertEquals(4, new ContainerWithMostWater().maxArea(new int[] { 10, 4 }));
+	}
+
+	/**
 	 * Test cases for 26. Remove Duplicates from Sorted Array
 	 * 
 	 * @see RemoveDuplicatesFromSortedArray
