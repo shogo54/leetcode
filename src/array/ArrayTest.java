@@ -484,6 +484,30 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 448. Find All Numbers Disappeared in an Array
+	 * 
+	 * @see FindAllNumbersDisappearedInAnArray
+	 */
+	@Test
+	void testFindAllNumbersDisappearedInAnArray() {
+		List<Integer> expected = Arrays.asList(5, 6);
+		List<Integer> actual = new FindAllNumbersDisappearedInAnArray()
+				.findDisappearedNumbers(new int[] { 4, 3, 2, 7, 8, 2, 3, 1 });
+		assertEquals(expected.size(), actual.size());
+		assertEquals(new HashSet<Integer>(expected), new HashSet<Integer>(actual));
+
+		expected = Arrays.asList(1);
+		actual = new FindAllNumbersDisappearedInAnArray().findDisappearedNumbers(new int[] { 2, 2 });
+		assertEquals(expected.size(), actual.size());
+		assertEquals(new HashSet<Integer>(expected), new HashSet<Integer>(actual));
+
+		expected = Arrays.asList(1, 2);
+		actual = new FindAllNumbersDisappearedInAnArray().findDisappearedNumbers(new int[] { 3, 3, 3, 4 });
+		assertEquals(expected.size(), actual.size());
+		assertEquals(new HashSet<Integer>(expected), new HashSet<Integer>(actual));
+	}
+
+	/**
 	 * Test cases for 1207. Unique Number of Occurrences
 	 * 
 	 * @see UniqueNumberOfOccurrences

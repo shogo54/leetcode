@@ -4,41 +4,37 @@ import java.util.*;
 
 /**
  * @author Shogo Akiyama 
- * Solved on 08/27/2019
+ * Solved on 11/17/2019
  * 
- * 217. Contains Duplicate
- * https://leetcode.com/problems/contains-duplicate/
+ * 448. Find All Numbers Disappeared in an Array
+ * https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
  * Difficulty: Easy
  * 
- * Approach: Hash Table & Iteration
- * Runtime: 257 ms, faster than 5.08% of Java online submissions for Find All Numbers Disappeared in an Array.
- * Memory Usage: 50.7 MB, less than 32.08% of Java online submissions for Find All Numbers Disappeared in an Array.
+ * Approach: Mark by Negativing
+ * Runtime: 2 ms, faster than 95.27% of Java online submissions for Container With Most Water.
+ * Memory Usage: 40.3 MB, less than 89.10% of Java online submissions for Container With Most Water.
  * 
- * @see ArrayTest#testContainsDuplicate()
+ * @see ArrayTest#testFindAllNumbersDisappearedInAnArray()
  */
 public class FindAllNumbersDisappearedInAnArray {
 
 	public List<Integer> findDisappearedNumbers(int[] nums) {
-        List<Integer> list = new ArrayList<Integer>();
-        
-        for(int i=0; i<nums.length; i++){
-            list.add(i+1);
-        }
-        
-        for(int num: nums){
-            list.set(num-1, -1);
-        }
-        
-        int index = 0;
-        while(index < list.size()){
-            if(list.get(index).intValue() == -1){
-                list.remove(index);
-            }else{
-                index++;
-            }
-        }
-        
-        return list;
-    }
-	
+		List<Integer> list = new ArrayList<Integer>();
+
+		for (int i = 0; i < nums.length; i++) {
+			int val = Math.abs(nums[i]) - 1;
+			if (nums[val] > 0) {
+				nums[val] = -nums[val];
+			}
+		}
+
+		for (int i = 0; i < nums.length; i++) {
+			if (nums[i] > 0) {
+				list.add(i + 1);
+			}
+		}
+
+		return list;
+	}
+
 }
