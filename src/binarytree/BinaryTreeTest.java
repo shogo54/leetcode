@@ -256,6 +256,30 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 543. Diameter of Binary Tree
+	 * 
+	 * @see DiameterOfBinaryTree
+	 */
+	@Test
+	void testDiameterOfBinaryTree() throws Exception {
+		TreeNode root = setupTree(new Integer[] { 1, 2, 3, 4, 5 });
+		assertEquals(3, new DiameterOfBinaryTree().diameterOfBinaryTree(root));
+
+		root = setupTree(new Integer[0]);
+		assertEquals(0, new DiameterOfBinaryTree().diameterOfBinaryTree(root));
+
+		root = setupTree(new Integer[] { 1 });
+		assertEquals(0, new DiameterOfBinaryTree().diameterOfBinaryTree(root));
+
+		root = setupTree(new Integer[] { 1, 2 });
+		assertEquals(1, new DiameterOfBinaryTree().diameterOfBinaryTree(root));
+
+		root = setupTree(new Integer[] { 1, 2, null, 4, 5, null, null, 6, 7, 8, null, null, null, null, null, null,
+				null, null, null, 9 });
+		assertEquals(5, new DiameterOfBinaryTree().diameterOfBinaryTree(root));
+	}
+
+	/**
 	 * Test cases for 572. Subtree of Another Tree
 	 * 
 	 * @see SubtreeOfAnotherTree
