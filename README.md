@@ -127,7 +127,7 @@ BFS = Breadth First Search<br/>
 | 461 | [Hamming Distance*](/src/HammingDistance.java) | Easy |  | - |
 | 508 | [Most Frequent Subtree Sum*](https://leetcode.com/problems/most-frequent-subtree-sum/) | Medium | [Recursion](src/binarytree/MostFrequentSubtreeSum.java) | [binarytree](https://github.com/ShogoAkiyama54/LeetCode/blob/16f4e7de8aaba29c3c45f455867bcd1c3a8e5b1b/src/binarytree/BinaryTreeTest.java#L164-L179) | 06/12/2019 |
 | 509 | [Fibonacci Number](src/FibonacciNumber.java) | Easy |  | - |
-| 543 | [Diameter of Binary Tree***](https://leetcode.com/problems/diameter-of-binary-tree/) | Easy | [Recursion](/src/binarytree/DiameterOfBinaryTree.java) | [binarytree] | 11/20/2019 |
+| 543 | [Diameter of Binary Tree***](https://leetcode.com/problems/diameter-of-binary-tree/) | Easy | [Recursion](/src/binarytree/DiameterOfBinaryTree.java) | [binarytree](https://github.com/ShogoAkiyama54/LeetCode/blob/c41202fe557be817aaf7aa945dd76e225b83103e/src/binarytree/BinaryTreeTest.java#L258-L280) | 11/20/2019 |
 | 547 | [Friend Circles*](/src/FriendCircles.java) | Medium |  | - |
 | 572 | [Subtree of Another Tree***](https://leetcode.com/problems/subtree-of-another-tree/) | Easy | [Recursion](/src/binarytree/SubtreeOfAnotherTree.java) | [binarytree](https://github.com/ShogoAkiyama54/LeetCode/blob/16f4e7de8aaba29c3c45f455867bcd1c3a8e5b1b/src/binarytree/BinaryTreeTest.java#L181-L195) | 08/29/2019 |
 | 617 | [Merge Two Binary Trees***](https://leetcode.com/problems/merge-two-binary-trees/) | Easy | [Recursion](/src/binarytree/MergeTwoBinaryTrees.java) | [binarytree](https://github.com/ShogoAkiyama54/LeetCode/blob/63f4f934bcf931321d5d928f1812f8ecd0642a9d/src/binarytree/BinaryTreeTest.java#L275-L296) | 11/14/2019 |
