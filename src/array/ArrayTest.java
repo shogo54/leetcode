@@ -105,6 +105,23 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 41. First Missing Positive
+	 * 
+	 * @see FirstMissingPositive
+	 */
+	@Test
+	void testFirstMissingPositive() {
+		assertEquals(3, new FirstMissingPositive().firstMissingPositive(new int[] { 1, 2, 0 }));
+		assertEquals(2, new FirstMissingPositive().firstMissingPositive(new int[] { 3, 4, -1, 1 }));
+		assertEquals(1, new FirstMissingPositive().firstMissingPositive(new int[] { 7, 8, 9, 11, 12 }));
+		assertEquals(1, new FirstMissingPositive().firstMissingPositive(new int[] { 0 }));
+		assertEquals(1, new FirstMissingPositive().firstMissingPositive(new int[] { -5 }));
+		assertEquals(2, new FirstMissingPositive().firstMissingPositive(new int[] { 1 }));
+		assertEquals(1, new FirstMissingPositive().firstMissingPositive(new int[] { -3, -10, -5, -8 }));
+		assertEquals(1, new FirstMissingPositive().firstMissingPositive(new int[0]));
+	}
+
+	/**
 	 * Test cases for 46. Permutations
 	 * 
 	 * @see Permutations
