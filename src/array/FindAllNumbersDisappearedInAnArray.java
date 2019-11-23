@@ -10,7 +10,7 @@ import java.util.*;
  * https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
  * Difficulty: Easy
  * 
- * Approach: Mark by Negativing
+ * Approach: Mark as Negatives
  * Runtime: 2 ms, faster than 95.27% of Java online submissions for Container With Most Water.
  * Memory Usage: 40.3 MB, less than 89.10% of Java online submissions for Container With Most Water.
  * 
