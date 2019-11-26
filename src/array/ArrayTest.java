@@ -525,6 +525,24 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 581. Shortest Unsorted Continuous Subarray
+	 * 
+	 * @see ShortestUnsortedContinuousSubarray
+	 */
+	@Test
+	void testShortestUnsortedContinuousSubarray() {
+		assertEquals(5,
+				new ShortestUnsortedContinuousSubarray().findUnsortedSubarray(new int[] { 2, 6, 4, 8, 10, 9, 15 }));
+		assertEquals(6, new ShortestUnsortedContinuousSubarray().findUnsortedSubarray(new int[] { 3, 3, 1, 1, 1, 2 }));
+		assertEquals(6, new ShortestUnsortedContinuousSubarray().findUnsortedSubarray(new int[] { 3, 3, 1, 1, 1, 1 }));
+		assertEquals(0, new ShortestUnsortedContinuousSubarray().findUnsortedSubarray(new int[] { 2, 6 }));
+		assertEquals(2, new ShortestUnsortedContinuousSubarray().findUnsortedSubarray(new int[] { 6, 2 }));
+		assertEquals(3, new ShortestUnsortedContinuousSubarray().findUnsortedSubarray(new int[] { 1, 2, 4, 5, 3 }));
+		assertEquals(3, new ShortestUnsortedContinuousSubarray().findUnsortedSubarray(new int[] { 1, 2, 3, 4, 5, 3 }));
+		assertEquals(0, new ShortestUnsortedContinuousSubarray().findUnsortedSubarray(new int[] { 1 }));
+	}
+
+	/**
 	 * Test cases for 1207. Unique Number of Occurrences
 	 * 
 	 * @see UniqueNumberOfOccurrences
