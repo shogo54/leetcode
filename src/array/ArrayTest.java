@@ -64,6 +64,34 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 31. Next Permutation
+	 * 
+	 * @see NextPermutation
+	 */
+	@Test
+	void testNextPermutation() {
+		int[] actual = new int[] { 1, 2, 3 };
+		int[] expected = new int[] { 1, 3, 2 };
+		new NextPermutation().nextPermutation(actual);
+		assertArrayEquals(actual, expected);
+
+		actual = new int[] { 3, 2, 1 };
+		expected = new int[] { 1, 2, 3 };
+		new NextPermutation().nextPermutation(actual);
+		assertArrayEquals(actual, expected);
+
+		actual = new int[] { 1, 1, 5 };
+		expected = new int[] { 1, 5, 1 };
+		new NextPermutation().nextPermutation(actual);
+		assertArrayEquals(actual, expected);
+
+		actual = new int[] { 1, 5, 8, 4, 7, 6, 5, 3, 1 };
+		expected = new int[] { 1, 5, 8, 5, 1, 3, 4, 6, 7 };
+		new NextPermutation().nextPermutation(actual);
+		assertArrayEquals(actual, expected);
+	}
+
+	/**
 	 * Test cases for 33. Search in Rotated Sorted Array
 	 * 
 	 * @see SearchInRotatedSortedArray
