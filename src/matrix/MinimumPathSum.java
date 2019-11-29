@@ -10,7 +10,7 @@ import java.util.*;
  * https://leetcode.com/problems/minimum-path-sum/
  * Difficulty: Medium
  * 
- * Approach: Dijkstra
+ * Approach: A*
  * Runtime: 20 ms, faster than 5.34% of Java online submissions for Minimum Path Sum.
  * Memory Usage: 37.2 MB, less than 100.00% of Java online submissions for Minimum Path Sum.
  * 
