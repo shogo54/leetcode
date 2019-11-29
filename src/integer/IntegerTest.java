@@ -2,9 +2,27 @@ package integer;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.*;
+
 import org.junit.jupiter.api.Test;
 
 class IntegerTest {
+
+	/**
+	 * Test cases for 22. Generate Parentheses
+	 * 
+	 * @see GenerateParentheses
+	 */
+	@Test
+	void testGenerateParentheses() {
+		assertEquals(Arrays.asList(""), new GenerateParentheses().generateParenthesis(0));
+		assertEquals(Arrays.asList("()"), new GenerateParentheses().generateParenthesis(1));
+		assertEquals(Arrays.asList("()()", "(())"), new GenerateParentheses().generateParenthesis(2));
+		List<String> expected = Arrays.asList("((()))", "(()())", "(())()", "()(())", "()()()");
+		List<String> actual = new GenerateParentheses().generateParenthesis(3);
+		assertEquals(expected.size(), actual.size());
+		assertEquals(new HashSet<String>(expected), new HashSet<String>(actual));
+	}
 
 	/**
 	 * Test cases for 70. Climbing Stairs
