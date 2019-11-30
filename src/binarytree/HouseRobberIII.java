@@ -15,7 +15,7 @@ import binarytree.BinaryTreeTest.TreeNode;
  * Memory Usage: 37.2 MB, less than 100.00% of Java online submissions for House Robber III.
  * 
  * Time Complexity: O(n)
- * Space Complexity: O(n) for recursive stack
+ * Space Complexity: O(n) for recursive stack, O(1) without counting recursive stack
  * Where n is the number of nodes in a tree
  * 
  * @see BinaryTreeTest#testHouseRobberIII()
