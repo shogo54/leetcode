@@ -238,6 +238,32 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 337. House Robber III
+	 * 
+	 * @see HouseRobberIII
+	 */
+	@Test
+	void testHouseRobberIII() throws Exception{
+		TreeNode root = setupTree();
+		assertEquals(4, new HouseRobberIII().rob(root));
+		
+		root = setupTree(new Integer[] {3,2,3,null,3,null,1});
+		assertEquals(7, new HouseRobberIII().rob(root));
+		
+		root = setupTree(new Integer[] {3,4,5,1,3,null,1});
+		assertEquals(9, new HouseRobberIII().rob(root));
+		
+		root = setupTree(new Integer[] {2,1,3,null,4});
+		assertEquals(7, new HouseRobberIII().rob(root));
+		
+		root = setupTree(new Integer[] {2});
+		assertEquals(2, new HouseRobberIII().rob(root));
+		
+		root = setupTree(new Integer[0]);
+		assertEquals(0, new HouseRobberIII().rob(root));
+	}
+
+	/**
 	 * Test cases for 508. Most Frequent Subtree Sum
 	 * 
 	 * @see MostFrequentSubtreeSum
