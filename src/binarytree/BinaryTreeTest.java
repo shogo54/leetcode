@@ -12,7 +12,7 @@ class BinaryTreeTest {
 	 * @see BinaryTreeInorderTraversal
 	 */
 	@Test
-	void testBinaryTreeInorderTraversal() throws Exception {
+	void testBinaryTreeInorderTraversal() {
 		TreeNode root = setupTree();
 		assertEquals(new ArrayList<Integer>(Arrays.asList(1, 3, 2)),
 				new BinaryTreeInorderTraversal().inorderTraversal(root));
@@ -24,7 +24,7 @@ class BinaryTreeTest {
 	 * @see ValidateBinarySearchTree
 	 */
 	@Test
-	void testValidateBinarySearchTree() throws Exception {
+	void testValidateBinarySearchTree() {
 		TreeNode root = setupTree(new Integer[] { 2, 1, 3 });
 		assertTrue(new ValidateBinarySearchTree().isValidBST(root));
 		root = setupTree(new Integer[] { 10, 5, 15, null, null, 6, 20 });
@@ -37,7 +37,7 @@ class BinaryTreeTest {
 	 * @see SameTree
 	 */
 	@Test
-	void testSameTree() throws Exception {
+	void testSameTree() {
 		SameTree st = new SameTree();
 		TreeNode root1 = setupTree(new Integer[] { 1, 2, 3 });
 		TreeNode root2 = setupTree(new Integer[] { 1, 2, 3 });
@@ -54,7 +54,7 @@ class BinaryTreeTest {
 	 * @see SymmetricTree
 	 */
 	@Test
-	void testSymmetricTree() throws Exception {
+	void testSymmetricTree() {
 		TreeNode root = setupTree(new Integer[] { 1, 2, 2, 3, 4, 4, 3 });
 		assertTrue(new SymmetricTree().isSymmetric(root));
 
@@ -71,7 +71,7 @@ class BinaryTreeTest {
 	 * @see BinaryTreeLevelOrderTraversal
 	 */
 	@Test
-	void testBinaryTreeLevelOrderTraversal() throws Exception {
+	void testBinaryTreeLevelOrderTraversal() {
 		TreeNode root = setupTree(new Integer[] { 3, 9, 20, null, null, 15, 7 });
 		List<List<Integer>> list = new ArrayList<List<Integer>>();
 		list.add(Arrays.asList(3));
@@ -86,7 +86,7 @@ class BinaryTreeTest {
 	 * @see BinaryTreeZigzagLevelOrderTraversal
 	 */
 	@Test
-	void testBinaryTreeZigzagLevelOrderTraversal() throws Exception {
+	void testBinaryTreeZigzagLevelOrderTraversal() {
 		TreeNode root = setupTree(new Integer[] { 3, 9, 20, null, null, 15, 7 });
 		List<List<Integer>> list = new ArrayList<List<Integer>>();
 		list.add(Arrays.asList(3));
@@ -110,7 +110,7 @@ class BinaryTreeTest {
 	 * @see MaximumDepthOfBinaryTree
 	 */
 	@Test
-	void testMaximumDepthOfBinaryTree() throws Exception {
+	void testMaximumDepthOfBinaryTree() {
 		TreeNode root = setupTree(new Integer[] { 3, 9, 20, null, null, 15, 21 });
 		assertEquals(3, new MaximumDepthOfBinaryTree().maxDepth(root));
 	}
@@ -122,14 +122,14 @@ class BinaryTreeTest {
 	 * @see ConstructBinaryTreeFromPreorderAndInorderTraversal2
 	 */
 	@Test
-	void testConstructBinaryTreeFromPreorderAndInorderTraversal() throws Exception {
+	void testConstructBinaryTreeFromPreorderAndInorderTraversal() {
 		ConstructBinaryTreeFromPreorderAndInorderTraversal builder = new ConstructBinaryTreeFromPreorderAndInorderTraversal();
 		TreeNode exptected = setupTree(new Integer[] { 3, 9, 20, null, null, 15, 7 });
 		TreeNode actual = builder.buildTree(new int[] { 3, 9, 20, 15, 7 }, new int[] { 9, 3, 15, 20, 7 });
 		assertEquals(exptected.toString(), actual.toString());
 
 		builder = new ConstructBinaryTreeFromPreorderAndInorderTraversal();
-		exptected = setupTree(new Integer[] { 4, 1, null, null, 2, null, null, null, null, null, 3 });
+		exptected = setupTree(new Integer[] { 4, 1, null, null, 2, null, 3 });
 		actual = builder.buildTree(new int[] { 4, 1, 2, 3 }, new int[] { 1, 2, 3, 4 });
 		assertEquals(exptected.toString(), actual.toString());
 	}
@@ -140,8 +140,8 @@ class BinaryTreeTest {
 	 * @see ConvertSortedArrayToBinarySearchTree
 	 */
 	@Test
-	void testConvertSortedArrayToBinarySearchTree() throws Exception {
-		TreeNode root = setupTree(new Integer[] { 0, -3, 9, -10, null, 5 });
+	void testConvertSortedArrayToBinarySearchTree() {
+		TreeNode root = setupTree(new Integer[] { 0, -10, 5, null, -3, null, 9 });
 		TreeNode converted = new ConvertSortedArrayToBinarySearchTree()
 				.sortedArrayToBST(new int[] { -10, -3, 0, 5, 9 });
 		assertEquals(root.toString(), converted.toString());
@@ -153,14 +153,14 @@ class BinaryTreeTest {
 	 * @see BinaryTreeMaximumPathSum
 	 */
 	@Test
-	void testBinaryTreeMaximumPathSum() throws Exception {
+	void testBinaryTreeMaximumPathSum() {
 		TreeNode root = setupTree(new Integer[] { 1, 2, 3 });
 		assertEquals(6, new BinaryTreeMaximumPathSum().maxPathSum(root));
 
 		root = setupTree(new Integer[] { -10, 9, 20, null, null, 15, 7 });
 		assertEquals(42, new BinaryTreeMaximumPathSum().maxPathSum(root));
 
-		root = setupTree(new Integer[] { 5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null, null, 1 });
+		root = setupTree(new Integer[] { 5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1 });
 		assertEquals(48, new BinaryTreeMaximumPathSum().maxPathSum(root));
 	}
 
@@ -170,7 +170,7 @@ class BinaryTreeTest {
 	 * @see BinaryTreePostorderTraversal
 	 */
 	@Test
-	void testBinaryTreePostorderTraversal() throws Exception {
+	void testBinaryTreePostorderTraversal() {
 		TreeNode root = setupTree();
 		assertEquals(new ArrayList<Integer>(Arrays.asList(3, 2, 1)),
 				new BinaryTreePostorderTraversal().postorderTraversal(root));
@@ -182,7 +182,7 @@ class BinaryTreeTest {
 	 * @see InvertBinaryTree
 	 */
 	@Test
-	void testInvertBinaryTree() throws Exception {
+	void testInvertBinaryTree() {
 		TreeNode root = setupTree(new Integer[] { 4, 2, 7, 1, 3, 6, 9 });
 		TreeNode inverted = setupTree(new Integer[] { 4, 7, 2, 9, 6, 3, 1 });
 		assertEquals(inverted.toString(), new InvertBinaryTree().invertTree(root).toString());
@@ -194,7 +194,7 @@ class BinaryTreeTest {
 	 * @see KthSmallestElementInABST
 	 */
 	@Test
-	void testKthSmallestElementInABST() throws Exception {
+	void testKthSmallestElementInABST() {
 		TreeNode root = setupTree(new Integer[] { 3, 1, 4, null, 2 });
 		assertEquals(1, new KthSmallestElementInABST().kthSmallest(root, 1));
 
@@ -208,7 +208,7 @@ class BinaryTreeTest {
 	 * @see LowestCommonAncestorOfABinarySearchTree
 	 */
 	@Test
-	void testLowestCommonAncestorOfABinarySearchTree() throws Exception {
+	void testLowestCommonAncestorOfABinarySearchTree() {
 		TreeNode root = setupTree(new Integer[] { 6, 2, 8, 0, 4, 7, 9, null, null, 3, 5 });
 		LowestCommonAncestorOfABinarySearchTree tester = new LowestCommonAncestorOfABinarySearchTree();
 
@@ -224,7 +224,7 @@ class BinaryTreeTest {
 	 * @see SerializeAndDeserializeBinaryTree
 	 */
 	@Test
-	void testSerializeAndDeserializeBinaryTree() throws Exception {
+	void testSerializeAndDeserializeBinaryTree() {
 		SerializeAndDeserializeBinaryTree tester = new SerializeAndDeserializeBinaryTree();
 
 		TreeNode root = setupTree();
@@ -233,8 +233,17 @@ class BinaryTreeTest {
 		root = setupTree(new Integer[] { 1, 2, 3, null, null, 4, 5 });
 		assertEquals(root.toString(), tester.deserialize(tester.serialize(root)).toString());
 
-		root = setupTree(new Integer[] { 1, 2, null, 3, null, null, null, 4 });
+		root = setupTree(new Integer[] { 1, 2, null, 3, null, 4, null, 5 });
 		assertEquals(root.toString(), tester.deserialize(tester.serialize(root)).toString());
+
+		root = setupTree(new Integer[] { 2, null, 3, null, 4, null, 5, null, 6 });
+		assertEquals(root.toString(), tester.deserialize(tester.serialize(root)).toString());
+
+		root = setupTree(new Integer[] { 2 });
+		assertEquals(root.toString(), tester.deserialize(tester.serialize(root)).toString());
+
+		root = setupTree(new Integer[0]);
+		assertEquals(root, tester.deserialize(tester.serialize(root)));
 	}
 
 	/**
@@ -243,24 +252,47 @@ class BinaryTreeTest {
 	 * @see HouseRobberIII
 	 */
 	@Test
-	void testHouseRobberIII() throws Exception{
+	void testHouseRobberIII() {
 		TreeNode root = setupTree();
 		assertEquals(4, new HouseRobberIII().rob(root));
-		
-		root = setupTree(new Integer[] {3,2,3,null,3,null,1});
+
+		root = setupTree(new Integer[] { 3, 2, 3, null, 3, null, 1 });
 		assertEquals(7, new HouseRobberIII().rob(root));
-		
-		root = setupTree(new Integer[] {3,4,5,1,3,null,1});
+
+		root = setupTree(new Integer[] { 3, 4, 5, 1, 3, null, 1 });
 		assertEquals(9, new HouseRobberIII().rob(root));
-		
-		root = setupTree(new Integer[] {2,1,3,null,4});
+
+		root = setupTree(new Integer[] { 2, 1, 3, null, 4 });
 		assertEquals(7, new HouseRobberIII().rob(root));
-		
-		root = setupTree(new Integer[] {2});
+
+		root = setupTree(new Integer[] { 2 });
 		assertEquals(2, new HouseRobberIII().rob(root));
-		
+
 		root = setupTree(new Integer[0]);
 		assertEquals(0, new HouseRobberIII().rob(root));
+	}
+
+	/**
+	 * Test cases for 437. Path Sum III
+	 * 
+	 * @see PathSumIII
+	 */
+	@Test
+	void testPathSumIII() {
+		TreeNode root = setupTree();
+		assertEquals(2, new PathSumIII().pathSum(root, 3));
+		assertEquals(1, new PathSumIII().pathSum(root, 2));
+
+		root = setupTree(new Integer[0]);
+		assertEquals(0, new PathSumIII().pathSum(root, 2));
+
+		root = setupTree(new Integer[] { 8 });
+		assertEquals(0, new PathSumIII().pathSum(root, 2));
+		assertEquals(1, new PathSumIII().pathSum(root, 8));
+
+		root = setupTree(new Integer[] { 10, 5, -3, 3, 2, null, 11, 3, -2, null, 1 });
+		assertEquals(3, new PathSumIII().pathSum(root, 8));
+		assertEquals(3, new PathSumIII().pathSum(root, 3));
 	}
 
 	/**
@@ -269,7 +301,7 @@ class BinaryTreeTest {
 	 * @see MostFrequentSubtreeSum
 	 */
 	@Test
-	void testMostFrequentSubtreeSum() throws Exception {
+	void testMostFrequentSubtreeSum() {
 		TreeNode root = setupTree(new Integer[] { 5, 2, -3 });
 		int[] expected = new int[] { 2, -3, 4 };
 		int[] actual = new MostFrequentSubtreeSum().findFrequentTreeSum(root);
@@ -287,7 +319,7 @@ class BinaryTreeTest {
 	 * @see DiameterOfBinaryTree
 	 */
 	@Test
-	void testDiameterOfBinaryTree() throws Exception {
+	void testDiameterOfBinaryTree() {
 		TreeNode root = setupTree(new Integer[] { 1, 2, 3, 4, 5 });
 		assertEquals(3, new DiameterOfBinaryTree().diameterOfBinaryTree(root));
 
@@ -300,8 +332,7 @@ class BinaryTreeTest {
 		root = setupTree(new Integer[] { 1, 2 });
 		assertEquals(1, new DiameterOfBinaryTree().diameterOfBinaryTree(root));
 
-		root = setupTree(new Integer[] { 1, 2, null, 4, 5, null, null, 6, 7, 8, null, null, null, null, null, null,
-				null, null, null, 9 });
+		root = setupTree(new Integer[] { 1, 2, null, 4, 5, 6, 7, 8, null, null, null, null, 9 });
 		assertEquals(5, new DiameterOfBinaryTree().diameterOfBinaryTree(root));
 	}
 
@@ -311,7 +342,7 @@ class BinaryTreeTest {
 	 * @see SubtreeOfAnotherTree
 	 */
 	@Test
-	void testSubtreeOfAnotherTree() throws Exception {
+	void testSubtreeOfAnotherTree() {
 		TreeNode root = setupTree(new Integer[] { 3, 4, 5, 1, 2 });
 		assertTrue(new SubtreeOfAnotherTree().isSubtree(root, setupTree(new Integer[] { 4, 1, 2 })));
 
@@ -328,7 +359,7 @@ class BinaryTreeTest {
 	 * @see MergeTwoBinaryTrees
 	 */
 	@Test
-	void testMergeTwoBinaryTrees() throws Exception {
+	void testMergeTwoBinaryTrees() {
 		TreeNode root1 = setupTree(new Integer[] { 1, 3, 2, 5 });
 		TreeNode root2 = setupTree(new Integer[] { 2, 1, 3, null, 4, null, 7 });
 		TreeNode expected = setupTree(new Integer[] { 3, 4, 5, 5, 4, null, 7 });
@@ -351,8 +382,8 @@ class BinaryTreeTest {
 	 * @see MaximumBinaryTree
 	 */
 	@Test
-	void testMaximumBinaryTree() throws Exception {
-		TreeNode root = setupTree(new Integer[] { 6, 3, 5, null, 2, 0, null, null, null, null, 1 });
+	void testMaximumBinaryTree() {
+		TreeNode root = setupTree(new Integer[] { 6, 3, 5, null, 2, 0, null, null, 1 });
 		assertEquals(root.toString(),
 				new MaximumBinaryTree().constructMaximumBinaryTree(new int[] { 3, 2, 1, 6, 0, 5 }).toString());
 
@@ -366,7 +397,7 @@ class BinaryTreeTest {
 	 * @see SearchInABinarySearchTree
 	 */
 	@Test
-	void testSearchInABinarySearchTree() throws Exception {
+	void testSearchInABinarySearchTree() {
 		TreeNode root = setupTree(new Integer[] { 4, 2, 7, 1, 3 });
 		assertEquals(root.left, new SearchInABinarySearchTree().searchBST(root, 2));
 	}
@@ -377,7 +408,7 @@ class BinaryTreeTest {
 	 * @see RangeSumOfBST
 	 */
 	@Test
-	void testRangeSumOfBST() throws Exception {
+	void testRangeSumOfBST() {
 		TreeNode root = setupTree(new Integer[] { 10, 5, 15, 3, 7, null, 18 });
 		assertEquals(32, new RangeSumOfBST().rangeSumBST(root, 7, 15));
 
@@ -388,45 +419,43 @@ class BinaryTreeTest {
 		assertEquals(0, new RangeSumOfBST().rangeSumBST(root, 6, 10));
 	}
 
-	TreeNode setupTree() throws Exception {
-		return setupTree(new Integer[] { 1, null, 2, null, null, 3 });
+	TreeNode setupTree() {
+		return setupTree(new Integer[] { 1, null, 2, 3 });
 	}
 
-	TreeNode setupTree(Integer[] array) throws Exception {
+	TreeNode setupTree(Integer[] array) {
 		if (array.length == 0) {
 			return null;
 		}
 
-		Map<Integer, TreeNode> map = new TreeMap<Integer, TreeNode>();
+		Queue<TreeNode> queue = new LinkedList<TreeNode>();
+		TreeNode root = new TreeNode(array[0]);
+		queue.offer(root);
 		boolean left = true;
 
-		map.put(0, new TreeNode(array[0]));
-
 		for (int i = 1; i < array.length; i++) {
-			if (array[i] == null) {
-				left = !left;
-				continue;
-			}
-			TreeNode t = new TreeNode(array[i]);
+			TreeNode parent = queue.peek();
 
-			if (left) {
-				if (map.get(i / 2) == null) {
-					throw new Exception();
+			if (array[i] != null) {
+				TreeNode child = new TreeNode(array[i]);
+
+				if (left) {
+					parent.left = child;
+				} else {
+					parent.right = child;
+					queue.poll();
 				}
-				map.get(i / 2).left = t;
-
+				queue.offer(child);
 			} else {
-				if (map.get((i - 1) / 2) == null) {
-					throw new Exception();
+				if (!left) {
+					queue.poll();
 				}
-				map.get((i - 1) / 2).right = t;
-
 			}
-			map.put(i, t);
+
 			left = !left;
 		}
 
-		return map.get(0);
+		return root;
 	}
 
 	static class TreeNode {
@@ -438,23 +467,33 @@ class BinaryTreeTest {
 			val = x;
 		}
 
+		@Override
 		public String toString() {
-			return "[" + helper().substring(1) + "]";
-		}
+			String s = "[";
+			Queue<TreeNode> queue = new LinkedList<TreeNode>();
+			queue.add(this);
 
-		private String helper() {
-			String s = "";
-			if (left != null) {
-				s += left.helper();
+			while (!queue.isEmpty()) {
+				TreeNode curr = queue.poll();
+				if (curr != null) {
+					s += curr.val + ",";
+					queue.add(curr.left);
+					queue.add(curr.right);
+				} else {
+					s += "null,";
+				}
 			}
 
-			s += "," + val;
-
-			if (right != null) {
-				s += right.helper();
+			int lastIndex = s.length() - 1;
+			for (int i = s.length() - 1; i >= 0; i--) {
+				char c = s.charAt(i);
+				if (Character.isDigit(c)) {
+					lastIndex = i;
+					break;
+				}
 			}
 
-			return s;
+			return s.substring(0, lastIndex + 1) + "]";
 		}
 	}
 
