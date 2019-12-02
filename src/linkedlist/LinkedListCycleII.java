@@ -16,7 +16,7 @@ import linkedlist.LinkedListTest.ListNode;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * where n is the number of nodes in the list
+ * Where n is the number of nodes in the linked list
  * 
  * @see LinkedListTest#testLinkedListCycleII()
  */

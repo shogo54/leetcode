@@ -112,6 +112,27 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 34. Find First and Last Position of Element in Sorted Array
+	 * 
+	 * @see FindFirstAndLastPositionOfElementInSortedArray
+	 */
+	@Test
+	void testFindFirstAndLastPositionOfElementInSortedArray() {
+		assertArrayEquals(new int[] { 3, 4 },
+				new FindFirstAndLastPositionOfElementInSortedArray().searchRange(new int[] { 5, 7, 7, 8, 8, 10 }, 8));
+		assertArrayEquals(new int[] { -1, -1 },
+				new FindFirstAndLastPositionOfElementInSortedArray().searchRange(new int[] { 5, 7, 7, 8, 8, 10 }, 6));
+		assertArrayEquals(new int[] { -1, -1 },
+				new FindFirstAndLastPositionOfElementInSortedArray().searchRange(new int[] { 5 }, 6));
+		assertArrayEquals(new int[] { -1, -1 },
+				new FindFirstAndLastPositionOfElementInSortedArray().searchRange(new int[] { 5, 7 }, 6));
+		assertArrayEquals(new int[] { 0, 0 },
+				new FindFirstAndLastPositionOfElementInSortedArray().searchRange(new int[] { 5, 7 }, 5));
+		assertArrayEquals(new int[] { 0, 1 },
+				new FindFirstAndLastPositionOfElementInSortedArray().searchRange(new int[] { 5, 5 }, 5));
+	}
+
+	/**
 	 * Test cases for 39. Combination Sum
 	 * 
 	 * @see CombinationSum
