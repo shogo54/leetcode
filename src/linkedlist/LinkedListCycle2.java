@@ -10,7 +10,7 @@ import linkedlist.LinkedListTest.ListNode;
  * https://leetcode.com/problems/linked-list-cycle/
  * Difficulty: Easy
  * 
- * Approach: Floyd's tortoise and hare
+ * Approach: Floyd's Cycle Detection
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Linked List Cycle.
  * Memory Usage: 37.4 MB, less than 98.57% of Java online submissions for Linked List Cycle.
  * 
