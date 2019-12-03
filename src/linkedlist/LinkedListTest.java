@@ -137,6 +137,28 @@ public class LinkedListTest {
 	}
 
 	/**
+	 * Test cases for 160. Intersection of Two Linked Lists
+	 * 
+	 * @see IntersectionOfTwoLinkedLists
+	 */
+	@Test
+	void testIntersectionOfTwoLinkedLists() {
+		ListNode headA = setupHead(new int[] { 4, 1 });
+		ListNode headB = setupHead(new int[] { 5, 0, 1, 8, 4, 5 });
+		headA.next.next = headB.next.next.next;
+		assertEquals(headA.next.next, new IntersectionOfTwoLinkedLists().getIntersectionNode(headA, headB));
+
+		headA = setupHead(new int[] { 0, 9, 1 });
+		headB = setupHead(new int[] { 3, 2, 4 });
+		headA.next.next.next = headB.next;
+		assertEquals(headB.next, new IntersectionOfTwoLinkedLists().getIntersectionNode(headA, headB));
+
+		headA = setupHead(new int[] { 2, 6, 4 });
+		headB = setupHead(new int[] { 1, 5 });
+		assertEquals(null, new IntersectionOfTwoLinkedLists().getIntersectionNode(headA, headB));
+	}
+
+	/**
 	 * Test cases for 206. Reverse Linked List
 	 * 
 	 * @see ReverseLinkedList
