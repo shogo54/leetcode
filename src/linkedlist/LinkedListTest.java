@@ -176,6 +176,38 @@ public class LinkedListTest {
 	}
 
 	/**
+	 * Test cases for 234. Palindrome Linked List
+	 * 
+	 * @see PalindromeLinkedList
+	 */
+	@Test
+	void testPalindromeLinkedList() {
+		ListNode head = setupHead();
+		assertFalse(new PalindromeLinkedList().isPalindrome(head));
+		
+		head = setupHead(new int[] {1,2,2,1});
+		assertTrue(new PalindromeLinkedList().isPalindrome(head));
+		
+		head = setupHead(new int[] {1,2,3,2,1});
+		assertTrue(new PalindromeLinkedList().isPalindrome(head));
+		
+		head = setupHead(new int[] {1,2,2,1,2});
+		assertFalse(new PalindromeLinkedList().isPalindrome(head));
+		
+		head = setupHead(new int[] {1,2});
+		assertFalse(new PalindromeLinkedList().isPalindrome(head));
+		
+		head = setupHead(new int[] {1,1});
+		assertTrue(new PalindromeLinkedList().isPalindrome(head));
+		
+		head = setupHead(new int[] {1});
+		assertTrue(new PalindromeLinkedList().isPalindrome(head));
+		
+		head = null;
+		assertTrue(new PalindromeLinkedList().isPalindrome(head));
+	}
+
+	/**
 	 * Test cases for 328. Odd Even Linked List
 	 * 
 	 * @see OddEvenLinkedList
