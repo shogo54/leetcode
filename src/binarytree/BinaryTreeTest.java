@@ -148,6 +148,38 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 114. Flatten Binary Tree to Linked List
+	 * 
+	 * @see FlattenBinaryTreeToLinkedList
+	 */
+	void testFlattenBinaryTreeToLinkedList() {
+		TreeNode root = setupTree(new Integer[] { 1, 2, 5, 3, 4, null, 6 });
+		TreeNode expected = setupTree(new Integer[] { 1, null, 2, null, 3, null, 4, null, 5, null, 6 });
+		new FlattenBinaryTreeToLinkedList().flatten(root);
+		assertEquals(expected.toString(), root.toString());
+
+		root = setupTree(new Integer[] { 1, 2, 5, 3, 4, 6, 7 });
+		expected = setupTree(new Integer[] { 1, null, 2, null, 3, null, 4, null, 5, null, 6, null, 7 });
+		new FlattenBinaryTreeToLinkedList().flatten(root);
+		assertEquals(expected.toString(), root.toString());
+
+		root = setupTree(new Integer[] { 1, 2, null, 3, null, 4 });
+		expected = setupTree(new Integer[] { 1, null, 2, null, 3, null, 4 });
+		new FlattenBinaryTreeToLinkedList().flatten(root);
+		assertEquals(expected.toString(), root.toString());
+
+		root = setupTree(new Integer[] { 1 });
+		expected = setupTree(new Integer[] { 1 });
+		new FlattenBinaryTreeToLinkedList().flatten(root);
+		assertEquals(expected.toString(), root.toString());
+
+		root = null;
+		expected = null;
+		new FlattenBinaryTreeToLinkedList().flatten(root);
+		assertEquals(expected, root);
+	}
+
+	/**
 	 * Test cases for 124. Binary Tree Maximum Path Sum
 	 * 
 	 * @see BinaryTreeMaximumPathSum
