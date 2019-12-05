@@ -168,6 +168,11 @@ class BinaryTreeTest {
 		new FlattenBinaryTreeToLinkedList().flatten(root);
 		assertEquals(expected.toString(), root.toString());
 
+		root = setupTree(new Integer[] { 1, null, 2, null, 3, null, 4 });
+		expected = setupTree(new Integer[] { 1, null, 2, null, 3, null, 4 });
+		new FlattenBinaryTreeToLinkedList().flatten(root);
+		assertEquals(expected.toString(), root.toString());
+
 		root = setupTree(new Integer[] { 1 });
 		expected = setupTree(new Integer[] { 1 });
 		new FlattenBinaryTreeToLinkedList().flatten(root);
