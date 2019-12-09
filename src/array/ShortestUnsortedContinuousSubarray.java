@@ -14,6 +14,7 @@ package array;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)
+ * Where n is the number of a linked list
  * 
  * @see ArrayTest#testShortestUnsortedContinuousSubarray()
  */

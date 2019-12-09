@@ -16,7 +16,7 @@ import linkedlist.LinkedListTest.ListNode;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(n) for recursive stack, O(1) without counting recursive stack
- * Where n is the numbers of the linked list
+ * Where n is the numbers of a linked list
  * 
  * @see LinkedListTest#testPalindromeLinkedList()
  */

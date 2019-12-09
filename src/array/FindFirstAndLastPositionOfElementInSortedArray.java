@@ -14,7 +14,7 @@ package array;
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * Where n is the number of nodes in the array
+ * Where n is the number of nodes in an array
  * 
  * @see ArrayTest#testFindFirstAndLastPositionOfElementInSortedArray()
  */
