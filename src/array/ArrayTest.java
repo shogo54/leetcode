@@ -490,6 +490,25 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 315. Count of Smaller Numbers After Self
+	 * 
+	 * @see CountOfSmallerNumbersAfterSelf
+	 */
+	@Test
+	void testCountOfSmallerNumbersAfterSelf() {
+		assertEquals(Arrays.asList(2, 1, 1, 0),
+				new CountOfSmallerNumbersAfterSelf().countSmaller(new int[] { 5, 2, 6, 1 }));
+		assertEquals(Arrays.asList(4, 3, 2, 1, 0),
+				new CountOfSmallerNumbersAfterSelf().countSmaller(new int[] { 5, 4, 3, 2, 1 }));
+		assertEquals(Arrays.asList(1, 0), new CountOfSmallerNumbersAfterSelf().countSmaller(new int[] { 5, 2 }));
+		assertEquals(Arrays.asList(0, 0, 0, 0, 0),
+				new CountOfSmallerNumbersAfterSelf().countSmaller(new int[] { 5, 6, 8, 9, 12 }));
+		assertEquals(Arrays.asList(0, 0), new CountOfSmallerNumbersAfterSelf().countSmaller(new int[] { 5, 6 }));
+		assertEquals(Arrays.asList(0), new CountOfSmallerNumbersAfterSelf().countSmaller(new int[] { 1 }));
+		assertEquals(Arrays.asList(), new CountOfSmallerNumbersAfterSelf().countSmaller(new int[0]));
+	}
+
+	/**
 	 * Test cases for 322. Coin Change
 	 * 
 	 * @see CoinChange
