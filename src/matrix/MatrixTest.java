@@ -139,6 +139,35 @@ class MatrixTest {
 	}
 
 	/**
+	 * Test cases for 329. Longest Increasing Path in a Matrix
+	 * 
+	 * @see LongestIncreasingPathInAMatrix
+	 */
+	@Test
+	void testLongestIncreasingPathInAMatrix() {
+		int[][] matrix = setupMatrix("[[9,9,4],[6,6,8],[2,1,1]]");
+		assertEquals(4, new LongestIncreasingPathInAMatrix().longestIncreasingPath(matrix));
+
+		matrix = setupMatrix("[[3,4,5],[3,2,6],[2,2,1]]");
+		assertEquals(4, new LongestIncreasingPathInAMatrix().longestIncreasingPath(matrix));
+
+		matrix = setupMatrix("[]");
+		assertEquals(0, new LongestIncreasingPathInAMatrix().longestIncreasingPath(matrix));
+
+		matrix = setupMatrix("[[1]]");
+		assertEquals(1, new LongestIncreasingPathInAMatrix().longestIncreasingPath(matrix));
+
+		matrix = setupMatrix("[[4,3,2]]");
+		assertEquals(3, new LongestIncreasingPathInAMatrix().longestIncreasingPath(matrix));
+
+		matrix = setupMatrix("[[1],[3],[5]]");
+		assertEquals(3, new LongestIncreasingPathInAMatrix().longestIncreasingPath(matrix));
+
+		matrix = setupMatrix("[[1,6,12,1,3],[8,4,6,10,5],[12,11,7,12,2],[2,3,4,1,13],[14,6,0,14,13]]");
+		assertEquals(6, new LongestIncreasingPathInAMatrix().longestIncreasingPath(matrix));
+	}
+
+	/**
 	 * Test cases for 417. Pacific Atlantic Water Flow
 	 * 
 	 * @see PacificAtlanticWaterFlow
