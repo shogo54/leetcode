@@ -121,11 +121,21 @@ class StringTest {
 	 */
 	@Test
 	void testWordLadder() {
-		assertEquals(5, new WordLadder().ladderLength("hit", "cog", Arrays.asList("hot", "dot", "dog", "lot", "log", "cog")));
-		assertEquals(5, new WordLadder().ladderLength("hit", "cog", Arrays.asList("hot", "dot", "dog", "lot", "log")));
-		assertEquals(4, new WordLadder().ladderLength("ta", "if", 
-				Arrays.asList("ts", "sc", "ph", "ca", "jr", "hf", "to", "if", "ha", "is", "io", "cf", "ta")));
-		assertEquals(2, new WordLadder().ladderLength("a", "c", Arrays.asList("b", "c")));
+		List<String> list = new ArrayList<String>();
+		list.addAll(Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"));
+		assertEquals(5, new WordLadder().ladderLength("hit", "cog", list));
+
+		list.clear();
+		list.addAll(Arrays.asList("hot", "dot", "dog", "lot", "log"));
+		assertEquals(0, new WordLadder().ladderLength("hit", "cog", list));
+
+		list.clear();
+		list.addAll(Arrays.asList("ts", "sc", "ph", "ca", "jr", "hf", "to", "if", "ha", "is", "io", "cf", "ta"));
+		assertEquals(4, new WordLadder().ladderLength("ta", "if", list));
+
+		list.clear();
+		list.addAll(Arrays.asList("b", "c"));
+		assertEquals(2, new WordLadder().ladderLength("a", "c", list));
 	}
 
 	/**
@@ -230,6 +240,22 @@ class StringTest {
 		assertEquals(6, tester.firstUniqChar("aabbccd"));
 		assertEquals(0, tester.firstUniqChar("a"));
 		assertEquals(-1, tester.firstUniqChar(""));
+	}
+
+	/**
+	 * Test cases for 394. Decode String
+	 * 
+	 * @see DecodeString
+	 */
+	@Test
+	void testDecodeString() {
+		assertEquals("aaabcbc", new DecodeString().decodeString("3[a]2[bc]"));
+		assertEquals("accaccacc", new DecodeString().decodeString("3[a2[c]]"));
+		assertEquals("abcabccdcdcdef", new DecodeString().decodeString("2[abc]3[cd]ef"));
+		assertEquals("absabcabccdcdcdef", new DecodeString().decodeString("abs2[abc]3[cd]ef"));
+		assertEquals("f", new DecodeString().decodeString("f"));
+		assertEquals("", new DecodeString().decodeString(""));
+		assertEquals("abababababababababababab", new DecodeString().decodeString("12[ab]"));
 	}
 
 	/**
