@@ -74,6 +74,23 @@ class StringTest {
 	}
 
 	/**
+	 * Test cases for 32. Longest Valid Parentheses
+	 * 
+	 * @see LongestValidParentheses
+	 */
+	@Test
+	void testLongestValidParentheses() {
+		assertEquals(2, new LongestValidParentheses().longestValidParentheses("(()"));
+		assertEquals(4, new LongestValidParentheses().longestValidParentheses(")()())"));
+		assertEquals(0, new LongestValidParentheses().longestValidParentheses(""));
+		assertEquals(0, new LongestValidParentheses().longestValidParentheses("("));
+		assertEquals(0, new LongestValidParentheses().longestValidParentheses(")"));
+		assertEquals(2, new LongestValidParentheses().longestValidParentheses("()"));
+		assertEquals(2, new LongestValidParentheses().longestValidParentheses("()(()"));
+		assertEquals(22, new LongestValidParentheses().longestValidParentheses("((((((())))(()))()))())"));
+	}
+
+	/**
 	 * Test cases for 76. Minimum Window Substring
 	 * 
 	 * @see MinimumWindowSubstring
