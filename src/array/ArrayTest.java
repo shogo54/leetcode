@@ -331,6 +331,7 @@ class ArrayTest {
 				.evalRPN(new String[] { "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" }));
 		assertEquals(0, new EvaluateReversePolishNotation().evalRPN(new String[0]));
 		assertEquals(4, new EvaluateReversePolishNotation().evalRPN(new String[] { "4" }));
+		assertEquals(-1, new EvaluateReversePolishNotation().evalRPN(new String[] { "3", "13", "3", "/", "-" }));
 	}
 
 	/**
