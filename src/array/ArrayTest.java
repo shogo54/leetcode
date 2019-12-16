@@ -320,6 +320,20 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 150. Evaluate Reverse Polish Notation
+	 * 
+	 * @see EvaluateReversePolishNotation
+	 */
+	void testEvaluateReversePolishNotation() {
+		assertEquals(9, new EvaluateReversePolishNotation().evalRPN(new String[] { "2", "1", "+", "3", "*" }));
+		assertEquals(6, new EvaluateReversePolishNotation().evalRPN(new String[] { "4", "13", "5", "/", "+" }));
+		assertEquals(22, new EvaluateReversePolishNotation()
+				.evalRPN(new String[] { "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" }));
+		assertEquals(0, new EvaluateReversePolishNotation().evalRPN(new String[0]));
+		assertEquals(4, new EvaluateReversePolishNotation().evalRPN(new String[] { "4" }));
+	}
+
+	/**
 	 * Test cases for 152. Maximum Product Subarray
 	 * 
 	 * @see MaximumProductSubarray
