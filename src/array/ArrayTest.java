@@ -33,6 +33,23 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 14. Longest Common Prefix
+	 * 
+	 * @see LongestCommonPrefix
+	 */
+	@Test
+	void testLongestCommonPrefix() {
+		assertEquals("fl", new LongestCommonPrefix().longestCommonPrefix(new String[] { "flower", "flow", "flight" }));
+		assertEquals("", new LongestCommonPrefix().longestCommonPrefix(new String[] { "dog", "racecar", "car" }));
+		assertEquals("", new LongestCommonPrefix().longestCommonPrefix(new String[] { "" }));
+		assertEquals("dog", new LongestCommonPrefix().longestCommonPrefix(new String[] { "dog" }));
+		assertEquals("f", new LongestCommonPrefix().longestCommonPrefix(new String[] { "flip", "fire" }));
+		assertEquals("", new LongestCommonPrefix().longestCommonPrefix(new String[] { "" }));
+		assertEquals("", new LongestCommonPrefix().longestCommonPrefix(new String[] { "dog", "racecar", "" }));
+		assertEquals("", new LongestCommonPrefix().longestCommonPrefix(new String[0]));
+	}
+
+	/**
 	 * Test cases for 26. Remove Duplicates from Sorted Array
 	 * 
 	 * @see RemoveDuplicatesFromSortedArray
