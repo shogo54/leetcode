@@ -12,7 +12,7 @@ package array;
  * Runtime: 1 ms, faster than 74.31% of Java online submissions for Longest Common Prefix.
  * Memory Usage: 37.1 MB, less than 99.42% of Java online submissions for Longest Common Prefix.
  * 
- * Time Complexity: O(m * n)
+ * Time Complexity: O(m*n)
  * Space Complexity: O(1)
  * Where n is the number of elements in an array and m is the longest length of strings
  * 
