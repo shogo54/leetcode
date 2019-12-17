@@ -104,6 +104,64 @@ class MatrixTest {
 	}
 
 	/**
+	 * Test cases for 130. Surrounded Regions
+	 * 
+	 * @see SurroundedRegions
+	 */
+	@Test
+	void testSurroundedRegions() {
+		char[][] board = setupCharMatrix(new String[] { "XXXX", "XOOX", "XXOX", "XOXX" });
+		char[][] expected = setupCharMatrix(new String[] { "XXXX", "XXXX", "XXXX", "XOXX" });
+		new SurroundedRegions().solve(board);
+		assertArrayEquals(expected, board);
+
+		board = setupCharMatrix(new String[] { "XXXX", "XOOX", "XOOX", "XOXX" });
+		expected = setupCharMatrix(new String[] { "XXXX", "XOOX", "XOOX", "XOXX" });
+		new SurroundedRegions().solve(board);
+		assertArrayEquals(expected, board);
+
+		board = setupCharMatrix(new String[] { "" });
+		expected = setupCharMatrix(new String[] { "" });
+		new SurroundedRegions().solve(board);
+		assertArrayEquals(expected, board);
+
+		board = setupCharMatrix(new String[0]);
+		expected = setupCharMatrix(new String[0]);
+		new SurroundedRegions().solve(board);
+		assertArrayEquals(expected, board);
+
+		board = setupCharMatrix(new String[] { "X" });
+		expected = setupCharMatrix(new String[] { "X" });
+		new SurroundedRegions().solve(board);
+		assertArrayEquals(expected, board);
+
+		board = setupCharMatrix(new String[] { "O" });
+		expected = setupCharMatrix(new String[] { "O" });
+		new SurroundedRegions().solve(board);
+		assertArrayEquals(expected, board);
+
+		board = setupCharMatrix(new String[] { "XXXX", "XOOX", "XOOX", "XXXX" });
+		expected = setupCharMatrix(new String[] { "XXXX", "XXXX", "XXXX", "XXXX" });
+		new SurroundedRegions().solve(board);
+		assertArrayEquals(expected, board);
+
+		board = setupCharMatrix(new String[] { "OOOO", "OXXO", "OXXO", "OOOO" });
+		expected = setupCharMatrix(new String[] { "OOOO", "OXXO", "OXXO", "OOOO" });
+		new SurroundedRegions().solve(board);
+		assertArrayEquals(expected, board);
+
+		board = setupCharMatrix(new String[] { "OXO" });
+		expected = setupCharMatrix(new String[] { "OXO" });
+		new SurroundedRegions().solve(board);
+		assertArrayEquals(expected, board);
+
+		board = setupCharMatrix(new String[] { "O", "X", "O" });
+		expected = setupCharMatrix(new String[] { "O", "X", "O" });
+		new SurroundedRegions().solve(board);
+		assertArrayEquals(expected, board);
+	}
+
+	/**
 	 * Test cases for 200. Number of Islands
 	 * 
 	 * @see NumberOfIslands
@@ -151,7 +209,7 @@ class MatrixTest {
 		matrix = setupMatrix("[[3,4,5],[3,2,6],[2,2,1]]");
 		assertEquals(4, new LongestIncreasingPathInAMatrix().longestIncreasingPath(matrix));
 
-		matrix = setupMatrix("[]");
+		matrix = new int[0][0];
 		assertEquals(0, new LongestIncreasingPathInAMatrix().longestIncreasingPath(matrix));
 
 		matrix = setupMatrix("[[1]]");
