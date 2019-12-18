@@ -197,6 +197,39 @@ class MatrixTest {
 	}
 
 	/**
+	 * Test cases for 289. Game of Life
+	 * 
+	 * @see GameOfLife
+	 */
+	@Test
+	void testGameOfLife() {
+		int[][] board = setupMatrix("[[0,1,0],[0,0,1],[1,1,1],[0,0,0]]");
+		int[][] expected = setupMatrix("[[0,0,0],[1,0,1],[0,1,1],[0,1,0]]");
+		new GameOfLife().gameOfLife(board);
+		assertArrayEquals(expected, board);
+		
+		board = setupMatrix("[[0,1,0]]");
+		expected = setupMatrix("[[0,0,0]]");
+		new GameOfLife().gameOfLife(board);
+		assertArrayEquals(expected, board);
+		
+		board = setupMatrix("[[0],[1],[0]]");
+		expected = setupMatrix("[[0],[0],[0]]");
+		new GameOfLife().gameOfLife(board);
+		assertArrayEquals(expected, board);
+		
+		board = setupMatrix("[[]]");
+		expected = setupMatrix("[[]]");
+		new GameOfLife().gameOfLife(board);
+		assertArrayEquals(expected, board);
+		
+		board = setupMatrix("[]");
+		expected = setupMatrix("[]");
+		new GameOfLife().gameOfLife(board);
+		assertArrayEquals(expected, board);
+	}
+
+	/**
 	 * Test cases for 329. Longest Increasing Path in a Matrix
 	 * 
 	 * @see LongestIncreasingPathInAMatrix
@@ -254,7 +287,9 @@ class MatrixTest {
 			matrix[i] = new int[nums.length];
 
 			for (int j = 0; j < nums.length; j++) {
-				matrix[i][j] = Integer.valueOf(nums[j]);
+				if(!nums[j].equals("")) {
+					matrix[i][j] = Integer.valueOf(nums[j]);
+				}
 			}
 		}
 
