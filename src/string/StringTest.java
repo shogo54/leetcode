@@ -291,6 +291,44 @@ class StringTest {
 	}
 
 	/**
+	 * Test cases for 438. Find All Anagrams in a String
+	 * 
+	 * @see FindAllAnagramsInAString
+	 */
+	@Test
+	void testFindAllAnagramsInAString() {
+		List<Integer> actual = new FindAllAnagramsInAString().findAnagrams("cbaebabacd", "abc");
+		List<Integer> expected = Arrays.asList(0, 6);
+		assertEquals(expected.size(), actual.size());
+		assertEquals(new HashSet<Integer>(expected), new HashSet<Integer>(actual));
+
+		actual = new FindAllAnagramsInAString().findAnagrams("abab", "ab");
+		expected = Arrays.asList(0, 1, 2);
+		assertEquals(expected.size(), actual.size());
+		assertEquals(new HashSet<Integer>(expected), new HashSet<Integer>(actual));
+
+		actual = new FindAllAnagramsInAString().findAnagrams("", "abc");
+		expected = Arrays.asList();
+		assertEquals(expected.size(), actual.size());
+		assertEquals(new HashSet<Integer>(expected), new HashSet<Integer>(actual));
+
+		actual = new FindAllAnagramsInAString().findAnagrams("baa", "aa");
+		expected = Arrays.asList(1);
+		assertEquals(expected.size(), actual.size());
+		assertEquals(new HashSet<Integer>(expected), new HashSet<Integer>(actual));
+
+		actual = new FindAllAnagramsInAString().findAnagrams("baa", "aa");
+		expected = Arrays.asList(1);
+		assertEquals(expected.size(), actual.size());
+		assertEquals(new HashSet<Integer>(expected), new HashSet<Integer>(actual));
+
+		actual = new FindAllAnagramsInAString().findAnagrams("bpaa", "aa");
+		expected = Arrays.asList(2);
+		assertEquals(expected.size(), actual.size());
+		assertEquals(new HashSet<Integer>(expected), new HashSet<Integer>(actual));
+	}
+
+	/**
 	 * Test cases for 647. Palindromic Substrings
 	 * 
 	 * @see PalindromicSubstrings
