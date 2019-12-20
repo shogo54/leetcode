@@ -165,6 +165,7 @@ BFS = Breadth First Search<br/>
 | 905 | [Sort Array By Parity***](/src/SortArrayByParity.java) | Easy |  | O |
 | 912 | [Sort An Array*](/src/SortAnArray.java) | Medium |  | - |
 | 938 | [Range Sum of BST***](https://leetcode.com/problems/range-sum-of-bst/) | Easy | [Recursion](/src/binarytree/RangeSumOfBST.java) | [binarytree](https://github.com/ShogoAkiyama54/LeetCode/blob/46f3306510ac83c4fe9a534f33e909cc7aab720a/src/binarytree/BinaryTreeTest.java#L405-L420) | 10/19/2019 |
+| 977 | [Squares of a Sorted Array*](https://leetcode.com/problems/squares-of-a-sorted-array/) | Easy | [Iteration](/src/array/SquaresOfASortedArray.java) | [array] | 12/19/2019 |
 | 980 | [Unique Paths III*](/src/UniquePathsIII.java) | Hard |  | - |
 | 1003 | [Check If Word Is Valid After Substitutions*](https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/) | Medium | [Recursion](/src/string/CheckIfWordIsValidAfterSubstitutions.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L153-L164) | 06/13/2019 |
 | 1047 | [Remove All Adjacent Duplicates In String*](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | Easy | [Recursion](/src/string/RemoveAllAdjacentDuplicatesInString.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L166-L174) | 06/12/2019 |

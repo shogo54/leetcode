@@ -642,6 +642,26 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 977. Squares of a Sorted Array
+	 * 
+	 * @see SquaresOfASortedArray
+	 */
+	@Test
+	void testSquaresOfASortedArray() {
+		assertArrayEquals(new int[] { 0, 1, 9, 16, 100 },
+				new SquaresOfASortedArray().sortedSquares(new int[] { -4, -1, 0, 3, 10 }));
+		assertArrayEquals(new int[] { 4, 9, 9, 49, 121 },
+				new SquaresOfASortedArray().sortedSquares(new int[] { -7, -3, 2, 3, 11 }));
+		assertArrayEquals(new int[] { 4, 9, 81, 144 },
+				new SquaresOfASortedArray().sortedSquares(new int[] { 2, 3, 9, 12 }));
+		assertArrayEquals(new int[] { 1, 9, 16 }, new SquaresOfASortedArray().sortedSquares(new int[] { -4, -3, -1 }));
+		assertArrayEquals(new int[] { 16 }, new SquaresOfASortedArray().sortedSquares(new int[] { -4 }));
+		assertArrayEquals(new int[] { 49 }, new SquaresOfASortedArray().sortedSquares(new int[] { 7 }));
+		assertArrayEquals(new int[] { 4, 4, 4 }, new SquaresOfASortedArray().sortedSquares(new int[] { 2, 2, 2 }));
+		assertArrayEquals(new int[] { 49, 49, 49 }, new SquaresOfASortedArray().sortedSquares(new int[] { -7, -7, 7 }));
+	}
+
+	/**
 	 * Test cases for 1207. Unique Number of Occurrences
 	 * 
 	 * @see UniqueNumberOfOccurrences
