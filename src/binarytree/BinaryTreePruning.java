@@ -17,7 +17,7 @@ import binarytree.BinaryTreeTest.TreeNode;
  * @see BinaryTreeTest#testBinaryTreePruning()
  */
 public class BinaryTreePruning {
-	
+
 	public TreeNode pruneTree(TreeNode root) {
 		if (root == null) {
 			return null;
@@ -30,5 +30,5 @@ public class BinaryTreePruning {
 		}
 		return root;
 	}
-	
+
 }

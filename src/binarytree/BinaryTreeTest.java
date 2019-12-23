@@ -440,6 +440,42 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 814. Binary Tree Pruning
+	 * 
+	 * @see BinaryTreePruning
+	 */
+	@Test
+	void testBinaryTreePruning() {
+		TreeNode root = setupTree(new Integer[] { 1, null, 0, 0, 1 });
+		TreeNode expected = setupTree(new Integer[] { 1, null, 0, null, 1 });
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
+
+		root = setupTree(new Integer[] { 1, 0, 1, 0, 0, 0, 1 });
+		expected = setupTree(new Integer[] { 1, null, 1, null, 1 });
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
+
+		root = setupTree(new Integer[] { 1, 1, 0, 1, 1, 0, 1, 0 });
+		expected = setupTree(new Integer[] { 1, 1, 0, 1, 1, null, 1 });
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
+		
+		root = setupTree(new Integer[] { 1 });
+		expected = setupTree(new Integer[] { 1 });
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
+		
+		root = setupTree(new Integer[] { 0 });
+		expected = setupTree(new Integer[0]);
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
+		
+		root = setupTree(new Integer[] { 0, 0, 0, 0, 0 });
+		expected = setupTree(new Integer[0]);
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
+
+		root = setupTree(new Integer[0]);
+		expected = setupTree(new Integer[0]);
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
+	}
+
+	/**
 	 * Test cases for 938. Range Sum of BST
 	 * 
 	 * @see RangeSumOfBST
@@ -531,6 +567,32 @@ class BinaryTreeTest {
 			}
 
 			return s.substring(0, lastIndex + 1) + "]";
+		}
+		
+		@Override
+		public boolean equals(Object obj) {
+			if(this == obj) {
+				return true;
+			}
+			if(!(obj instanceof TreeNode)) {
+				return false;
+			}
+			
+			TreeNode other = (TreeNode) obj;
+			return compare(this, other);
+		}
+		
+		boolean compare(TreeNode t1, TreeNode t2) {
+			if(t1 == t2) {
+				return true;
+			}
+			if(t1 == null || t2 == null) {
+				return false;
+			}
+			if(t1.val == t2.val && compare(t1.left, t2.left) && compare(t1.right, t2.right)) {
+				return true;
+			}
+			return false;
 		}
 	}
 
