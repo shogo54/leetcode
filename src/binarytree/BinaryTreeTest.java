@@ -251,8 +251,7 @@ class BinaryTreeTest {
 
 		assertEquals(root, tester.lowestCommonAncestor(root, new TreeNode(2), new TreeNode(8)));
 
-		assertEquals(root.left,
-				tester.lowestCommonAncestor(root, new TreeNode(2), new TreeNode(4)));
+		assertEquals(root.left, tester.lowestCommonAncestor(root, new TreeNode(2), new TreeNode(4)));
 	}
 
 	/**
@@ -421,8 +420,7 @@ class BinaryTreeTest {
 	@Test
 	void testMaximumBinaryTree() {
 		TreeNode root = setupTree(new Integer[] { 6, 3, 5, null, 2, 0, null, null, 1 });
-		assertEquals(root,
-				new MaximumBinaryTree().constructMaximumBinaryTree(new int[] { 3, 2, 1, 6, 0, 5 }));
+		assertEquals(root, new MaximumBinaryTree().constructMaximumBinaryTree(new int[] { 3, 2, 1, 6, 0, 5 }));
 
 		root = setupTree(new Integer[] { 3 });
 		assertEquals(root, new MaximumBinaryTree().constructMaximumBinaryTree(new int[] { 3 }));
@@ -457,15 +455,15 @@ class BinaryTreeTest {
 		root = setupTree(new Integer[] { 1, 1, 0, 1, 1, 0, 1, 0 });
 		expected = setupTree(new Integer[] { 1, 1, 0, 1, 1, null, 1 });
 		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
-		
+
 		root = setupTree(new Integer[] { 1 });
 		expected = setupTree(new Integer[] { 1 });
 		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
-		
+
 		root = setupTree(new Integer[] { 0 });
 		expected = setupTree(new Integer[0]);
 		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
-		
+
 		root = setupTree(new Integer[] { 0, 0, 0, 0, 0 });
 		expected = setupTree(new Integer[0]);
 		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
@@ -568,28 +566,28 @@ class BinaryTreeTest {
 
 			return s.substring(0, lastIndex + 1) + "]";
 		}
-		
+
 		@Override
 		public boolean equals(Object obj) {
-			if(this == obj) {
+			if (this == obj) {
 				return true;
 			}
-			if(!(obj instanceof TreeNode)) {
+			if (!(obj instanceof TreeNode)) {
 				return false;
 			}
-			
+
 			TreeNode other = (TreeNode) obj;
 			return compare(this, other);
 		}
-		
+
 		boolean compare(TreeNode t1, TreeNode t2) {
-			if(t1 == t2) {
+			if (t1 == t2) {
 				return true;
 			}
-			if(t1 == null || t2 == null) {
+			if (t1 == null || t2 == null) {
 				return false;
 			}
-			if(t1.val == t2.val && compare(t1.left, t2.left) && compare(t1.right, t2.right)) {
+			if (t1.val == t2.val && compare(t1.left, t2.left) && compare(t1.right, t2.right)) {
 				return true;
 			}
 			return false;
