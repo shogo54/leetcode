@@ -25,6 +25,23 @@ class IntegerTest {
 	}
 
 	/**
+	 * Test cases for 38. Count and Say
+	 * 
+	 * @see CountAndSay
+	 */
+	@Test
+	void testCountAndSay() {
+		assertEquals("1", new CountAndSay().countAndSay(1));
+		assertEquals("11", new CountAndSay().countAndSay(2));
+		assertEquals("21", new CountAndSay().countAndSay(3));
+		assertEquals("1211", new CountAndSay().countAndSay(4));
+		assertEquals("111221", new CountAndSay().countAndSay(5));
+		assertEquals("111221", new CountAndSay().countAndSay(5));
+		assertEquals("312211", new CountAndSay().countAndSay(6));
+		assertEquals("13211311123113112211", new CountAndSay().countAndSay(10));
+	}
+
+	/**
 	 * Test cases for 70. Climbing Stairs
 	 * 
 	 * @see ClimbingStairs
