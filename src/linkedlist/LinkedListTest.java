@@ -137,6 +137,34 @@ public class LinkedListTest {
 	}
 
 	/**
+	 * Test cases for 148. Sort List
+	 * 
+	 * @see SortList
+	 */
+	@Test
+	void testSortList() {
+		ListNode list = setupHead(new int[] {4,2,1,3});
+		ListNode expected = setupHead(new int[] {1,2,3,4});
+		assertEquals(expected, new SortList().sortList(list));
+		
+		list = setupHead(new int[] {-1,5,3,4,0});
+		expected = setupHead(new int[] {-1,0,3,4,5});
+		assertEquals(expected, new SortList().sortList(list));
+		
+		list = setupHead(new int[] {4});
+		expected = setupHead(new int[] {4});
+		assertEquals(expected, new SortList().sortList(list));
+		
+		list = setupHead(new int[0]);
+		expected = setupHead(new int[0]);
+		assertEquals(expected, new SortList().sortList(list));
+		
+		list = setupHead(new int[] {-1,5,3,4,0});
+		expected = setupHead(new int[] {-1,0,3,4,5});
+		assertEquals(expected, new SortList().sortList(list));
+	}
+
+	/**
 	 * Test cases for 160. Intersection of Two Linked Lists
 	 * 
 	 * @see IntersectionOfTwoLinkedLists
