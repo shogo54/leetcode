@@ -624,6 +624,29 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 560. Subarray Sum Equals K
+	 * 
+	 * @see SubarraySumEqualsK
+	 */
+	@Test
+	void testSubarraySumEqualsK() {
+		int[] array = new int[] { 1, 1, 1 };
+		assertEquals(2, new SubarraySumEqualsK().subarraySum(array, 2));
+
+		array = new int[] { 1, 1, 1, 3, 5, -2, -3, 2, 5, -7, 4, 1, -6 };
+		assertEquals(7, new SubarraySumEqualsK().subarraySum(array, 3));
+
+		array = new int[] { 2 };
+		assertEquals(0, new SubarraySumEqualsK().subarraySum(array, 3));
+
+		array = new int[] { 3 };
+		assertEquals(1, new SubarraySumEqualsK().subarraySum(array, 3));
+
+		array = new int[] { 1, 1, 1 };
+		assertEquals(0, new SubarraySumEqualsK().subarraySum(array, 4));
+	}
+
+	/**
 	 * Test cases for 581. Shortest Unsorted Continuous Subarray
 	 * 
 	 * @see ShortestUnsortedContinuousSubarray
