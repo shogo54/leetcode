@@ -14,6 +14,10 @@ import binarytree.BinaryTreeTest.TreeNode;
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Maximum Depth of Binary Tree.
  * Memory Usage: 39 MB, less than 97.27% of Java online submissions for Maximum Depth of Binary Tree.
  * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(n) for a recursive stack
+ * Where n is the number of nodes in a tree
+ * 
  * @see BinaryTreeTest#testMaximumDepthOfBinaryTree()
  */
 public class MaximumDepthOfBinaryTree {

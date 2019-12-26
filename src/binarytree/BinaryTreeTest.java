@@ -108,11 +108,33 @@ class BinaryTreeTest {
 	 * Test cases for 104. Maximum Depth of Binary Tree
 	 * 
 	 * @see MaximumDepthOfBinaryTree
+	 * @see MaximumDepthOfBinaryTree2
 	 */
 	@Test
 	void testMaximumDepthOfBinaryTree() {
+		//
+		// Test for MaximumDepthOfBinaryTree
+		//
 		TreeNode root = setupTree(new Integer[] { 3, 9, 20, null, null, 15, 21 });
 		assertEquals(3, new MaximumDepthOfBinaryTree().maxDepth(root));
+
+		root = null;
+		assertEquals(0, new MaximumDepthOfBinaryTree().maxDepth(root));
+
+		root = setupTree(new Integer[] { 5 });
+		assertEquals(1, new MaximumDepthOfBinaryTree().maxDepth(root));
+
+		//
+		// Test for MaximumDepthOfBinaryTree2
+		//
+		root = setupTree(new Integer[] { 3, 9, 20, null, null, 15, 21 });
+		assertEquals(3, new MaximumDepthOfBinaryTree2().maxDepth(root));
+
+		root = null;
+		assertEquals(0, new MaximumDepthOfBinaryTree2().maxDepth(root));
+
+		root = setupTree(new Integer[] { 5 });
+		assertEquals(1, new MaximumDepthOfBinaryTree2().maxDepth(root));
 	}
 
 	/**
