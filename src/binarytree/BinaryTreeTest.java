@@ -148,12 +148,12 @@ class BinaryTreeTest {
 		ConstructBinaryTreeFromPreorderAndInorderTraversal builder = new ConstructBinaryTreeFromPreorderAndInorderTraversal();
 		TreeNode exptected = setupTree(new Integer[] { 3, 9, 20, null, null, 15, 7 });
 		TreeNode actual = builder.buildTree(new int[] { 3, 9, 20, 15, 7 }, new int[] { 9, 3, 15, 20, 7 });
-		assertEquals(exptected.toString(), actual.toString());
+		assertEquals(exptected, actual);
 
 		builder = new ConstructBinaryTreeFromPreorderAndInorderTraversal();
 		exptected = setupTree(new Integer[] { 4, 1, null, null, 2, null, 3 });
 		actual = builder.buildTree(new int[] { 4, 1, 2, 3 }, new int[] { 1, 2, 3, 4 });
-		assertEquals(exptected.toString(), actual.toString());
+		assertEquals(exptected, actual);
 	}
 
 	/**
@@ -166,7 +166,7 @@ class BinaryTreeTest {
 		TreeNode root = setupTree(new Integer[] { 0, -10, 5, null, -3, null, 9 });
 		TreeNode converted = new ConvertSortedArrayToBinarySearchTree()
 				.sortedArrayToBST(new int[] { -10, -3, 0, 5, 9 });
-		assertEquals(root.toString(), converted.toString());
+		assertEquals(root, converted);
 	}
 
 	/**
@@ -178,27 +178,27 @@ class BinaryTreeTest {
 		TreeNode root = setupTree(new Integer[] { 1, 2, 5, 3, 4, null, 6 });
 		TreeNode expected = setupTree(new Integer[] { 1, null, 2, null, 3, null, 4, null, 5, null, 6 });
 		new FlattenBinaryTreeToLinkedList().flatten(root);
-		assertEquals(expected.toString(), root.toString());
+		assertEquals(expected, root);
 
 		root = setupTree(new Integer[] { 1, 2, 5, 3, 4, 6, 7 });
 		expected = setupTree(new Integer[] { 1, null, 2, null, 3, null, 4, null, 5, null, 6, null, 7 });
 		new FlattenBinaryTreeToLinkedList().flatten(root);
-		assertEquals(expected.toString(), root.toString());
+		assertEquals(expected, root);
 
 		root = setupTree(new Integer[] { 1, 2, null, 3, null, 4 });
 		expected = setupTree(new Integer[] { 1, null, 2, null, 3, null, 4 });
 		new FlattenBinaryTreeToLinkedList().flatten(root);
-		assertEquals(expected.toString(), root.toString());
+		assertEquals(expected, root);
 
 		root = setupTree(new Integer[] { 1, null, 2, null, 3, null, 4 });
 		expected = setupTree(new Integer[] { 1, null, 2, null, 3, null, 4 });
 		new FlattenBinaryTreeToLinkedList().flatten(root);
-		assertEquals(expected.toString(), root.toString());
+		assertEquals(expected, root);
 
 		root = setupTree(new Integer[] { 1 });
 		expected = setupTree(new Integer[] { 1 });
 		new FlattenBinaryTreeToLinkedList().flatten(root);
-		assertEquals(expected.toString(), root.toString());
+		assertEquals(expected, root);
 
 		root = null;
 		expected = null;
@@ -244,7 +244,7 @@ class BinaryTreeTest {
 	void testInvertBinaryTree() {
 		TreeNode root = setupTree(new Integer[] { 4, 2, 7, 1, 3, 6, 9 });
 		TreeNode inverted = setupTree(new Integer[] { 4, 7, 2, 9, 6, 3, 1 });
-		assertEquals(inverted.toString(), new InvertBinaryTree().invertTree(root).toString());
+		assertEquals(inverted, new InvertBinaryTree().invertTree(root));
 	}
 
 	/**
@@ -271,10 +271,9 @@ class BinaryTreeTest {
 		TreeNode root = setupTree(new Integer[] { 6, 2, 8, 0, 4, 7, 9, null, null, 3, 5 });
 		LowestCommonAncestorOfABinarySearchTree tester = new LowestCommonAncestorOfABinarySearchTree();
 
-		assertEquals(root.toString(), tester.lowestCommonAncestor(root, new TreeNode(2), new TreeNode(8)).toString());
+		assertEquals(root, tester.lowestCommonAncestor(root, new TreeNode(2), new TreeNode(8)));
 
-		assertEquals(root.left.toString(),
-				tester.lowestCommonAncestor(root, new TreeNode(2), new TreeNode(4)).toString());
+		assertEquals(root.left, tester.lowestCommonAncestor(root, new TreeNode(2), new TreeNode(4)));
 	}
 
 	/**
@@ -287,19 +286,19 @@ class BinaryTreeTest {
 		SerializeAndDeserializeBinaryTree tester = new SerializeAndDeserializeBinaryTree();
 
 		TreeNode root = setupTree();
-		assertEquals(root.toString(), tester.deserialize(tester.serialize(root)).toString());
+		assertEquals(root, tester.deserialize(tester.serialize(root)));
 
 		root = setupTree(new Integer[] { 1, 2, 3, null, null, 4, 5 });
-		assertEquals(root.toString(), tester.deserialize(tester.serialize(root)).toString());
+		assertEquals(root, tester.deserialize(tester.serialize(root)));
 
 		root = setupTree(new Integer[] { 1, 2, null, 3, null, 4, null, 5 });
-		assertEquals(root.toString(), tester.deserialize(tester.serialize(root)).toString());
+		assertEquals(root, tester.deserialize(tester.serialize(root)));
 
 		root = setupTree(new Integer[] { 2, null, 3, null, 4, null, 5, null, 6 });
-		assertEquals(root.toString(), tester.deserialize(tester.serialize(root)).toString());
+		assertEquals(root, tester.deserialize(tester.serialize(root)));
 
 		root = setupTree(new Integer[] { 2 });
-		assertEquals(root.toString(), tester.deserialize(tester.serialize(root)).toString());
+		assertEquals(root, tester.deserialize(tester.serialize(root)));
 
 		root = setupTree(new Integer[0]);
 		assertEquals(root, tester.deserialize(tester.serialize(root)));
@@ -422,17 +421,17 @@ class BinaryTreeTest {
 		TreeNode root1 = setupTree(new Integer[] { 1, 3, 2, 5 });
 		TreeNode root2 = setupTree(new Integer[] { 2, 1, 3, null, 4, null, 7 });
 		TreeNode expected = setupTree(new Integer[] { 3, 4, 5, 5, 4, null, 7 });
-		assertEquals(expected.toString(), new MergeTwoBinaryTrees().mergeTrees(root1, root2).toString());
+		assertEquals(expected, new MergeTwoBinaryTrees().mergeTrees(root1, root2));
 
 		root1 = setupTree(new Integer[] {});
 		root2 = setupTree(new Integer[] { 2, 1, 3, null, 4, null, 7 });
 		expected = setupTree(new Integer[] { 2, 1, 3, null, 4, null, 7 });
-		assertEquals(expected.toString(), new MergeTwoBinaryTrees().mergeTrees(root1, root2).toString());
+		assertEquals(expected, new MergeTwoBinaryTrees().mergeTrees(root1, root2));
 
 		root1 = setupTree(new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
 		root2 = setupTree(new Integer[] { 2, 1, 3, null, 4, null, 7 });
 		expected = setupTree(new Integer[] { 3, 3, 6, 4, 9, 6, 14, 8, 9 });
-		assertEquals(expected.toString(), new MergeTwoBinaryTrees().mergeTrees(root1, root2).toString());
+		assertEquals(expected, new MergeTwoBinaryTrees().mergeTrees(root1, root2));
 	}
 
 	/**
@@ -443,11 +442,10 @@ class BinaryTreeTest {
 	@Test
 	void testMaximumBinaryTree() {
 		TreeNode root = setupTree(new Integer[] { 6, 3, 5, null, 2, 0, null, null, 1 });
-		assertEquals(root.toString(),
-				new MaximumBinaryTree().constructMaximumBinaryTree(new int[] { 3, 2, 1, 6, 0, 5 }).toString());
+		assertEquals(root, new MaximumBinaryTree().constructMaximumBinaryTree(new int[] { 3, 2, 1, 6, 0, 5 }));
 
 		root = setupTree(new Integer[] { 3 });
-		assertEquals(root.toString(), new MaximumBinaryTree().constructMaximumBinaryTree(new int[] { 3 }).toString());
+		assertEquals(root, new MaximumBinaryTree().constructMaximumBinaryTree(new int[] { 3 }));
 	}
 
 	/**
@@ -459,6 +457,42 @@ class BinaryTreeTest {
 	void testSearchInABinarySearchTree() {
 		TreeNode root = setupTree(new Integer[] { 4, 2, 7, 1, 3 });
 		assertEquals(root.left, new SearchInABinarySearchTree().searchBST(root, 2));
+	}
+
+	/**
+	 * Test cases for 814. Binary Tree Pruning
+	 * 
+	 * @see BinaryTreePruning
+	 */
+	@Test
+	void testBinaryTreePruning() {
+		TreeNode root = setupTree(new Integer[] { 1, null, 0, 0, 1 });
+		TreeNode expected = setupTree(new Integer[] { 1, null, 0, null, 1 });
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
+
+		root = setupTree(new Integer[] { 1, 0, 1, 0, 0, 0, 1 });
+		expected = setupTree(new Integer[] { 1, null, 1, null, 1 });
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
+
+		root = setupTree(new Integer[] { 1, 1, 0, 1, 1, 0, 1, 0 });
+		expected = setupTree(new Integer[] { 1, 1, 0, 1, 1, null, 1 });
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
+
+		root = setupTree(new Integer[] { 1 });
+		expected = setupTree(new Integer[] { 1 });
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
+
+		root = setupTree(new Integer[] { 0 });
+		expected = setupTree(new Integer[0]);
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
+
+		root = setupTree(new Integer[] { 0, 0, 0, 0, 0 });
+		expected = setupTree(new Integer[0]);
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
+
+		root = setupTree(new Integer[0]);
+		expected = setupTree(new Integer[0]);
+		assertEquals(expected, new BinaryTreePruning().pruneTree(root));
 	}
 
 	/**
@@ -553,6 +587,32 @@ class BinaryTreeTest {
 			}
 
 			return s.substring(0, lastIndex + 1) + "]";
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj) {
+				return true;
+			}
+			if (!(obj instanceof TreeNode)) {
+				return false;
+			}
+
+			TreeNode other = (TreeNode) obj;
+			return compare(this, other);
+		}
+
+		boolean compare(TreeNode t1, TreeNode t2) {
+			if (t1 == t2) {
+				return true;
+			}
+			if (t1 == null || t2 == null) {
+				return false;
+			}
+			if (t1.val == t2.val && compare(t1.left, t2.left) && compare(t1.right, t2.right)) {
+				return true;
+			}
+			return false;
 		}
 	}
 

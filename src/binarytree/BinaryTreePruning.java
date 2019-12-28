@@ -14,10 +14,14 @@ import binarytree.BinaryTreeTest.TreeNode;
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Binary Tree Pruning.
  * Memory Usage: 34.6 MB, less than 100.00% of Java online submissions for Binary Tree Pruning.
  * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(n) for the recursive stack
+ * Where n is the number of nodes in a tree
+ * 
  * @see BinaryTreeTest#testBinaryTreePruning()
  */
 public class BinaryTreePruning {
-	
+
 	public TreeNode pruneTree(TreeNode root) {
 		if (root == null) {
 			return null;
@@ -30,5 +34,5 @@ public class BinaryTreePruning {
 		}
 		return root;
 	}
-	
+
 }
