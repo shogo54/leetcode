@@ -381,7 +381,7 @@ class StringTest {
 		assertFalse(checker.isValid("z"));
 		assertFalse(checker.isValid("abz"));
 		assertTrue(checker.isValid(""));
-		
+
 		//
 		// Test for CheckIfWordIsValidAfterSubstitutions2
 		//

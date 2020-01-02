@@ -14,6 +14,10 @@ import java.util.*;
  * Runtime: 17 ms, faster than 59.52% of Java online submissions for Check If Word Is Valid After Substitutions.
  * Memory Usage: 37.7 MB, less than 100.00% of Java online submissions for Check If Word Is Valid After Substitutions.
  * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * Where n is the length of a string
+ * 
  * @see StringTest#testCheckIfWordIsValidAfterSubstitutions()
  */
 public class CheckIfWordIsValidAfterSubstitutions2 {
