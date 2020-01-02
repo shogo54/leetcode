@@ -14,6 +14,10 @@ import java.util.*;
  * Runtime: 2 ms, faster than 98.86% of Java online submissions for Two Sum.
  * Memory Usage: 38.3 MB, less than 77.56% of Java online submissions for Two Sum.
  * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * Where n is the number of elements in an array
+ * 
  * @see ArrayTest#testTwoSum()
  */
 public class TwoSum2 {

@@ -29,7 +29,7 @@ BFS = Breadth First Search<br/>
 
 | # | Problem Name | Difficulty | Solutions | Test Case | Last Solved |
 | :---: | --- | --- | --- | :---: | :---: |
-| 1 | [Two Sum*](https://leetcode.com/problems/two-sum/) | Easy | [Brute Force](/src/array/TwoSum.java) | [array](https://github.com/ShogoAkiyama54/LeetCode/blob/71940da22cc70ad84c6ba1bc488ae48720307d95/src/array/ArrayTest.java#L9-L17) | 08/13/2019 |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | [Brute Force](/src/array/TwoSum.java) / [Hash Table](/src/array/TwoSum2.java) | [array](https://github.com/ShogoAkiyama54/LeetCode/blob/71940da22cc70ad84c6ba1bc488ae48720307d95/src/array/ArrayTest.java#L9-L17) | 12/31/2019 |
 | 2 | [Add Two Numbers***](https://leetcode.com/problems/add-two-numbers/) | Medium | [Recursion](/src/linkedlist/AddTwoNumbers.java) | [linkedlist](https://github.com/ShogoAkiyama54/LeetCode/blob/80ab55c4232afddbfb6275356bea65e886d184ce/src/linkedlist/LinkedListTest.java#L8-L17) | 08/18/2019 |
 | 3 | [Longest Substring Without Repeating Characters*](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Iteration](/src/string/LongestSubstringWithoutRepeatingCharacters.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L8-L19) | 08/19/2019 |
 | 5 | [Longest Palindromic Substring*](https://leetcode.com/problems/longest-palindromic-substring/) | Medium | [Expand Around Center](/src/string/LongestPalindromicSubstring.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/b8b3ca5d91c55659a821bc7196d2209918c9ed20/src/string/StringTest.java#L21-L29) | 10/05/2019 |
