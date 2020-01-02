@@ -363,14 +363,39 @@ class StringTest {
 	 * Test cases for 1003. Check If Word Is Valid After Substitutions
 	 * 
 	 * @see CheckIfWordIsValidAfterSubstitutions
+	 * @see CheckIfWordIsValidAfterSubstitutions2
 	 */
 	@Test
 	void testCheckIfWordIsValidAfterSubstitutions() {
+		//
+		// Test for CheckIfWordIsValidAfterSubstitutions
+		//
 		CheckIfWordIsValidAfterSubstitutions checker = new CheckIfWordIsValidAfterSubstitutions();
 		assertTrue(checker.isValid("aabcbc"));
 		assertTrue(checker.isValid("abcabcababcc"));
 		assertFalse(checker.isValid("abccba"));
 		assertFalse(checker.isValid("cababc"));
+		assertFalse(checker.isValid("cba"));
+		assertFalse(checker.isValid("bca"));
+		assertFalse(checker.isValid("c"));
+		assertFalse(checker.isValid("z"));
+		assertFalse(checker.isValid("abz"));
+		assertTrue(checker.isValid(""));
+		
+		//
+		// Test for CheckIfWordIsValidAfterSubstitutions2
+		//
+		CheckIfWordIsValidAfterSubstitutions2 checker2 = new CheckIfWordIsValidAfterSubstitutions2();
+		assertTrue(checker2.isValid("aabcbc"));
+		assertTrue(checker2.isValid("abcabcababcc"));
+		assertFalse(checker2.isValid("abccba"));
+		assertFalse(checker2.isValid("cababc"));
+		assertFalse(checker2.isValid("cba"));
+		assertFalse(checker2.isValid("bca"));
+		assertFalse(checker2.isValid("c"));
+		assertFalse(checker2.isValid("z"));
+		assertFalse(checker2.isValid("abz"));
+		assertTrue(checker2.isValid(""));
 	}
 
 	/**
