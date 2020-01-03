@@ -1,5 +1,6 @@
+package array;
+
 /**
- * 
  * @author Shogo Akiyama 
  * Solved on 04/20/2019
  * 
@@ -7,33 +8,17 @@
  * https://leetcode.com/problems/sort-array-by-parity/
  * Difficulty: Easy
  * 
- * To run the code in LeetCode, take the codes from the following method(s):
- * int[] sortArrayByParity(int[] A).
- * 
+ * Approach: Iteration
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Sort Array By Parity.
  * Memory Usage: 42.2 MB, less than 21.75% of Java online submissions for Sort Array By Parity.
  * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(1) except for the output
+ * Where n is the number of elements in an array
+ * 
+ * @see ArrayTest#testSortArrayByParity()
  */
-
 public class SortArrayByParity {
-
-	public static String convertArrayToString(int[] array) {
-		String result = "[";
-		for (int i = 0; i < array.length; i++) {
-			result += array[i] + ",";
-		}
-		result = result.substring(0, result.length() - 1) + "]";
-
-		return result;
-	}
-
-	public static void main(String[] args) {
-		int[] test = { 3, 1, 2, 4 };
-		int[] result = new SortArrayByParity().sortArrayByParity(test);
-
-		System.out.println("Test case: " + SortArrayByParity.convertArrayToString(test));
-		System.out.println("Result: " + SortArrayByParity.convertArrayToString(result));
-	}
 
 	public int[] sortArrayByParity(int[] A) {
 		int evenIndex = 0;
@@ -51,5 +36,5 @@ public class SortArrayByParity {
 		}
 		return result;
 	}
-	
+
 }

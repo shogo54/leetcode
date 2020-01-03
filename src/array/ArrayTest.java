@@ -711,6 +711,26 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 905. Sort Array By Parity
+	 * 
+	 * @see SortArrayByParity
+	 */
+	@Test
+	void testSortArrayByParity() {
+		int[] actual = new SortArrayByParity().sortArrayByParity(new int[] {3,1,2,4});
+		Set<int[]> expected = new HashSet<int[]>();
+		expected.add(new int[] {2,4,3,1});
+		expected.add(new int[] {4,2,3,1});
+		expected.add(new int[] {2,4,1,3});
+		expected.add(new int[] {4,2,1,3});
+		boolean included = false;
+		for(int[] ex: expected) {
+			included = included || Arrays.toString(actual).equals(Arrays.toString(ex));
+		}
+		assertTrue(included);
+	}
+
+	/**
 	 * Test cases for 977. Squares of a Sorted Array
 	 * 
 	 * @see SquaresOfASortedArray
