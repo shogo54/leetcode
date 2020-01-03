@@ -1,6 +1,6 @@
 # LeetCode
 
-This is the list of my accepted LeetCode solutions in Java for more than 100 problems (as of 10/29/2019).
+This is the list of my accepted LeetCode solutions in Java for more than 150 problems (as of 01/03/2020).
 
 ## How to Read the List
 
@@ -24,6 +24,11 @@ BFS = Breadth First Search<br/>
 ** = problems that I should revisit in the future because I spent too long on solving it. <br/>
 *** = problems that have follow-up or different approaches.<br/>
 ^ = problems that I like.
+
+## Log
+
++ Solved 150 problems (as of 01/03/2020).
++ Solved 100 problems (as of 10/29/2019).
 
 ## Java Solution List
 
