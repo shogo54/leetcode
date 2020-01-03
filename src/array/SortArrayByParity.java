@@ -8,12 +8,12 @@ package array;
  * https://leetcode.com/problems/sort-array-by-parity/
  * Difficulty: Easy
  * 
- * Approach: Iteration
+ * Approach: Two Pointers & Iteration
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Sort Array By Parity.
  * Memory Usage: 42.2 MB, less than 21.75% of Java online submissions for Sort Array By Parity.
  * 
  * Time Complexity: O(n)
- * Space Complexity: O(1) except for the output
+ * Space Complexity: O(n)
  * Where n is the number of elements in an array
  * 
  * @see ArrayTest#testSortArrayByParity()
