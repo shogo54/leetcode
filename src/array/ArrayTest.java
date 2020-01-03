@@ -566,6 +566,38 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 334. Increasing Triplet Subsequence
+	 * 
+	 * @see IncreasingTripletSubsequence
+	 */
+	@Test
+	void IncreasingTripletSubsequence() {
+		int[] array = new int[] { 1, 2, 3, 4, 5 };
+		assertTrue(new IncreasingTripletSubsequence().increasingTriplet(array));
+
+		array = new int[] { 5, 4, 3, 2, 1 };
+		assertFalse(new IncreasingTripletSubsequence().increasingTriplet(array));
+
+		array = new int[0];
+		assertFalse(new IncreasingTripletSubsequence().increasingTriplet(array));
+
+		array = new int[] { 1 };
+		assertFalse(new IncreasingTripletSubsequence().increasingTriplet(array));
+
+		array = new int[] { 1, 4 };
+		assertFalse(new IncreasingTripletSubsequence().increasingTriplet(array));
+
+		array = new int[] { 1, 4, 3 };
+		assertFalse(new IncreasingTripletSubsequence().increasingTriplet(array));
+
+		array = new int[] { 1, 2, -10, -8, -7 };
+		assertTrue(new IncreasingTripletSubsequence().increasingTriplet(array));
+
+		array = new int[] { 1, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 100000000 };
+		assertTrue(new IncreasingTripletSubsequence().increasingTriplet(array));
+	}
+
+	/**
 	 * Test cases for 347. Top K Frequent Elements
 	 * 
 	 * @see TopKFrequentElements
