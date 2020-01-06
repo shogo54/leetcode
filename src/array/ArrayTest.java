@@ -717,14 +717,14 @@ class ArrayTest {
 	 */
 	@Test
 	void testSortArrayByParity() {
-		int[] actual = new SortArrayByParity().sortArrayByParity(new int[] {3,1,2,4});
+		int[] actual = new SortArrayByParity().sortArrayByParity(new int[] { 3, 1, 2, 4 });
 		Set<int[]> expected = new HashSet<int[]>();
-		expected.add(new int[] {2,4,3,1});
-		expected.add(new int[] {4,2,3,1});
-		expected.add(new int[] {2,4,1,3});
-		expected.add(new int[] {4,2,1,3});
+		expected.add(new int[] { 2, 4, 3, 1 });
+		expected.add(new int[] { 4, 2, 3, 1 });
+		expected.add(new int[] { 2, 4, 1, 3 });
+		expected.add(new int[] { 4, 2, 1, 3 });
 		boolean included = false;
-		for(int[] ex: expected) {
+		for (int[] ex : expected) {
 			included = included || Arrays.toString(actual).equals(Arrays.toString(ex));
 		}
 		assertTrue(included);
@@ -760,6 +760,18 @@ class ArrayTest {
 		assertTrue(new UniqueNumberOfOccurrences().uniqueOccurrences(new int[] { 1, 2, 2, 1, 1, 3 }));
 		assertFalse(new UniqueNumberOfOccurrences().uniqueOccurrences(new int[] { 1, 2 }));
 		assertTrue(new UniqueNumberOfOccurrences().uniqueOccurrences(new int[] { -3, 0, 1, -3, 1, 1, 1, -3, 10, 0 }));
+	}
+
+	/**
+	 * Test cases for 1295. Find Numbers with Even Number of Digits
+	 * 
+	 * @see FindNumbersWithEvenNumberOfDigits
+	 */
+	@Test
+	void testFindNumbersWithEvenNumberOfDigits() {
+		assertEquals(2, new FindNumbersWithEvenNumberOfDigits().findNumbers(new int[] { 12, 345, 2, 6, 7896 }));
+		assertEquals(1, new FindNumbersWithEvenNumberOfDigits().findNumbers(new int[] { 555, 901, 482, 1771 }));
+		assertEquals(0, new FindNumbersWithEvenNumberOfDigits().findNumbers(new int[] { 1 }));
 	}
 
 }
