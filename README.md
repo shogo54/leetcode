@@ -181,6 +181,6 @@ BFS = Breadth First Search<br/>
 | 1053 | [Previous Permutation With One Swap*](/src/PreviousPermutationWithOneSwap.java) | Medium |  | - |
 | 1078 | [Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/) | Easy | [Iteration](/src/string/OccurrencesAfterBigram.java) | [string](https://github.com/ShogoAkiyama54/LeetCode/blob/d96d5b3d7578a3d5437bff1644c8a7a8328166cd/src/string/StringTest.java#L176-L185) | 06/15/2019 |
 | 1207 | [Unique Number of Occurrences*](https://leetcode.com/problems/unique-number-of-occurrences/) | Easy | [Map](/src/array/UniqueNumberOfOccurrences.java) | [array](https://github.com/ShogoAkiyama54/LeetCode/blob/a1dc948aa56e2f21c6f014d4d5f5bd490c45c332/src/array/ArrayTest.java#L129-L138) | 10/24/2019 |
-| 1295 | [Find Numbers with Even Number of Digits*](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | Easy | [Iteration](/src/array/FindNumbersWithEvenNumberOfDigits.java) | [array] | 01/05/2019 |
+| 1295 | [Find Numbers with Even Number of Digits*](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | Easy | [Iteration](/src/array/FindNumbersWithEvenNumberOfDigits.java) | [array](https://github.com/ShogoAkiyama54/LeetCode/blob/9686f3fa8751721077e83bd2bccf47fee383db87/src/array/ArrayTest.java#L765-L775) | 01/05/2019 |
 
 
