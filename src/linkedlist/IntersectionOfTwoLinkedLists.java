@@ -16,7 +16,7 @@ import linkedlist.LinkedListTest.ListNode;
  * 
  * Time Complexity: O(m + n)
  * Space Complexity: O(m + n) for recursive stack, O(1) without counting recursive stack
- * Where m and n are the numbers of the linked lists respectively
+ * Where m and n are the numbers of nodes in the linked lists respectively
  * 
  * @see LinkedListTest#testIntersectionOfTwoLinkedLists()
  */
