@@ -20,10 +20,10 @@ import linkedlist.LinkedListTest.ListNode;
  * @see LinkedListTest#testDeleteNodeInALinkedList()
  */
 public class DeleteNodeInALinkedList {
-	
+
 	public void deleteNode(ListNode node) {
-        node.val = node.next.val;
-        node.next = node.next.next;
-    }
-	
+		node.val = node.next.val;
+		node.next = node.next.next;
+	}
+
 }
