@@ -1,6 +1,7 @@
 package linkedlist;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.Test;
 
 public class LinkedListTest {
@@ -334,6 +335,7 @@ public class LinkedListTest {
 			val = x;
 		}
 
+		@Override
 		public String toString() {
 			String result = "[";
 			result += helperString();
@@ -345,6 +347,30 @@ public class LinkedListTest {
 				return val + "";
 			}
 			return val + "," + next.helperString();
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj) {
+				return true;
+			}
+			if (!(obj instanceof ListNode)) {
+				return false;
+			}
+
+			ListNode other = (ListNode) obj;
+			return compare(this, other);
+		}
+
+		boolean compare(ListNode l1, ListNode l2) {
+			if (l1 == l2) {
+				return true;
+			}
+			if (l1 == null || l2 == null) {
+				return false;
+			}
+
+			return (l1.val == l2.val && compare(l1.next, l2.next));
 		}
 	}
 
