@@ -236,6 +236,22 @@ public class LinkedListTest {
 	}
 
 	/**
+	 * Test cases for 237. Delete Node in a Linked List
+	 * 
+	 * @see DeleteNodeInALinkedList
+	 */
+	@Test
+	void testDeleteNodeInALinkedList() {
+		ListNode head = setupHead(new int[] {4,5,1,9});
+		new DeleteNodeInALinkedList().deleteNode(head.next);
+		assertEquals("[4,1,9]", head.toString());
+		
+		head = setupHead(new int[] {4,5,1,9});
+		new DeleteNodeInALinkedList().deleteNode(head.next.next);
+		assertEquals("[4,5,9]", head.toString());
+	}
+
+	/**
 	 * Test cases for 328. Odd Even Linked List
 	 * 
 	 * @see OddEvenLinkedList
@@ -280,6 +296,10 @@ public class LinkedListTest {
 	}
 
 	ListNode setupHead(int[] array) {
+		if(array == null || array.length == 0) {
+			return null;
+		}
+		
 		ListNode head = new ListNode(array[0]);
 		ListNode curr = head;
 
