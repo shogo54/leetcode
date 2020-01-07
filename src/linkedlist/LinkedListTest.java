@@ -143,24 +143,24 @@ public class LinkedListTest {
 	 */
 	@Test
 	void testSortList() {
-		ListNode list = setupHead(new int[] {4,2,1,3});
-		ListNode expected = setupHead(new int[] {1,2,3,4});
+		ListNode list = setupHead(new int[] { 4, 2, 1, 3 });
+		ListNode expected = setupHead(new int[] { 1, 2, 3, 4 });
 		assertEquals(expected, new SortList().sortList(list));
-		
-		list = setupHead(new int[] {-1,5,3,4,0});
-		expected = setupHead(new int[] {-1,0,3,4,5});
+
+		list = setupHead(new int[] { -1, 5, 3, 4, 0 });
+		expected = setupHead(new int[] { -1, 0, 3, 4, 5 });
 		assertEquals(expected, new SortList().sortList(list));
-		
-		list = setupHead(new int[] {4});
-		expected = setupHead(new int[] {4});
+
+		list = setupHead(new int[] { 4 });
+		expected = setupHead(new int[] { 4 });
 		assertEquals(expected, new SortList().sortList(list));
-		
+
 		list = setupHead(new int[0]);
 		expected = setupHead(new int[0]);
 		assertEquals(expected, new SortList().sortList(list));
-		
-		list = setupHead(new int[] {-1,5,3,4,0});
-		expected = setupHead(new int[] {-1,0,3,4,5});
+
+		list = setupHead(new int[] { -1, 5, 3, 4, 0 });
+		expected = setupHead(new int[] { -1, 0, 3, 4, 5 });
 		assertEquals(expected, new SortList().sortList(list));
 	}
 
@@ -212,25 +212,25 @@ public class LinkedListTest {
 	void testPalindromeLinkedList() {
 		ListNode head = setupHead();
 		assertFalse(new PalindromeLinkedList().isPalindrome(head));
-		
-		head = setupHead(new int[] {1,2,2,1});
+
+		head = setupHead(new int[] { 1, 2, 2, 1 });
 		assertTrue(new PalindromeLinkedList().isPalindrome(head));
-		
-		head = setupHead(new int[] {1,2,3,2,1});
+
+		head = setupHead(new int[] { 1, 2, 3, 2, 1 });
 		assertTrue(new PalindromeLinkedList().isPalindrome(head));
-		
-		head = setupHead(new int[] {1,2,2,1,2});
+
+		head = setupHead(new int[] { 1, 2, 2, 1, 2 });
 		assertFalse(new PalindromeLinkedList().isPalindrome(head));
-		
-		head = setupHead(new int[] {1,2});
+
+		head = setupHead(new int[] { 1, 2 });
 		assertFalse(new PalindromeLinkedList().isPalindrome(head));
-		
-		head = setupHead(new int[] {1,1});
+
+		head = setupHead(new int[] { 1, 1 });
 		assertTrue(new PalindromeLinkedList().isPalindrome(head));
-		
-		head = setupHead(new int[] {1});
+
+		head = setupHead(new int[] { 1 });
 		assertTrue(new PalindromeLinkedList().isPalindrome(head));
-		
+
 		head = null;
 		assertTrue(new PalindromeLinkedList().isPalindrome(head));
 	}
@@ -242,11 +242,11 @@ public class LinkedListTest {
 	 */
 	@Test
 	void testDeleteNodeInALinkedList() {
-		ListNode head = setupHead(new int[] {4,5,1,9});
+		ListNode head = setupHead(new int[] { 4, 5, 1, 9 });
 		new DeleteNodeInALinkedList().deleteNode(head.next);
 		assertEquals("[4,1,9]", head.toString());
-		
-		head = setupHead(new int[] {4,5,1,9});
+
+		head = setupHead(new int[] { 4, 5, 1, 9 });
 		new DeleteNodeInALinkedList().deleteNode(head.next.next);
 		assertEquals("[4,5,9]", head.toString());
 	}
@@ -296,10 +296,10 @@ public class LinkedListTest {
 	}
 
 	ListNode setupHead(int[] array) {
-		if(array == null || array.length == 0) {
+		if (array == null || array.length == 0) {
 			return null;
 		}
-		
+
 		ListNode head = new ListNode(array[0]);
 		ListNode curr = head;
 
