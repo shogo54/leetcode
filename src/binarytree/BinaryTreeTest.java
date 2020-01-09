@@ -512,11 +512,43 @@ class BinaryTreeTest {
 		assertEquals(0, new RangeSumOfBST().rangeSumBST(root, 6, 10));
 	}
 
-	TreeNode setupTree() {
-		return setupTree(new Integer[] { 1, null, 2, 3 });
+	/**
+	 * Test cases for 1110. Delete Nodes And Return Forest
+	 * 
+	 * @see DeleteNodesAndReturnForest
+	 */
+	@Test
+	void testDeleteNodesAndReturnForest() {
+		TreeNode root = setupTree(1, 2, 3, 4, 5, 6, 7);
+		int[] toDelete = new int[] { 3, 5 };
+		List<TreeNode> expected = Arrays.asList(setupTree(1, 2, null, 4), setupTree(6), setupTree(7));
+		List<TreeNode> actual = new DeleteNodesAndReturnForest().delNodes(root, toDelete);
+		assertTrue(expected.size() == actual.size() && expected.containsAll(actual) && actual.containsAll(expected));
+
+		root = setupTree(1, 2, 3, 4, 5, 6, 7);
+		toDelete = new int[] { 1, 3, 5 };
+		expected = Arrays.asList(setupTree(2, 4), setupTree(6), setupTree(7));
+		actual = new DeleteNodesAndReturnForest().delNodes(root, toDelete);
+		assertTrue(expected.size() == actual.size() && expected.containsAll(actual) && actual.containsAll(expected));
+
+		root = setupTree(1, 2, 3, 4, 5, 6, 7);
+		toDelete = new int[] { 1 };
+		expected = Arrays.asList(setupTree(2, 4, 5), setupTree(3, 6, 7));
+		actual = new DeleteNodesAndReturnForest().delNodes(root, toDelete);
+		assertTrue(expected.size() == actual.size() && expected.containsAll(actual) && actual.containsAll(expected));
+
+		root = setupTree(new Integer[0]);
+		toDelete = new int[] { 1 };
+		expected = Arrays.asList();
+		actual = new DeleteNodesAndReturnForest().delNodes(root, toDelete);
+		assertTrue(expected.size() == actual.size() && expected.containsAll(actual) && actual.containsAll(expected));
 	}
 
-	TreeNode setupTree(Integer[] array) {
+	TreeNode setupTree() {
+		return setupTree(1, null, 2, 3);
+	}
+
+	TreeNode setupTree(Integer... array) {
 		if (array.length == 0) {
 			return null;
 		}
