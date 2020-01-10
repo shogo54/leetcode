@@ -15,8 +15,8 @@ import binarytree.BinaryTreeTest.TreeNode;
  * Memory Usage: 39 MB, less than 97.27% of Java online submissions for Maximum Depth of Binary Tree.
  * 
  * Time Complexity: O(n)
- * Space Complexity: O(n) for a recursive stack
- * Where n is the number of nodes in a tree
+ * Space Complexity: O(d) for the recursive stack
+ * Where n is the number of nodes in a tree and d is the maximum depth of the tree
  * 
  * @see BinaryTreeTest#testMaximumDepthOfBinaryTree()
  */

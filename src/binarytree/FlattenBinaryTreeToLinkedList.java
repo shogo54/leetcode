@@ -15,8 +15,8 @@ import binarytree.BinaryTreeTest.TreeNode;
  * Memory Usage: 36.2 MB, less than 100.00% of Java online submissions for Flatten Binary Tree to Linked List.
  * 
  * Time Complexity: O(n)
- * Space Complexity: O(n) for recursive stack, O(1) without counting recursive stack
- * Where n is the number of nodes in a tree
+ * Space Complexity: O(d) for the recursive stack
+ * Where n is the number of nodes in a tree and d is the maximum depth of the tree
  * 
  * @see BinaryTreeTest#testFlattenBinaryTreeToLinkedList()
  */

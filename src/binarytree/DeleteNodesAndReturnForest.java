@@ -17,7 +17,7 @@ import binarytree.BinaryTreeTest.TreeNode;
  * Memory Usage: 43.2 MB, less than 100.00% of Java online submissions for Delete Nodes And Return Forest.
  * 
  * Time Complexity: O(n)
- * Space Complexity: O(d) for recursive stack, O(1) without counting recursive stack
+ * Space Complexity: O(d) for the recursive stack
  * Where n is the number of nodes in a tree and d is the maximum depth of the tree
  * 
  * @see BinaryTreeTest#testHouseRobberIII()

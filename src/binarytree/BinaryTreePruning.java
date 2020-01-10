@@ -15,8 +15,8 @@ import binarytree.BinaryTreeTest.TreeNode;
  * Memory Usage: 34.6 MB, less than 100.00% of Java online submissions for Binary Tree Pruning.
  * 
  * Time Complexity: O(n)
- * Space Complexity: O(n) for the recursive stack
- * Where n is the number of nodes in a tree
+ * Space Complexity: O(d) for the recursive stack
+ * Where n is the number of nodes in a tree and d is the maximum depth of the tree
  * 
  * @see BinaryTreeTest#testBinaryTreePruning()
  */
