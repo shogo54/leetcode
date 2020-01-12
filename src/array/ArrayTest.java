@@ -711,6 +711,32 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 599. Minimum Index Sum of Two Lists
+	 * 
+	 * @see MinimumIndexSumOfTwoLists
+	 */
+	@Test
+	void testMinimumIndexSumOfTwoLists() {
+		String[] list1 = new String[] { "Shogun", "Tapioca Express", "Burger King", "KFC" };
+		String[] list2 = new String[] { "Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun" };
+		String[] expected = new String[] { "Shogun" };
+		assertArrayEquals(expected, new MinimumIndexSumOfTwoLists().findRestaurant(list1, list2));
+
+		list1 = new String[] { "Shogun", "Tapioca Express", "Burger King", "KFC" };
+		list2 = new String[] { "KFC", "Shogun", "Burger King" };
+		expected = new String[] { "Shogun" };
+		assertArrayEquals(expected, new MinimumIndexSumOfTwoLists().findRestaurant(list1, list2));
+
+		list1 = new String[] { "Shogun", "KFC", "Burger King" };
+		list2 = new String[] { "KFC", "Shogun", "Burger King" };
+		expected = new String[] { "Shogun", "KFC" };
+		String[] actual = new MinimumIndexSumOfTwoLists().findRestaurant(list1, list2);
+		Arrays.sort(expected);
+		Arrays.sort(actual);
+		assertArrayEquals(expected, actual);
+	}
+
+	/**
 	 * Test cases for 905. Sort Array By Parity
 	 * 
 	 * @see SortArrayByParity
