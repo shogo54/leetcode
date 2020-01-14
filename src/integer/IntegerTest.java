@@ -56,6 +56,75 @@ class IntegerTest {
 	}
 
 	/**
+	 * Test cases for 77. Combinations
+	 * 
+	 * @see Combinations
+	 * @see Combinations2
+	 */
+	@Test
+	void testCombinations() {
+		//
+		// Test for Combinations
+		//
+		List<List<Integer>> actual = new Combinations().combine(4, 2);
+		List<List<Integer>> expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(1, 2));
+		expected.add(Arrays.asList(1, 3));
+		expected.add(Arrays.asList(1, 4));
+		expected.add(Arrays.asList(2, 3));
+		expected.add(Arrays.asList(2, 4));
+		expected.add(Arrays.asList(3, 4));
+		assertTrue(actual.size() == expected.size() && actual.containsAll(expected) && expected.containsAll(actual));
+
+		actual = new Combinations().combine(1, 2);
+		expected = new ArrayList<List<Integer>>();
+		assertTrue(actual.size() == expected.size() && actual.containsAll(expected) && expected.containsAll(actual));
+
+		actual = new Combinations().combine(3, 3);
+		expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(1, 2, 3));
+		assertTrue(actual.size() == expected.size() && actual.containsAll(expected) && expected.containsAll(actual));
+
+		actual = new Combinations().combine(4, 1);
+		expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(1));
+		expected.add(Arrays.asList(2));
+		expected.add(Arrays.asList(3));
+		expected.add(Arrays.asList(4));
+		assertTrue(actual.size() == expected.size() && actual.containsAll(expected) && expected.containsAll(actual));
+
+		//
+		// Test for Combinations2
+		//
+		actual = new Combinations2().combine(4, 2);
+		expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(1, 2));
+		expected.add(Arrays.asList(1, 3));
+		expected.add(Arrays.asList(1, 4));
+		expected.add(Arrays.asList(2, 3));
+		expected.add(Arrays.asList(2, 4));
+		expected.add(Arrays.asList(3, 4));
+		assertTrue(actual.size() == expected.size() && actual.containsAll(expected) && expected.containsAll(actual));
+
+		actual = new Combinations2().combine(1, 2);
+		expected = new ArrayList<List<Integer>>();
+		assertTrue(actual.size() == expected.size() && actual.containsAll(expected) && expected.containsAll(actual));
+
+		actual = new Combinations2().combine(3, 3);
+		expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(1, 2, 3));
+		assertTrue(actual.size() == expected.size() && actual.containsAll(expected) && expected.containsAll(actual));
+
+		actual = new Combinations2().combine(4, 1);
+		expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(1));
+		expected.add(Arrays.asList(2));
+		expected.add(Arrays.asList(3));
+		expected.add(Arrays.asList(4));
+		assertTrue(actual.size() == expected.size() && actual.containsAll(expected) && expected.containsAll(actual));
+	}
+
+	/**
 	 * Test cases for 202. Happy Number
 	 * 
 	 * @see HappyNumber
