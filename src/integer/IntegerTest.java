@@ -125,6 +125,20 @@ class IntegerTest {
 	}
 
 	/**
+	 * Test cases for 96. Unique Binary Search Trees
+	 * 
+	 * @see UniqueBinarySearchTrees
+	 */
+	@Test
+	void testUniqueBinarySearchTrees() {
+		assertEquals(5, new UniqueBinarySearchTrees().numTrees(3));
+		assertEquals(1, new UniqueBinarySearchTrees().numTrees(1));
+		assertEquals(2, new UniqueBinarySearchTrees().numTrees(2));
+		assertEquals(16796, new UniqueBinarySearchTrees().numTrees(10));
+		assertEquals(1767263190, new UniqueBinarySearchTrees().numTrees(19));
+	}
+
+	/**
 	 * Test cases for 202. Happy Number
 	 * 
 	 * @see HappyNumber
