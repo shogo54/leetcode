@@ -532,6 +532,38 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 623. Add One Row to Tree
+	 * 
+	 * @see AddOneRowToTree
+	 */
+	@Test
+	void testAddOneRowToTree() {
+		TreeNode root = setupTree(4, 2, 6, 3, 1, 5);
+		TreeNode expected = setupTree(4, 1, 1, 2, null, null, 6, 3, 1, 5);
+		assertEquals(expected, new AddOneRowToTree().addOneRow(root, 1, 2));
+
+		root = setupTree(4, 2, null, 3, 1);
+		expected = setupTree(4, 2, null, 1, 1, 3, null, null, 1);
+		assertEquals(expected, new AddOneRowToTree().addOneRow(root, 1, 3));
+
+		root = setupTree(4, 2, 6, 3, 1, 5);
+		expected = setupTree(1, 4, null, 2, 6, 3, 1, 5);
+		assertEquals(expected, new AddOneRowToTree().addOneRow(root, 1, 1));
+
+		root = setupTree(4, 2, 6, 3, 1, 5);
+		expected = setupTree(4, 2, 6, 3, 1, 5, null, 1, 1, 1, 1, 1, 1);
+		assertEquals(expected, new AddOneRowToTree().addOneRow(root, 1, 4));
+
+		root = setupTree(4);
+		expected = setupTree(3, 4);
+		assertEquals(expected, new AddOneRowToTree().addOneRow(root, 3, 1));
+
+		root = setupTree(4);
+		expected = setupTree(4, 3, 3);
+		assertEquals(expected, new AddOneRowToTree().addOneRow(root, 3, 2));
+	}
+
+	/**
 	 * Test cases for 654. Maximum Binary Tree
 	 * 
 	 * @see MaximumBinaryTree
