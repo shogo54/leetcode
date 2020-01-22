@@ -657,6 +657,35 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 958. Check Completeness of a Binary Tree
+	 * 
+	 * @see CheckCompletenessOfABinaryTree
+	 */
+	@Test
+	void testCheckCompletenessOfABinaryTree() {
+		TreeNode root = setupTree(1, 2, 3, 4, 5, 6);
+		assertTrue(new CheckCompletenessOfABinaryTree().isCompleteTree(root));
+
+		root = setupTree(1, 2, 3, 4, 5, null, 7);
+		assertFalse(new CheckCompletenessOfABinaryTree().isCompleteTree(root));
+
+		root = setupTree(1, null, 3, 4);
+		assertFalse(new CheckCompletenessOfABinaryTree().isCompleteTree(root));
+
+		root = setupTree(1, 2, 3);
+		assertTrue(new CheckCompletenessOfABinaryTree().isCompleteTree(root));
+
+		root = setupTree(1, 2);
+		assertTrue(new CheckCompletenessOfABinaryTree().isCompleteTree(root));
+
+		root = setupTree(1);
+		assertTrue(new CheckCompletenessOfABinaryTree().isCompleteTree(root));
+
+		root = null;
+		assertTrue(new CheckCompletenessOfABinaryTree().isCompleteTree(root));
+	}
+
+	/**
 	 * Test cases for 1110. Delete Nodes And Return Forest
 	 * 
 	 * @see DeleteNodesAndReturnForest
