@@ -717,6 +717,23 @@ class BinaryTreeTest {
 		assertTrue(expected.size() == actual.size() && expected.containsAll(actual) && actual.containsAll(expected));
 	}
 
+	/**
+	 * test cases for 1161. Maximum Level Sum of a Binary Tree
+	 * 
+	 * @see MaximumLevelSumOfABinaryTree
+	 */
+	@Test
+	void testMaximumLevelSumOfABinaryTree() {
+		TreeNode root = setupTree(1, 7, 0, 7, -8);
+		assertEquals(2, new MaximumLevelSumOfABinaryTree().maxLevelSum(root));
+
+		root = setupTree(1);
+		assertEquals(1, new MaximumLevelSumOfABinaryTree().maxLevelSum(root));
+
+		root = setupTree(1, 7, -6);
+		assertEquals(1, new MaximumLevelSumOfABinaryTree().maxLevelSum(root));
+	}
+
 	TreeNode setupTree(Integer... array) {
 		if (array.length == 0) {
 			return null;
