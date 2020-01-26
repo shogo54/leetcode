@@ -290,6 +290,22 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 144. Binary Tree Preorder Traversal
+	 * 
+	 * @see BinaryTreePreorderTraversal
+	 */
+	void testBinaryTreePreorderTraversal() {
+		TreeNode root = setupTree(1, null, 2, 3);
+		assertEquals(Arrays.asList(1, 2, 3), new BinaryTreePreorderTraversal().preorderTraversal(root));
+
+		root = setupTree(5);
+		assertEquals(Arrays.asList(5), new BinaryTreePreorderTraversal().preorderTraversal(root));
+
+		root = null;
+		assertEquals(Arrays.asList(), new BinaryTreePreorderTraversal().preorderTraversal(root));
+	}
+
+	/**
 	 * Test cases for 145. Binary Tree Postorder Traversal
 	 * 
 	 * @see BinaryTreePostorderTraversal
