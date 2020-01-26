@@ -734,6 +734,37 @@ class BinaryTreeTest {
 		assertEquals(1, new MaximumLevelSumOfABinaryTree().maxLevelSum(root));
 	}
 
+	/**
+	 * Test cases for 1261. Find Elements in a Contaminated Binary Tree
+	 * 
+	 * @see FindElements
+	 */
+	void testFindElementsInAContaminatedBinaryTree() {
+		TreeNode root = setupTree(-1, null, -1);
+		FindElements findElements = new FindElements(root);
+		assertFalse(findElements.find(1));
+		assertTrue(findElements.find(2));
+
+		root = setupTree(-1, -1, -1, -1, -1);
+		findElements = new FindElements(root);
+		assertTrue(findElements.find(1));
+		assertTrue(findElements.find(3));
+		assertFalse(findElements.find(5));
+
+		root = setupTree(-1, null, -1, -1, null, -1);
+		findElements = new FindElements(root);
+		assertTrue(findElements.find(2));
+		assertFalse(findElements.find(3));
+		assertFalse(findElements.find(4));
+		assertTrue(findElements.find(3));
+
+		root = setupTree(-1);
+		findElements = new FindElements(root);
+		assertTrue(findElements.find(0));
+		assertFalse(findElements.find(-1));
+		assertFalse(findElements.find(2));
+	}
+
 	TreeNode setupTree(Integer... array) {
 		if (array.length == 0) {
 			return null;
