@@ -739,7 +739,7 @@ class BinaryTreeTest {
 	 * 
 	 * @see FindElements
 	 */
-	void testFindElementsInAContaminatedBinaryTree() {
+	void testFindElements() {
 		TreeNode root = setupTree(-1, null, -1);
 		FindElements findElements = new FindElements(root);
 		assertFalse(findElements.find(1));

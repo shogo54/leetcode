@@ -20,7 +20,7 @@ import binarytree.BinaryTreeTest.TreeNode;
  * Space Complexity: O(n)
  * Where n is the number of nodes in a tree
  * 
- * @see BinaryTreeTest#testFindElementsInAContaminatedBinaryTree()
+ * @see BinaryTreeTest#testFindElements()
  */
 public class FindElements {
 
