@@ -323,6 +323,35 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 173. Binary Search Tree Iterator
+	 * 
+	 * @see BSTIterator
+	 */
+	void testBSTIterator() {
+		TreeNode root = setupTree(7, 3, 15, null, null, 9, 20);
+		BSTIterator iterator = new BSTIterator(root);
+		assertEquals(3, iterator.next());
+		assertEquals(7, iterator.next());
+		assertTrue(iterator.hasNext());
+		assertEquals(9, iterator.next());
+		assertTrue(iterator.hasNext());
+		assertEquals(15, iterator.next());
+		assertTrue(iterator.hasNext());
+		assertEquals(20, iterator.next());
+		assertFalse(iterator.hasNext());
+
+		root = setupTree(7);
+		iterator = new BSTIterator(root);
+		assertTrue(iterator.hasNext());
+		assertEquals(7, iterator.next());
+		assertFalse(iterator.hasNext());
+
+		root = null;
+		iterator = new BSTIterator(root);
+		assertFalse(iterator.hasNext());
+	}
+
+	/**
 	 * Test cases for 226. Invert Binary Tree
 	 * 
 	 * @see InvertBinaryTree
