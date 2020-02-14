@@ -360,6 +360,20 @@ class StringTest {
 	}
 
 	/**
+	 * Test cases for 917. Reverse Only Letters
+	 * 
+	 * @see ReverseOnlyLetters
+	 */
+	void testReverseOnlyLetters() {
+		assertEquals("dc-ba", new ReverseOnlyLetters().reverseOnlyLetters("ab-cd"));
+		assertEquals("j-Ih-gfE-dCba", new ReverseOnlyLetters().reverseOnlyLetters("a-bC-dEf-ghIj"));
+		assertEquals("Qedo1ct-eeLg=ntse-T!", new ReverseOnlyLetters().reverseOnlyLetters("Test1ng-Leet=code-Q!"));
+		assertEquals("e", new ReverseOnlyLetters().reverseOnlyLetters("e"));
+		assertEquals("", new ReverseOnlyLetters().reverseOnlyLetters(""));
+		assertEquals("-", new ReverseOnlyLetters().reverseOnlyLetters("-"));
+	}
+
+	/**
 	 * Test cases for 1003. Check If Word Is Valid After Substitutions
 	 * 
 	 * @see CheckIfWordIsValidAfterSubstitutions
