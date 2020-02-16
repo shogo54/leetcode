@@ -464,10 +464,12 @@ class ArrayTest {
 	 * @see ProductOfArrayExceptSelf
 	 */
 	void testProductOfArrayExceptSelf() {
-		assertEquals(Arrays.asList(24,12,8,6), new ProductOfArrayExceptSelf().productExceptSelf(new int[] {1,2,3,4}));
-		assertEquals(Arrays.asList(10,5), new ProductOfArrayExceptSelf().productExceptSelf(new int[] {5,10}));
-		assertEquals(Arrays.asList(2,2), new ProductOfArrayExceptSelf().productExceptSelf(new int[] {2,2}));
-		assertEquals(Arrays.asList(20,15,12), new ProductOfArrayExceptSelf().productExceptSelf(new int[] {3,4,5}));
+		assertEquals(Arrays.asList(24, 12, 8, 6),
+				new ProductOfArrayExceptSelf().productExceptSelf(new int[] { 1, 2, 3, 4 }));
+		assertEquals(Arrays.asList(10, 5), new ProductOfArrayExceptSelf().productExceptSelf(new int[] { 5, 10 }));
+		assertEquals(Arrays.asList(2, 2), new ProductOfArrayExceptSelf().productExceptSelf(new int[] { 2, 2 }));
+		assertEquals(Arrays.asList(20, 15, 12),
+				new ProductOfArrayExceptSelf().productExceptSelf(new int[] { 3, 4, 5 }));
 	}
 
 	/**
