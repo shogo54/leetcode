@@ -260,6 +260,30 @@ class StringTest {
 	}
 
 	/**
+	 * Test cases for 389. Find the Difference
+	 * 
+	 * @see FindTheDifference
+	 */
+	@Test
+	void testFindTheDifference() {
+		String s = "abcd";
+		String t = "abcde";
+		assertEquals('e', new FindTheDifference().findTheDifference(s, t));
+		
+		s = "abcd";
+		t = "acedb";
+		assertEquals('e', new FindTheDifference().findTheDifference(s, t));
+		
+		s = "abbbcde";
+		t = "ebbbabdc";
+		assertEquals('b', new FindTheDifference().findTheDifference(s, t));
+		
+		s = "";
+		t = "c";
+		assertEquals('c', new FindTheDifference().findTheDifference(s, t));
+	}
+
+	/**
 	 * Test cases for 394. Decode String
 	 * 
 	 * @see DecodeString
