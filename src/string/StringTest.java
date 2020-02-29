@@ -461,4 +461,19 @@ class StringTest {
 				tester.findOcurrences("we will we will rock you", "we", "will"));
 	}
 
+	/**
+	 * Test cases for 1249. Minimum Remove to Make Valid Parentheses
+	 * 
+	 * @see MinimumRemoveToMakeValidParentheses
+	 */
+	@Test
+	void testMinimumRemoveToMakeValidParentheses() {
+		MinimumRemoveToMakeValidParentheses tester = new MinimumRemoveToMakeValidParentheses();
+		assertEquals("lee(t(c)o)de", tester.minRemoveToMakeValid("lee(t(c)o)de)"));
+		assertEquals("ab(c)d", tester.minRemoveToMakeValid("a)b(c)d"));
+		assertEquals("", tester.minRemoveToMakeValid("))(("));
+		assertEquals("a(b(c)d)", tester.minRemoveToMakeValid("(a(b(c)d)"));
+		assertEquals("", tester.minRemoveToMakeValid(""));
+	}
+
 }
