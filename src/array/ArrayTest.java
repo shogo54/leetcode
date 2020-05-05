@@ -163,6 +163,19 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 35. Search Insert Position
+	 * 
+	 * @see SearchInsertPosition
+	 */
+	@Test
+	void testSearchInsertPosition() {
+		assertEquals(2, new SearchInsertPosition().searchInsert(new int[] {1,3,5,6}, 5));
+		assertEquals(1, new SearchInsertPosition().searchInsert(new int[] {1,3,5,6}, 2));
+		assertEquals(4, new SearchInsertPosition().searchInsert(new int[] {1,3,5,6}, 7));
+		assertEquals(0, new SearchInsertPosition().searchInsert(new int[] {1,3,5,6}, 0));
+	}
+
+	/**
 	 * Test cases for 39. Combination Sum
 	 * 
 	 * @see CombinationSum
