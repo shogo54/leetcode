@@ -12,6 +12,10 @@ package string;
  * Runtime: 58 ms, faster than 7.28% of Java online submissions for Valid Parentheses.
  * Memory Usage: 36.3 MB, less than 42.56% of Java online submissions for Valid Parentheses.
  * 
+ * Time Complexity: O(n^2)
+ * Space Complexity: O(n^2)
+ * Where n is the length of the string
+ * 
  * @see StringTest#testValidParentheses()
  */
 public class ValidParentheses {
