@@ -9,6 +9,21 @@ import org.junit.jupiter.api.Test;
 class IntegerTest {
 
 	/**
+	 * Test cases for 12. Integer to Roman
+	 * 
+	 * @see IntegerToRoman
+	 */
+	@Test
+	void testIntegerToRoman() {
+		assertEquals("III", new IntegerToRoman().intToRoman(3));
+		assertEquals("IV", new IntegerToRoman().intToRoman(4));
+		assertEquals("IX", new IntegerToRoman().intToRoman(9));
+		assertEquals("LVIII", new IntegerToRoman().intToRoman(58));
+		assertEquals("MCMXCIV", new IntegerToRoman().intToRoman(1994));
+		assertEquals("MMMCMXCIX", new IntegerToRoman().intToRoman(3999));
+	}
+
+	/**
 	 * Test cases for 22. Generate Parentheses
 	 * 
 	 * @see GenerateParentheses
