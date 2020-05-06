@@ -63,14 +63,38 @@ class StringTest {
 	/**
 	 * Test cases for 20. Valid Parentheses
 	 * 
-	 * @see ValidPalindrome
+	 * @see ValidParentheses
+	 * @see ValidParentheses2
+	 * @see ValidParentheses3
 	 */
 	@Test
-	void testValidPalindrome() {
-		assertTrue(new ValidPalindrome().isPalindrome("A man, a plan, a canal: Panama"));
-		assertFalse(new ValidPalindrome().isPalindrome("race a car"));
-		assertFalse(new ValidPalindrome().isPalindrome("0P"));
-		assertTrue(new ValidPalindrome().isPalindrome("ab@a"));
+	void testValidParentheses() {
+		// Test for ValidParentheses
+		ValidParentheses tester = new ValidParentheses();
+		assertTrue(tester.isValid("()"));
+		assertTrue(tester.isValid("()[]{}"));
+		assertFalse(tester.isValid("(]"));
+		assertFalse(tester.isValid("([)]"));
+		assertTrue(tester.isValid("{[]}"));
+		assertFalse(tester.isValid("{"));
+		
+		// Test for ValidParentheses2
+		ValidParentheses2 tester2 = new ValidParentheses2();
+		assertTrue(tester2.isValid("()"));
+		assertTrue(tester2.isValid("()[]{}"));
+		assertFalse(tester2.isValid("(]"));
+		assertFalse(tester2.isValid("([)]"));
+		assertTrue(tester2.isValid("{[]}"));
+		assertFalse(tester2.isValid("{"));
+		
+		// Test for ValidParentheses2
+		ValidParentheses3 tester3 = new ValidParentheses3();
+		assertTrue(tester3.isValid("()"));
+		assertTrue(tester3.isValid("()[]{}"));
+		assertFalse(tester3.isValid("(]"));
+		assertFalse(tester3.isValid("([)]"));
+		assertTrue(tester3.isValid("{[]}"));
+		assertFalse(tester3.isValid("{"));
 	}
 
 	/**
@@ -118,17 +142,14 @@ class StringTest {
 	/**
 	 * Test cases for 125. Valid Palindrome
 	 * 
-	 * @see ValidParentheses
+	 * @see ValidPalindrome
 	 */
 	@Test
-	void testValidParentheses() {
-		ValidParentheses tester = new ValidParentheses();
-		assertTrue(tester.isValid("()"));
-		assertTrue(tester.isValid("()[]{}"));
-		assertFalse(tester.isValid("(]"));
-		assertFalse(tester.isValid("([)]"));
-		assertTrue(tester.isValid("{[]}"));
-
+	void testValidPalindrome() {
+		assertTrue(new ValidPalindrome().isPalindrome("A man, a plan, a canal: Panama"));
+		assertFalse(new ValidPalindrome().isPalindrome("race a car"));
+		assertFalse(new ValidPalindrome().isPalindrome("0P"));
+		assertTrue(new ValidPalindrome().isPalindrome("ab@a"));
 	}
 
 	/**
