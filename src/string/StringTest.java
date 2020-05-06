@@ -12,14 +12,27 @@ class StringTest {
 	 * Test cases for 3. Longest Substring Without Repeating Characters
 	 * 
 	 * @see LongestSubstringWithoutRepeatingCharacters
+	 * @see LongestSubstringWithoutRepeatingCharacters2
 	 */
 	@Test
 	void testLongestSubstringWithoutRepeatingCharacters() {
+		// Test for LongestSubstringWithoutRepeatingCharacters
 		LongestSubstringWithoutRepeatingCharacters tester = new LongestSubstringWithoutRepeatingCharacters();
 		assertEquals(3, tester.lengthOfLongestSubstring("abcabcbb"));
 		assertEquals(1, tester.lengthOfLongestSubstring("bbbbb"));
 		assertEquals(3, tester.lengthOfLongestSubstring("pwwkew"));
 		assertEquals(6, tester.lengthOfLongestSubstring("ohvhjdml"));
+		assertEquals(1, tester.lengthOfLongestSubstring(" "));
+		assertEquals(5, tester.lengthOfLongestSubstring("tmmzuxt"));
+		
+		// Test for LongestSubstringWithoutRepeatingCharacters2
+		LongestSubstringWithoutRepeatingCharacters2 tester2 = new LongestSubstringWithoutRepeatingCharacters2();
+		assertEquals(3, tester2.lengthOfLongestSubstring("abcabcbb"));
+		assertEquals(1, tester2.lengthOfLongestSubstring("bbbbb"));
+		assertEquals(3, tester2.lengthOfLongestSubstring("pwwkew"));
+		assertEquals(6, tester2.lengthOfLongestSubstring("ohvhjdml"));
+		assertEquals(1, tester2.lengthOfLongestSubstring(" "));
+		assertEquals(5, tester2.lengthOfLongestSubstring("tmmzuxt"));
 	}
 
 	/**

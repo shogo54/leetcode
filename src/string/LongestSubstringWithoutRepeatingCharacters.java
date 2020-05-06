@@ -10,9 +10,13 @@ import java.util.*;
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
  * Difficulty: Medium
  * 
- * Approach: Iteration
+ * Approach: Iteration & Set
  * Runtime: 10 ms, faster than 41.50% of Java online submissions for Longest Substring Without Repeating Characters.
  * Memory Usage: 37.1 MB, less than 99.76% of Java online submissions for Longest Substring Without Repeating Characters.
+ * 
+ * Time Complexity: O(2n) = O(n)
+ * Space Complexity: O(min(m,n))
+ * Where n is the length of the string and the m is the size of the charset/alphabet. 
  * 
  * @see StringTest#testLongestSubstringWithoutRepeatingCharacters()
  */
