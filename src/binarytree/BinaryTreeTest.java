@@ -646,6 +646,25 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 701. Insert into a Binary Search Tree
+	 * 
+	 * @see InsertIntoABinarySearchTree
+	 */
+	void testInsertIntoABinarySearchTree() {
+		TreeNode root = setupTree(4,2,7,1,3);
+		TreeNode expected = setupTree(4,2,7,1,3,5);
+		assertEquals(expected, new InsertIntoABinarySearchTree().insertIntoBST(root, 5));
+		
+		root = null;
+		expected = setupTree(5);
+		assertEquals(expected, new InsertIntoABinarySearchTree().insertIntoBST(root, 5));
+		
+		root = setupTree(7);
+		expected = setupTree(7, 5);
+		assertEquals(expected, new InsertIntoABinarySearchTree().insertIntoBST(root, 5));
+	}
+
+	/**
 	 * Test cases for 814. Binary Tree Pruning
 	 * 
 	 * @see BinaryTreePruning
