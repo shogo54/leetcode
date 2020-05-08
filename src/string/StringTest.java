@@ -156,13 +156,23 @@ class StringTest {
 	 * Test cases for 125. Valid Palindrome
 	 * 
 	 * @see ValidPalindrome
+	 * @see ValidPalindrome2
 	 */
 	@Test
 	void testValidPalindrome() {
+		// Test for ValidPalindrome
 		assertTrue(new ValidPalindrome().isPalindrome("A man, a plan, a canal: Panama"));
 		assertFalse(new ValidPalindrome().isPalindrome("race a car"));
 		assertFalse(new ValidPalindrome().isPalindrome("0P"));
 		assertTrue(new ValidPalindrome().isPalindrome("ab@a"));
+		assertTrue(new ValidPalindrome().isPalindrome(".,"));
+		
+		// Test for ValidPalindrome2
+		assertTrue(new ValidPalindrome2().isPalindrome("A man, a plan, a canal: Panama"));
+		assertFalse(new ValidPalindrome2().isPalindrome("race a car"));
+		assertFalse(new ValidPalindrome2().isPalindrome("0P"));
+		assertTrue(new ValidPalindrome2().isPalindrome("ab@a"));
+		assertTrue(new ValidPalindrome2().isPalindrome(".,"));
 	}
 
 	/**
