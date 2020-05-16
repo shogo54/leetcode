@@ -44,6 +44,33 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 99. Recover Binary Search Tree
+	 * 
+	 * @see RecoverBinarySearchTree
+	 */
+	void testRecoverBinarySearchTree() {
+		TreeNode root = setupTree(1,3,null,null,2);
+		TreeNode expected = setupTree(3,1,null,null,2);
+		new RecoverBinarySearchTree().recoverTree(root);
+		assertEquals(expected, root);
+		
+		root = setupTree(3,1,4,null,null,2);
+		expected = setupTree(2,1,4,null,null,3);
+		new RecoverBinarySearchTree().recoverTree(root);
+		assertEquals(expected, root);
+		
+		root = setupTree(5,1,4,null,null,null,3);
+		expected = setupTree(3,1,4,null,null,null,5);
+		new RecoverBinarySearchTree().recoverTree(root);
+		assertEquals(expected, root);
+		
+		root = setupTree(5,1,4,null,null,3,2);
+		expected = setupTree(5,1,4,null,null,3,2);
+		new RecoverBinarySearchTree().recoverTree(root);
+		assertEquals(expected, root);
+	}
+
+	/**
 	 * Test cases for 100. Same Tree
 	 * 
 	 * @see SameTree
