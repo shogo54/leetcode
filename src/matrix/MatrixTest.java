@@ -274,6 +274,48 @@ class MatrixTest {
 		assertEquals(expected, new PacificAtlanticWaterFlow().pacificAtlantic(matrix));
 	}
 
+	/**
+	 * Test cases for 1222. Queens That Can Attack the King
+	 * 
+	 * @see QueensThatCanAttackTheKing
+	 */
+	@Test
+	void testQueensThatCanAttackTheKing() {
+		int[][] queens = new int[][] { { 0, 1 }, { 1, 0 }, { 4, 0 }, { 0, 4 }, { 3, 3 }, { 2, 4 } };
+		int[] king = new int[] { 0, 0 };
+		List<List<Integer>> actual = new QueensThatCanAttackTheKing().queensAttacktheKing(queens, king);
+		List<List<Integer>> expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(0, 1));
+		expected.add(Arrays.asList(1, 0));
+		expected.add(Arrays.asList(3, 3));
+		assertEquals(expected, actual);
+
+		queens = new int[][] { { 0, 0 }, { 1, 1 }, { 2, 2 }, { 3, 4 }, { 3, 5 }, { 4, 4 }, { 4, 5 } };
+		king = new int[] { 3, 3 };
+		actual = new QueensThatCanAttackTheKing().queensAttacktheKing(queens, king);
+		expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(2, 2));
+		expected.add(Arrays.asList(3, 4));
+		expected.add(Arrays.asList(4, 4));
+		assertEquals(expected, actual);
+
+		queens = new int[][] { { 5, 6 }, { 7, 7 }, { 2, 1 }, { 0, 7 }, { 1, 6 }, { 5, 1 }, { 3, 7 }, { 0, 3 }, { 4, 0 },
+				{ 1, 2 }, { 6, 3 }, { 5, 0 }, { 0, 4 }, { 2, 2 }, { 1, 1 }, { 6, 4 }, { 5, 4 }, { 0, 0 }, { 2, 6 },
+				{ 4, 5 }, { 5, 2 }, { 1, 4 }, { 7, 5 }, { 2, 3 }, { 0, 5 }, { 4, 2 }, { 1, 0 }, { 2, 7 }, { 0, 1 },
+				{ 4, 6 }, { 6, 1 }, { 0, 6 }, { 4, 3 }, { 1, 7 } };
+		king = new int[] { 3, 4 };
+		actual = new QueensThatCanAttackTheKing().queensAttacktheKing(queens, king);
+		expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(2, 3));
+		expected.add(Arrays.asList(1, 4));
+		expected.add(Arrays.asList(1, 6));
+		expected.add(Arrays.asList(3, 7));
+		expected.add(Arrays.asList(4, 3));
+		expected.add(Arrays.asList(5, 4));
+		expected.add(Arrays.asList(4, 5));
+		assertEquals(expected, actual);
+	}
+	
 	int[][] setupMatrix() {
 		return setupMatrix("[[1,2,3],[4,5,6],[7,8,9]]");
 	}
