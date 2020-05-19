@@ -66,6 +66,7 @@ class ArrayTest {
 	 * Test cases for 26. Remove Duplicates from Sorted Array
 	 * 
 	 * @see RemoveDuplicatesFromSortedArray
+	 * @see RemoveDuplicatesFromSortedArray2
 	 * @see #testRemoveDuplicatesFromSortedArray(int[], int[], int)
 	 */
 	@Test

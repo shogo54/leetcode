@@ -12,6 +12,10 @@ package array;
  * Runtime: 1 ms, faster than 97.70% of Java online submissions for Remove Duplicates from Sorted Array.
  * Memory Usage: 39.5 MB, less than 97.87% of Java online submissions for Remove Duplicates from Sorted Array.
  * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ * Where n is the number of elements in the array
+ * 
  * @see ArrayTest#testRemoveDuplicatesFromSortedArray()
  */
 public class RemoveDuplicatesFromSortedArray {
