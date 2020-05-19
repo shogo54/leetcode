@@ -337,9 +337,11 @@ class ArrayTest {
 	 * Test cases for 122. Best Time to Buy and Sell Stock II
 	 * 
 	 * @see BestTimeToBuyAndSellStockII
+	 * @see BestTimeToBuyAndSellStockII2
 	 */
 	@Test
 	void testBestTimeToBuyAndSellStockII() {
+		// Test for BestTimeToBuyAndSellStockII
 		assertEquals(7, new BestTimeToBuyAndSellStockII().maxProfit(new int[] { 7, 1, 5, 3, 6, 4 }));
 		assertEquals(4, new BestTimeToBuyAndSellStockII().maxProfit(new int[] { 1, 2, 3, 4, 5 }));
 		assertEquals(0, new BestTimeToBuyAndSellStockII().maxProfit(new int[] { 7, 6, 4, 3, 1 }));
@@ -347,6 +349,15 @@ class ArrayTest {
 		assertEquals(2, new BestTimeToBuyAndSellStockII().maxProfit(new int[] { 1, 3 }));
 		assertEquals(0, new BestTimeToBuyAndSellStockII().maxProfit(new int[] { 7 }));
 		assertEquals(0, new BestTimeToBuyAndSellStockII().maxProfit(new int[0]));
+		
+		// Test for BestTimeToBuyAndSellStockII2
+		assertEquals(7, new BestTimeToBuyAndSellStockII2().maxProfit(new int[] { 7, 1, 5, 3, 6, 4 }));
+		assertEquals(4, new BestTimeToBuyAndSellStockII2().maxProfit(new int[] { 1, 2, 3, 4, 5 }));
+		assertEquals(0, new BestTimeToBuyAndSellStockII2().maxProfit(new int[] { 7, 6, 4, 3, 1 }));
+		assertEquals(0, new BestTimeToBuyAndSellStockII2().maxProfit(new int[] { 7, 6 }));
+		assertEquals(2, new BestTimeToBuyAndSellStockII2().maxProfit(new int[] { 1, 3 }));
+		assertEquals(0, new BestTimeToBuyAndSellStockII2().maxProfit(new int[] { 7 }));
+		assertEquals(0, new BestTimeToBuyAndSellStockII2().maxProfit(new int[0]));
 	}
 
 	/**

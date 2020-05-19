@@ -12,6 +12,10 @@ package array;
  * Runtime: 1 ms, faster than 93.21% of Java online submissions for Best Time to Buy and Sell Stock II.
  * Memory Usage: 37.9 MB, less than 96.19% of Java online submissions for Best Time to Buy and Sell Stock II.
  * 
+ * Time complexity : O(n)
+ * Space complexity : O(1)
+ * Where n is the number of elements in the array
+ * 
  * @see ArrayTest#testBestTimeToBuyAndSellStockII()
  */
 public class BestTimeToBuyAndSellStockII {
