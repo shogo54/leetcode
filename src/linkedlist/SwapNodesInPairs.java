@@ -14,22 +14,26 @@ import linkedlist.LinkedListTest.ListNode;
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Swap Nodes in Pairs.
  * Memory Usage: 37 MB, less than 5.50% of Java online submissions for Swap Nodes in Pairs.
  * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(n) for the recursive stack
+ * Where n is the number of nodes in the list
+ * 
  * @see LinkedListTest#testSwapNodesInPairs()
  */
 public class SwapNodesInPairs {
-    
-    public ListNode swapPairs(ListNode head) {
-        if(head == null){
-            return null;
-        }
-        if(head.next == null){
-            return head;
-        }
-        ListNode temp1 = head.next;
-        ListNode temp2 = head.next.next;
-        head.next.next = head;
-        head.next = swapPairs(temp2);
-        return temp1;
-    }
-    
+
+	public ListNode swapPairs(ListNode head) {
+		if (head == null) {
+			return null;
+		}
+		if (head.next == null) {
+			return head;
+		}
+		ListNode temp1 = head.next;
+		ListNode temp2 = head.next.next;
+		head.next.next = head;
+		head.next = swapPairs(temp2);
+		return temp1;
+	}
+
 }

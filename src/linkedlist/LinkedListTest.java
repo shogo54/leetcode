@@ -73,6 +73,37 @@ public class LinkedListTest {
 	}
 
 	/**
+	 * Test cases for 24. Swap Nodes in Pairs
+	 * 
+	 * @see SwapNodesInPairs
+	 */
+	void testSwapNodesInPairs() {
+		ListNode head = setupHead(new int[] {1,2,3,4});
+		ListNode expected = setupHead(new int[] {2,1,4,3});
+		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
+		
+		head = setupHead(new int[] {1,2,3,4,5});
+		expected = setupHead(new int[] {2,1,4,3,5});
+		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
+		
+		head = setupHead(new int[] {1,2,3});
+		expected = setupHead(new int[] {2,1,4});
+		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
+		
+		head = setupHead(new int[] {1,2});
+		expected = setupHead(new int[] {2,1});
+		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
+		
+		head = setupHead(new int[] {1});
+		expected = setupHead(new int[] {1});
+		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
+		
+		head = null;
+		expected = null;
+		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
+	}
+
+	/**
 	 * Test cases for 92. Reverse Linked List II
 	 * 
 	 * @see ReverseLinkedListII
