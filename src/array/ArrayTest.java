@@ -432,6 +432,38 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 189. Rotate Array
+	 * 
+	 * @see RotateArray
+	 */
+	void testRotateArray() {
+		int[] actual = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+		new RotateArray().rotate(actual, 3);
+		int[] expected = new int[] { 5, 6, 7, 1, 2, 3, 4 };
+		assertArrayEquals(expected, actual);
+
+		actual = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+		new RotateArray().rotate(actual, 5);
+		expected = new int[] { 3, 4, 5, 6, 7, 1, 2 };
+		assertArrayEquals(expected, actual);
+
+		actual = new int[] { -1, -100, 3, 99 };
+		new RotateArray().rotate(actual, 2);
+		expected = new int[] { 3, 99, -1, -100 };
+		assertArrayEquals(expected, actual);
+
+		actual = new int[] { -1, -100, 3, 99 };
+		new RotateArray().rotate(actual, 5);
+		expected = new int[] { 99, -1, -100, 3 };
+		assertArrayEquals(expected, actual);
+
+		actual = new int[] { -1 };
+		new RotateArray().rotate(actual, 2);
+		expected = new int[] { -1 };
+		assertArrayEquals(expected, actual);
+	}
+
+	/**
 	 * Test cases for 198. House Robber
 	 * 
 	 * @see HouseRobber
