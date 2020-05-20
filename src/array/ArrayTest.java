@@ -375,16 +375,35 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 136. Single Number
+	 * 
+	 * @see SingleNumber
+	 * @see SingleNumber2
+	 */
+	@Test
+	void testSingleNumber() {
+		// Test for SingleNumber
+		assertEquals(1, new SingleNumber().singleNumber(new int[] {2,2,1}));
+		assertEquals(4, new SingleNumber().singleNumber(new int[] {4,1,2,1,2}));
+		assertEquals(2, new SingleNumber().singleNumber(new int[] {2}));
+		
+		// Test for SingleNumber2
+		assertEquals(1, new SingleNumber2().singleNumber(new int[] {2,2,1}));
+		assertEquals(4, new SingleNumber2().singleNumber(new int[] {4,1,2,1,2}));
+		assertEquals(2, new SingleNumber().singleNumber(new int[] {2}));
+	}
+
+	/**
 	 * Test cases for 150. Evaluate Reverse Polish Notation
 	 * 
 	 * @see EvaluateReversePolishNotation
 	 */
+	@Test
 	void testEvaluateReversePolishNotation() {
 		assertEquals(9, new EvaluateReversePolishNotation().evalRPN(new String[] { "2", "1", "+", "3", "*" }));
 		assertEquals(6, new EvaluateReversePolishNotation().evalRPN(new String[] { "4", "13", "5", "/", "+" }));
 		assertEquals(22, new EvaluateReversePolishNotation()
 				.evalRPN(new String[] { "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" }));
-		assertEquals(0, new EvaluateReversePolishNotation().evalRPN(new String[0]));
 		assertEquals(4, new EvaluateReversePolishNotation().evalRPN(new String[] { "4" }));
 		assertEquals(-1, new EvaluateReversePolishNotation().evalRPN(new String[] { "3", "13", "3", "/", "-" }));
 	}
@@ -436,6 +455,7 @@ class ArrayTest {
 	 * 
 	 * @see RotateArray
 	 */
+	@Test
 	void testRotateArray() {
 		int[] actual = new int[] { 1, 2, 3, 4, 5, 6, 7 };
 		new RotateArray().rotate(actual, 3);
