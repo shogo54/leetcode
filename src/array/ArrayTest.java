@@ -383,14 +383,14 @@ class ArrayTest {
 	@Test
 	void testSingleNumber() {
 		// Test for SingleNumber
-		assertEquals(1, new SingleNumber().singleNumber(new int[] {2,2,1}));
-		assertEquals(4, new SingleNumber().singleNumber(new int[] {4,1,2,1,2}));
-		assertEquals(2, new SingleNumber().singleNumber(new int[] {2}));
-		
+		assertEquals(1, new SingleNumber().singleNumber(new int[] { 2, 2, 1 }));
+		assertEquals(4, new SingleNumber().singleNumber(new int[] { 4, 1, 2, 1, 2 }));
+		assertEquals(2, new SingleNumber().singleNumber(new int[] { 2 }));
+
 		// Test for SingleNumber2
-		assertEquals(1, new SingleNumber2().singleNumber(new int[] {2,2,1}));
-		assertEquals(4, new SingleNumber2().singleNumber(new int[] {4,1,2,1,2}));
-		assertEquals(2, new SingleNumber().singleNumber(new int[] {2}));
+		assertEquals(1, new SingleNumber2().singleNumber(new int[] { 2, 2, 1 }));
+		assertEquals(4, new SingleNumber2().singleNumber(new int[] { 4, 1, 2, 1, 2 }));
+		assertEquals(2, new SingleNumber().singleNumber(new int[] { 2 }));
 	}
 
 	/**
@@ -547,12 +547,13 @@ class ArrayTest {
 	 * 
 	 * @see ProductOfArrayExceptSelf
 	 */
+	@Test
 	void testProductOfArrayExceptSelf() {
-		assertEquals(Arrays.asList(24, 12, 8, 6),
+		assertArrayEquals(new int[] { 24, 12, 8, 6 },
 				new ProductOfArrayExceptSelf().productExceptSelf(new int[] { 1, 2, 3, 4 }));
-		assertEquals(Arrays.asList(10, 5), new ProductOfArrayExceptSelf().productExceptSelf(new int[] { 5, 10 }));
-		assertEquals(Arrays.asList(2, 2), new ProductOfArrayExceptSelf().productExceptSelf(new int[] { 2, 2 }));
-		assertEquals(Arrays.asList(20, 15, 12),
+		assertArrayEquals(new int[] { 10, 5 }, new ProductOfArrayExceptSelf().productExceptSelf(new int[] { 5, 10 }));
+		assertArrayEquals(new int[] { 2, 2 }, new ProductOfArrayExceptSelf().productExceptSelf(new int[] { 2, 2 }));
+		assertArrayEquals(new int[] { 20, 15, 12 },
 				new ProductOfArrayExceptSelf().productExceptSelf(new int[] { 3, 4, 5 }));
 	}
 
