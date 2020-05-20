@@ -731,6 +731,7 @@ class ArrayTest {
 	 * 
 	 * @see IntersectionOfTwoArraysII
 	 * @see IntersectionOfTwoArraysII2
+	 * @see IntersectionOfTwoArraysII3
 	 */
 	@Test
 	void testIntersectionOfTwoArraysII() {
@@ -740,6 +741,7 @@ class ArrayTest {
 				new IntersectionOfTwoArraysII().intersect(new int[] { 4, 9, 5 }, new int[] { 9, 4, 9, 8, 4 }));
 		assertArrayEquals(new int[] { 2, 1 },
 				new IntersectionOfTwoArraysII().intersect(new int[] { 2, 1 }, new int[] { 1, 2 }));
+		assertArrayEquals(new int[] {4,9,5,4}, new IntersectionOfTwoArraysII().intersect(new int[] {4,9,5,4}, new int[] {5,9,4,9,8,4}));
 		assertArrayEquals(new int[0], new IntersectionOfTwoArraysII().intersect(new int[] { 1, 2, 2, 1 }, new int[0]));
 		assertArrayEquals(new int[0], new IntersectionOfTwoArraysII().intersect(new int[0], new int[] { 1, 2, 2 }));
 	}

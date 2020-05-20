@@ -14,6 +14,10 @@ import java.util.*;
  * Runtime: 4 ms, faster than 22.94% of Java online submissions for Intersection of Two Arrays II.
  * Memory Usage: 36.7 MB, less than 83.87% of Java online submissions for Intersection of Two Arrays II.
  * 
+ * Time Complexity: O(m + n)
+ * Space Complexity: O(m + n)
+ * Where m and n are the numbers of elements in nums1 and nums2, respectively
+ * 
  * @see ArrayTest#testIntersectionOfTwoArraysII()
  */
 public class IntersectionOfTwoArraysII2 {
