@@ -4,15 +4,16 @@ import java.util.*;
 
 /**
  * @author Shogo Akiyama 
- * Solved on 08/27/2019
+ * Solved on 05/20/2020
+ * Time: 5m30s
  * 
  * 217. Contains Duplicate
  * https://leetcode.com/problems/contains-duplicate/
  * Difficulty: Easy
  * 
  * Approach: Hash Set & Iteration
- * Runtime: 9 ms, faster than 51.82% of Java online submissions for Contains Duplicate.
- * Memory Usage: 44 MB, less than 62.93% of Java online submissions for Contains Duplicate.
+ * Runtime: 5 ms, faster than 71.78% of Java online submissions for Contains Duplicate.
+ * Memory Usage: 47.2 MB, less than 5.17% of Java online submissions for Contains Duplicate.
  * 
  * Time Complexity: O(n)
  * Space Complexity: O(n)
@@ -20,17 +21,14 @@ import java.util.*;
  * 
  * @see ArrayTest#testContainsDuplicate()
  */
-public class ContainsDuplicate {
+public class ContainsDuplicate2 {
 
 	public boolean containsDuplicate(int[] nums) {
-		Set<Integer> seen = new HashSet<Integer>();
-		for (int n : nums) {
-			if (seen.contains(n)) {
-				return true;
-			}
-			seen.add(n);
+		Set<Integer> set = new HashSet<Integer>();
+		for (int i : nums) {
+			set.add(i);
 		}
-		return false;
+		return set.size() != nums.length;
 	}
 
 }

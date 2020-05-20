@@ -507,12 +507,19 @@ class ArrayTest {
 	 * Test cases for 217. Contains Duplicate
 	 * 
 	 * @see ContainsDuplicate
+	 * @see ContainsDuplicate2
 	 */
 	@Test
 	void testContainsDuplicate() {
+		// Test for ContainsDuplicate
 		assertTrue(new ContainsDuplicate().containsDuplicate(new int[] { 1, 2, 3, 1 }));
 		assertFalse(new ContainsDuplicate().containsDuplicate(new int[] { 1, 2, 3, 4 }));
 		assertTrue(new ContainsDuplicate().containsDuplicate(new int[] { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 }));
+		
+		// Test for ContainsDuplicate2
+		assertTrue(new ContainsDuplicate2().containsDuplicate(new int[] { 1, 2, 3, 1 }));
+		assertFalse(new ContainsDuplicate2().containsDuplicate(new int[] { 1, 2, 3, 4 }));
+		assertTrue(new ContainsDuplicate2().containsDuplicate(new int[] { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 }));
 	}
 
 	/**
