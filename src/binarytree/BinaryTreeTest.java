@@ -48,6 +48,7 @@ class BinaryTreeTest {
 	 * 
 	 * @see RecoverBinarySearchTree
 	 */
+	@Test
 	void testRecoverBinarySearchTree() {
 		TreeNode root = setupTree(1,3,null,null,2);
 		TreeNode expected = setupTree(3,1,null,null,2);
@@ -65,7 +66,7 @@ class BinaryTreeTest {
 		assertEquals(expected, root);
 		
 		root = setupTree(5,1,4,null,null,3,2);
-		expected = setupTree(5,1,4,null,null,3,2);
+		expected = setupTree(2,1,4,null,null,3,5);
 		new RecoverBinarySearchTree().recoverTree(root);
 		assertEquals(expected, root);
 	}
@@ -264,6 +265,7 @@ class BinaryTreeTest {
 	 * 
 	 * @see FlattenBinaryTreeToLinkedList
 	 */
+	@Test
 	void testFlattenBinaryTreeToLinkedList() {
 		TreeNode root = setupTree(1, 2, 5, 3, 4, null, 6);
 		TreeNode expected = setupTree(1, null, 2, null, 3, null, 4, null, 5, null, 6);
@@ -321,6 +323,7 @@ class BinaryTreeTest {
 	 * 
 	 * @see BinaryTreePreorderTraversal
 	 */
+	@Test
 	void testBinaryTreePreorderTraversal() {
 		TreeNode root = setupTree(1, null, 2, 3);
 		assertEquals(Arrays.asList(1, 2, 3), new BinaryTreePreorderTraversal().preorderTraversal(root));
@@ -354,6 +357,7 @@ class BinaryTreeTest {
 	 * 
 	 * @see BSTIterator
 	 */
+	@Test
 	void testBSTIterator() {
 		TreeNode root = setupTree(7, 3, 15, null, null, 9, 20);
 		BSTIterator iterator = new BSTIterator(root);
@@ -677,6 +681,7 @@ class BinaryTreeTest {
 	 * 
 	 * @see InsertIntoABinarySearchTree
 	 */
+	@Test
 	void testInsertIntoABinarySearchTree() {
 		TreeNode root = setupTree(4,2,7,1,3);
 		TreeNode expected = setupTree(4,2,7,1,3,5);
@@ -830,6 +835,7 @@ class BinaryTreeTest {
 	 * 
 	 * @see FindElements
 	 */
+	@Test
 	void testFindElements() {
 		TreeNode root = setupTree(-1, null, -1);
 		FindElements findElements = new FindElements(root);
@@ -847,7 +853,7 @@ class BinaryTreeTest {
 		assertTrue(findElements.find(2));
 		assertFalse(findElements.find(3));
 		assertFalse(findElements.find(4));
-		assertTrue(findElements.find(3));
+		assertTrue(findElements.find(5));
 
 		root = setupTree(-1);
 		findElements = new FindElements(root);
