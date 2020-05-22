@@ -245,6 +245,19 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 66. Plus One
+	 */
+	@Test
+	void testPlusOne() {
+		assertArrayEquals(new int[] {1,2,4}, new PlusOne().plusOne(new int[] {1,2,3}));
+		assertArrayEquals(new int[] {4,3,2,2}, new PlusOne().plusOne(new int[] {4,3,2,1}));
+		assertArrayEquals(new int[] {2}, new PlusOne().plusOne(new int[] {1}));
+		assertArrayEquals(new int[] {1,0}, new PlusOne().plusOne(new int[] {9}));
+		assertArrayEquals(new int[] {9,0,0}, new PlusOne().plusOne(new int[] {8,9,9}));
+		assertArrayEquals(new int[] {1,0,0,0}, new PlusOne().plusOne(new int[] {9,9,9}));
+	}
+
+	/**
 	 * Test cases for 75. Sort Colors
 	 * 
 	 * @see SortColors
