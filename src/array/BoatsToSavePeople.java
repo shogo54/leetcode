@@ -15,7 +15,7 @@ import java.util.*;
  * Memory Usage: 49 MB, less than 100.00% of Java online submissions for Boats to Save People.
  * 
  * Time Complexity: O(nlog(n))
- * Space Complexity: O(log(n))
+ * Space Complexity: O(1)
  * Where n is the number of elements in the array
  * 
  * @see ArrayTest#testBoatsToSavePeople()
