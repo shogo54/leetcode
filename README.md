@@ -206,5 +206,4 @@ BFS = Breadth First Search<br/>
 | 1249 | [Minimum Remove to Make Valid Parentheses*](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | Medium | [Stack and Array](/src/string/MinimumRemoveToMakeValidParentheses.java) | [string](https://github.com/shogo54/leetcode/blob/0dc6aba27c46c6c79a558aa31a269cb66836874e/src/string/StringTest.java#L464-L477) | 02/22/2020 |
 | 1261 | [Find Elements in a Contaminated Binary Tree***](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/) | Medium | [Recursion](/src/binarytree/FindElements.java) | [binarytree](https://github.com/shogo54/leetcode/blob/a880aee9b6423732f511b1bae9692a66152b467e/src/binarytree/BinaryTreeTest.java#L737-L766) | 01/25/2020 |
 | 1295 | [Find Numbers with Even Number of Digits*](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | Easy | [Iteration](/src/array/FindNumbersWithEvenNumberOfDigits.java) | [array](https://github.com/ShogoAkiyama54/LeetCode/blob/9686f3fa8751721077e83bd2bccf47fee383db87/src/array/ArrayTest.java#L765-L775) | 01/05/2019 |
-
-
+| 1448 | [Count Good Nodes in Binary Tree***](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | [Recursion](/src/binarytree/CountGoodNodesInBinaryTree.java) | [binarytree] | 05/22/2020 |

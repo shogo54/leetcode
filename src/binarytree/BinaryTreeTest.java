@@ -856,6 +856,29 @@ class BinaryTreeTest {
 		assertFalse(findElements.find(2));
 	}
 
+	/**
+	 * Test cases for 1448. Count Good Nodes in Binary Tree
+	 * 
+	 * @see CountGoodNodesInBinaryTree
+	 */
+	@Test
+	void testCountGoodNodesInBinaryTree() {
+		TreeNode root = setupTree(3,1,4,3,null,1,5);
+		assertEquals(4, new CountGoodNodesInBinaryTree().goodNodes(root));
+		
+		root = setupTree(3,3,null,4,2);
+		assertEquals(3, new CountGoodNodesInBinaryTree().goodNodes(root));
+		
+		root = setupTree(1);
+		assertEquals(1, new CountGoodNodesInBinaryTree().goodNodes(root));
+		
+		root = setupTree(2,4,2,4,6,9);
+		assertEquals(6, new CountGoodNodesInBinaryTree().goodNodes(root));
+		
+		root = setupTree(5,4,3,2,1);
+		assertEquals(1, new CountGoodNodesInBinaryTree().goodNodes(root));
+	}
+
 	TreeNode setupTree(Integer... array) {
 		if (array.length == 0) {
 			return null;
