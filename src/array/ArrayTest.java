@@ -589,29 +589,30 @@ class ArrayTest {
 	 * Test cases for 283. Move Zeroes
 	 * 
 	 * @see MoveZeroes
+	 * @see MoveZeroes2
 	 */
 	@Test
 	void testMoveZeroes() {
-		int[] actual = new int[] {0,1,0,3,12};
+		int[] actual = new int[] { 0, 1, 0, 3, 12 };
 		new MoveZeroes().moveZeroes(actual);
-		int[] expected = new int[] {1,3,12,0,0};
+		int[] expected = new int[] { 1, 3, 12, 0, 0 };
 		assertArrayEquals(expected, actual);
-		
-		actual = new int[] {2,1};
+
+		actual = new int[] { 2, 1 };
 		new MoveZeroes().moveZeroes(actual);
-		expected = new int[] {2,1};
+		expected = new int[] { 2, 1 };
 		assertArrayEquals(expected, actual);
-		
-		actual = new int[] {1};
+
+		actual = new int[] { 1 };
 		new MoveZeroes().moveZeroes(actual);
-		expected = new int[] {1};
+		expected = new int[] { 1 };
 		assertArrayEquals(expected, actual);
-		
-		actual = new int[] {0};
+
+		actual = new int[] { 0 };
 		new MoveZeroes().moveZeroes(actual);
-		expected = new int[] {0};
+		expected = new int[] { 0 };
 		assertArrayEquals(expected, actual);
-		
+
 		actual = new int[0];
 		new MoveZeroes().moveZeroes(actual);
 		expected = new int[0];
