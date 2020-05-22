@@ -432,6 +432,7 @@ class StringTest {
 	 * 
 	 * @see ReverseOnlyLetters
 	 */
+	@Test
 	void testReverseOnlyLetters() {
 		assertEquals("dc-ba", new ReverseOnlyLetters().reverseOnlyLetters("ab-cd"));
 		assertEquals("j-Ih-gfE-dCba", new ReverseOnlyLetters().reverseOnlyLetters("a-bC-dEf-ghIj"));

@@ -77,6 +77,7 @@ public class LinkedListTest {
 	 * 
 	 * @see SwapNodesInPairs
 	 */
+	@Test
 	void testSwapNodesInPairs() {
 		ListNode head = setupHead(new int[] {1,2,3,4});
 		ListNode expected = setupHead(new int[] {2,1,4,3});
@@ -87,7 +88,7 @@ public class LinkedListTest {
 		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
 		
 		head = setupHead(new int[] {1,2,3});
-		expected = setupHead(new int[] {2,1,4});
+		expected = setupHead(new int[] {2,1,3});
 		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
 		
 		head = setupHead(new int[] {1,2});
