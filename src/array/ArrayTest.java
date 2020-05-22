@@ -887,6 +887,26 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 881. Boats to Save People
+	 * 
+	 * @see BoatsToSavePeople
+	 */
+	@Test
+	void testBoatsToSavePeople() {
+		int[] people = new int[] { 1, 2 };
+		assertEquals(1, new BoatsToSavePeople().numRescueBoats(people, 3));
+
+		people = new int[] { 3, 2, 2, 1 };
+		assertEquals(3, new BoatsToSavePeople().numRescueBoats(people, 3));
+
+		people = new int[] { 3, 5, 3, 4 };
+		assertEquals(4, new BoatsToSavePeople().numRescueBoats(people, 5));
+
+		people = new int[] { 1 };
+		assertEquals(1, new BoatsToSavePeople().numRescueBoats(people, 1));
+	}
+
+	/**
 	 * Test cases for 905. Sort Array By Parity
 	 * 
 	 * @see SortArrayByParity
