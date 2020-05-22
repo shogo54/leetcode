@@ -12,6 +12,10 @@ package array;
  * Runtime: 25 ms, faster than 23.60% of Java online submissions for Two Sum.
  * Memory Usage: 36.3 MB, less than 99.61% of Java online submissions for Two Sum.
  * 
+ * Time Complexity: O(n^2)
+ * Space Complexity: O(1)
+ * Where n is the number of elements in the array
+ * 
  * @see ArrayTest#testTwoSum()
  */
 public class TwoSum {
