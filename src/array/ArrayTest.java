@@ -586,6 +586,39 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 283. Move Zeroes
+	 * 
+	 * @see MoveZeroes
+	 */
+	@Test
+	void testMoveZeroes() {
+		int[] actual = new int[] {0,1,0,3,12};
+		new MoveZeroes().moveZeroes(actual);
+		int[] expected = new int[] {1,3,12,0,0};
+		assertArrayEquals(expected, actual);
+		
+		actual = new int[] {2,1};
+		new MoveZeroes().moveZeroes(actual);
+		expected = new int[] {2,1};
+		assertArrayEquals(expected, actual);
+		
+		actual = new int[] {1};
+		new MoveZeroes().moveZeroes(actual);
+		expected = new int[] {1};
+		assertArrayEquals(expected, actual);
+		
+		actual = new int[] {0};
+		new MoveZeroes().moveZeroes(actual);
+		expected = new int[] {0};
+		assertArrayEquals(expected, actual);
+		
+		actual = new int[0];
+		new MoveZeroes().moveZeroes(actual);
+		expected = new int[0];
+		assertArrayEquals(expected, actual);
+	}
+
+	/**
 	 * Test cases for 287. Find the Duplicate Number
 	 * 
 	 * @see FindTheDuplicateNumber
