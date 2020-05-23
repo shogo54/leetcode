@@ -2,15 +2,20 @@ package matrix;
 
 /**
  * @author Shogo Akiyama 
- * Solved on 10/28/2019
+ * Solved on 10/28/2019 and 5/22/2020
+ * Time: 30m
  * 
  * 36. Valid Sudoku
  * https://leetcode.com/problems/valid-sudoku/
  * Difficulty: Medium
  * 
- * Approach: DFS
+ * Approach: Hash Table
  * Runtime: 2 ms, faster than 90.49% of Java online submissions for Valid Sudoku.
  * Memory Usage: 42.9 MB, less than 97.10% of Java online submissions for Valid Sudoku.
+ * 
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ * Because the max number of the matrix is 81
  * 
  * @see MatrixTest#testValidSudoku()
  */
