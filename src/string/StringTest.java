@@ -274,6 +274,7 @@ class StringTest {
 	 * Test cases for 344. Reverse String
 	 * 
 	 * @see ReverseString
+	 * @see ReverseString2
 	 */
 	@Test
 	void testReverseString() {
@@ -285,6 +286,14 @@ class StringTest {
 		input = new char[] { 'H', 'a', 'n', 'n', 'a', 'h' };
 		tester.reverseString(input);
 		assertArrayEquals(new char[] { 'h', 'a', 'n', 'n', 'a', 'H' }, input);
+
+		input = new char[] { 'H' };
+		tester.reverseString(input);
+		assertArrayEquals(new char[] { 'H' }, input);
+
+		input = new char[0];
+		tester.reverseString(input);
+		assertArrayEquals(new char[0], input);
 	}
 
 	/**

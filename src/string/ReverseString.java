@@ -2,7 +2,8 @@ package string;
 
 /**
  * @author Shogo Akiyama 
- * Solved on 06/11/2019
+ * Solved on 06/11/2019 and 05/23/2020
+ * Time: 2m30s
  * 
  * 344. Reverse String
  * https://leetcode.com/problems/reverse-string/
@@ -11,6 +12,10 @@ package string;
  * Approach: Two Pointers & Iteration
  * Runtime: 1 ms, faster than 100.00% of Java online submissions for Reverse String.
  * Memory Usage: 47.5 MB, less than 65.73% of Java online submissions for Reverse String.
+ * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ * Where n is the length of the array
  * 
  * @see StringTest#testReverseString()
  */
