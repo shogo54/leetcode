@@ -262,12 +262,21 @@ class StringTest {
 	 * Test cases for 242. Valid Anagram
 	 * 
 	 * @see ValidAnagram
+	 * @see ValidAnagram2
 	 */
 	@Test
 	void testValidAnagram() {
+		// Test for ValidAnagram
 		ValidAnagram tester = new ValidAnagram();
 		assertTrue(tester.isAnagram("anagram", "nagaram"));
 		assertFalse(tester.isAnagram("rat", "car"));
+		assertTrue(tester.isAnagram("", ""));
+		
+		// Test for ValidAnagram2
+		ValidAnagram2 tester2 = new ValidAnagram2();
+		assertTrue(tester2.isAnagram("anagram", "nagaram"));
+		assertFalse(tester2.isAnagram("rat", "car"));
+		assertTrue(tester2.isAnagram("", ""));
 	}
 
 	/**
