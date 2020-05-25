@@ -34,15 +34,26 @@ class MatrixTest {
 	 * Test cases for 48. Rotate Image
 	 * 
 	 * @see RotateImage
+	 * @see RotateImage2
 	 */
 	@Test
 	void testRotateImage() {
+		// Test for RotateImage
 		int[][] matrix = setupMatrix();
 		new RotateImage().rotate(matrix);
 		assertArrayEquals(setupMatrix("[[7,4,1],[8,5,2],[9,6,3]]"), matrix);
 
 		matrix = setupMatrix("[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]");
 		new RotateImage().rotate(matrix);
+		assertArrayEquals(setupMatrix("[[13,9,5,1],[14,10,6,2],[15,11,7,3],[16,12,8,4]]"), matrix);
+		
+		// Test for RotateImage2
+		matrix = setupMatrix();
+		new RotateImage2().rotate(matrix);
+		assertArrayEquals(setupMatrix("[[7,4,1],[8,5,2],[9,6,3]]"), matrix);
+
+		matrix = setupMatrix("[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]");
+		new RotateImage2().rotate(matrix);
 		assertArrayEquals(setupMatrix("[[13,9,5,1],[14,10,6,2],[15,11,7,3],[16,12,8,4]]"), matrix);
 	}
 

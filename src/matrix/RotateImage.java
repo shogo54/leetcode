@@ -12,6 +12,10 @@ package matrix;
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Rotate Image.
  * Memory Usage: 36.4 MB, less than 100.00% of Java online submissions for Rotate Image.
  * 
+ * Time Complexity: O(n^2)
+ * Space Complexity: O(n)
+ * Where n is the side length of the matrix
+ * 
  * @see MatrixTest#testRotateImage()
  */
 public class RotateImage {
