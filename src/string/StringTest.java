@@ -111,6 +111,22 @@ class StringTest {
 	}
 
 	/**
+	 * Test cases for 28. Implement strStr()
+	 * 
+	 * @see ImplementStrStr
+	 */
+	@Test
+	void testImplementStrStr() {
+		assertEquals(2, new ImplementStrStr().strStr("hello", "ll"));
+		assertEquals(-1, new ImplementStrStr().strStr("aaaaa", "bba"));
+		assertEquals(4, new ImplementStrStr().strStr("mississippi", "issip"));
+		assertEquals(-1, new ImplementStrStr().strStr("mississippi", "issipi"));
+		assertEquals(0, new ImplementStrStr().strStr("a", "a"));
+		assertEquals(0, new ImplementStrStr().strStr("aaaaa", ""));
+		assertEquals(-1, new ImplementStrStr().strStr("a", "aaaaa"));
+	}
+
+	/**
 	 * Test cases for 32. Longest Valid Parentheses
 	 * 
 	 * @see LongestValidParentheses
