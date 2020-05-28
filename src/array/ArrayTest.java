@@ -304,6 +304,24 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 80. Remove Duplicates from Sorted Array II
+	 * 
+	 * @see RemoveDuplicatesFromSortedArrayII
+	 */
+	@Test
+	void testRemoveDuplicatesFromSortedArrayII() {
+		int[] actual = new int[] { 1, 1, 1, 2, 2, 3 };
+		int len = new RemoveDuplicatesFromSortedArrayII().removeDuplicates(actual);
+		int[] expected = new int[] { 1, 1, 2, 2, 3 };
+		assertArrayEquals(expected, Arrays.copyOfRange(actual, 0, len));
+
+		actual = new int[] { 0, 0, 1, 1, 1, 1, 2, 3, 3 };
+		len = new RemoveDuplicatesFromSortedArrayII().removeDuplicates(actual);
+		expected = new int[] { 0, 0, 1, 1, 2, 3, 3 };
+		assertArrayEquals(expected, Arrays.copyOfRange(actual, 0, len));
+	}
+
+	/**
 	 * Test cases for 88. Merge Sorted Array
 	 * 
 	 * @see MergeSortedArray

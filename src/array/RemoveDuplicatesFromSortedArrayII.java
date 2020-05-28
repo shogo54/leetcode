@@ -19,27 +19,28 @@ package array;
  * @see ArrayTest#testRemoveDuplicatesFromSortedArrayII()
  */
 public class RemoveDuplicatesFromSortedArrayII {
-    public int removeDuplicates(int[] nums) {
-        if(nums.length == 0){
-            return nums.length;
-        }
-        int prev = nums[0];
-        int count = 1;
-        int skip = 0;
-        for(int i=1; i<nums.length; i++){
-            if(prev == nums[i]){
-                count++;
-                if(count>2){
-                    skip++;
-                }else{
-                    nums[i-skip] = nums[i];
-                }
-            }else{
-                prev = nums[i];
-                count = 1;
-                nums[i-skip] = nums[i];
-            }
-        }
-        return nums.length - skip;
-    }
+	public int removeDuplicates(int[] nums) {
+		if (nums.length == 0) {
+			return nums.length;
+		}
+		int prev = nums[0];
+		int count = 1;
+		int skip = 0;
+		
+		for (int i = 1; i < nums.length; i++) {
+			if (prev == nums[i]) {
+				count++;
+				if (count > 2) {
+					skip++;
+				} else {
+					nums[i - skip] = nums[i];
+				}
+			} else {
+				prev = nums[i];
+				count = 1;
+				nums[i - skip] = nums[i];
+			}
+		}
+		return nums.length - skip;
+	}
 }
