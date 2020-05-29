@@ -2,7 +2,8 @@ package integer;
 
 /**
  * @author Shogo Akiyama 
- * Solved on 12/25/2019
+ * Solved on 12/25/2019 and 05/29/2020
+ * Time: 12m
  * 
  * 38. Count and Say
  * https://leetcode.com/problems/count-and-say/
