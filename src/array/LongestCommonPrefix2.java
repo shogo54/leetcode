@@ -3,6 +3,7 @@ package array;
 /**
  * @author Shogo Akiyama 
  * Solved on 05/29/2020
+ * Time: 10m
  * 
  * 14. Longest Common Prefix
  * https://leetcode.com/problems/longest-common-prefix/
