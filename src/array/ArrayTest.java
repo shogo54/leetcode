@@ -50,6 +50,7 @@ class ArrayTest {
 	 * Test cases for 14. Longest Common Prefix
 	 * 
 	 * @see LongestCommonPrefix
+	 * @see LongestCommonPrefix2
 	 */
 	@Test
 	void testLongestCommonPrefix() {
@@ -59,6 +60,7 @@ class ArrayTest {
 		assertEquals("dog", new LongestCommonPrefix().longestCommonPrefix(new String[] { "dog" }));
 		assertEquals("f", new LongestCommonPrefix().longestCommonPrefix(new String[] { "flip", "fire" }));
 		assertEquals("", new LongestCommonPrefix().longestCommonPrefix(new String[] { "dog", "racecar", "" }));
+		assertEquals("a", new LongestCommonPrefix().longestCommonPrefix(new String[] { "aa", "a" }));
 		assertEquals("", new LongestCommonPrefix().longestCommonPrefix(new String[0]));
 	}
 
