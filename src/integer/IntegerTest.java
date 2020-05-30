@@ -169,6 +169,30 @@ class IntegerTest {
 	}
 
 	/**
+	 * Test cases for 278. First Bad Version
+	 * 
+	 * @see FirstBadVersion
+	 */
+	@Test
+	void testFirstBadVersion() {
+		assertEquals(4, new FirstBadVersion(4).firstBadVersion(5));
+		assertEquals(5, new FirstBadVersion(5).firstBadVersion(5));
+		assertEquals(3, new FirstBadVersion(3).firstBadVersion(5));
+		assertEquals(2, new FirstBadVersion(2).firstBadVersion(5));
+		assertEquals(1, new FirstBadVersion(1).firstBadVersion(5));
+
+		assertEquals(4, new FirstBadVersion(4).firstBadVersion(4));
+		assertEquals(3, new FirstBadVersion(3).firstBadVersion(4));
+		assertEquals(2, new FirstBadVersion(2).firstBadVersion(4));
+		assertEquals(1, new FirstBadVersion(1).firstBadVersion(4));
+
+		assertEquals(1, new FirstBadVersion(1).firstBadVersion(2));
+		assertEquals(2, new FirstBadVersion(2).firstBadVersion(2));
+
+		assertEquals(1, new FirstBadVersion(1).firstBadVersion(1));
+	}
+
+	/**
 	 * Test cases for 279. Perfect Squares
 	 * 
 	 * @see PerfectSquares
