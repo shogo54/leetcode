@@ -236,6 +236,23 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 53. Maximum Subarray
+	 * 
+	 * @see MaximumSubarray
+	 */
+	@Test
+	void testMaximumSubarray() {
+		int[] array = new int[] {-2,1,-3,4,-1,2,1,-5,4};
+		assertEquals(6, new MaximumSubarray().maxSubArray(array));
+		
+		array = new int[] {-2,1};
+		assertEquals(1, new MaximumSubarray().maxSubArray(array));
+		
+		array = new int[] {-2};
+		assertEquals(-2, new MaximumSubarray().maxSubArray(array));
+	}
+
+	/**
 	 * Test cases for 55. Jump Game
 	 * 
 	 * @see JumpGame
