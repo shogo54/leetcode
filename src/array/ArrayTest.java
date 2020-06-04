@@ -236,6 +236,25 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 49. Group Anagrams
+	 * 
+	 * @see GroupAnagrams
+	 */
+	@Test
+	void testGroupAnagrams() {
+		HashSet<List<String>> expected = new HashSet<List<String>>();
+		expected.add(Arrays.asList("eat","tea","ate"));
+		expected.add(Arrays.asList("tan","nat"));
+		expected.add(Arrays.asList("bat"));
+		String[] input = new String[] {"eat", "tea", "tan", "ate", "nat", "bat"};
+		List<List<String>> actual = new GroupAnagrams().groupAnagrams(input);
+		assertEquals(expected.size(), actual.size());
+		for(List<String> li: actual) {
+			assertTrue(expected.contains(li));
+		}
+	}
+
+	/**
 	 * Test cases for 53. Maximum Subarray
 	 * 
 	 * @see MaximumSubarray
