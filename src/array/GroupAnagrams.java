@@ -11,7 +11,7 @@ import java.util.*;
  * https://leetcode.com/problems/group-anagrams/
  * difficulty: Medium
  * 
- * Approach: Hash Map
+ * Approach: Hash Map and Sort
  * Runtime: 6 ms, faster than 96.99% of Java online submissions for Group Anagrams.
  * Memory Usage: 42.3 MB, less than 90.64% of Java online submissions for Group Anagrams.
  * 
