@@ -97,6 +97,29 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 27. Remove Element
+	 * 
+	 * @see RemoveElement
+	 */
+	@Test
+	void testRemoveElement() {
+		int[] input = new int[] { 3, 2, 2, 3 };
+		int size = new RemoveElement().removeElement(input, 3);
+		int[] expected = new int[] { 2, 2 };
+		assertArrayEquals(expected, Arrays.copyOfRange(input, 0, size));
+
+		input = new int[] { 0, 1, 2, 2, 3, 0, 4, 2 };
+		size = new RemoveElement().removeElement(input, 2);
+		expected = new int[] { 0, 1, 3, 0, 4 };
+		assertArrayEquals(expected, Arrays.copyOfRange(input, 0, size));
+		
+		input = new int[0];
+		size = new RemoveElement().removeElement(input, 2);
+		expected = new int[0];
+		assertArrayEquals(expected, Arrays.copyOfRange(input, 0, size));
+	}
+
+	/**
 	 * Test cases for 31. Next Permutation
 	 * 
 	 * @see NextPermutation
