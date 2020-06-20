@@ -207,4 +207,16 @@ class IntegerTest {
 		assertEquals(4, new PerfectSquares().numSquares(99999));
 	}
 
+	/**
+	 * Test cases for 412. Fizz Buzz
+	 * 
+	 * @see FizzBuzz
+	 */
+	@Test
+	void testFizzBuzz() {
+		assertEquals(Arrays.asList("1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13",
+				"14", "FizzBuzz"), new FizzBuzz().fizzBuzz(15));
+		assertEquals(Arrays.asList(), new FizzBuzz().fizzBuzz(0));
+	}
+
 }
