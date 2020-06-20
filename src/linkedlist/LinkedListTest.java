@@ -79,29 +79,69 @@ public class LinkedListTest {
 	 */
 	@Test
 	void testSwapNodesInPairs() {
-		ListNode head = setupHead(new int[] {1,2,3,4});
-		ListNode expected = setupHead(new int[] {2,1,4,3});
+		ListNode head = setupHead(new int[] { 1, 2, 3, 4 });
+		ListNode expected = setupHead(new int[] { 2, 1, 4, 3 });
 		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
-		
-		head = setupHead(new int[] {1,2,3,4,5});
-		expected = setupHead(new int[] {2,1,4,3,5});
+
+		head = setupHead(new int[] { 1, 2, 3, 4, 5 });
+		expected = setupHead(new int[] { 2, 1, 4, 3, 5 });
 		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
-		
-		head = setupHead(new int[] {1,2,3});
-		expected = setupHead(new int[] {2,1,3});
+
+		head = setupHead(new int[] { 1, 2, 3 });
+		expected = setupHead(new int[] { 2, 1, 3 });
 		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
-		
-		head = setupHead(new int[] {1,2});
-		expected = setupHead(new int[] {2,1});
+
+		head = setupHead(new int[] { 1, 2 });
+		expected = setupHead(new int[] { 2, 1 });
 		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
-		
-		head = setupHead(new int[] {1});
-		expected = setupHead(new int[] {1});
+
+		head = setupHead(new int[] { 1 });
+		expected = setupHead(new int[] { 1 });
 		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
-		
+
 		head = null;
 		expected = null;
 		assertEquals(expected, new SwapNodesInPairs().swapPairs(head));
+	}
+
+	/**
+	 * Test cases for 61. Rotate List
+	 * 
+	 * @see RotateList
+	 */
+	@Test
+	void testRotateList() {
+		ListNode head = setupHead(new int[] { 1, 2, 3, 4, 5 });
+		ListNode expected = setupHead(new int[] { 4, 5, 1, 2, 3 });
+		assertEquals(expected, new RotateList().rotateRight(head, 2));
+
+		head = setupHead(new int[] { 0, 1, 2 });
+		expected = setupHead(new int[] { 2, 0, 1 });
+		assertEquals(expected, new RotateList().rotateRight(head, 4));
+
+		head = setupHead(new int[] { 0, 1, 2 });
+		expected = setupHead(new int[] { 1, 2, 0 });
+		assertEquals(expected, new RotateList().rotateRight(head, 5));
+
+		head = setupHead(new int[] { 0, 1, 2 });
+		expected = setupHead(new int[] { 0, 1, 2 });
+		assertEquals(expected, new RotateList().rotateRight(head, 6));
+
+		head = setupHead(new int[] { 0, 1, 2 });
+		expected = setupHead(new int[] { 0, 1, 2 });
+		assertEquals(expected, new RotateList().rotateRight(head, 0));
+
+		head = setupHead(new int[] { 0, 1 });
+		expected = setupHead(new int[] { 1, 0 });
+		assertEquals(expected, new RotateList().rotateRight(head, 3));
+
+		head = setupHead(new int[] { 0 });
+		expected = setupHead(new int[] { 0 });
+		assertEquals(expected, new RotateList().rotateRight(head, 3));
+
+		head = setupHead(new int[0]);
+		expected = setupHead(new int[0]);
+		assertEquals(expected, new RotateList().rotateRight(head, 3));
 	}
 
 	/**
