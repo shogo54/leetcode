@@ -112,7 +112,7 @@ class ArrayTest {
 		size = new RemoveElement().removeElement(input, 2);
 		expected = new int[] { 0, 1, 3, 0, 4 };
 		assertArrayEquals(expected, Arrays.copyOfRange(input, 0, size));
-		
+
 		input = new int[0];
 		size = new RemoveElement().removeElement(input, 2);
 		expected = new int[0];
@@ -195,10 +195,10 @@ class ArrayTest {
 	 */
 	@Test
 	void testSearchInsertPosition() {
-		assertEquals(2, new SearchInsertPosition().searchInsert(new int[] {1,3,5,6}, 5));
-		assertEquals(1, new SearchInsertPosition().searchInsert(new int[] {1,3,5,6}, 2));
-		assertEquals(4, new SearchInsertPosition().searchInsert(new int[] {1,3,5,6}, 7));
-		assertEquals(0, new SearchInsertPosition().searchInsert(new int[] {1,3,5,6}, 0));
+		assertEquals(2, new SearchInsertPosition().searchInsert(new int[] { 1, 3, 5, 6 }, 5));
+		assertEquals(1, new SearchInsertPosition().searchInsert(new int[] { 1, 3, 5, 6 }, 2));
+		assertEquals(4, new SearchInsertPosition().searchInsert(new int[] { 1, 3, 5, 6 }, 7));
+		assertEquals(0, new SearchInsertPosition().searchInsert(new int[] { 1, 3, 5, 6 }, 0));
 	}
 
 	/**
@@ -259,6 +259,22 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 47. Permutations II
+	 * 
+	 * @see PermutationsII
+	 */
+	@Test
+	void testPermutationsII() {
+		List<List<Integer>> expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(1, 1, 2));
+		expected.add(Arrays.asList(1, 2, 1));
+		expected.add(Arrays.asList(2, 1, 1));
+		List<List<Integer>> actual = new PermutationsII().permuteUnique(new int[] { 1, 1, 2 });
+		assertEquals(expected.size(), actual.size());
+		assertEquals(new HashSet<List<Integer>>(expected), new HashSet<List<Integer>>(actual));
+	}
+
+	/**
 	 * Test cases for 49. Group Anagrams
 	 * 
 	 * @see GroupAnagrams
@@ -266,13 +282,13 @@ class ArrayTest {
 	@Test
 	void testGroupAnagrams() {
 		HashSet<List<String>> expected = new HashSet<List<String>>();
-		expected.add(Arrays.asList("eat","tea","ate"));
-		expected.add(Arrays.asList("tan","nat"));
+		expected.add(Arrays.asList("eat", "tea", "ate"));
+		expected.add(Arrays.asList("tan", "nat"));
 		expected.add(Arrays.asList("bat"));
-		String[] input = new String[] {"eat", "tea", "tan", "ate", "nat", "bat"};
+		String[] input = new String[] { "eat", "tea", "tan", "ate", "nat", "bat" };
 		List<List<String>> actual = new GroupAnagrams().groupAnagrams(input);
 		assertEquals(expected.size(), actual.size());
-		for(List<String> li: actual) {
+		for (List<String> li : actual) {
 			assertTrue(expected.contains(li));
 		}
 	}
@@ -284,13 +300,13 @@ class ArrayTest {
 	 */
 	@Test
 	void testMaximumSubarray() {
-		int[] array = new int[] {-2,1,-3,4,-1,2,1,-5,4};
+		int[] array = new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
 		assertEquals(6, new MaximumSubarray().maxSubArray(array));
-		
-		array = new int[] {-2,1};
+
+		array = new int[] { -2, 1 };
 		assertEquals(1, new MaximumSubarray().maxSubArray(array));
-		
-		array = new int[] {-2};
+
+		array = new int[] { -2 };
 		assertEquals(-2, new MaximumSubarray().maxSubArray(array));
 	}
 
@@ -312,12 +328,12 @@ class ArrayTest {
 	 */
 	@Test
 	void testPlusOne() {
-		assertArrayEquals(new int[] {1,2,4}, new PlusOne().plusOne(new int[] {1,2,3}));
-		assertArrayEquals(new int[] {4,3,2,2}, new PlusOne().plusOne(new int[] {4,3,2,1}));
-		assertArrayEquals(new int[] {2}, new PlusOne().plusOne(new int[] {1}));
-		assertArrayEquals(new int[] {1,0}, new PlusOne().plusOne(new int[] {9}));
-		assertArrayEquals(new int[] {9,0,0}, new PlusOne().plusOne(new int[] {8,9,9}));
-		assertArrayEquals(new int[] {1,0,0,0}, new PlusOne().plusOne(new int[] {9,9,9}));
+		assertArrayEquals(new int[] { 1, 2, 4 }, new PlusOne().plusOne(new int[] { 1, 2, 3 }));
+		assertArrayEquals(new int[] { 4, 3, 2, 2 }, new PlusOne().plusOne(new int[] { 4, 3, 2, 1 }));
+		assertArrayEquals(new int[] { 2 }, new PlusOne().plusOne(new int[] { 1 }));
+		assertArrayEquals(new int[] { 1, 0 }, new PlusOne().plusOne(new int[] { 9 }));
+		assertArrayEquals(new int[] { 9, 0, 0 }, new PlusOne().plusOne(new int[] { 8, 9, 9 }));
+		assertArrayEquals(new int[] { 1, 0, 0, 0 }, new PlusOne().plusOne(new int[] { 9, 9, 9 }));
 	}
 
 	/**
@@ -443,7 +459,7 @@ class ArrayTest {
 		assertEquals(2, new BestTimeToBuyAndSellStockII().maxProfit(new int[] { 1, 3 }));
 		assertEquals(0, new BestTimeToBuyAndSellStockII().maxProfit(new int[] { 7 }));
 		assertEquals(0, new BestTimeToBuyAndSellStockII().maxProfit(new int[0]));
-		
+
 		// Test for BestTimeToBuyAndSellStockII2
 		assertEquals(7, new BestTimeToBuyAndSellStockII2().maxProfit(new int[] { 7, 1, 5, 3, 6, 4 }));
 		assertEquals(4, new BestTimeToBuyAndSellStockII2().maxProfit(new int[] { 1, 2, 3, 4, 5 }));
@@ -629,7 +645,7 @@ class ArrayTest {
 		assertTrue(new ContainsDuplicate().containsDuplicate(new int[] { 1, 2, 3, 1 }));
 		assertFalse(new ContainsDuplicate().containsDuplicate(new int[] { 1, 2, 3, 4 }));
 		assertTrue(new ContainsDuplicate().containsDuplicate(new int[] { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 }));
-		
+
 		// Test for ContainsDuplicate2
 		assertTrue(new ContainsDuplicate2().containsDuplicate(new int[] { 1, 2, 3, 1 }));
 		assertFalse(new ContainsDuplicate2().containsDuplicate(new int[] { 1, 2, 3, 4 }));
@@ -869,7 +885,8 @@ class ArrayTest {
 				new IntersectionOfTwoArraysII().intersect(new int[] { 4, 9, 5 }, new int[] { 9, 4, 9, 8, 4 }));
 		assertArrayEquals(new int[] { 2, 1 },
 				new IntersectionOfTwoArraysII().intersect(new int[] { 2, 1 }, new int[] { 1, 2 }));
-		assertArrayEquals(new int[] {4,9,5,4}, new IntersectionOfTwoArraysII().intersect(new int[] {4,9,5,4}, new int[] {5,9,4,9,8,4}));
+		assertArrayEquals(new int[] { 4, 9, 5, 4 },
+				new IntersectionOfTwoArraysII().intersect(new int[] { 4, 9, 5, 4 }, new int[] { 5, 9, 4, 9, 8, 4 }));
 		assertArrayEquals(new int[0], new IntersectionOfTwoArraysII().intersect(new int[] { 1, 2, 2, 1 }, new int[0]));
 		assertArrayEquals(new int[0], new IntersectionOfTwoArraysII().intersect(new int[0], new int[] { 1, 2, 2 }));
 	}
