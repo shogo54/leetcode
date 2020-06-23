@@ -892,6 +892,44 @@ class ArrayTest {
 	}
 
 	/**
+	 * Test cases for 373. Find K Pairs with Smallest Sums
+	 * 
+	 * @see FindKPairsWithSmallestSums
+	 */
+	@Test
+	void testFindKPairsWithSmallestSums() {
+		List<List<Integer>> expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(1,2));
+		expected.add(Arrays.asList(1,4));
+		expected.add(Arrays.asList(1,6));
+		
+		int[] nums1 = new int[] {1,7,11};
+		int[] nums2 = new int[] {2,4,6};
+		List<List<Integer>> actual = new FindKPairsWithSmallestSums().kSmallestPairs(nums1, nums2, 3);
+		assertEquals(expected, actual);
+		
+		
+		expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(1,1));
+		expected.add(Arrays.asList(1,1));
+		
+		nums1 = new int[] {1,1,2};
+		nums2 = new int[] {1,2,3};
+		actual = new FindKPairsWithSmallestSums().kSmallestPairs(nums1, nums2, 2);
+		assertEquals(expected, actual);
+		
+		
+		expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(1,3));
+		expected.add(Arrays.asList(2,3));
+		
+		nums1 = new int[] {1,2};
+		nums2 = new int[] {3};
+		actual = new FindKPairsWithSmallestSums().kSmallestPairs(nums1, nums2, 3);
+		assertEquals(expected, actual);
+	}
+
+	/**
 	 * Test cases for 448. Find All Numbers Disappeared in an Array
 	 * 
 	 * @see FindAllNumbersDisappearedInAnArray
