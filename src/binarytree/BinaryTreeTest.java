@@ -261,6 +261,29 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 110. Balanced Binary Tree
+	 * 
+	 * @see BalancedBinaryTree
+	 */
+	@Test
+	void testBalancedBinaryTree() {
+		TreeNode root = setupTree(3,9,20,null,null,15,7);
+		assertTrue(new BalancedBinaryTree().isBalanced(root));
+		
+		root = setupTree(1,2,2,3,3,null,null,4,4);
+		assertFalse(new BalancedBinaryTree().isBalanced(root));
+		
+		root = setupTree(1,2);
+		assertTrue(new BalancedBinaryTree().isBalanced(root));
+		
+		root = setupTree(1);
+		assertTrue(new BalancedBinaryTree().isBalanced(root));
+		
+		root = null;
+		assertTrue(new BalancedBinaryTree().isBalanced(root));
+	}
+
+	/**
 	 * Test cases for 114. Flatten Binary Tree to Linked List
 	 * 
 	 * @see FlattenBinaryTreeToLinkedList
