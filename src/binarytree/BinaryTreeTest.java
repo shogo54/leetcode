@@ -406,6 +406,34 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 199. Binary Tree Right Side View
+	 * 
+	 * @see BinaryTreeRightSideView
+	 */
+	@Test
+	void testBinaryTreeRightSideView() {
+		TreeNode root = setupTree(1, 2, 3, null, 5, null, 4);
+		List<Integer> actual = new BinaryTreeRightSideView().rightSideView(root);
+		List<Integer> expected = Arrays.asList(1, 3, 4);
+		assertEquals(expected, actual);
+
+		root = setupTree(1, 2, 3, null, 5, null, 4, 6);
+		actual = new BinaryTreeRightSideView().rightSideView(root);
+		expected = Arrays.asList(1, 3, 4, 6);
+		assertEquals(expected, actual);
+
+		root = setupTree(1);
+		actual = new BinaryTreeRightSideView().rightSideView(root);
+		expected = Arrays.asList(1);
+		assertEquals(expected, actual);
+
+		root = null;
+		actual = new BinaryTreeRightSideView().rightSideView(root);
+		expected = Arrays.asList();
+		assertEquals(expected, actual);
+	}
+
+	/**
 	 * Test cases for 226. Invert Binary Tree
 	 * 
 	 * @see InvertBinaryTree
