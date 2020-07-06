@@ -284,6 +284,32 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 112. Path Sum
+	 * 
+	 * @see PathSum
+	 */
+	@Test
+	void testPathSum() {
+		TreeNode root = setupTree(5,4,8,11,null,13,4,7,2,null,null,null,1);
+		assertTrue(new PathSum().hasPathSum(root, 22));
+		assertTrue(new PathSum().hasPathSum(root, 26));
+		assertFalse(new PathSum().hasPathSum(root, 24));
+		
+		root = setupTree(5,4,8,13,null,13,4,7,2,null,null,null,1);
+		assertFalse(new PathSum().hasPathSum(root, 22));
+		assertTrue(new PathSum().hasPathSum(root, 26));
+		assertTrue(new PathSum().hasPathSum(root, 24));
+		
+		root = setupTree(5);
+		assertFalse(new PathSum().hasPathSum(root, 4));
+		assertTrue(new PathSum().hasPathSum(root, 5));
+		
+		root = null;
+		assertFalse(new PathSum().hasPathSum(root, 4));
+		assertFalse(new PathSum().hasPathSum(root, 0));
+	}
+
+	/**
 	 * Test cases for 114. Flatten Binary Tree to Linked List
 	 * 
 	 * @see FlattenBinaryTreeToLinkedList
