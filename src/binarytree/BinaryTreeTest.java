@@ -240,6 +240,42 @@ class BinaryTreeTest {
 	}
 
 	/**
+	 * Test cases for 107. Binary Tree Level Order Traversal II
+	 * 
+	 * @see BinaryTreeLevelOrderTraversalII
+	 */
+	@Test
+	void testBinaryTreeLevelOrderTraversalII() {
+		TreeNode root = setupTree(3, 9, 20, null, null, 15, 7);
+		List<List<Integer>> actual = new BinaryTreeLevelOrderTraversalII().levelOrderBottom(root);
+		List<List<Integer>> expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(15, 7));
+		expected.add(Arrays.asList(9, 20));
+		expected.add(Arrays.asList(3));
+		assertEquals(expected, actual);
+
+		root = setupTree(3, 9, 20, null, null, 15, 7, 11);
+		actual = new BinaryTreeLevelOrderTraversalII().levelOrderBottom(root);
+		expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(11));
+		expected.add(Arrays.asList(15, 7));
+		expected.add(Arrays.asList(9, 20));
+		expected.add(Arrays.asList(3));
+		assertEquals(expected, actual);
+
+		root = setupTree(3);
+		actual = new BinaryTreeLevelOrderTraversalII().levelOrderBottom(root);
+		expected = new ArrayList<List<Integer>>();
+		expected.add(Arrays.asList(3));
+		assertEquals(expected, actual);
+
+		root = null;
+		actual = new BinaryTreeLevelOrderTraversalII().levelOrderBottom(root);
+		expected = new ArrayList<List<Integer>>();
+		assertEquals(expected, actual);
+	}
+
+	/**
 	 * Test cases for 108. Convert Sorted Array to Binary Search Tree
 	 * 
 	 * @see ConvertSortedArrayToBinarySearchTree
